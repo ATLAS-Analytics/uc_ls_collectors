@@ -1,0 +1,22 @@
+# - pipeline.id: main
+#   path.config: "/usr/share/logstash/pipeline"
+
+- pipeline.id: rucio
+  path.config: "/usr/share/logstash/rucio"
+  pipeline.workers: 1
+  # queue.type: persisted
+
+- pipeline.id: pilot
+  path.config: "/usr/share/logstash/pilot"
+  pipeline.workers: 1
+  # queue.type: persisted
+
+- pipeline.id: xcache_atlasrift
+  path.config: "/usr/share/logstash/xcache_atlasrift"
+  pipeline.workers: 1
+  # queue.type: persisted
+
+- pipeline.id: stashcp
+  path.config: "/usr/share/logstash/stashcp"
+  pipeline.workers: 1
+  # queue.type: persisted

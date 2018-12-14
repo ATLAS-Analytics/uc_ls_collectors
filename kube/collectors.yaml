@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: uc-logstash
+  namespace: aaas
+  labels:
+    app: uc-logstash
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: uc-logstash
+  template:
+    metadata:
+      labels:
+        app: uc-logstash
+    spec:
+      containers:
+      - name: uc-logstash
+        image: ivukotic/uc_logstash:latest
+        command: ["sleep"]
+        args: ["infinity"]
+        ports:
+          - containerPort: 8080
+          - containerPort: 61613
+          - containerPort: 9951
+
