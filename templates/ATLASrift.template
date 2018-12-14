@@ -1,6 +1,6 @@
 {
     "order": 0,
-    "template": "ar-visits",
+    "index-pattern": "ar-visits",
     "settings": {
         "number_of_shards": 1,
         "number_of_replicas": 1

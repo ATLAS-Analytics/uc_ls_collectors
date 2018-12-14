@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: uc-logstash
-        image: ivukotic/uc_logstash:latest
+        image: atlasanalyticsservice/uc_ls_collectors:latest
         command: ["sleep"]
         args: ["infinity"]
         ports:
