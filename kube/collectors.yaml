@@ -11,7 +11,7 @@ spec:
   ports:
   - name: http
     protocol: UDP
-    port: 60637
+    port: 9000 
     targetPort: 60637
   selector:
     k8s-app: uc-logstash
