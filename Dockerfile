@@ -5,7 +5,7 @@ LABEL maintainer="Ilija Vukotic <ivukotic@cern.ch>"
 USER root
 RUN yum install -y nmap
 
-USER logstash
+# USER logstash
 
 RUN mkdir /usr/share/logstash/rucio
 RUN mkdir /usr/share/logstash/pilot
