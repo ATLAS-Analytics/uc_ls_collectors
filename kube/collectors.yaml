@@ -63,4 +63,7 @@ spec:
         image: atlasanalyticsservice/uc_ls_collectors:latest
         command: ["sleep"]
         args: ["infinity"]
+        env:
+        - name: LOGSTASH_PWD
+          value: "smth"
 
