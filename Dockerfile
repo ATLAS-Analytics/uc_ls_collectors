@@ -3,7 +3,7 @@ FROM docker.elastic.co/logstash/logstash:7.8.0
 LABEL maintainer="Ilija Vukotic <ivukotic@cern.ch>"
 
 USER root
-RUN yum install -y netcat
+RUN yum install -y nmap
 
 USER logstash
 
