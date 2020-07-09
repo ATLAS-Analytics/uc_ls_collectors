@@ -8,12 +8,12 @@ metadata:
 spec:
   # type: NodePort
   type: LoadBalancer
-  loadBalancerIP: 192.170.227.234
+  loadBalancerIP: 192.170.227.237
   ports:
-  - name: xcache-g-stream
-    protocol: UDP
-    port: 9000 
-    targetPort: 60637
+    - name: xcache-g-stream
+      port: 9000
+      targetPort: 9000
+      protocol: UDP
   selector:
     k8s-app: uc-logstash
 # ---
@@ -47,24 +47,20 @@ metadata:
   name: uc-logstash
   namespace: aaas
   labels:
-    app: uc-logstash
+    k8s-app: uc-logstash
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: uc-logstash
+      k8s-app: uc-logstash
   template:
     metadata:
       labels:
-        app: uc-logstash
+        k8s-app: uc-logstash
     spec:
       containers:
       - name: uc-logstash
         image: atlasanalyticsservice/uc_ls_collectors:latest
         command: ["sleep"]
         args: ["infinity"]
-        ports:
-          - containerPort: 80
-          - containerPort: 61613
-          - containerPort: 9951
 
