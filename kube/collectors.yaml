@@ -61,9 +61,12 @@ spec:
       containers:
       - name: uc-logstash
         image: atlasanalyticsservice/uc_ls_collectors:latest
-        command: ["sleep"]
-        args: ["infinity"]
+        # command: ["sleep"]
+        # args: ["infinity"]
         env:
         - name: LOGSTASH_PWD
-          value: "smth"
+          valueFrom:
+            secretKeyRef:
+              name: logstash-pwd
+              key: password
 
