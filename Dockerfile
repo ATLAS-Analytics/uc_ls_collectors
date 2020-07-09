@@ -2,6 +2,8 @@ FROM docker.elastic.co/logstash/logstash:7.8.0
 
 LABEL maintainer="Ilija Vukotic <ivukotic@cern.ch>"
 
+RUN yum install -y netcat
+
 RUN mkdir /usr/share/logstash/rucio
 RUN mkdir /usr/share/logstash/pilot
 RUN mkdir /usr/share/logstash/atlasrift

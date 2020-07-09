@@ -8,8 +8,9 @@ metadata:
 spec:
   # type: NodePort
   type: LoadBalancer
+  loadBalancerIP: 192.170.227.234
   ports:
-  - name: http
+  - name: xcache-g-stream
     protocol: UDP
     port: 9000 
     targetPort: 60637
