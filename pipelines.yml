@@ -17,7 +17,12 @@
 #   # queue.type: persisted
 
 - pipeline.id: xcache
-  path.config: "/usr/share/logstash/xcache"
+  path.config: "/usr/share/logstash/xcache/xCacheMonitoringCollector.conf"
+  pipeline.workers: 1
+  # queue.type: persisted
+
+- pipeline.id: xcache-gstream
+  path.config: "/usr/share/logstash/xcache/xCache_gStreamCollector.conf"
   pipeline.workers: 1
   # queue.type: persisted
 
