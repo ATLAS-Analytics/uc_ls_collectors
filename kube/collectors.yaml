@@ -35,6 +35,10 @@ spec:
       port: 80
       targetPort: 80
       protocol: TCP
+    - name: stashcp
+      port: 9951
+      targetPort: 9951
+      protocol: TCP
   selector:
     k8s-app: uc-logstash
 ---

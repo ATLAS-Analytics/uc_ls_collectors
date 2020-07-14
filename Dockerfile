@@ -22,13 +22,12 @@ RUN bin/logstash-plugin install logstash-input-stomp
 COPY logstash.yml /usr/share/logstash/config/
 COPY pipelines.yml /usr/share/logstash/config/
 
-
 COPY pipelines/xCache_gStreamCollector.conf /usr/share/logstash/xcache/
 COPY pipelines/xCacheMonitoringCollector.conf /usr/share/logstash/xcache/
+COPY pipelines/StashCP.conf  /usr/share/logstash/stashcp/
 
 # COPY pipelines/rucio-events.conf  /usr/share/logstash/rucio/
 # COPY pipelines/PandaPilot.conf  /usr/share/logstash/pilot/
 # COPY pipelines/ATLASrift.conf /usr/share/logstash/atlasrift/
-# COPY pipelines/StashCP.conf  /usr/share/logstash/stashcp/
 
 # COPY templates/ATLASrift.template  /usr/share/logstash/templates/

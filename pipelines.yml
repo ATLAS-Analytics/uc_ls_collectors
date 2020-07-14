@@ -26,7 +26,7 @@
   pipeline.workers: 1
   # queue.type: persisted
 
-# - pipeline.id: stashcp
-#   path.config: "/usr/share/logstash/stashcp"
-#   pipeline.workers: 1
-#   # queue.type: persisted
+- pipeline.id: stashcp
+  path.config: "/usr/share/logstash/stashcp/StashCP.conf"
+  pipeline.workers: 1
+  # queue.type: persisted
