@@ -1,0 +1,48 @@
+# only collectors.yaml should be recreated.
+# If services are recreated, collector.atlas-ml.org should be updated to point to them.
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: uc-logstash-udp
+  namespace: aaas
+  annotations:
+    metallb.universe.tf/allow-shared-ip: "uc-logstash"
+  labels:
+    k8s-app: uc-logstash
+spec:
+  type: LoadBalancer
+  loadBalancerIP: 192.170.227.237
+  ports:
+    - name: xcache-g-stream
+      port: 9000
+      targetPort: 9000
+      protocol: UDP
+  selector:
+    k8s-app: uc-logstash
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: uc-logstash-tcp
+  namespace: aaas
+  annotations:
+    metallb.universe.tf/allow-shared-ip: "uc-logstash"
+  labels:
+    k8s-app: uc-logstash
+spec:
+  type: LoadBalancer
+  loadBalancerIP: 192.170.227.237
+  ports:
+    - name: xcache
+      port: 80
+      targetPort: 80
+      protocol: TCP
+    - name: stashcp
+      port: 9951
+      targetPort: 9951
+      protocol: TCP
+  selector:
+    k8s-app: uc-logstash
+---
+

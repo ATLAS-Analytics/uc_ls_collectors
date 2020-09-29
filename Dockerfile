@@ -8,7 +8,7 @@ RUN yum install -y nmap
 # USER logstash
 
 
-RUN mkdir /usr/share/logstash/xcache
+RUN mkdir /usr/share/logstash/xcache 
 
 RUN mkdir /usr/share/logstash/rucio
 RUN mkdir /usr/share/logstash/pilot

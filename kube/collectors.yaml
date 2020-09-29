@@ -1,47 +1,7 @@
-kind: Service
-apiVersion: v1
-metadata:
-  name: uc-logstash-udp
-  namespace: aaas
-  annotations:
-    metallb.universe.tf/allow-shared-ip: "uc-logstash"
-  labels:
-    k8s-app: uc-logstash
-spec:
-  type: LoadBalancer
-  loadBalancerIP: 192.170.227.237
-  ports:
-    - name: xcache-g-stream
-      port: 9000
-      targetPort: 9000
-      protocol: UDP
-  selector:
-    k8s-app: uc-logstash
----
-kind: Service
-apiVersion: v1
-metadata:
-  name: uc-logstash-tcp
-  namespace: aaas
-  annotations:
-    metallb.universe.tf/allow-shared-ip: "uc-logstash"
-  labels:
-    k8s-app: uc-logstash
-spec:
-  type: LoadBalancer
-  loadBalancerIP: 192.170.227.237
-  ports:
-    - name: xcache
-      port: 80
-      targetPort: 80
-      protocol: TCP
-    - name: stashcp
-      port: 9951
-      targetPort: 9951
-      protocol: TCP
-  selector:
-    k8s-app: uc-logstash
----
+# only collectors.yaml should be recreated. 
+# If services are recreated, collector.atlas-ml.org should be updated to point to them.
+
+
 # apiVersion: extensions/v1beta1
 # kind: Ingress
 # metadata:
@@ -51,7 +11,7 @@ spec:
 #     k8s-app: uc-logstash
 #   annotations:
 #     kubernetes.io/ingress.class: slate
-#     certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+#     cert-manager.io/cluster-issuer: letsencrypt-prod
 # spec:
 #   tls:
 #   - hosts:
@@ -84,14 +44,13 @@ spec:
         k8s-app: uc-logstash
     spec:
       containers:
-      - name: uc-logstash
-        image: atlasanalyticsservice/uc_ls_collectors:latest
-        # command: ["sleep"]
-        # args: ["infinity"]
-        env:
-        - name: LOGSTASH_PWD
-          valueFrom:
-            secretKeyRef:
-              name: logstash-pwd
-              key: password
-
+        - name: uc-logstash
+          image: atlasanalyticsservice/uc_ls_collectors:latest
+          # command: ["sleep"]
+          # args: ["infinity"]
+          env:
+            - name: LOGSTASH_PWD
+              valueFrom:
+                secretKeyRef:
+                  name: logstash-pwd
+                  key: password
