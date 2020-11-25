@@ -11,11 +11,15 @@
 #   pipeline.workers: 1
 #   # queue.type: persisted
 
-- pipeline.id: pilot
-  path.config: "/usr/share/logstash/pilot"
+# - pipeline.id: benchmarks
+#   path.config: "/usr/share/logstash/pilot/PandaPilot.conf"
+#   pipeline.workers: 1
+
+- pipeline.id: memory-monitor
+  path.config: "/usr/share/logstash/pilot/PandaMonitor.conf"
   pipeline.workers: 1
 
-  # queue.type: persisted
+# queue.type: persisted
 - pipeline.id: xcache
   path.config: "/usr/share/logstash/xcache/xCacheMonitoringCollector.conf"
   pipeline.workers: 1
