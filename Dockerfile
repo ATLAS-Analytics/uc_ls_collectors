@@ -26,7 +26,7 @@ COPY pipelines/xCache_gStreamCollector.conf /usr/share/logstash/xcache/
 COPY pipelines/xCacheMonitoringCollector.conf /usr/share/logstash/xcache/
 COPY pipelines/StashCP.conf  /usr/share/logstash/stashcp/
 COPY pipelines/PandaPilot.conf  /usr/share/logstash/pilot/
-COPY pipelines/PandaMonitor.conf  /usr/share/logstash/pilot/
+COPY pipelines/PilotMonitor.conf  /usr/share/logstash/pilot/
 
 # COPY pipelines/rucio-events.conf  /usr/share/logstash/rucio/
 # COPY pipelines/ATLASrift.conf /usr/share/logstash/atlasrift/

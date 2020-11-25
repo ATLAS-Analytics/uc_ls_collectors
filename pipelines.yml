@@ -16,7 +16,7 @@
 #   pipeline.workers: 1
 
 - pipeline.id: memory-monitor
-  path.config: "/usr/share/logstash/pilot/PandaMonitor.conf"
+  path.config: "/usr/share/logstash/pilot/PilotMonitor.conf"
   pipeline.workers: 1
 
 # queue.type: persisted

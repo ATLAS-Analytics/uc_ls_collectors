@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: uc-logstash
+  labels:
+    k8s-app: uc-logstash
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: uc-logstash
+  template:
+    metadata:
+      labels:
+        k8s-app: uc-logstash
+    spec:
+      containers:
+        - name: uc-logstash
+          image: atlasanalyticsservice/uc_ls_collectors:latest
+          # command: ["sleep"]
+          # args: ["infinity"]
+          env:
+            - name: LOGSTASH_PWD
+              valueFrom:
+                secretKeyRef:
+                  name: logstash-pwd
+                  key: password
