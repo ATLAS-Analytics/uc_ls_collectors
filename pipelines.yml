@@ -6,26 +6,26 @@
 #   pipeline.workers: 1
 #   # queue.type: persisted
 
-# - pipeline.id: pilot
-#   path.config: "/usr/share/logstash/pilot"
-#   pipeline.workers: 1
-#   # queue.type: persisted
-
 # - pipeline.id: atlasrift
 #   path.config: "/usr/share/logstash/atlasrift"
 #   pipeline.workers: 1
 #   # queue.type: persisted
 
+- pipeline.id: pilot
+  path.config: "/usr/share/logstash/pilot"
+  pipeline.workers: 1
+
+  # queue.type: persisted
 - pipeline.id: xcache
   path.config: "/usr/share/logstash/xcache/xCacheMonitoringCollector.conf"
   pipeline.workers: 1
-  # queue.type: persisted
 
+  # queue.type: persisted
 - pipeline.id: xcache-gstream
   path.config: "/usr/share/logstash/xcache/xCache_gStreamCollector.conf"
   pipeline.workers: 1
-  # queue.type: persisted
 
+  # queue.type: persisted
 - pipeline.id: stashcp
   path.config: "/usr/share/logstash/stashcp/StashCP.conf"
   pipeline.workers: 1
