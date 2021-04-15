@@ -1,0 +1,22 @@
+# - pipeline.id: rucio
+#   path.config: "/usr/share/logstash/rucio"
+#   pipeline.workers: 1
+
+# - pipeline.id: atlasrift
+#   path.config: "/usr/share/logstash/atlasrift"
+#   pipeline.workers: 1
+#   queue.type: persisted
+#   queue.max_bytes: 4gb
+
+# - pipeline.id: benchmarks
+#   path.config: "/usr/share/logstash/pilot/PandaPilot.conf"
+#   pipeline.workers: 1
+
+# # - pipeline.id: xcache-gstream
+# #   path.config: "/usr/share/logstash/xcache/xCache_gStreamCollector.conf"
+# #   pipeline.workers: 1
+# #######
+
+# # - pipeline.id: stashcp
+# #   path.config: "/usr/share/logstash/stashcp/StashCP.conf"
+# #   pipeline.workers: 1

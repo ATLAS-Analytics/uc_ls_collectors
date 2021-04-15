@@ -1,3 +1,8 @@
+Move rest of xcaches to new collector.
+    inform BNL and LRZ-LMU
+Move stashcp to stashcp.atlas-ml.org
+Move both pilot and xcache to SSL
+
 # g-stream parsing
 
 g12345678901234567890123{"siteID":"mwt2","hostID":"xcache.mwt2.org:9230"}

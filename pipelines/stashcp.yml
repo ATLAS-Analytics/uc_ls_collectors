@@ -1,0 +1,5 @@
+- pipeline.id: stashcp
+  path.config: "/usr/share/logstash/configs/StashCP.conf"
+  pipeline.workers: 1
+#   queue.type: persisted
+#   queue.max_bytes: 4gb

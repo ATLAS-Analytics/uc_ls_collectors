@@ -1,26 +1,24 @@
-# only collectors.yaml should be recreated.
-# If services are recreated, collector.atlas-ml.org should be updated to point to them.
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: uc-logstash
-  namespace: aaas
+  name: uc-ls-memory
   labels:
-    k8s-app: uc-logstash
+    k8s-app: uc-ls-memory
 spec:
   replicas: 1
   selector:
     matchLabels:
-      k8s-app: uc-logstash
+      k8s-app: uc-ls-memory
   template:
     metadata:
       labels:
-        k8s-app: uc-logstash
+        k8s-app: uc-ls-memory
     spec:
       containers:
-        - name: uc-logstash
-          image: atlasanalyticsservice/uc_ls_collectors:latest
+        - name: uc-ls-memory
+          image: uc_ls_memory-monitor
+          imagePullPolicy: IfNotPresent
+          # image: atlasanalyticsservice/uc_ls_memory-monitor:latest
           # command: ["sleep"]
           # args: ["infinity"]
           env:

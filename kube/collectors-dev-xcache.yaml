@@ -1,26 +1,24 @@
-# only collectors.yaml should be recreated.
-# If services are recreated, collector.atlas-ml.org should be updated to point to them.
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: uc-logstash
-  namespace: aaas
+  name: uc-ls-xcache
   labels:
-    k8s-app: uc-logstash
+    k8s-app: uc-ls-xcache
 spec:
   replicas: 1
   selector:
     matchLabels:
-      k8s-app: uc-logstash
+      k8s-app: uc-ls-xcache
   template:
     metadata:
       labels:
-        k8s-app: uc-logstash
+        k8s-app: uc-ls-xcache
     spec:
       containers:
         - name: uc-logstash
-          image: atlasanalyticsservice/uc_ls_collectors:latest
+          image: uc_ls_xcache
+          imagePullPolicy: IfNotPresent
+          # image: atlasanalyticsservice/uc_ls_xcache:latest
           # command: ["sleep"]
           # args: ["infinity"]
           env:

@@ -1,0 +1,48 @@
+# If service was recreated at some other IP, stashcp.atlas-ml.org should be updated to point to it.
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: uc-ls-stashcp
+  namespace: aaas
+  labels:
+    k8s-app: uc-ls-stashcp
+spec:
+  type: LoadBalancer
+  loadBalancerIP: 192.170.227.237
+  ports:
+    - name: stashcp
+      port: 9951
+      targetPort: 9951
+      protocol: TCP
+  selector:
+    k8s-app: uc-ls-stashcp
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: uc-ls-stashcp
+  namespace: aaas
+  labels:
+    k8s-app: uc-ls-stashcp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: uc-ls-stashcp
+  template:
+    metadata:
+      labels:
+        k8s-app: uc-ls-stashcp
+    spec:
+      containers:
+        - name: uc-ls-stashcp
+          image: atlasanalyticsservice/uc_ls_stashcp:latest
+          # command: ["sleep"]
+          # args: ["infinity"]
+          env:
+            - name: LOGSTASH_PWD
+              valueFrom:
+                secretKeyRef:
+                  name: logstash-pwd
+                  key: password

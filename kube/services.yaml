@@ -1,4 +1,3 @@
-# only collectors.yaml should be recreated.
 # If services are recreated, collector.atlas-ml.org should be updated to point to them.
 
 kind: Service
