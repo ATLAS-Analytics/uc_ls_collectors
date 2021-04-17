@@ -4,23 +4,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: uc-logstash
+  name: uc-ls-xcache-gstream
   namespace: aaas
   labels:
-    k8s-app: uc-logstash
+    k8s-app: uc-ls-xcache-gstream
 spec:
   replicas: 1
   selector:
     matchLabels:
-      k8s-app: uc-logstash
+      k8s-app: uc-ls-xcache-gstream
   template:
     metadata:
       labels:
-        k8s-app: uc-logstash
+        k8s-app: uc-ls-xcache-gstream
     spec:
       containers:
-        - name: uc-logstash
-          image: atlasanalyticsservice/uc_ls_collectors:latest
+        - name: uc-ls-xcache-gstream
+          image: atlasanalyticsservice/uc_ls_xcache_gstream:latest
           # command: ["sleep"]
           # args: ["infinity"]
           env:

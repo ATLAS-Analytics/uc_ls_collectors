@@ -1,0 +1,19 @@
+FROM docker.elastic.co/logstash/logstash:7.12.0
+
+LABEL maintainer="Ilija Vukotic <ivukotic@cern.ch>"
+
+USER root
+RUN yum install -y nmap
+
+# USER logstash
+
+RUN bin/logstash-plugin install logstash-input-stomp
+
+RUN mkdir /usr/share/logstash/configs
+
+COPY logstash.yml /usr/share/logstash/config/
+COPY configs/xcache_gstream.conf /usr/share/logstash/configs/
+COPY pipelines/xcache_gstream.yml /usr/share/logstash/config/pipelines.yml
+
+# RUN mkdir /usr/share/logstash/templates
+# COPY templates/ATLASrift.template  /usr/share/logstash/templates/

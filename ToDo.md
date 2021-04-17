@@ -1,10 +1,17 @@
-Move rest of xcaches to new collector.
-    inform BNL and LRZ-LMU
-Move stashcp to stashcp.atlas-ml.org
-Move both pilot and xcache to SSL
+# To Do
 
-# g-stream parsing
+## g-Stream
 
+* make sure it has everything we need
+* change all xcaches to send to collector.atlas-ml.org:9000 (LB: 192.170.227.237)
+
+xrootd.monitor dest pfc collector.atlas-ml.org:9000
+
+xrootd.mongstream pfc flush 60s maxlen 1300 send json insthdr collector.atlas-ml.org:9000
+
+parsing
+
+```json
 g12345678901234567890123{"siteID":"mwt2","hostID":"xcache.mwt2.org:9230"}
 {"event":"access","accnr":1}
 {"bababa"}
@@ -14,9 +21,86 @@ g12345678901234567890123{"siteID":"mwt2","hostID":"xcache.mwt2.org:9230"}
 
 HDR g(.|\n|\r){23}
 JSN (.|\n|\r)*
+```
+
+```json
+       "message" => "
+       {
+           "code":"g",
+           "pseq": 25,
+           "stod":1618516840,
+           "sid":176071238409740,
+           "src":{
+               "site":"",
+               "host":"sl-um-es2.slateci.io",
+               "port":1094,
+               "inst":"atlas-xcache"
+            },
+            "gs":{
+                "type":"C",
+                "tbeg":1618638245,
+                "tend":1618638253
+            }
+        }
+            
+        {
+            "event":"file_close",
+            "lfn":"atlas/rucio/mc16_13TeV/61/1d/EVNT.18541195._000368.pool.root.1",
+            "size":368827877,
+            "blk_size":1048576,
+            "n_blks":352,
+            "n_blks_done":352,
+            "access_cnt":2,
+            "attach_t":1618638031,
+            "detach_t":1618638245,
+            "remotes":["st-048-cc8205a3.cern.ch:1095"],
+            "b_hit":362827532,
+            "b_miss":5699773,
+            "b_bypass":0
+        }
+        
+        {
+            "event":"file_close",
+            "lfn":"atlas/rucio/data18_13TeV/9a/01/DAOD_TOPQ1.23529347._000279.pool.root.1",
+            "size":1150928438,
+            "blk_size":1048576,
+            "n_blks":1098,
+            "n_blks_done":1052,
+            "access_cnt":4,
+            "attach_t":1618637032,
+            "detach_t":1618638245,
+            "remotes":["ags46.atlas.unimelb.edu.au:1095"],
+            "b_hit":85567490,
+            "b_miss":291743500,
+            "b_bypass":0
+        }
+        
+        {
+            "event":"file_close",
+            "lfn":"atlas/rucio/mc16_13TeV/c5/ee/DAOD_TOPQ5.22714093._000135.pool.root.1",
+            "size":7393431119,
+            "blk_size":1048576,
+            "n_blks":7051,
+            "n_blks_done":7039,
+            "access_cnt":4,
+            "attach_t":1618628970,
+            "detach_t":1618638253,
+            "remotes":["sn152.pleiades.uni-wuppertal.de:33145"],
+            "b_hit":972730278,
+            "b_miss":2930078280,
+            "b_bypass":0
+        }
+            
+```
 
 
-# pilot memory data
+## StashCP
+
+* Move stashcp to stashcp.atlas-ml.org (uses the same LB: 192.170.227.237)
+
+## pilot memory data
+
+```json
 {
     "Time": [1606320741, 1606320802, 1606320863, 1606320924, 1606320985, 1606321046, 1606321107],
     "wtime": [17, 79, 138, 199, 263, 322, 384], 
@@ -39,3 +123,8 @@ JSN (.|\n|\r)*
     "type": "MemoryMonitorData", 
     "pandaid": "4903329210"
 }
+```
+
+## Other
+
+Move both pilot and xcache to SSL

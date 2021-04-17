@@ -1,0 +1,3 @@
+- pipeline.id: xcache-gstream
+  path.config: "/usr/share/logstash/configs/xcache_gstream.conf"
+  pipeline.workers: 1

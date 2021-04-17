@@ -8,7 +8,7 @@ metadata:
   annotations:
     metallb.universe.tf/allow-shared-ip: "uc-logstash"
   labels:
-    k8s-app: uc-logstash
+    k8s-app: uc-ls-xcache-gstream
 spec:
   type: LoadBalancer
   loadBalancerIP: 192.170.227.237
@@ -18,8 +18,9 @@ spec:
       targetPort: 9000
       protocol: UDP
   selector:
-    k8s-app: uc-logstash
+    k8s-app: uc-ls-xcache-gstream
 ---
+#### NO idea what is this one for.
 kind: Service
 apiVersion: v1
 metadata:
@@ -28,7 +29,7 @@ metadata:
   annotations:
     metallb.universe.tf/allow-shared-ip: "uc-logstash"
   labels:
-    k8s-app: uc-logstash
+    k8s-app: uc-ls-xcache-gstream
 spec:
   type: LoadBalancer
   loadBalancerIP: 192.170.227.237
@@ -42,6 +43,6 @@ spec:
       targetPort: 9951
       protocol: TCP
   selector:
-    k8s-app: uc-logstash
+    k8s-app: uc-ls-xcache-gstream
 ---
 
