@@ -30,7 +30,3 @@
     "pandaid": "4903329210"
 }
 ```
-
-## Other
-
-Move both pilot and xcache to SSL
