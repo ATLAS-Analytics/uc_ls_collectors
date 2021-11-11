@@ -26,6 +26,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.AAAS_GITOPS_DEPLOY_TRIGGER }}
-          repository: ATLAS-Analytics/deployments
+          repository: maniaclab/flux_af
           event-type: gitops-uc-ls-xcache-node-monitor-app-trigger
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
