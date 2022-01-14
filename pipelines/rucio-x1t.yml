@@ -1,0 +1,5 @@
+- pipeline.id: rucio-x1t
+  path.config: "/usr/share/logstash/configs/rucio-x1t.conf"
+  pipeline.workers: 1
+#   queue.type: persisted
+#   queue.max_bytes: 4gb
