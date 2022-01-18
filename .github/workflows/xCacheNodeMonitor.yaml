@@ -3,7 +3,7 @@ name: Build xCache Node Monitor Logstash dockerhub image
 on:
   push:
     branches:
-      - "master"
+      - "xcache-node-monitor"
 
 jobs:
   docker:
