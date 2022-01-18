@@ -1,8 +1,0 @@
-http.host: "0.0.0.0"
-# just logstash monitoring. Should be done properly with a k8s secret etc.
-xpack.monitoring.enabled: false
-# xpack.monitoring.elasticsearch.hosts: ["https://atlas-kibana.mwt2.org:9200"]
-# xpack.monitoring.elasticsearch.username: "logstash_system"
-# xpack.monitoring.elasticsearch.password: "changeme"
-pipeline.ordered: false
-pipeline.ecs_compatibility: disabled
