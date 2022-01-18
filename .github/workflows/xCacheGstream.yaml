@@ -3,7 +3,7 @@ name: Build xCache gStream Logstash dockerhub image
 on:
   push:
     branches:
-      - "master"
+      - "xcache_gstream"
 
 jobs:
   docker:
