@@ -3,7 +3,7 @@ name: Build Memory Monitor Logstash dockerhub image
 on:
   push:
     branches:
-      - "master"
+      - "memory-monitor"
 
 jobs:
   docker:
