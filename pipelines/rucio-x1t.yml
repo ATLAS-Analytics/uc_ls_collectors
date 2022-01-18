@@ -1,5 +1,11 @@
-- pipeline.id: rucio-x1t
-  path.config: "/usr/share/logstash/configs/rucio-x1t.conf"
+- pipeline.id: rucio-x1t-rse
+  path.config: "/usr/share/logstash/configs/rucio-x1t-rse.conf"
+  pipeline.workers: 1
+- pipeline.id: rucio-x1t-account
+  path.config: "/usr/share/logstash/configs/rucio-x1t-account.conf"
+  pipeline.workers: 1
+- pipeline.id: rucio-x1t-dids
+  path.config: "/usr/share/logstash/configs/rucio-x1t-dids.conf"
   pipeline.workers: 1
 #   queue.type: persisted
 #   queue.max_bytes: 4gb
