@@ -3,7 +3,7 @@ name: Build Stashcp Logstash dockerhub image
 on:
   push:
     branches:
-      - "master"
+      - "stashcp"
 
 jobs:
   docker:
