@@ -3,7 +3,7 @@ name: Build Xenon1T rucio Logstash dockerhub image
 on:
   push:
     branches:
-      - "master"
+      - "rucio-x1t"
 
 jobs:
   docker:
