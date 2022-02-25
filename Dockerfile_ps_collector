@@ -7,14 +7,12 @@ RUN yum install -y nmap
 
 # add postgresql driver
 RUN mkdir -p /usr/share/logstash/java/
-RUN curl https://jdbc.postgresql.org/download/postgresql-42.3.1.jar -o /usr/share/logstash/java/postgresql-42.3.1.jar
+# RUN curl https://jdbc.postgresql.org/download/postgresql-42.3.1.jar -o /usr/share/logstash/java/postgresql-42.3.1.jar
 
 RUN mkdir /usr/share/logstash/configs
 
 COPY logstash.yml /usr/share/logstash/config/logstash.yml
 
-COPY configs/rucio-x1t-rse.conf /usr/share/logstash/configs/rucio-x1t-rse.conf
-COPY configs/rucio-x1t-account.conf /usr/share/logstash/configs/rucio-x1t-account.conf
-COPY configs/rucio-x1t-dids.conf /usr/share/logstash/configs/rucio-x1t-dids.conf
+COPY configs/ps-collector.conf /usr/share/logstash/configs/ps-collector.conf
 
-COPY pipelines/rucio-x1t.yml /usr/share/logstash/config/pipelines.yml
+COPY pipelines/ps-collector.yml /usr/share/logstash/config/pipelines.yml
