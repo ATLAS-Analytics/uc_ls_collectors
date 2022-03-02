@@ -1,0 +1,734 @@
+{
+    "timestamp": "2022-03-02T22:24:45.338Z",
+    "dest_host": "perfsonar2.icepp.jp",
+    "src_host": "psum02.aglt2.org",
+    "test": {
+        "type": "throughput",
+        "spec": {
+            "duration": "PT25S",
+            "omit": "PT5S",
+            "ip-version": 6,
+            "schema": 1,
+            "source": "psum02.aglt2.org",
+            "dest": "perfsonar2.icepp.jp"
+        }
+    },
+    "result": {
+        "succeeded": true,
+        "summary": {
+            "summary": {
+                "retransmits": 3,
+                "throughput-bits": 1.820327717560674E8,
+                "throughput-bytes": 568852480,
+                "start": 0,
+                "end": 25.000003,
+                "receiver-throughput-bits": 1.815747640133619E8
+            },
+            "streams": [
+                {
+                    "retransmits": 3,
+                    "throughput-bits": 1.820327717560674E8,
+                    "throughput-bytes": 568852480,
+                    "start": 0,
+                    "end": 25.000003,
+                    "rtt": 157317,
+                    "stream-id": 5
+                }
+            ]
+        },
+        "intervals": [
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 1.0851942308503326E7,
+                    "throughput-bytes": 1356600,
+                    "start": 0,
+                    "end": 1.000079,
+                    "omitted": true
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 1.0851942308503326E7,
+                        "throughput-bytes": 1356600,
+                        "start": 0,
+                        "end": 1.000079,
+                        "rtt": 157131,
+                        "tcp-window-size": 444108,
+                        "omitted": true,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 6.780562163498117E8,
+                    "throughput-bytes": 84757704,
+                    "start": 1.000079,
+                    "end": 2.000087,
+                    "omitted": true
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 6.780562163498117E8,
+                        "throughput-bytes": 84757704,
+                        "start": 1.000079,
+                        "end": 2.000087,
+                        "rtt": 158815,
+                        "tcp-window-size": 27601812,
+                        "omitted": true,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 3,
+                    "throughput-bits": 1.13248698804783E9,
+                    "throughput-bytes": 141557760,
+                    "start": 2.000087,
+                    "end": 3.000065,
+                    "omitted": true
+                },
+                "streams": [
+                    {
+                        "retransmits": 3,
+                        "throughput-bits": 1.13248698804783E9,
+                        "throughput-bytes": 141557760,
+                        "start": 2.000087,
+                        "end": 3.000065,
+                        "rtt": 157086,
+                        "tcp-window-size": 12009480,
+                        "omitted": true,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 1,
+                    "throughput-bits": 3.670023437515073E8,
+                    "throughput-bytes": 45875200,
+                    "start": 3.000065,
+                    "end": 4.000063,
+                    "omitted": true
+                },
+                "streams": [
+                    {
+                        "retransmits": 1,
+                        "throughput-bits": 3.670023437515073E8,
+                        "throughput-bytes": 45875200,
+                        "start": 3.000065,
+                        "end": 4.000063,
+                        "rtt": 157146,
+                        "tcp-window-size": 6013308,
+                        "omitted": true,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 2.935871756775906E8,
+                    "throughput-bytes": 36700160,
+                    "start": 4.000063,
+                    "end": 5.000111,
+                    "omitted": true
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 2.935871756775906E8,
+                        "throughput-bytes": 36700160,
+                        "start": 4.000063,
+                        "end": 5.000111,
+                        "rtt": 157115,
+                        "tcp-window-size": 6059004,
+                        "omitted": true,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 3.250393798817919E8,
+                    "throughput-bytes": 40632320,
+                    "start": 2.4E-5,
+                    "end": 1.000035,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 3.250393798817919E8,
+                        "throughput-bytes": 40632320,
+                        "start": 2.4E-5,
+                        "end": 1.000035,
+                        "rtt": 157064,
+                        "tcp-window-size": 6237504,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 3.1457122500788563E8,
+                    "throughput-bytes": 39321600,
+                    "start": 1.000035,
+                    "end": 2.00004,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 3.1457122500788563E8,
+                        "throughput-bytes": 39321600,
+                        "start": 1.000035,
+                        "end": 2.00004,
+                        "rtt": 157127,
+                        "tcp-window-size": 6497400,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 3.145517264118381E8,
+                    "throughput-bytes": 39321600,
+                    "start": 2.00004,
+                    "end": 3.000107,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 3.145517264118381E8,
+                        "throughput-bytes": 39321600,
+                        "start": 2.00004,
+                        "end": 3.000107,
+                        "rtt": 157120,
+                        "tcp-window-size": 6794424,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 3.880010570115322E8,
+                    "throughput-bytes": 48496640,
+                    "start": 3.000107,
+                    "end": 4.000035,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 3.880010570115322E8,
+                        "throughput-bytes": 48496640,
+                        "start": 3.000107,
+                        "end": 4.000035,
+                        "rtt": 157112,
+                        "tcp-window-size": 7248528,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 3.5650836015693337E8,
+                    "throughput-bytes": 44564480,
+                    "start": 4.000035,
+                    "end": 5.000056,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 3.5650836015693337E8,
+                        "throughput-bytes": 44564480,
+                        "start": 4.000035,
+                        "end": 5.000056,
+                        "rtt": 157132,
+                        "tcp-window-size": 7681212,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 1,
+                    "throughput-bits": 3.145501516307372E8,
+                    "throughput-bytes": 39321600,
+                    "start": 5.000056,
+                    "end": 6.000128,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 1,
+                        "throughput-bits": 3.145501516307372E8,
+                        "throughput-bytes": 39321600,
+                        "start": 5.000056,
+                        "end": 6.000128,
+                        "rtt": 157165,
+                        "tcp-window-size": 3946992,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 2.2022033420447385E8,
+                    "throughput-bytes": 27525120,
+                    "start": 6.000128,
+                    "end": 7.00004,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 2.2022033420447385E8,
+                        "throughput-bytes": 27525120,
+                        "start": 6.000128,
+                        "end": 7.00004,
+                        "rtt": 157102,
+                        "tcp-window-size": 3962700,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 1.8873744770579642E8,
+                    "throughput-bytes": 23592960,
+                    "start": 7.00004,
+                    "end": 8.000073,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 1.8873744770579642E8,
+                        "throughput-bytes": 23592960,
+                        "start": 7.00004,
+                        "end": 8.000073,
+                        "rtt": 157141,
+                        "tcp-window-size": 4051236,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 1,
+                    "throughput-bits": 1.3630916024001068E8,
+                    "throughput-bytes": 17039360,
+                    "start": 8.000073,
+                    "end": 9.000115,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 1,
+                        "throughput-bits": 1.3630916024001068E8,
+                        "throughput-bytes": 17039360,
+                        "start": 8.000073,
+                        "end": 9.000115,
+                        "rtt": 157151,
+                        "tcp-window-size": 2044896,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 1.0486378786513725E8,
+                    "throughput-bytes": 13107200,
+                    "start": 9.000115,
+                    "end": 10.000056,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 1.0486378786513725E8,
+                        "throughput-bytes": 13107200,
+                        "start": 9.000115,
+                        "end": 10.000056,
+                        "rtt": 157135,
+                        "tcp-window-size": 2079168,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 1.0485277522201112E8,
+                    "throughput-bytes": 13107200,
+                    "start": 10.000056,
+                    "end": 11.000102,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 1.0485277522201112E8,
+                        "throughput-bytes": 13107200,
+                        "start": 10.000056,
+                        "end": 11.000102,
+                        "rtt": 157172,
+                        "tcp-window-size": 2173416,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 1.2583742304785454E8,
+                    "throughput-bytes": 15728640,
+                    "start": 11.000102,
+                    "end": 12.000036,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 1.2583742304785454E8,
+                        "throughput-bytes": 15728640,
+                        "start": 11.000102,
+                        "end": 12.000036,
+                        "rtt": 157157,
+                        "tcp-window-size": 2316216,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 1.1534209501387343E8,
+                    "throughput-bytes": 14417920,
+                    "start": 12.000036,
+                    "end": 13.000047,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 1.1534209501387343E8,
+                        "throughput-bytes": 14417920,
+                        "start": 12.000036,
+                        "end": 13.000047,
+                        "rtt": 157201,
+                        "tcp-window-size": 2437596,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 1.1533747530024666E8,
+                    "throughput-bytes": 14417920,
+                    "start": 13.000047,
+                    "end": 14.000098,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 1.1533747530024666E8,
+                        "throughput-bytes": 14417920,
+                        "start": 13.000047,
+                        "end": 14.000098,
+                        "rtt": 157139,
+                        "tcp-window-size": 2533272,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 1.4681018687082028E8,
+                    "throughput-bytes": 18350080,
+                    "start": 14.000098,
+                    "end": 15.000033,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 1.4681018687082028E8,
+                        "throughput-bytes": 18350080,
+                        "start": 14.000098,
+                        "end": 15.000033,
+                        "rtt": 157158,
+                        "tcp-window-size": 2641800,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 1.2582496513719761E8,
+                    "throughput-bytes": 15728640,
+                    "start": 15.000033,
+                    "end": 16.000066,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 1.2582496513719761E8,
+                        "throughput-bytes": 15728640,
+                        "start": 15.000033,
+                        "end": 16.000066,
+                        "rtt": 157195,
+                        "tcp-window-size": 2768892,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 1.3630738916166264E8,
+                    "throughput-bytes": 17039360,
+                    "start": 16.000066,
+                    "end": 17.000121,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 1.3630738916166264E8,
+                        "throughput-bytes": 17039360,
+                        "start": 16.000066,
+                        "end": 17.000121,
+                        "rtt": 157193,
+                        "tcp-window-size": 2894556,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 1.677860911566938E8,
+                    "throughput-bytes": 20971520,
+                    "start": 17.000121,
+                    "end": 18.000038,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 1.677860911566938E8,
+                        "throughput-bytes": 20971520,
+                        "start": 17.000121,
+                        "end": 18.000038,
+                        "rtt": 157160,
+                        "tcp-window-size": 3060204,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 1.4679535519025952E8,
+                    "throughput-bytes": 18350080,
+                    "start": 18.000038,
+                    "end": 19.000074,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 1.4679535519025952E8,
+                        "throughput-bytes": 18350080,
+                        "start": 18.000038,
+                        "end": 19.000074,
+                        "rtt": 157137,
+                        "tcp-window-size": 3267264,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 1.572782254248756E8,
+                    "throughput-bytes": 19660800,
+                    "start": 19.000074,
+                    "end": 20.000126,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 1.572782254248756E8,
+                        "throughput-bytes": 19660800,
+                        "start": 19.000074,
+                        "end": 20.000126,
+                        "rtt": 157145,
+                        "tcp-window-size": 3511452,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 1,
+                    "throughput-bits": 1.5730087633225065E8,
+                    "throughput-bytes": 19660800,
+                    "start": 20.000126,
+                    "end": 21.000034,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 1,
+                        "throughput-bits": 1.5730087633225065E8,
+                        "throughput-bytes": 19660800,
+                        "start": 20.000126,
+                        "end": 21.000034,
+                        "rtt": 157113,
+                        "tcp-window-size": 1833552,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 8.388071034374063E7,
+                    "throughput-bytes": 10485760,
+                    "start": 21.000034,
+                    "end": 22.000098,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 8.388071034374063E7,
+                        "throughput-bytes": 10485760,
+                        "start": 21.000034,
+                        "end": 22.000098,
+                        "rtt": 157158,
+                        "tcp-window-size": 1849260,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 1.0486441919344306E8,
+                    "throughput-bytes": 13107200,
+                    "start": 22.000098,
+                    "end": 23.000033,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 1.0486441919344306E8,
+                        "throughput-bytes": 13107200,
+                        "start": 22.000098,
+                        "end": 23.000033,
+                        "rtt": 157059,
+                        "tcp-window-size": 1927800,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 9.437127750335275E7,
+                    "throughput-bytes": 11796480,
+                    "start": 23.000033,
+                    "end": 24.000039,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 9.437127750335275E7,
+                        "throughput-bytes": 11796480,
+                        "start": 23.000033,
+                        "end": 24.000039,
+                        "rtt": 160858,
+                        "tcp-window-size": 2006340,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            },
+            {
+                "summary": {
+                    "retransmits": 0,
+                    "throughput-bits": 1.0486137513590944E8,
+                    "throughput-bytes": 13107200,
+                    "start": 24.000039,
+                    "end": 25.000003,
+                    "omitted": false
+                },
+                "streams": [
+                    {
+                        "retransmits": 0,
+                        "throughput-bits": 1.0486137513590944E8,
+                        "throughput-bytes": 13107200,
+                        "start": 24.000039,
+                        "end": 25.000003,
+                        "rtt": 157142,
+                        "tcp-window-size": 2147712,
+                        "omitted": false,
+                        "stream-id": 5
+                    }
+                ]
+            }
+        ],
+        "diags": "Participant 0:\nUnable to use NUMA for this test.  Disabling it.\n/usr/bin/iperf3 -p 5201 -6 -B psum02.aglt2.org -c perfsonar2.icepp.jp -t 25 --json -O 5 --rsa-public-key-path /run/pscheduler-server/runner/tmp/tmpx7x8c3zl/tmpu7882vj_/public-key --username M0fOdDtYLHV0TH1UWpem\n\n{\n\t\"start\":\t{\n\t\t\"connected\":\t[{\n\t\t\t\t\"socket\":\t5,\n\t\t\t\t\"local_host\":\t\"2001:48a8:68f7:1:192:41:230:60\",\n\t\t\t\t\"local_port\":\t36647,\n\t\t\t\t\"remote_host\":\t\"2404:d540:1:589:2:6:1:2\",\n\t\t\t\t\"remote_port\":\t5201\n\t\t\t}],\n\t\t\"version\":\t\"iperf 3.11\",\n\t\t\"system_info\":\t\"Linux psum02.aglt2.org 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64\",\n\t\t\"timestamp\":\t{\n\t\t\t\"time\":\t\"Wed, 02 Mar 2022 22:24:06 GMT\",\n\t\t\t\"timesecs\":\t1646259846\n\t\t},\n\t\t\"connecting_to\":\t{\n\t\t\t\"host\":\t\"perfsonar2.icepp.jp\",\n\t\t\t\"port\":\t5201\n\t\t},\n\t\t\"cookie\":\t\"2dceef6vq52343uazjisfqmo6bq33kztao7n\",\n\t\t\"tcp_mss_default\":\t1428,\n\t\t\"target_bitrate\":\t0,\n\t\t\"sock_bufsize\":\t0,\n\t\t\"sndbuf_actual\":\t65536,\n\t\t\"rcvbuf_actual\":\t87380,\n\t\t\"test_start\":\t{\n\t\t\t\"protocol\":\t\"TCP\",\n\t\t\t\"num_streams\":\t1,\n\t\t\t\"blksize\":\t131072,\n\t\t\t\"omit\":\t5,\n\t\t\t\"duration\":\t25,\n\t\t\t\"bytes\":\t0,\n\t\t\t\"blocks\":\t0,\n\t\t\t\"reverse\":\t0,\n\t\t\t\"tos\":\t0,\n\t\t\t\"target_bitrate\":\t0\n\t\t}\n\t},\n\t\"intervals\":\t[{\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t0,\n\t\t\t\t\t\"end\":\t1.000079,\n\t\t\t\t\t\"seconds\":\t1.0000790357589722,\n\t\t\t\t\t\"bytes\":\t1356600,\n\t\t\t\t\t\"bits_per_second\":\t10851942.308503326,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t444108,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157131,\n\t\t\t\t\t\"rttvar\":\t633,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t0,\n\t\t\t\t\"end\":\t1.000079,\n\t\t\t\t\"seconds\":\t1.0000790357589722,\n\t\t\t\t\"bytes\":\t1356600,\n\t\t\t\t\"bits_per_second\":\t10851942.308503326,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t1.000079,\n\t\t\t\t\t\"end\":\t2.000087,\n\t\t\t\t\t\"seconds\":\t1.0000079870224,\n\t\t\t\t\t\"bytes\":\t84757704,\n\t\t\t\t\t\"bits_per_second\":\t678056216.34981167,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t27601812,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t158815,\n\t\t\t\t\t\"rttvar\":\t353,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t1.000079,\n\t\t\t\t\"end\":\t2.000087,\n\t\t\t\t\"seconds\":\t1.0000079870224,\n\t\t\t\t\"bytes\":\t84757704,\n\t\t\t\t\"bits_per_second\":\t678056216.34981167,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t2.000087,\n\t\t\t\t\t\"end\":\t3.000065,\n\t\t\t\t\t\"seconds\":\t0.999978005886078,\n\t\t\t\t\t\"bytes\":\t141557760,\n\t\t\t\t\t\"bits_per_second\":\t1132486988.04783,\n\t\t\t\t\t\"retransmits\":\t3,\n\t\t\t\t\t\"snd_cwnd\":\t12009480,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157086,\n\t\t\t\t\t\"rttvar\":\t65,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t2.000087,\n\t\t\t\t\"end\":\t3.000065,\n\t\t\t\t\"seconds\":\t0.999978005886078,\n\t\t\t\t\"bytes\":\t141557760,\n\t\t\t\t\"bits_per_second\":\t1132486988.04783,\n\t\t\t\t\"retransmits\":\t3,\n\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t3.000065,\n\t\t\t\t\t\"end\":\t4.000063,\n\t\t\t\t\t\"seconds\":\t0.99999797344207764,\n\t\t\t\t\t\"bytes\":\t45875200,\n\t\t\t\t\t\"bits_per_second\":\t367002343.75150728,\n\t\t\t\t\t\"retransmits\":\t1,\n\t\t\t\t\t\"snd_cwnd\":\t6013308,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157146,\n\t\t\t\t\t\"rttvar\":\t81,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t3.000065,\n\t\t\t\t\"end\":\t4.000063,\n\t\t\t\t\"seconds\":\t0.99999797344207764,\n\t\t\t\t\"bytes\":\t45875200,\n\t\t\t\t\"bits_per_second\":\t367002343.75150728,\n\t\t\t\t\"retransmits\":\t1,\n\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t4.000063,\n\t\t\t\t\t\"end\":\t5.000111,\n\t\t\t\t\t\"seconds\":\t1.000048041343689,\n\t\t\t\t\t\"bytes\":\t36700160,\n\t\t\t\t\t\"bits_per_second\":\t293587175.67759061,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t6059004,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157115,\n\t\t\t\t\t\"rttvar\":\t41,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t4.000063,\n\t\t\t\t\"end\":\t5.000111,\n\t\t\t\t\"seconds\":\t1.000048041343689,\n\t\t\t\t\"bytes\":\t36700160,\n\t\t\t\t\"bits_per_second\":\t293587175.67759061,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t2.4e-05,\n\t\t\t\t\t\"end\":\t1.000035,\n\t\t\t\t\t\"seconds\":\t1.0000590085983276,\n\t\t\t\t\t\"bytes\":\t40632320,\n\t\t\t\t\t\"bits_per_second\":\t325039379.88179189,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t6237504,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157064,\n\t\t\t\t\t\"rttvar\":\t80,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t2.4e-05,\n\t\t\t\t\"end\":\t1.000035,\n\t\t\t\t\"seconds\":\t1.0000590085983276,\n\t\t\t\t\"bytes\":\t40632320,\n\t\t\t\t\"bits_per_second\":\t325039379.88179189,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t1.000035,\n\t\t\t\t\t\"end\":\t2.00004,\n\t\t\t\t\t\"seconds\":\t1.0000050067901611,\n\t\t\t\t\t\"bytes\":\t39321600,\n\t\t\t\t\t\"bits_per_second\":\t314571225.00788563,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t6497400,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157127,\n\t\t\t\t\t\"rttvar\":\t97,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t1.000035,\n\t\t\t\t\"end\":\t2.00004,\n\t\t\t\t\"seconds\":\t1.0000050067901611,\n\t\t\t\t\"bytes\":\t39321600,\n\t\t\t\t\"bits_per_second\":\t314571225.00788563,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t2.00004,\n\t\t\t\t\t\"end\":\t3.000107,\n\t\t\t\t\t\"seconds\":\t1.0000669956207275,\n\t\t\t\t\t\"bytes\":\t39321600,\n\t\t\t\t\t\"bits_per_second\":\t314551726.41183811,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t6794424,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157120,\n\t\t\t\t\t\"rttvar\":\t88,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t2.00004,\n\t\t\t\t\"end\":\t3.000107,\n\t\t\t\t\"seconds\":\t1.0000669956207275,\n\t\t\t\t\"bytes\":\t39321600,\n\t\t\t\t\"bits_per_second\":\t314551726.41183811,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t3.000107,\n\t\t\t\t\t\"end\":\t4.000035,\n\t\t\t\t\t\"seconds\":\t0.99992799758911133,\n\t\t\t\t\t\"bytes\":\t48496640,\n\t\t\t\t\t\"bits_per_second\":\t388001057.01153219,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t7248528,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157112,\n\t\t\t\t\t\"rttvar\":\t88,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t3.000107,\n\t\t\t\t\"end\":\t4.000035,\n\t\t\t\t\"seconds\":\t0.99992799758911133,\n\t\t\t\t\"bytes\":\t48496640,\n\t\t\t\t\"bits_per_second\":\t388001057.01153219,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t4.000035,\n\t\t\t\t\t\"end\":\t5.000056,\n\t\t\t\t\t\"seconds\":\t1.0000209808349609,\n\t\t\t\t\t\"bytes\":\t44564480,\n\t\t\t\t\t\"bits_per_second\":\t356508360.15693337,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t7681212,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157132,\n\t\t\t\t\t\"rttvar\":\t78,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t4.000035,\n\t\t\t\t\"end\":\t5.000056,\n\t\t\t\t\"seconds\":\t1.0000209808349609,\n\t\t\t\t\"bytes\":\t44564480,\n\t\t\t\t\"bits_per_second\":\t356508360.15693337,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t5.000056,\n\t\t\t\t\t\"end\":\t6.000128,\n\t\t\t\t\t\"seconds\":\t1.0000720024108887,\n\t\t\t\t\t\"bytes\":\t39321600,\n\t\t\t\t\t\"bits_per_second\":\t314550151.63073719,\n\t\t\t\t\t\"retransmits\":\t1,\n\t\t\t\t\t\"snd_cwnd\":\t3946992,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157165,\n\t\t\t\t\t\"rttvar\":\t124,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t5.000056,\n\t\t\t\t\"end\":\t6.000128,\n\t\t\t\t\"seconds\":\t1.0000720024108887,\n\t\t\t\t\"bytes\":\t39321600,\n\t\t\t\t\"bits_per_second\":\t314550151.63073719,\n\t\t\t\t\"retransmits\":\t1,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t6.000128,\n\t\t\t\t\t\"end\":\t7.00004,\n\t\t\t\t\t\"seconds\":\t0.99991202354431152,\n\t\t\t\t\t\"bytes\":\t27525120,\n\t\t\t\t\t\"bits_per_second\":\t220220334.20447385,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t3962700,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157102,\n\t\t\t\t\t\"rttvar\":\t83,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t6.000128,\n\t\t\t\t\"end\":\t7.00004,\n\t\t\t\t\"seconds\":\t0.99991202354431152,\n\t\t\t\t\"bytes\":\t27525120,\n\t\t\t\t\"bits_per_second\":\t220220334.20447385,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t7.00004,\n\t\t\t\t\t\"end\":\t8.000073,\n\t\t\t\t\t\"seconds\":\t1.0000330209732056,\n\t\t\t\t\t\"bytes\":\t23592960,\n\t\t\t\t\t\"bits_per_second\":\t188737447.70579642,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t4051236,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157141,\n\t\t\t\t\t\"rttvar\":\t78,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t7.00004,\n\t\t\t\t\"end\":\t8.000073,\n\t\t\t\t\"seconds\":\t1.0000330209732056,\n\t\t\t\t\"bytes\":\t23592960,\n\t\t\t\t\"bits_per_second\":\t188737447.70579642,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t8.000073,\n\t\t\t\t\t\"end\":\t9.000115,\n\t\t\t\t\t\"seconds\":\t1.0000419616699219,\n\t\t\t\t\t\"bytes\":\t17039360,\n\t\t\t\t\t\"bits_per_second\":\t136309160.24001068,\n\t\t\t\t\t\"retransmits\":\t1,\n\t\t\t\t\t\"snd_cwnd\":\t2044896,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157151,\n\t\t\t\t\t\"rttvar\":\t36,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t8.000073,\n\t\t\t\t\"end\":\t9.000115,\n\t\t\t\t\"seconds\":\t1.0000419616699219,\n\t\t\t\t\"bytes\":\t17039360,\n\t\t\t\t\"bits_per_second\":\t136309160.24001068,\n\t\t\t\t\"retransmits\":\t1,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t9.000115,\n\t\t\t\t\t\"end\":\t10.000056,\n\t\t\t\t\t\"seconds\":\t0.99994099140167236,\n\t\t\t\t\t\"bytes\":\t13107200,\n\t\t\t\t\t\"bits_per_second\":\t104863787.86513725,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t2079168,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157135,\n\t\t\t\t\t\"rttvar\":\t30,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t9.000115,\n\t\t\t\t\"end\":\t10.000056,\n\t\t\t\t\"seconds\":\t0.99994099140167236,\n\t\t\t\t\"bytes\":\t13107200,\n\t\t\t\t\"bits_per_second\":\t104863787.86513725,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t10.000056,\n\t\t\t\t\t\"end\":\t11.000102,\n\t\t\t\t\t\"seconds\":\t1.0000460147857666,\n\t\t\t\t\t\"bytes\":\t13107200,\n\t\t\t\t\t\"bits_per_second\":\t104852775.22201112,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t2173416,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157172,\n\t\t\t\t\t\"rttvar\":\t68,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t10.000056,\n\t\t\t\t\"end\":\t11.000102,\n\t\t\t\t\"seconds\":\t1.0000460147857666,\n\t\t\t\t\"bytes\":\t13107200,\n\t\t\t\t\"bits_per_second\":\t104852775.22201112,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t11.000102,\n\t\t\t\t\t\"end\":\t12.000036,\n\t\t\t\t\t\"seconds\":\t0.99993401765823364,\n\t\t\t\t\t\"bytes\":\t15728640,\n\t\t\t\t\t\"bits_per_second\":\t125837423.04785454,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t2316216,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157157,\n\t\t\t\t\t\"rttvar\":\t24,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t11.000102,\n\t\t\t\t\"end\":\t12.000036,\n\t\t\t\t\"seconds\":\t0.99993401765823364,\n\t\t\t\t\"bytes\":\t15728640,\n\t\t\t\t\"bits_per_second\":\t125837423.04785454,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t12.000036,\n\t\t\t\t\t\"end\":\t13.000047,\n\t\t\t\t\t\"seconds\":\t1.0000109672546387,\n\t\t\t\t\t\"bytes\":\t14417920,\n\t\t\t\t\t\"bits_per_second\":\t115342095.01387343,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t2437596,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157201,\n\t\t\t\t\t\"rttvar\":\t57,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t12.000036,\n\t\t\t\t\"end\":\t13.000047,\n\t\t\t\t\"seconds\":\t1.0000109672546387,\n\t\t\t\t\"bytes\":\t14417920,\n\t\t\t\t\"bits_per_second\":\t115342095.01387343,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t13.000047,\n\t\t\t\t\t\"end\":\t14.000098,\n\t\t\t\t\t\"seconds\":\t1.0000510215759277,\n\t\t\t\t\t\"bytes\":\t14417920,\n\t\t\t\t\t\"bits_per_second\":\t115337475.30024666,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t2533272,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157139,\n\t\t\t\t\t\"rttvar\":\t66,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t13.000047,\n\t\t\t\t\"end\":\t14.000098,\n\t\t\t\t\"seconds\":\t1.0000510215759277,\n\t\t\t\t\"bytes\":\t14417920,\n\t\t\t\t\"bits_per_second\":\t115337475.30024666,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t14.000098,\n\t\t\t\t\t\"end\":\t15.000033,\n\t\t\t\t\t\"seconds\":\t0.99993497133255,\n\t\t\t\t\t\"bytes\":\t18350080,\n\t\t\t\t\t\"bits_per_second\":\t146810186.87082028,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t2641800,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157158,\n\t\t\t\t\t\"rttvar\":\t47,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t14.000098,\n\t\t\t\t\"end\":\t15.000033,\n\t\t\t\t\"seconds\":\t0.99993497133255,\n\t\t\t\t\"bytes\":\t18350080,\n\t\t\t\t\"bits_per_second\":\t146810186.87082028,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t15.000033,\n\t\t\t\t\t\"end\":\t16.000066,\n\t\t\t\t\t\"seconds\":\t1.0000330209732056,\n\t\t\t\t\t\"bytes\":\t15728640,\n\t\t\t\t\t\"bits_per_second\":\t125824965.13719761,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t2768892,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157195,\n\t\t\t\t\t\"rttvar\":\t32,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t15.000033,\n\t\t\t\t\"end\":\t16.000066,\n\t\t\t\t\"seconds\":\t1.0000330209732056,\n\t\t\t\t\"bytes\":\t15728640,\n\t\t\t\t\"bits_per_second\":\t125824965.13719761,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t16.000066,\n\t\t\t\t\t\"end\":\t17.000121,\n\t\t\t\t\t\"seconds\":\t1.0000549554824829,\n\t\t\t\t\t\"bytes\":\t17039360,\n\t\t\t\t\t\"bits_per_second\":\t136307389.16166264,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t2894556,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157193,\n\t\t\t\t\t\"rttvar\":\t34,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t16.000066,\n\t\t\t\t\"end\":\t17.000121,\n\t\t\t\t\"seconds\":\t1.0000549554824829,\n\t\t\t\t\"bytes\":\t17039360,\n\t\t\t\t\"bits_per_second\":\t136307389.16166264,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t17.000121,\n\t\t\t\t\t\"end\":\t18.000038,\n\t\t\t\t\t\"seconds\":\t0.999916970729828,\n\t\t\t\t\t\"bytes\":\t20971520,\n\t\t\t\t\t\"bits_per_second\":\t167786091.15669379,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t3060204,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157160,\n\t\t\t\t\t\"rttvar\":\t38,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t17.000121,\n\t\t\t\t\"end\":\t18.000038,\n\t\t\t\t\"seconds\":\t0.999916970729828,\n\t\t\t\t\"bytes\":\t20971520,\n\t\t\t\t\"bits_per_second\":\t167786091.15669379,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t18.000038,\n\t\t\t\t\t\"end\":\t19.000074,\n\t\t\t\t\t\"seconds\":\t1.0000360012054443,\n\t\t\t\t\t\"bytes\":\t18350080,\n\t\t\t\t\t\"bits_per_second\":\t146795355.19025952,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t3267264,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157137,\n\t\t\t\t\t\"rttvar\":\t52,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t18.000038,\n\t\t\t\t\"end\":\t19.000074,\n\t\t\t\t\"seconds\":\t1.0000360012054443,\n\t\t\t\t\"bytes\":\t18350080,\n\t\t\t\t\"bits_per_second\":\t146795355.19025952,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t19.000074,\n\t\t\t\t\t\"end\":\t20.000126,\n\t\t\t\t\t\"seconds\":\t1.0000519752502441,\n\t\t\t\t\t\"bytes\":\t19660800,\n\t\t\t\t\t\"bits_per_second\":\t157278225.42487559,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t3511452,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157145,\n\t\t\t\t\t\"rttvar\":\t52,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t19.000074,\n\t\t\t\t\"end\":\t20.000126,\n\t\t\t\t\"seconds\":\t1.0000519752502441,\n\t\t\t\t\"bytes\":\t19660800,\n\t\t\t\t\"bits_per_second\":\t157278225.42487559,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t20.000126,\n\t\t\t\t\t\"end\":\t21.000034,\n\t\t\t\t\t\"seconds\":\t0.9999079704284668,\n\t\t\t\t\t\"bytes\":\t19660800,\n\t\t\t\t\t\"bits_per_second\":\t157300876.33225065,\n\t\t\t\t\t\"retransmits\":\t1,\n\t\t\t\t\t\"snd_cwnd\":\t1833552,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157113,\n\t\t\t\t\t\"rttvar\":\t61,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t20.000126,\n\t\t\t\t\"end\":\t21.000034,\n\t\t\t\t\"seconds\":\t0.9999079704284668,\n\t\t\t\t\"bytes\":\t19660800,\n\t\t\t\t\"bits_per_second\":\t157300876.33225065,\n\t\t\t\t\"retransmits\":\t1,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t21.000034,\n\t\t\t\t\t\"end\":\t22.000098,\n\t\t\t\t\t\"seconds\":\t1.0000640153884888,\n\t\t\t\t\t\"bytes\":\t10485760,\n\t\t\t\t\t\"bits_per_second\":\t83880710.343740627,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t1849260,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157158,\n\t\t\t\t\t\"rttvar\":\t44,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t21.000034,\n\t\t\t\t\"end\":\t22.000098,\n\t\t\t\t\"seconds\":\t1.0000640153884888,\n\t\t\t\t\"bytes\":\t10485760,\n\t\t\t\t\"bits_per_second\":\t83880710.343740627,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t22.000098,\n\t\t\t\t\t\"end\":\t23.000033,\n\t\t\t\t\t\"seconds\":\t0.99993497133255,\n\t\t\t\t\t\"bytes\":\t13107200,\n\t\t\t\t\t\"bits_per_second\":\t104864419.19344306,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t1927800,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157059,\n\t\t\t\t\t\"rttvar\":\t48,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t22.000098,\n\t\t\t\t\"end\":\t23.000033,\n\t\t\t\t\"seconds\":\t0.99993497133255,\n\t\t\t\t\"bytes\":\t13107200,\n\t\t\t\t\"bits_per_second\":\t104864419.19344306,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t23.000033,\n\t\t\t\t\t\"end\":\t24.000039,\n\t\t\t\t\t\"seconds\":\t1.0000059604644775,\n\t\t\t\t\t\"bytes\":\t11796480,\n\t\t\t\t\t\"bits_per_second\":\t94371277.503352746,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t2006340,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t160858,\n\t\t\t\t\t\"rttvar\":\t7290,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t23.000033,\n\t\t\t\t\"end\":\t24.000039,\n\t\t\t\t\"seconds\":\t1.0000059604644775,\n\t\t\t\t\"bytes\":\t11796480,\n\t\t\t\t\"bits_per_second\":\t94371277.503352746,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t24.000039,\n\t\t\t\t\t\"end\":\t25.000003,\n\t\t\t\t\t\"seconds\":\t0.99996399879455566,\n\t\t\t\t\t\"bytes\":\t13107200,\n\t\t\t\t\t\"bits_per_second\":\t104861375.13590944,\n\t\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\t\"snd_cwnd\":\t2147712,\n\t\t\t\t\t\"snd_wnd\":\t-1,\n\t\t\t\t\t\"rtt\":\t157142,\n\t\t\t\t\t\"rttvar\":\t55,\n\t\t\t\t\t\"pmtu\":\t9000,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t24.000039,\n\t\t\t\t\"end\":\t25.000003,\n\t\t\t\t\"seconds\":\t0.99996399879455566,\n\t\t\t\t\"bytes\":\t13107200,\n\t\t\t\t\"bits_per_second\":\t104861375.13590944,\n\t\t\t\t\"retransmits\":\t0,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\ttrue\n\t\t\t}\n\t\t}],\n\t\"end\":\t{\n\t\t\"streams\":\t[{\n\t\t\t\t\"sender\":\t{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t0,\n\t\t\t\t\t\"end\":\t25.000003,\n\t\t\t\t\t\"seconds\":\t25.000003,\n\t\t\t\t\t\"bytes\":\t568852480,\n\t\t\t\t\t\"bits_per_second\":\t182032771.7560674,\n\t\t\t\t\t\"retransmits\":\t3,\n\t\t\t\t\t\"max_snd_cwnd\":\t27601812,\n\t\t\t\t\t\"max_snd_wnd\":\t0,\n\t\t\t\t\t\"max_rtt\":\t160858,\n\t\t\t\t\t\"min_rtt\":\t157059,\n\t\t\t\t\t\"mean_rtt\":\t157317,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t},\n\t\t\t\t\"receiver\":\t{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t0,\n\t\t\t\t\t\"end\":\t25.156615,\n\t\t\t\t\t\"seconds\":\t25.000003,\n\t\t\t\t\t\"bytes\":\t570975804,\n\t\t\t\t\t\"bits_per_second\":\t181574764.0133619,\n\t\t\t\t\t\"sender\":\ttrue\n\t\t\t\t}\n\t\t\t}],\n\t\t\"sum_sent\":\t{\n\t\t\t\"start\":\t0,\n\t\t\t\"end\":\t25.000003,\n\t\t\t\"seconds\":\t25.000003,\n\t\t\t\"bytes\":\t568852480,\n\t\t\t\"bits_per_second\":\t182032771.7560674,\n\t\t\t\"retransmits\":\t3,\n\t\t\t\"sender\":\ttrue\n\t\t},\n\t\t\"sum_received\":\t{\n\t\t\t\"start\":\t0,\n\t\t\t\"end\":\t25.156615,\n\t\t\t\"seconds\":\t25.156615,\n\t\t\t\"bytes\":\t570975804,\n\t\t\t\"bits_per_second\":\t181574764.0133619,\n\t\t\t\"sender\":\ttrue\n\t\t},\n\t\t\"cpu_utilization_percent\":\t{\n\t\t\t\"host_total\":\t2.0890321341124682,\n\t\t\t\"host_user\":\t0.18440604752606859,\n\t\t\t\"host_system\":\t1.9487699468703639,\n\t\t\t\"remote_total\":\t2.4509306700516675,\n\t\t\t\"remote_user\":\t0.21356169628852614,\n\t\t\t\"remote_system\":\t2.22983605311338\n\t\t},\n\t\t\"sender_tcp_congestion\":\t\"htcp\",\n\t\t\"receiver_tcp_congestion\":\t\"htcp\"\n\t}\n}\n\nParticipant 1:\nnumactl -N 0 /usr/bin/iperf3 -s -1 --json -p 5201 -B perfsonar2.icepp.jp -6 --authorized-users-path /run/pscheduler-server/runner/tmp/tmpl7w5k05r/tmp6eazvdan/credentials --rsa-private-key-path /run/pscheduler-server/runner/tmp/tmpl7w5k05r/tmp6eazvdan/private-key\n\n{\n\t\"start\":\t{\n\t\t\"connected\":\t[{\n\t\t\t\t\"socket\":\t5,\n\t\t\t\t\"local_host\":\t\"2404:d540:1:589:2:6:1:2\",\n\t\t\t\t\"local_port\":\t5201,\n\t\t\t\t\"remote_host\":\t\"2001:48a8:68f7:1:192:41:230:60\",\n\t\t\t\t\"remote_port\":\t36647\n\t\t\t}],\n\t\t\"version\":\t\"iperf 3.9\",\n\t\t\"system_info\":\t\"Linux perfsonar2.icepp.jp 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64\",\n\t\t\"sock_bufsize\":\t0,\n\t\t\"sndbuf_actual\":\t65536,\n\t\t\"rcvbuf_actual\":\t87380,\n\t\t\"timestamp\":\t{\n\t\t\t\"time\":\t\"Wed, 02 Mar 2022 22:24:06 GMT\",\n\t\t\t\"timesecs\":\t1646259846\n\t\t},\n\t\t\"accepted_connection\":\t{\n\t\t\t\"host\":\t\"2001:48a8:68f7:1:192:41:230:60\",\n\t\t\t\"port\":\t41517\n\t\t},\n\t\t\"cookie\":\t\"2dceef6vq52343uazjisfqmo6bq33kztao7n\",\n\t\t\"tcp_mss_default\":\t0,\n\t\t\"test_start\":\t{\n\t\t\t\"protocol\":\t\"TCP\",\n\t\t\t\"num_streams\":\t1,\n\t\t\t\"blksize\":\t131072,\n\t\t\t\"omit\":\t5,\n\t\t\t\"duration\":\t25,\n\t\t\t\"bytes\":\t0,\n\t\t\t\"blocks\":\t0,\n\t\t\t\"reverse\":\t0,\n\t\t\t\"tos\":\t0\n\t\t}\n\t},\n\t\"intervals\":\t[{\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t0,\n\t\t\t\t\t\"end\":\t1.000245,\n\t\t\t\t\t\"seconds\":\t1.0002449750900269,\n\t\t\t\t\t\"bytes\":\t429828,\n\t\t\t\t\t\"bits_per_second\":\t3437781.8290869268,\n\t\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t0,\n\t\t\t\t\"end\":\t1.000245,\n\t\t\t\t\"seconds\":\t1.0002449750900269,\n\t\t\t\t\"bytes\":\t429828,\n\t\t\t\t\"bits_per_second\":\t3437781.8290869268,\n\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t1.000245,\n\t\t\t\t\t\"end\":\t2.000179,\n\t\t\t\t\t\"seconds\":\t0.99993401765823364,\n\t\t\t\t\t\"bytes\":\t27155700,\n\t\t\t\t\t\"bits_per_second\":\t217259935.31930438,\n\t\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t1.000245,\n\t\t\t\t\"end\":\t2.000179,\n\t\t\t\t\"seconds\":\t0.99993401765823364,\n\t\t\t\t\"bytes\":\t27155700,\n\t\t\t\t\"bits_per_second\":\t217259935.31930438,\n\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t2.000179,\n\t\t\t\t\t\"end\":\t3.000062,\n\t\t\t\t\t\"seconds\":\t0.999882996082306,\n\t\t\t\t\t\"bytes\":\t140944280,\n\t\t\t\t\t\"bits_per_second\":\t1127686183.7014225,\n\t\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t2.000179,\n\t\t\t\t\"end\":\t3.000062,\n\t\t\t\t\"seconds\":\t0.999882996082306,\n\t\t\t\t\"bytes\":\t140944280,\n\t\t\t\t\"bits_per_second\":\t1127686183.7014225,\n\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t3.000062,\n\t\t\t\t\t\"end\":\t4.000088,\n\t\t\t\t\t\"seconds\":\t1.0000259876251221,\n\t\t\t\t\t\"bytes\":\t46074420,\n\t\t\t\t\t\"bits_per_second\":\t368585781.33088946,\n\t\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t3.000062,\n\t\t\t\t\"end\":\t4.000088,\n\t\t\t\t\"seconds\":\t1.0000259876251221,\n\t\t\t\t\"bytes\":\t46074420,\n\t\t\t\t\"bits_per_second\":\t368585781.33088946,\n\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t4.000088,\n\t\t\t\t\t\"end\":\t5.000206,\n\t\t\t\t\t\"seconds\":\t1.0001180171966553,\n\t\t\t\t\t\"bytes\":\t35921340,\n\t\t\t\t\t\"bits_per_second\":\t287336809.31526875,\n\t\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t4.000088,\n\t\t\t\t\"end\":\t5.000206,\n\t\t\t\t\"seconds\":\t1.0001180171966553,\n\t\t\t\t\"bytes\":\t35921340,\n\t\t\t\t\"bits_per_second\":\t287336809.31526875,\n\t\t\t\t\"omitted\":\ttrue,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t6.8e-05,\n\t\t\t\t\t\"end\":\t1.000008,\n\t\t\t\t\t\"seconds\":\t1.0000760555267334,\n\t\t\t\t\t\"bytes\":\t41687604,\n\t\t\t\t\t\"bits_per_second\":\t333475469.34752613,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t6.8e-05,\n\t\t\t\t\"end\":\t1.000008,\n\t\t\t\t\"seconds\":\t1.0000760555267334,\n\t\t\t\t\"bytes\":\t41687604,\n\t\t\t\t\"bits_per_second\":\t333475469.34752613,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t1.000008,\n\t\t\t\t\t\"end\":\t2,\n\t\t\t\t\t\"seconds\":\t0.9999920129776,\n\t\t\t\t\t\"bytes\":\t38894436,\n\t\t\t\t\t\"bits_per_second\":\t311157973.225702,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t1.000008,\n\t\t\t\t\"end\":\t2,\n\t\t\t\t\"seconds\":\t0.9999920129776,\n\t\t\t\t\"bytes\":\t38894436,\n\t\t\t\t\"bits_per_second\":\t311157973.225702,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t2,\n\t\t\t\t\t\"end\":\t3.000304,\n\t\t\t\t\t\"seconds\":\t1.0003039836883545,\n\t\t\t\t\t\"bytes\":\t39519900,\n\t\t\t\t\t\"bits_per_second\":\t316063121.9664318,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t2,\n\t\t\t\t\"end\":\t3.000304,\n\t\t\t\t\"seconds\":\t1.0003039836883545,\n\t\t\t\t\"bytes\":\t39519900,\n\t\t\t\t\"bits_per_second\":\t316063121.9664318,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t3.000304,\n\t\t\t\t\t\"end\":\t4.000009,\n\t\t\t\t\t\"seconds\":\t0.99970501661300659,\n\t\t\t\t\t\"bytes\":\t48580560,\n\t\t\t\t\t\"bits_per_second\":\t388759157.493002,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t3.000304,\n\t\t\t\t\"end\":\t4.000009,\n\t\t\t\t\"seconds\":\t0.99970501661300659,\n\t\t\t\t\"bytes\":\t48580560,\n\t\t\t\t\"bits_per_second\":\t388759157.493002,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t4.000009,\n\t\t\t\t\t\"end\":\t5.000172,\n\t\t\t\t\t\"seconds\":\t1.0001629590988159,\n\t\t\t\t\t\"bytes\":\t44275140,\n\t\t\t\t\t\"bits_per_second\":\t354143409.1092,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t4.000009,\n\t\t\t\t\"end\":\t5.000172,\n\t\t\t\t\"seconds\":\t1.0001629590988159,\n\t\t\t\t\"bytes\":\t44275140,\n\t\t\t\t\"bits_per_second\":\t354143409.1092,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t5.000172,\n\t\t\t\t\t\"end\":\t6.000142,\n\t\t\t\t\t\"seconds\":\t0.999970018863678,\n\t\t\t\t\t\"bytes\":\t39354252,\n\t\t\t\t\t\"bits_per_second\":\t314843455.36455536,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t5.000172,\n\t\t\t\t\"end\":\t6.000142,\n\t\t\t\t\"seconds\":\t0.999970018863678,\n\t\t\t\t\"bytes\":\t39354252,\n\t\t\t\t\"bits_per_second\":\t314843455.36455536,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t6.000142,\n\t\t\t\t\t\"end\":\t7.000007,\n\t\t\t\t\t\"seconds\":\t0.99986499547958374,\n\t\t\t\t\t\"bytes\":\t27476148,\n\t\t\t\t\t\"bits_per_second\":\t219838863.24030063,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t6.000142,\n\t\t\t\t\"end\":\t7.000007,\n\t\t\t\t\"seconds\":\t0.99986499547958374,\n\t\t\t\t\"bytes\":\t27476148,\n\t\t\t\t\"bits_per_second\":\t219838863.24030063,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t7.000007,\n\t\t\t\t\t\"end\":\t8.000084,\n\t\t\t\t\t\"seconds\":\t1.00007700920105,\n\t\t\t\t\t\"bytes\":\t23840460,\n\t\t\t\t\t\"bits_per_second\":\t190708993.65276578,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t7.000007,\n\t\t\t\t\"end\":\t8.000084,\n\t\t\t\t\"seconds\":\t1.00007700920105,\n\t\t\t\t\"bytes\":\t23840460,\n\t\t\t\t\"bits_per_second\":\t190708993.65276578,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t8.000084,\n\t\t\t\t\t\"end\":\t8.999999,\n\t\t\t\t\t\"seconds\":\t0.99991500377655029,\n\t\t\t\t\t\"bytes\":\t17221680,\n\t\t\t\t\t\"bits_per_second\":\t137785151.21750093,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t8.000084,\n\t\t\t\t\"end\":\t8.999999,\n\t\t\t\t\"seconds\":\t0.99991500377655029,\n\t\t\t\t\"bytes\":\t17221680,\n\t\t\t\t\"bits_per_second\":\t137785151.21750093,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t8.999999,\n\t\t\t\t\t\"end\":\t10.000081,\n\t\t\t\t\t\"seconds\":\t1.0000820159912109,\n\t\t\t\t\t\"bytes\":\t13029072,\n\t\t\t\t\t\"bits_per_second\":\t104224027.96303861,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t8.999999,\n\t\t\t\t\"end\":\t10.000081,\n\t\t\t\t\"seconds\":\t1.0000820159912109,\n\t\t\t\t\"bytes\":\t13029072,\n\t\t\t\t\"bits_per_second\":\t104224027.96303861,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t10.000081,\n\t\t\t\t\t\"end\":\t11.000081,\n\t\t\t\t\t\"seconds\":\t1,\n\t\t\t\t\t\"bytes\":\t12726336,\n\t\t\t\t\t\"bits_per_second\":\t101810688,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t10.000081,\n\t\t\t\t\"end\":\t11.000081,\n\t\t\t\t\"seconds\":\t1,\n\t\t\t\t\"bytes\":\t12726336,\n\t\t\t\t\"bits_per_second\":\t101810688,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t11.000081,\n\t\t\t\t\t\"end\":\t11.999999,\n\t\t\t\t\t\"seconds\":\t0.999917984008789,\n\t\t\t\t\t\"bytes\":\t15435252,\n\t\t\t\t\t\"bits_per_second\":\t123492144.33062404,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t11.000081,\n\t\t\t\t\"end\":\t11.999999,\n\t\t\t\t\"seconds\":\t0.999917984008789,\n\t\t\t\t\"bytes\":\t15435252,\n\t\t\t\t\"bits_per_second\":\t123492144.33062404,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t11.999999,\n\t\t\t\t\t\"end\":\t13.000059,\n\t\t\t\t\t\"seconds\":\t1.000059962272644,\n\t\t\t\t\t\"bytes\":\t14295708,\n\t\t\t\t\t\"bits_per_second\":\t114358806.78604825,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t11.999999,\n\t\t\t\t\"end\":\t13.000059,\n\t\t\t\t\"seconds\":\t1.000059962272644,\n\t\t\t\t\"bytes\":\t14295708,\n\t\t\t\t\"bits_per_second\":\t114358806.78604825,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t13.000059,\n\t\t\t\t\t\"end\":\t14.000085,\n\t\t\t\t\t\"seconds\":\t1.0000259876251221,\n\t\t\t\t\t\"bytes\":\t14844060,\n\t\t\t\t\t\"bits_per_second\":\t118749393.98526564,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t13.000059,\n\t\t\t\t\"end\":\t14.000085,\n\t\t\t\t\"seconds\":\t1.0000259876251221,\n\t\t\t\t\"bytes\":\t14844060,\n\t\t\t\t\"bits_per_second\":\t118749393.98526564,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t14.000085,\n\t\t\t\t\t\"end\":\t15.000078,\n\t\t\t\t\t\"seconds\":\t0.99999302625656128,\n\t\t\t\t\t\"bytes\":\t17801448,\n\t\t\t\t\t\"bits_per_second\":\t142412577.14877549,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t14.000085,\n\t\t\t\t\"end\":\t15.000078,\n\t\t\t\t\"seconds\":\t0.99999302625656128,\n\t\t\t\t\"bytes\":\t17801448,\n\t\t\t\t\"bits_per_second\":\t142412577.14877549,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t15.000078,\n\t\t\t\t\t\"end\":\t16.00006,\n\t\t\t\t\t\"seconds\":\t0.99998199939727783,\n\t\t\t\t\t\"bytes\":\t16162104,\n\t\t\t\t\t\"bits_per_second\":\t129299159.4628018,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t15.000078,\n\t\t\t\t\"end\":\t16.00006,\n\t\t\t\t\"seconds\":\t0.99998199939727783,\n\t\t\t\t\"bytes\":\t16162104,\n\t\t\t\t\"bits_per_second\":\t129299159.4628018,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t16.00006,\n\t\t\t\t\t\"end\":\t17.000146,\n\t\t\t\t\t\"seconds\":\t1.0000859498977661,\n\t\t\t\t\t\"bytes\":\t16900380,\n\t\t\t\t\t\"bits_per_second\":\t135191420.31124538,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t16.00006,\n\t\t\t\t\"end\":\t17.000146,\n\t\t\t\t\"seconds\":\t1.0000859498977661,\n\t\t\t\t\"bytes\":\t16900380,\n\t\t\t\t\"bits_per_second\":\t135191420.31124538,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t17.000146,\n\t\t\t\t\t\"end\":\t18.000067,\n\t\t\t\t\t\"seconds\":\t0.99992102384567261,\n\t\t\t\t\t\"bytes\":\t20434680,\n\t\t\t\t\t\"bits_per_second\":\t163490351.8392579,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t17.000146,\n\t\t\t\t\"end\":\t18.000067,\n\t\t\t\t\"seconds\":\t0.99992102384567261,\n\t\t\t\t\"bytes\":\t20434680,\n\t\t\t\t\"bits_per_second\":\t163490351.8392579,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t18.000067,\n\t\t\t\t\t\"end\":\t19.000021,\n\t\t\t\t\t\"seconds\":\t0.9999539852142334,\n\t\t\t\t\t\"bytes\":\t18828180,\n\t\t\t\t\t\"bits_per_second\":\t150632371.31629562,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t18.000067,\n\t\t\t\t\"end\":\t19.000021,\n\t\t\t\t\"seconds\":\t0.9999539852142334,\n\t\t\t\t\"bytes\":\t18828180,\n\t\t\t\t\"bits_per_second\":\t150632371.31629562,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t19.000021,\n\t\t\t\t\t\"end\":\t20.000062,\n\t\t\t\t\t\"seconds\":\t1.0000410079956055,\n\t\t\t\t\t\"bytes\":\t20241900,\n\t\t\t\t\t\"bits_per_second\":\t161928559.63433811,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t19.000021,\n\t\t\t\t\"end\":\t20.000062,\n\t\t\t\t\"seconds\":\t1.0000410079956055,\n\t\t\t\t\"bytes\":\t20241900,\n\t\t\t\t\"bits_per_second\":\t161928559.63433811,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t20.000062,\n\t\t\t\t\t\"end\":\t21.00011,\n\t\t\t\t\t\"seconds\":\t1.000048041343689,\n\t\t\t\t\t\"bytes\":\t19106640,\n\t\t\t\t\t\"bits_per_second\":\t152845777.08349171,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t20.000062,\n\t\t\t\t\"end\":\t21.00011,\n\t\t\t\t\"seconds\":\t1.000048041343689,\n\t\t\t\t\"bytes\":\t19106640,\n\t\t\t\t\"bits_per_second\":\t152845777.08349171,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t21.00011,\n\t\t\t\t\t\"end\":\t22.00006,\n\t\t\t\t\t\"seconds\":\t0.99994999170303345,\n\t\t\t\t\t\"bytes\":\t11095560,\n\t\t\t\t\t\"bits_per_second\":\t88768919.182471871,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t21.00011,\n\t\t\t\t\"end\":\t22.00006,\n\t\t\t\t\"seconds\":\t0.99994999170303345,\n\t\t\t\t\"bytes\":\t11095560,\n\t\t\t\t\"bits_per_second\":\t88768919.182471871,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t22.00006,\n\t\t\t\t\t\"end\":\t22.999993,\n\t\t\t\t\t\"seconds\":\t0.99993300437927246,\n\t\t\t\t\t\"bytes\":\t12787740,\n\t\t\t\t\t\"bits_per_second\":\t102308774.23983607,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t22.00006,\n\t\t\t\t\"end\":\t22.999993,\n\t\t\t\t\"seconds\":\t0.99993300437927246,\n\t\t\t\t\"bytes\":\t12787740,\n\t\t\t\t\"bits_per_second\":\t102308774.23983607,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t22.999993,\n\t\t\t\t\t\"end\":\t24.000049,\n\t\t\t\t\t\"seconds\":\t1.0000560283660889,\n\t\t\t\t\t\"bytes\":\t11952360,\n\t\t\t\t\t\"bits_per_second\":\t95613522.9305342,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t22.999993,\n\t\t\t\t\"end\":\t24.000049,\n\t\t\t\t\"seconds\":\t1.0000560283660889,\n\t\t\t\t\"bytes\":\t11952360,\n\t\t\t\t\"bits_per_second\":\t95613522.9305342,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t24.000049,\n\t\t\t\t\t\"end\":\t25.000001,\n\t\t\t\t\t\"seconds\":\t0.99995201826095581,\n\t\t\t\t\t\"bytes\":\t12337920,\n\t\t\t\t\t\"bits_per_second\":\t98708096.186112747,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t24.000049,\n\t\t\t\t\"end\":\t25.000001,\n\t\t\t\t\"seconds\":\t0.99995201826095581,\n\t\t\t\t\"bytes\":\t12337920,\n\t\t\t\t\"bits_per_second\":\t98708096.186112747,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}, {\n\t\t\t\"streams\":\t[{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t25.000001,\n\t\t\t\t\t\"end\":\t25.156615,\n\t\t\t\t\t\"seconds\":\t0.15661400556564331,\n\t\t\t\t\t\"bytes\":\t2146284,\n\t\t\t\t\t\"bits_per_second\":\t109634332.75323029,\n\t\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}],\n\t\t\t\"sum\":\t{\n\t\t\t\t\"start\":\t25.000001,\n\t\t\t\t\"end\":\t25.156615,\n\t\t\t\t\"seconds\":\t0.15661400556564331,\n\t\t\t\t\"bytes\":\t2146284,\n\t\t\t\t\"bits_per_second\":\t109634332.75323029,\n\t\t\t\t\"omitted\":\tfalse,\n\t\t\t\t\"sender\":\tfalse\n\t\t\t}\n\t\t}],\n\t\"end\":\t{\n\t\t\"streams\":\t[{\n\t\t\t\t\"sender\":\t{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t0,\n\t\t\t\t\t\"end\":\t25.156615,\n\t\t\t\t\t\"seconds\":\t25.156615,\n\t\t\t\t\t\"bytes\":\t0,\n\t\t\t\t\t\"bits_per_second\":\t0,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t},\n\t\t\t\t\"receiver\":\t{\n\t\t\t\t\t\"socket\":\t5,\n\t\t\t\t\t\"start\":\t0,\n\t\t\t\t\t\"end\":\t25.156615,\n\t\t\t\t\t\"seconds\":\t25.156615,\n\t\t\t\t\t\"bytes\":\t570975804,\n\t\t\t\t\t\"bits_per_second\":\t181574764.0133619,\n\t\t\t\t\t\"sender\":\tfalse\n\t\t\t\t}\n\t\t\t}],\n\t\t\"sum_sent\":\t{\n\t\t\t\"start\":\t0,\n\t\t\t\"end\":\t25.156615,\n\t\t\t\"seconds\":\t25.156615,\n\t\t\t\"bytes\":\t0,\n\t\t\t\"bits_per_second\":\t0,\n\t\t\t\"sender\":\tfalse\n\t\t},\n\t\t\"sum_received\":\t{\n\t\t\t\"start\":\t0,\n\t\t\t\"end\":\t25.156615,\n\t\t\t\"seconds\":\t25.156615,\n\t\t\t\"bytes\":\t570975804,\n\t\t\t\"bits_per_second\":\t181574764.0133619,\n\t\t\t\"sender\":\tfalse\n\t\t},\n\t\t\"cpu_utilization_percent\":\t{\n\t\t\t\"host_total\":\t2.4509306700516675,\n\t\t\t\"host_user\":\t0.21356169628852614,\n\t\t\t\"host_system\":\t2.22983605311338,\n\t\t\t\"remote_total\":\t0,\n\t\t\t\"remote_user\":\t0,\n\t\t\t\"remote_system\":\t0\n\t\t},\n\t\t\"receiver_tcp_congestion\":\t\"htcp\"\n\t}\n}\n\n"
+    },
+    "@timestamp": "2022-03-02T22:24:45.338Z"
+}
