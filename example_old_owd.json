@@ -1,0 +1,18 @@
+{
+    "MA": "2001:48a8:68f7:1:192:41:230:59",
+    "src_host": "psum01.aglt2.org",
+    "dest_host": "lcgps01.gridpp.rl.ac.uk",
+    "src": "2001:48a8:68f7:1:192:41:230:59",
+    "dest": "2001:630:58:1820::82f6:b06d",
+    "ipv6": true,
+    "src_site": "AGLT2",
+    "src_VO": "ATLAS",
+    "dest_site": "RAL-LCG2",
+    "dest_VO": "ATLAS",
+    "src_production": true,
+    "dest_production": true,
+    "timestamp": 1646196568000,
+    "delay_mean": 48.16248333333335,
+    "delay_sd": 0.3529556153242061,
+    "delay_median": 48.09
+}
