@@ -6,3 +6,5 @@ xpack.monitoring.enabled: false
 # xpack.monitoring.elasticsearch.password: "changeme"
 pipeline.ordered: false
 pipeline.ecs_compatibility: disabled
+dead_letter_queue.enable: true
+path.dead_letter_queue: "/var/log/logstash/"
