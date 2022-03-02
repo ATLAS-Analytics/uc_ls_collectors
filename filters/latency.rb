@@ -1,9 +1,9 @@
 def filter(event)
     # event.set('message', "Hello, from Ruby! Message: #{event.get('message')}")
-    owds=event.get('evenresult').get('histogram-latency')
+    owds=event.get('result').get('histogram-latency')
     c=0
     sum=0
-    event.each do |key, value|
+    owds.each do |key, value|
         c=c+value
         sum=sum+key.to_f*value
     end
