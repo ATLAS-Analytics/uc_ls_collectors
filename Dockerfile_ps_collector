@@ -9,6 +9,8 @@ RUN yum install -y nmap
 RUN mkdir -p /usr/share/logstash/java/
 # RUN curl https://jdbc.postgresql.org/download/postgresql-42.3.1.jar -o /usr/share/logstash/java/postgresql-42.3.1.jar
 
+RUN /usr/share/logstash/bin/logstash-plugin install logstash-filter-memcached
+
 RUN mkdir /usr/share/logstash/configs
 
 COPY logstash.yml /usr/share/logstash/config/logstash.yml
@@ -17,5 +19,4 @@ COPY configs/ps-collector.conf /usr/share/logstash/configs/ps-collector.conf
 
 COPY pipelines/ps-collector.yml /usr/share/logstash/config/pipelines.yml
 
-COPY filters/latency.rb /usr/share/logstash/filters/latency.rb
-COPY filters/trace.rb /usr/share/logstash/filters/trace.rb
+COPY filters/* /usr/share/logstash/filters/.
