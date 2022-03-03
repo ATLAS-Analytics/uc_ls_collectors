@@ -8,13 +8,13 @@ def filter(event)
     hs.each do |h|
         hops.push(h["ip"])
         ttls.push(c)
-    #     asns.push(h[:as][:number])
-        rtts.push(h["rtt"])
+        asns.push(h["as"]["number"])
+        rtts.push(h["rtt"][2,6].to_f)
         c = c + 1
     end
     event.set('hops', hops)
     event.set('ttls', ttls)
-    # event.set('asns', asns)
+    event.set('asns', asns)
     event.set('rtts', rtts)
     return [event]
 end
