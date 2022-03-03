@@ -6,7 +6,6 @@ def filter(event)
     asns = []
     rtts = []
     hs.each do |h|
-        puts "#{person[:name]}: #{person[:occupation]}"
         hops.push(h[:ip])
         ttls.push(c)
         asns.push(h[:as][:number])
