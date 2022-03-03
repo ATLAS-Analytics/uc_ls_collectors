@@ -18,3 +18,4 @@ COPY configs/ps-collector.conf /usr/share/logstash/configs/ps-collector.conf
 COPY pipelines/ps-collector.yml /usr/share/logstash/config/pipelines.yml
 
 COPY filters/latency.rb /usr/share/logstash/filters/latency.rb
+COPY filters/trace.rb /usr/share/logstash/filters/trace.rb
