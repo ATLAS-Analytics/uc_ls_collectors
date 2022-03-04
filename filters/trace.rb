@@ -6,17 +6,17 @@ def filter(event)
     asns = []
     rtts = []
     hs.each do |h|
-        ttls.push(c)
-        c = c + 1
         if h.length > 0
             hops.push(h["ip"])
-            asns.push(h["as"]["number"])
             rtts.push(h["rtt"][2,6].to_f)
-        else
-            hops.push("-")
-            asns.push(0)
-            rtts.push(0)
+            ttls.push(c)
+            if h["as"]
+                asns.push(h["as"]["number"])
+            else
+                asns.push(0)
+            end
         end
+        c = c + 1
     end
     event.set('hops', hops)
     event.set('ttls', ttls)
