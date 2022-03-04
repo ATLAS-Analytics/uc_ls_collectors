@@ -1,6 +1,6 @@
 # To Do
 
-* trce.rb often fails
+* change rtts to ms.
 * add templates
 * create memcache
 * if IP not in cache, add it.
