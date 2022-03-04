@@ -69,5 +69,6 @@ def filter(event)
     #     c = c + 1
     # end
     event.set('ingest_timestamp', Time.now.utc.to_i * 1000)
+    
     return [event]
 end

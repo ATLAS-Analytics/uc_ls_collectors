@@ -1,7 +1,5 @@
 # To Do
 
-* change rtts to ms.
-* add templates
 * create memcache
 * if IP not in cache, add it.
 * memcache will set a lifetime to lookups.
