@@ -1,8 +1,7 @@
 # To Do
 
-* add run.end-time as timestamp
-* add @timestamp as archiver_timestamp
-* add ingest_timestamp
+* trce.rb often fails
+* add templates
 * create memcache
 * if IP not in cache, add it.
 * memcache will set a lifetime to lookups.
