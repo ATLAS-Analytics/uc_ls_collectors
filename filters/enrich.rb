@@ -68,6 +68,6 @@ def filter(event)
     #     rtts.push(h["rtt"][2,6].to_f)
     #     c = c + 1
     # end
-    event.set('ingest_timestamp', Time.now.utc.to_f * 1000)
+    event.set('ingest_timestamp', Time.now.utc.to_i * 1000)
     return [event]
 end
