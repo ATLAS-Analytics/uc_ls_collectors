@@ -1,5 +1,5 @@
-# require 'socket'
-# require 'resolv'
+require 'socket'
+require 'resolv'
 
 # def get_ips(address)
 #     result = {
