@@ -55,8 +55,8 @@ end
 
 def filter(event)
     
-    event.set("src","111.222.123.1") unless event.get("src")
-    event.set("dest","222.111.123.2") unless event.get("dest")
+    event.set("src", get_ips(event.get("src_host")) ) unless event.get("src")
+    event.set("dest", get_ips(event.get("dest_host"))) unless event.get("dest")
 
     # c = 1
     # hops = []
