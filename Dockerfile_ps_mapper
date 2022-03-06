@@ -1,0 +1,12 @@
+FROM python
+
+LABEL maintainer="Ilija Vukotic <ivukotic@cern.ch>"
+
+USER root
+
+RUN pip install pymemcache simplejson requests
+RUN mkdir /usr/share/mapper/
+
+COPY siteMapping.py /usr/share/mapper/
+
+CMD [ "python", "/usr/share/mapper/siteMapping.py" ]
