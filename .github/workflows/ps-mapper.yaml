@@ -1,4 +1,4 @@
-name: Build PerfSONAR rucio Logstash dockerhub image
+name: Build pS Mapper dockerhub image
 
 on:
   push:
