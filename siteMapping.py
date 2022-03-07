@@ -128,17 +128,21 @@ def reload():
         for _key, val in res.items():
             # print(_key, val)
             p = ps()
-            p.hostname = val['endpoint']
-            if val['status'] == 'production':
-                p.production = True
-            p.flavor = val['flavour']
-            p.sitename = val['rcsite']
-            if p.sitename in sites:
-                p.VO = "ATLAS"
+            try:
+                p.hostname = val['endpoint']
+                if val['status'] == 'production':
+                    p.production = True
+                p.flavor = val['flavour']
+                p.sitename = val['rcsite']
+                if p.sitename in sites:
+                    p.VO = "ATLAS"
+                sites.append(val["rcsite"])
 
-            client.set('vo_'+p.hostname, p.VO)
-            client.set('si_'+p.hostname, p.sitename)
-            client.set('pr_'+p.hostname, p.production)
+                client.set('vo_'+p.hostname, p.VO)
+                client.set('si_'+p.hostname, p.sitename)
+                client.set('pr_'+p.hostname, p.production)
+            except AttributeError as e:
+                print('attribute missing.', e)
 
             # ips = getIP(p.hostname)
             # if not ips:
@@ -147,14 +151,12 @@ def reload():
             # for ip in ips:
             #     if ':' in ip[4][0]:
             #         try:
-            #             PerfSonars[ipaddress.IPv6Address(
-            #                 ip[4][0]).exploded] = p
+            #             PerfSonars[ipaddress.IPv6Address(ip[4][0]).exploded] = p
             #         except ipaddress.AddressValueError:
             #             print('Failed to parse IPv6 address:', ip)
             #             continue
             #     else:
             #         PerfSonars[ip[4][0]] = p
-            sites.append(val["rcsite"])
             p.prnt()
         print('Perfsonars reloaded.')
     except:
@@ -201,58 +203,58 @@ def reload():
 
     # loading meshes ===================================
 
-    try:
-        r = requests.get(
-            'http://psconfig.opensciencegrid.org/pub/config/', verify=False, timeout=10)
-        res = r.json()
-        for r in res:
-            inc = r['include'][0]
-            inc = inc.replace("https://", "http://")
-            if not inc.startswith('http://'):
-                inc = 'http://' + inc
-            meshes.append(inc)
-        print('All defined meshes:', meshes)
-    except:
-        print("Could not load meshes  Exiting...")
-        print("Unexpected error: ", str(sys.exc_info()[0]))
+    # try:
+    #     r = requests.get(
+    #         'http://psconfig.opensciencegrid.org/pub/config/', verify=False, timeout=10)
+    #     res = r.json()
+    #     for r in res:
+    #         inc = r['include'][0]
+    #         inc = inc.replace("https://", "http://")
+    #         if not inc.startswith('http://'):
+    #             inc = 'http://' + inc
+    #         meshes.append(inc)
+    #     print('All defined meshes:', meshes)
+    # except:
+    #     print("Could not load meshes  Exiting...")
+    #     print("Unexpected error: ", str(sys.exc_info()[0]))
 
-    throughputHosts = []
-    latencyHosts = []
-    params = {
-        "format": "meshconfig"
-    }
-    for m in meshes:
-        print('Loading mesh:', m)
-        try:
-            r = requests.get(m, verify=False, params=params, timeout=10)
-            res = r.json()
-            for o in res['organizations']:
-                for s in o['sites']:
-                    for h in s['hosts']:
-                        types = []
-                        if 'measurement_archives' not in h.keys():
-                            print("No measurement archive defined for ", h)
-                            continue
-                        for ma in h['measurement_archives']:
-                            if ma['type'].count('owamp') > 0:
-                                types.append('owamp')
-                            if ma['type'].count('bwctl') > 0:
-                                types.append('bwctl')
-                        for a in h['addresses']:
-                            print(a)
-                            ips = getIP(a)
-                            if ips and 'bwctl' in types:
-                                for ip in ips:
-                                    throughputHosts.append(ip[4][0])
-                            if ips and 'owamp' in types:
-                                for ip in ips:
-                                    latencyHosts.append(ip[4][0])
-        except:
-            print("Could not load mesh,", m, " Exiting...")
-            print("Unexpected error: ", str(sys.exc_info()[0]))
+    # throughputHosts = []
+    # latencyHosts = []
+    # params = {
+    #     "format": "meshconfig"
+    # }
+    # for m in meshes:
+    #     print('Loading mesh:', m)
+    #     try:
+    #         r = requests.get(m, verify=False, params=params, timeout=10)
+    #         res = r.json()
+    #         for o in res['organizations']:
+    #             for s in o['sites']:
+    #                 for h in s['hosts']:
+    #                     types = []
+    #                     if 'measurement_archives' not in h.keys():
+    #                         print("No measurement archive defined for ", h)
+    #                         continue
+    #                     for ma in h['measurement_archives']:
+    #                         if ma['type'].count('owamp') > 0:
+    #                             types.append('owamp')
+    #                         if ma['type'].count('bwctl') > 0:
+    #                             types.append('bwctl')
+    #                     for a in h['addresses']:
+    #                         print(a)
+    #                         ips = getIP(a)
+    #                         if ips and 'bwctl' in types:
+    #                             for ip in ips:
+    #                                 throughputHosts.append(ip[4][0])
+    #                         if ips and 'owamp' in types:
+    #                             for ip in ips:
+    #                                 latencyHosts.append(ip[4][0])
+    #     except:
+    #         print("Could not load mesh,", m, " Exiting...")
+    #         print("Unexpected error: ", str(sys.exc_info()[0]))
 
-    print('throughputHosts reloaded:\n', throughputHosts)
-    print('latencyHosts reloaded:\n', latencyHosts)
+    # print('throughputHosts reloaded:\n', throughputHosts)
+    # print('latencyHosts reloaded:\n', latencyHosts)
 
     print('All done.')
 
