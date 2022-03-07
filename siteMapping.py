@@ -19,8 +19,8 @@ except ImportError:
 
 meshes = []
 PerfSonars = {}
-throughputHosts = []
-latencyHosts = []
+# throughputHosts = []
+# latencyHosts = []
 
 GOCDB_FEED = "https://goc.egi.eu/gocdbpi/public/?method=get_service_endpoint"
 OIM_FEED = "https://my.opensciencegrid.org/rgsummary/xml?summary_attrs_showservice=on&summary_attrs_showfqdn=on&gip_status_attrs_showtestresults=on&downtime_attrs_showpast=&account_type=cumulative_hours&ce_account_type=gip_vo&se_account_type=vo_transfer_volume&bdiitree_type=total_jobs&bdii_object=service&bdii_server=is-osg&start_type=7daysago&start_date=11%2F17%2F2014&end_type=now&all_resources=on&facility_sel%5B%5D=10009&gridtype=on&gridtype_1=on&active=on&active_value=1&disable_value=0"
@@ -184,18 +184,23 @@ def reload():
             p.VO = "UNKNOWN"
             p.flavor = stype
             p.sitename = site
-            p.ip = [i[4][0] for i in ips]
+            # p.ip = [i[4][0] for i in ips]
+
+            client.set('vo_'+p.hostname, p.VO)
+            client.set('si_'+p.hostname, p.sitename)
+            client.set('pr_'+p.hostname, p.production)
+
             p.prnt()
-            for ip in ips:
-                if ':' in ip[4][0]:
-                    try:
-                        PerfSonars[ipaddress.IPv6Address(
-                            ip[4][0]).exploded] = p
-                    except ipaddress.AddressValueError:
-                        print('Failed to parse IPv6 address:', ip)
-                        continue
-                else:
-                    PerfSonars[ip[4][0]] = p
+            # for ip in ips:
+            #     if ':' in ip[4][0]:
+            #         try:
+            #             PerfSonars[ipaddress.IPv6Address(
+            #                 ip[4][0]).exploded] = p
+            #         except ipaddress.AddressValueError:
+            #             print('Failed to parse IPv6 address:', ip)
+            #             continue
+            #     else:
+            #         PerfSonars[ip[4][0]] = p
         print('Done')
     except:
         print("Could not get perfSONARs from GOCDB/OIM ...")
