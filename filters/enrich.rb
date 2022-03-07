@@ -13,7 +13,6 @@ def get_ips(address)
         addrinfo.each do |ai|
             if ai[0] == 'AF_INET' then
                 result['ipv4'] = ai[3]
-                #result['hostname_v4'] = ai[2]
             elsif ai[0] == 'AF_INET6' then
                 result['ipv6'] = ai[3]
                 #remove scope id since not compatible with elastic ip type

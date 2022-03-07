@@ -18,3 +18,6 @@ stats items
 
 Before starting logstash, make sure that the ps-mapper job at least once finished fine.
 One can manually execute it: kubectl create job --from=cronjob/<name of cronjob> <name of job>
+
+To manually flush the cache:
+echo 'flush_all' | nc memcached.collectors.svc.cluster.local 11211
