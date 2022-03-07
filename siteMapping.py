@@ -89,15 +89,6 @@ def get_oim_sonars(response):
     return oim_sonars
 
 
-def getIP(host):
-    ip = None
-    try:
-        ip = socket.getaddrinfo(host, 80, 0, 0, socket.IPPROTO_TCP)
-    except:
-        print("Could not get ip for", host)
-    return ip
-
-
 def reload():
     print('starting mapping reload')
     global throughputHosts
@@ -130,33 +121,27 @@ def reload():
             p = ps()
             try:
                 p.hostname = val['endpoint']
-                if val['status'] == 'production':
-                    p.production = True
-                p.flavor = val['flavour']
-                p.sitename = val['rcsite']
+                p.production = False
+                if hasattr('val', 'status'):
+                    if val['status'] == 'production':
+                        p.production = True
+                if hasattr('val', 'flavour'):
+                    p.flavor = val['flavour']
+                p.sitename = ""
+                if hasattr('val', 'rcsite'):
+                    p.sitename = val['rcsite']
                 if p.sitename in sites:
                     p.VO = "ATLAS"
+                else:
+                    p.VO = "unknown"
                 sites.append(val["rcsite"])
 
                 client.set('vo_'+p.hostname, p.VO)
                 client.set('si_'+p.hostname, p.sitename)
                 client.set('pr_'+p.hostname, p.production)
+                PerfSonars[p.hostname] = p
             except AttributeError as e:
                 print('attribute missing.', e)
-
-            # ips = getIP(p.hostname)
-            # if not ips:
-            #     continue
-            # p.ip = [i[4][0] for i in ips]
-            # for ip in ips:
-            #     if ':' in ip[4][0]:
-            #         try:
-            #             PerfSonars[ipaddress.IPv6Address(ip[4][0]).exploded] = p
-            #         except ipaddress.AddressValueError:
-            #             print('Failed to parse IPv6 address:', ip)
-            #             continue
-            #     else:
-            #         PerfSonars[ip[4][0]] = p
             p.prnt()
         print('Perfsonars reloaded.')
     except:
@@ -173,10 +158,7 @@ def reload():
         sonars.extend(oim_sonars)
 
         for host, stype, site in sonars:
-            ips = getIP(host)
-            if not ips:
-                continue
-            if ips[0][4][0] in PerfSonars.keys():
+            if host in PerfSonars.keys():
                 continue
             p = ps()
             p.hostname = host
@@ -184,82 +166,17 @@ def reload():
             p.VO = "UNKNOWN"
             p.flavor = stype
             p.sitename = site
-            # p.ip = [i[4][0] for i in ips]
 
             client.set('vo_'+p.hostname, p.VO)
             client.set('si_'+p.hostname, p.sitename)
             client.set('pr_'+p.hostname, p.production)
 
+            PerfSonars[p.hostname] = p
             p.prnt()
-            # for ip in ips:
-            #     if ':' in ip[4][0]:
-            #         try:
-            #             PerfSonars[ipaddress.IPv6Address(
-            #                 ip[4][0]).exploded] = p
-            #         except ipaddress.AddressValueError:
-            #             print('Failed to parse IPv6 address:', ip)
-            #             continue
-            #     else:
-            #         PerfSonars[ip[4][0]] = p
         print('Done')
     except:
         print("Could not get perfSONARs from GOCDB/OIM ...")
         print("Unexpected error: ", str(sys.exc_info()[0]))
-
-    # loading meshes ===================================
-
-    # try:
-    #     r = requests.get(
-    #         'http://psconfig.opensciencegrid.org/pub/config/', verify=False, timeout=10)
-    #     res = r.json()
-    #     for r in res:
-    #         inc = r['include'][0]
-    #         inc = inc.replace("https://", "http://")
-    #         if not inc.startswith('http://'):
-    #             inc = 'http://' + inc
-    #         meshes.append(inc)
-    #     print('All defined meshes:', meshes)
-    # except:
-    #     print("Could not load meshes  Exiting...")
-    #     print("Unexpected error: ", str(sys.exc_info()[0]))
-
-    # throughputHosts = []
-    # latencyHosts = []
-    # params = {
-    #     "format": "meshconfig"
-    # }
-    # for m in meshes:
-    #     print('Loading mesh:', m)
-    #     try:
-    #         r = requests.get(m, verify=False, params=params, timeout=10)
-    #         res = r.json()
-    #         for o in res['organizations']:
-    #             for s in o['sites']:
-    #                 for h in s['hosts']:
-    #                     types = []
-    #                     if 'measurement_archives' not in h.keys():
-    #                         print("No measurement archive defined for ", h)
-    #                         continue
-    #                     for ma in h['measurement_archives']:
-    #                         if ma['type'].count('owamp') > 0:
-    #                             types.append('owamp')
-    #                         if ma['type'].count('bwctl') > 0:
-    #                             types.append('bwctl')
-    #                     for a in h['addresses']:
-    #                         print(a)
-    #                         ips = getIP(a)
-    #                         if ips and 'bwctl' in types:
-    #                             for ip in ips:
-    #                                 throughputHosts.append(ip[4][0])
-    #                         if ips and 'owamp' in types:
-    #                             for ip in ips:
-    #                                 latencyHosts.append(ip[4][0])
-    #     except:
-    #         print("Could not load mesh,", m, " Exiting...")
-    #         print("Unexpected error: ", str(sys.exc_info()[0]))
-
-    # print('throughputHosts reloaded:\n', throughputHosts)
-    # print('latencyHosts reloaded:\n', latencyHosts)
 
     print('All done.')
 
