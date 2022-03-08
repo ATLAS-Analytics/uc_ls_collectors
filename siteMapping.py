@@ -127,7 +127,7 @@ def reload():
                         p.production = True
                 if hasattr('val', 'flavour'):
                     p.flavor = val['flavour']
-                p.sitename = ""
+                p.sitename = "unknown"
                 if hasattr('val', 'rcsite'):
                     p.sitename = val['rcsite']
                 if p.sitename in sites:
@@ -163,7 +163,7 @@ def reload():
             p = ps()
             p.hostname = host
             p.production = False
-            p.VO = "UNKNOWN"
+            p.VO = "unknown"
             p.flavor = stype
             p.sitename = site
 
