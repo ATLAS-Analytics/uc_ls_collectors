@@ -10,5 +10,5 @@ RUN yum install -y nmap
 RUN mkdir /usr/share/logstash/configs
 
 COPY logstash.yml /usr/share/logstash/config/logstash.yml
-COPY configs/MemoryMonitor.conf /usr/share/logstash/configs/MemoryMonitor.conf
-COPY pipelines/memory-monitor.yml /usr/share/logstash/config/pipelines.yml
+COPY configs/AF.conf /usr/share/logstash/configs/AF.conf
+COPY pipelines/af.yml /usr/share/logstash/config/pipelines.yml
