@@ -1,7 +1,5 @@
-# Memory Monitor collector to run at UC
+# Analysis Faciliest monitoring info collector to run at UC
 
-[![Build Memory Monitor image](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/MemoryMonitor.yaml/badge.svg)](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/MemoryMonitor.yaml)
+[![Build Analysis Facilities Monitoring Logstash dockerhub image](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/AF.yaml/badge.svg?branch=af)](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/AF.yaml)
 
-    * Pilot sends memory data to pilot.atlas-ml.org - this is done through ingress controller.
-    * Pilot does not send Benchmark data at the moment
-  
+    * xxx sends  data to af.atlas-ml.org - this is done through ingress controller.
