@@ -13,12 +13,17 @@ def filter(event)
             med_key = kv
         end
     end
-    mean=sum/c
-    res=0
-    owds.each do |key, value|
-        res = res + key.to_f * (value-mean) ** 2
+    if c>0
+        mean=sum/c
+        res=0
+        owds.each do |key, value|
+            res = res + key.to_f * (value-mean) ** 2
+        end
+        sd = Math.sqrt(res/c)
+    else
+        mean=0
+        sd=0
     end
-    sd = Math.sqrt(res/c)
     event.set('delay_mean', mean)
     event.set('delay_median', med_key)
     event.set('delay_sd', sd)
