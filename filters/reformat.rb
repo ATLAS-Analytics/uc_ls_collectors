@@ -1,5 +1,3 @@
-
-
 def filter(event)
     readout = event.get("[counters]")
     if readout
@@ -7,6 +5,5 @@ def filter(event)
             event.set("[#{k}]", v["value"])
         }
     end
-
     return [event]
 end
