@@ -21,7 +21,7 @@ def filter(event)
         co=0
         med=0
         c = c/2
-        b.each do |key, value|
+        owds.each do |key, value|
             kv = key.to_f
             co += value
             med = kv
