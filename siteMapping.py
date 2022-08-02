@@ -1,11 +1,9 @@
 """ maps ips to sites """
 
 import sys
-import socket
-import time
 import requests
 import xml.etree.ElementTree as ET
-import ipaddress
+# import socket
 from pymemcache.client import base
 
 # suppress InsecureRequestWarning: Unverified HTTPS request is being made.
@@ -33,11 +31,11 @@ class ps:
     hostname = ''
     sitename = ''
     VO = ''
-    ip = ''
+    # ip = ''
     flavor = ''
 
     def prnt(self):
-        print('ip:', self.ip, '\thost:', self.hostname, '\tVO:', self.VO,
+        print('host:', self.hostname, '\tVO:', self.VO,
               '\tflavor:', self.flavor, '\tsite:', self.sitename)
 
 
@@ -94,9 +92,10 @@ def reload():
     global throughputHosts
     global latencyHosts
 
-    timeout = 60
-    socket.setdefaulttimeout(timeout)
+    # timeout = 60
+    # socket.setdefaulttimeout(timeout)
 
+    print(" --- getting sites from ATLAS CRIC ---")
     try:
         r = requests.get(
             'https://atlas-cric.cern.ch/api/core/site/query/?json&vo_name=atlas&state=ACTIVE', verify=False)
@@ -105,11 +104,12 @@ def reload():
         sites = []
         for _key, val in res.items():
             sites.append(val["rc_site"])
-        # print('Sites reloaded.')
+        print(len(sites), "sites reloaded.")
     except:
         print("Could not get sites from CRIC. Exiting...")
         print("Unexpected error: ", str(sys.exc_info()[0]))
 
+    print(" --- getting PerfSonars from ATLAS CRIC ---")
     try:
         r = requests.get(
             'https://atlas-cric.cern.ch/api/core/service/query/?json&state=ACTIVE&type=PerfSonar',
@@ -121,20 +121,28 @@ def reload():
             p = ps()
             try:
                 p.hostname = val['endpoint']
+
+                # try: NOT LOOKING UP IP addresses as that will be done by enrich.rb
+                #     p.ip = socket.gethostbyname(p.hostname)
+                # except socket.gaierror as e:
+                #     p.ip = '0.0.0.0'
+                #     print(p.hostname, e)
+
                 p.production = False
-                if hasattr('val', 'status'):
+                if 'status' in val:
                     if val['status'] == 'production':
                         p.production = True
-                if hasattr('val', 'flavour'):
-                    p.flavor = val['flavour']
-                p.sitename = "unknown"
-                if hasattr('val', 'rcsite'):
-                    p.sitename = val['rcsite']
+
+                p.flavor = val.get('flavour', 'unknown')
+                p.sitename = val.get('rcsite', "unknown")
+
                 if p.sitename in sites:
                     p.VO = "ATLAS"
                 else:
                     p.VO = "unknown"
-                sites.append(val["rcsite"])
+
+                if p.sitename not in sites:
+                    sites.append(p.sitename)
 
                 client.set('vo_'+p.hostname, p.VO)
                 client.set('si_'+p.hostname, p.sitename)
@@ -143,7 +151,8 @@ def reload():
             except AttributeError as e:
                 print('attribute missing.', e)
             p.prnt()
-        print('Perfsonars reloaded.')
+
+        print(len(PerfSonars.keys()), 'perfsonars reloaded.')
     except:
         print("Could not get perfsonars from CRIC. Exiting...")
         print("Unexpected error: ", str(sys.exc_info()[0]))
