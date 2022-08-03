@@ -16,7 +16,12 @@ def filter(event)
                 asns.push(0)
             end
         end
-        c = c + 1
+        c += 1
+    end
+    if hs.length == c - 1 
+        event.set('path_complete', true)
+    else
+        event.set('path_complete', false)
     end
     event.set('hops', hops)
     event.set('ttls', ttls)
