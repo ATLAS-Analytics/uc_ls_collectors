@@ -20,3 +20,5 @@ COPY configs/ps-collector.conf /usr/share/logstash/configs/ps-collector.conf
 COPY pipelines/ps-collector.yml /usr/share/logstash/config/pipelines.yml
 
 COPY filters/* /usr/share/logstash/filters/
+
+USER logstash

@@ -27,8 +27,8 @@ end
 
 def filter(event)
     
-    event.set("src", get_ips(event.get("src_host")) ) unless event.get("src")
-    event.set("dest", get_ips(event.get("dest_host"))) unless event.get("dest")
+    event.set("source", get_ips(event.get("src_host")) ) unless event.get("source")
+    event.set("destination", get_ips(event.get("dest_host"))) unless event.get("destination")
 
     return [event]
 end
