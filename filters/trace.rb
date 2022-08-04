@@ -1,5 +1,9 @@
+require 'digest/sha1'
+
 def filter(event)
     hs = event.get('[result][paths]').first()
+    dest = even.get('[dest]')
+
     c = 1
     path_complete = true
     hops = []
@@ -21,10 +25,16 @@ def filter(event)
         end
         c += 1
     end
+
     event.set('path_complete', path_complete)
     event.set('hops', hops)
     event.set('ttls', ttls)
     event.set('asns', asns)
     event.set('rtts', rtts)
+
+    if hops.last() == dest
+        hops.pop()
+
+    event.set('route-sha1', Digest::SHA1.hexdigest hops.join(''))
     return [event]
 end
