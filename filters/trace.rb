@@ -1,6 +1,7 @@
 def filter(event)
     hs = event.get('[result][paths]').first()
     c = 1
+    path_complete = true
     hops = []
     ttls = []
     asns = []
@@ -15,14 +16,12 @@ def filter(event)
             else
                 asns.push(0)
             end
+        else
+            path_complete = false
         end
         c += 1
     end
-    if hs.length == c - 1 
-        event.set('path_complete', true)
-    else
-        event.set('path_complete', false)
-    end
+    event.set('path_complete', path_complete)
     event.set('hops', hops)
     event.set('ttls', ttls)
     event.set('asns', asns)
