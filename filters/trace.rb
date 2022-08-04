@@ -2,7 +2,7 @@ require 'digest/sha1'
 
 def filter(event)
     hs = event.get('[result][paths]').first()
-    dest = even.get('[dest]')
+    dest = event.get('[dest]')
 
     c = 1
     path_complete = true
@@ -37,7 +37,7 @@ def filter(event)
         hops.pop()
         destination_reached=true
     end
-    
+
     event.set('destination_reached', destination_reached)
     event.set('route-sha1', Digest::SHA1.hexdigest(hops.join('')) )
     return [event]
