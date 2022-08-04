@@ -6,6 +6,7 @@ def filter(event)
 
     c = 1
     path_complete = true
+    destination_reached = false
     hops = []
     ttls = []
     asns = []
@@ -34,7 +35,9 @@ def filter(event)
 
     if hops.last() == dest
         hops.pop()
+        destination_reached=true
 
-    event.set('route-sha1', Digest::SHA1.hexdigest hops.join(''))
+    event.set('destination_reached', destination_reached)
+    event.set('route-sha1', Digest::SHA1.hexdigest(hops.join('')) )
     return [event]
 end
