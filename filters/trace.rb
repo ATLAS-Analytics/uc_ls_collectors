@@ -36,7 +36,8 @@ def filter(event)
     if hops.last() == dest
         hops.pop()
         destination_reached=true
-
+    end
+    
     event.set('destination_reached', destination_reached)
     event.set('route-sha1', Digest::SHA1.hexdigest(hops.join('')) )
     return [event]
