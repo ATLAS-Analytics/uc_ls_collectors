@@ -25,5 +25,5 @@ COPY configs/rucio-fts-amq.conf /usr/share/logstash/configs/rucio-fts-amq.conf
 COPY pipelines/rucio-x1t.yml /usr/share/logstash/config/pipelines.yml
 
 # COPY filters/* /usr/share/logstash/filters/
-
+COPY stomp.rb /usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/logstash-input-stomp-3.0.8/lib/logstash/inputs/stomp.rb
 USER logstash
