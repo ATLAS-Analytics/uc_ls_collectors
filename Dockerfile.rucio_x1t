@@ -19,6 +19,7 @@ COPY logstash.yml /usr/share/logstash/config/logstash.yml
 COPY configs/rucio-x1t-rse.conf /usr/share/logstash/configs/rucio-x1t-rse.conf
 COPY configs/rucio-x1t-account.conf /usr/share/logstash/configs/rucio-x1t-account.conf
 COPY configs/rucio-x1t-dids.conf /usr/share/logstash/configs/rucio-x1t-dids.conf
+COPY configs/rucio-fts-amq.conf /usr/share/logstash/configs/rucio-fts-amq.conf
 
 COPY pipelines/rucio-x1t.yml /usr/share/logstash/config/pipelines.yml
 
