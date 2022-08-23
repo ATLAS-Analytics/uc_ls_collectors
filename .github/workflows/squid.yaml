@@ -1,9 +1,9 @@
-name: Build Xenon1T rucio Logstash dockerhub image
+name: Build Squid Logstash dockerhub image
 
 on:
   push:
     branches:
-      - "rucio-x1t"
+      - "squid"
 
 jobs:
   docker:
@@ -15,8 +15,8 @@ jobs:
       - name: Docker Build & Push Action
         uses: mr-smithers-excellent/docker-build-push@v5.6
         with:
-          image: atlasanalyticsservice/uc_ls_rucio_x1t
-          dockerfile: Dockerfile.rucio_x1t
+          image: atlasanalyticsservice/uc_ls_squid
+          dockerfile: Dockerfile.squid
           tags: latest, ${{ github.sha }}
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
@@ -27,5 +27,5 @@ jobs:
         with:
           token: ${{ secrets.AAAS_GITOPS_DEPLOY_TRIGGER }}
           repository: maniaclab/river_apps
-          event-type: gitops-uc-ls-x1t-rucio-app-trigger
+          event-type: gitops-uc-ls-squid-app-trigger
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
