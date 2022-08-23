@@ -12,6 +12,7 @@ RUN mkdir /usr/share/logstash/configs
 RUN mkdir /var/log/logstash && chown -R logstash /var/log/logstash
 
 COPY logstash.yml /usr/share/logstash/config/logstash.yml
+COPY squid.dic /usr/share/logstash/config/squid.dic
 
 COPY configs/squid.conf /usr/share/logstash/configs/squid.conf
 
