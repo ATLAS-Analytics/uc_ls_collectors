@@ -3,7 +3,8 @@ FROM docker.elastic.co/logstash/logstash:8.4.0
 LABEL maintainer="Ilija Vukotic <ivukotic@cern.ch>"
 
 USER root
-RUN yum install -y nmap
+
+RUN apt-get update && apt-get install -y nmap
 
 
 # RUN bin/logstash-plugin install logstash-input-stomp
