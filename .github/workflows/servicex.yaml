@@ -15,7 +15,7 @@ jobs:
       - name: Docker Build & Push Action
         uses: mr-smithers-excellent/docker-build-push@v5.6
         with:
-          image: atlasanalyticsservice/uc_ls_squid
+          image: atlasanalyticsservice/uc_ls_servicex
           dockerfile: Dockerfile.servicex
           tags: latest, ${{ github.sha }}
           registry: docker.io
