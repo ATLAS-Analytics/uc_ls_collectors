@@ -12,11 +12,10 @@ RUN mkdir /usr/share/logstash/configs
 RUN mkdir /var/log/logstash && chown -R logstash /var/log/logstash
 
 COPY logstash.yml /usr/share/logstash/config/logstash.yml
-COPY squid.dic /usr/share/logstash/config/squid.dic
 
-COPY configs/squid.conf /usr/share/logstash/configs/squid.conf
+COPY configs/servicex.conf /usr/share/logstash/configs/servicex.conf
 
-COPY pipelines/squid.yml /usr/share/logstash/config/pipelines.yml
+COPY pipelines/servicex.yml /usr/share/logstash/config/pipelines.yml
 
 # COPY filters/* /usr/share/logstash/filters/
 

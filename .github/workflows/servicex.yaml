@@ -1,9 +1,9 @@
-name: Build Squid Logstash dockerhub image
+name: Build servicex Logstash dockerhub image
 
 on:
   push:
     branches:
-      - "squid"
+      - "servicex"
 
 jobs:
   docker:
@@ -16,7 +16,7 @@ jobs:
         uses: mr-smithers-excellent/docker-build-push@v5.6
         with:
           image: atlasanalyticsservice/uc_ls_squid
-          dockerfile: Dockerfile.squid
+          dockerfile: Dockerfile.servicex
           tags: latest, ${{ github.sha }}
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
@@ -27,5 +27,5 @@ jobs:
         with:
           token: ${{ secrets.AAAS_GITOPS_DEPLOY_TRIGGER }}
           repository: maniaclab/river_apps
-          event-type: gitops-uc-ls-squid-app-trigger
+          event-type: gitops-uc-ls-servicex-app-trigger
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'

@@ -1,19 +1,11 @@
-import requests
+import logging
+import logstash
 
-newHeaders = {'Content-type': 'application/json', 'Accept': 'text/plain'}
+test_logger = logging.getLogger('python-logstash-logger')
+test_logger.setLevel(logging.INFO)
+# test_logger.addHandler(logstash.LogstashHandler('servicex.atlas-ml.org', 5959, version=1))
+test_logger.addHandler(logstash.TCPLogstashHandler('servicex.atlas-ml.org', 5959, version=1))
 
-data = {
-    'token': 'sqKHBKJB45n',
-    'site': 'MWT2',
-    'squid_id': 'asdf',
-    'timestamp': 1662047737,
-    'hits': 100,
-    'requests': 10,
-    'cputime': 3,
-    'objects': 123,
-    'memory': 1231445
-}
-
-response = requests.post('https://squid.atlas-ml.org', json=data,
-                         headers=newHeaders, verify=False)
-print("Status code: ", response.status_code)
+test_logger.error('python-logstash: test logstash error message.')
+test_logger.info('python-logstash: test logstash info message.')
+test_logger.warning('python-logstash: test logstash warning message.')
