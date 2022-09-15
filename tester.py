@@ -11,7 +11,7 @@ data = {
     'requests': 10,
     'cputime': 3,
     'objects': 123,
-    'memory': 1231445
+    'memory': 12314425
 }
 
 response = requests.post('https://squid.atlas-ml.org', json=data,
