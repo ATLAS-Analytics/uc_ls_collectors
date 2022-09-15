@@ -1,5 +1,0 @@
-- pipeline.id: squid
-  path.config: "/usr/share/logstash/configs/squid.conf"
-  pipeline.workers: 1
-#   queue.type: persisted
-#   queue.max_bytes: 4gb
