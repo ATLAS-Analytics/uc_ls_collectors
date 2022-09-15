@@ -8,4 +8,4 @@ test_logger.addHandler(logstash.TCPLogstashHandler('servicex.atlas-ml.org', 5959
 
 test_logger.error('python-logstash: test logstash error message.')
 test_logger.info('python-logstash: test logstash info message.')
-test_logger.warning('python-logstash: test logstash warning message.')
+test_logger.warning('python-logstash: test logstash warning mdessage.')
