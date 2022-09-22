@@ -1,0 +1,25 @@
+FROM docker.elastic.co/logstash/logstash:8.4.0
+
+LABEL maintainer="Ilija Vukotic <ivukotic@cern.ch>"
+
+USER root
+RUN apt-get update && apt-get install -y nmap
+
+# add postgresql driver
+RUN mkdir -p /usr/share/logstash/java/
+RUN curl https://jdbc.postgresql.org/download/postgresql-42.3.1.jar -o /usr/share/logstash/java/postgresql-42.3.1.jar
+
+RUN /usr/share/logstash/bin/logstash-plugin install logstash-filter-memcached
+# RUN /usr/share/logstash/bin/logstash-plugin install logstash-input-stomp
+
+RUN mkdir /usr/share/logstash/configs
+RUN mkdir /var/log/logstash && chown -R logstash /var/log/logstash
+
+COPY logstash.yml /usr/share/logstash/config/logstash.yml
+
+COPY configs/dcache.conf /usr/share/logstash/configs/dcache.conf
+
+COPY pipelines/dcache.yml /usr/share/logstash/config/pipelines.yml
+
+# COPY filters/* /usr/share/logstash/filters/
+USER logstash
