@@ -1,9 +1,9 @@
-name: Build dCache Logstash dockerhub image
+name: Build dCache-mwt2 Logstash dockerhub image
 
 on:
   push:
     branches:
-      - "dCache"
+      - "dcache-mwt2"
 
 jobs:
   docker:
@@ -15,7 +15,7 @@ jobs:
       - name: Docker Build & Push Action
         uses: mr-smithers-excellent/docker-build-push@v5.6
         with:
-          image: atlasanalyticsservice/uc_ls_dcache
+          image: atlasanalyticsservice/uc_ls_dcache-mwt2
           dockerfile: Dockerfile.dcache
           tags: latest, ${{ github.sha }}
           registry: docker.io
@@ -27,5 +27,5 @@ jobs:
         with:
           token: ${{ secrets.AAAS_GITOPS_DEPLOY_TRIGGER }}
           repository: maniaclab/river_apps
-          event-type: gitops-uc-ls-dcache-app-trigger
+          event-type: gitops-uc-ls-dcache-mwt2-app-trigger
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'

@@ -17,7 +17,7 @@ RUN mkdir /var/log/logstash && chown -R logstash /var/log/logstash
 
 COPY logstash.yml /usr/share/logstash/config/logstash.yml
 
-COPY configs/dcache.conf /usr/share/logstash/configs/dcache.conf
+COPY configs/dcache-mwt2.conf /usr/share/logstash/configs/dcache-mwt2.conf
 
 COPY pipelines/dcache.yml /usr/share/logstash/config/pipelines.yml
 
