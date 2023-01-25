@@ -1,0 +1,150 @@
+{
+  "_index": "ps_meta_write",
+  "is_vm": 0,
+  "tcp_info": {
+    "tcp_cc_algorithm": "htcp",
+    "tcp_max_buffer_send": 268435456,
+    "tcp_max_buffer_recv": 268435456,
+    "tcp_autotune_max_buffer_recv": 134217728,
+    "tcp_max_backlog": 1000,
+    "tcp_autotune_max_buffer_send": 134217728
+  },
+  "all_addrs_private": 0,
+  "host_memory": 16,
+  "sys_vendor": "Dell Inc.",
+  "services": {
+    "esmond": {
+      "version": "4.4.6-1.el7",
+      "enabled": 1,
+      "addresses": [
+        "https://mwt2-ps02.campuscluster.illinois.edu/esmond/perfsonar/archive/",
+        "https://127.0.0.1/esmond/perfsonar/archive/",
+        "https://::1/esmond/perfsonar/archive/"
+      ],
+      "is_running": "yes"
+    },
+    "lsregistration": {
+      "version": "4.4.6-1.el7",
+      "enabled": 1,
+      "addresses": [],
+      "is_running": "yes"
+    },
+    "owamp": {
+      "addresses": [],
+      "enabled": 1,
+      "is_running": "yes",
+      "version": "4.4.6-1.el7",
+      "daemon_port": "861",
+      "testing_ports": {
+        "test": {
+          "min_port": "8760",
+          "max_port": "9960"
+        }
+      }
+    },
+    "pscheduler": {
+      "version": "4.4.6-1.el7",
+      "enabled": 1,
+      "addresses": [
+        "https://mwt2-ps02.campuscluster.illinois.edu/pscheduler",
+        "https://127.0.0.1/pscheduler",
+        "https://::1/pscheduler"
+      ],
+      "is_running": "yes"
+    },
+    "psconfig": {
+      "version": "4.4.6-1.el7",
+      "enabled": 1,
+      "addresses": [],
+      "is_running": "yes"
+    },
+    "twamp": {
+      "addresses": [],
+      "enabled": 1,
+      "is_running": "yes",
+      "version": "4.4.6-1.el7",
+      "daemon_port": "862",
+      "testing_ports": {
+        "test": {
+          "min_port": "18760",
+          "max_port": "19960"
+        }
+      }
+    }
+  },
+  "cpu_speed": 2327.418,
+  "globally_registered": 1,
+  "privacy_link": "https://www.perfsonar.net/about/privacy-policy/",
+  "cpu_cores": 8,
+  "toolkit_name": "HOST",
+  "timestamp": 1674652162700,
+  "config": {
+    "site_name": "Midwest Tier2",
+    "access_policy": "public"
+  },
+  "product_name": "PowerEdge 1950",
+  "privacy_text": "perfSONAR Privacy Policy",
+  "templates": [
+    "http://www.mwt2.org/perfSonarMesh/mesh-mwt2.json",
+    "http://www.mwt2.org/perfSonarMesh/mesh-campus.json",
+    "http://www.mwt2.org/perfSonarMesh/mesh-itb.json",
+    "http://psconfig.opensciencegrid.org/pub/auto/mwt2-ps02.campuscluster.illinois.edu"
+  ],
+  "administrator": {
+    "email": "support@mwt2.org",
+    "name": "MWT2"
+  },
+  "ntp": {
+    "synchronized": 0
+  },
+  "ls_client_uuid": "248D03F8-8415-11E9-A6E3-D8E6E00FD8FF",
+  "toolkit_version": "4.4.6-1.el7",
+  "external_address": {
+    "ipv6_address": "2620:0:e01:4800::18",
+    "iface": "enp12s0",
+    "dns_name": "mwt2-ps02.campuscluster.illinois.edu",
+    "mtu": 9000,
+    "ipv4_address": "72.36.96.9",
+    "address": "72.36.96.9",
+    "speed": 10000000000,
+    "counters": {
+      "txfifo": 0,
+      "txcolls": 0,
+      "rxdrop": 43745,
+      "txdrop": 0,
+      "txcompr": 0,
+      "txbyt": 318802093506539,
+      "rxfifo": 0,
+      "rxframe": 0,
+      "rxpcks": 103778060034,
+      "rxbyt": 235613465255231,
+      "ttbyt": 554415558761770,
+      "txerrs": 0,
+      "txcarr": 0,
+      "rxerrs": 0,
+      "ttpcks": 232384376497,
+      "rxcompr": 0,
+      "rxmulti": 0,
+      "txpcks": 128606316463
+    }
+  },
+  "communities": [
+    "MWT2",
+    "USATLAS",
+    "ATLAS",
+    "LHC",
+    "WLCG"
+  ],
+  "configuration": {
+    "allow_internal_addresses": 0,
+    "force_toolkit_name": 0
+  },
+  "cpus": 2,
+  "distribution": "CentOS Linux 7.9.2009 (Core)",
+  "header": {
+    "destination": "/exchange/osg.status-test.raw/perfsonar.summary.meta",
+    "measurement_agent": "psetf-itb.opensciencegrid.org"
+  },
+  "host": "mwt2-ps02.campuscluster.illinois.edu",
+  "geolocation": "40.107487,-88.23"
+}
