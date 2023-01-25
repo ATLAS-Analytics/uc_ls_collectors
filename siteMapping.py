@@ -1,6 +1,7 @@
 """ maps ips to sites """
 
 import sys
+import json
 import requests
 import xml.etree.ElementTree as ET
 # import socket
@@ -10,10 +11,6 @@ from pymemcache.client import base
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
-try:
-    import simplejson as json
-except ImportError:
-    import json
 
 meshes = []
 PerfSonars = {}
