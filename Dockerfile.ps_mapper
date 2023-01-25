@@ -8,6 +8,5 @@ RUN pip install pymemcache requests psconfig-client
 RUN mkdir /usr/share/mapper/
 
 COPY siteMapping.py /usr/share/mapper/
-COPY etf_ps.py /usr/share/mapper/
 
 CMD [ "python", "/usr/share/mapper/siteMapping.py" ]
