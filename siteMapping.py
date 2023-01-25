@@ -1,9 +1,7 @@
 """ maps ips to sites """
 
 import sys
-import json
 import requests
-import xml.etree.ElementTree as ET
 import psconfig.api
 from pymemcache.client import base
 
@@ -11,22 +9,32 @@ from pymemcache.client import base
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
-
-meshes = []
 PerfSonars = {}
+
+print('loading pwa nodes')
+psc = psconfig.api.PSConfig('https://psconfig.aglt2.org/pub/config',
+                            hostcert=None, hostkey=None, verify=False)
+prod_hosts = psc.get_all_hosts()
+print(f'found {len(prod_hosts)} production hosts in PWA')
 
 client = base.Client(('memcached', 11211))
 
 
 class ps:
-    hostname = ''
-    sitename = ''
-    flavor = ''
-    VO = []
+    def __init__(self, hostname):
+        self.VO = []
+        self.sitename = []
+        self.hostname = hostname
+        self.rcsite = ''
+        self.flavor = ''
+        self.production = False
+        if self.hostname in prod_hosts:
+            self.production = True
 
-    def prnt(self):
-        print('host:', self.hostname,
-              '\tflavor:', self.flavor, '\trcsite:', self.rcsite, '\tvo:', self.VO)
+    def __str__(self):
+        s = f'host: {self.hostname} \tprod: {self.production} \tflavor: {self.flavor}'
+        s += f'\trcsite: {self.rcsite} \tvo: {self.VO} \tsitename:{self.sitename}'
+        return s
 
 
 def request(url, hostcert=None, hostkey=None, verify=False):
@@ -40,57 +48,37 @@ def request(url, hostcert=None, hostkey=None, verify=False):
 
 
 def reload():
-    print('starting mapping reload')
-
-    # timeout = 60
-    # socket.setdefaulttimeout(timeout)
-
-    # print(" --- getting sites from WLCG CRIC ---")
-    # try:
-    #     r = requests.get(
-    #         'https://wlcg-cric.cern.ch/api/core/site/query/?json&state=ACTIVE', verify=False)
-    #     res = r.json()
-    #     # print('whole json:', res)
-    #     sites = []
-    #     for _key, val in res.items():
-    #         sites.append(val["rc_site"])
-    #     print(len(sites), "sites reloaded.")
-    # except:
-    #     print("Could not get sites from CRIC. Exiting...")
-    #     print("Unexpected error: ", str(sys.exc_info()[0]))
-
     print(" --- getting PerfSonars from WLCG CRIC ---")
-    try:
-        r = requests.get(
-            'https://wlcg-cric.cern.ch/api/core/service/query/?json&state=ACTIVE&type=PerfSonar',
-            verify=False
-        )
-        res = r.json()
-        for _key, val in res.items():
-            # print(_key, val)
-            p = ps()
-            try:
-                p.hostname = val['endpoint']  # host name as in pwa
-                p.production = False
-                p.flavor = val.get('flavour', 'unknown')
-                p.rcsite = val.get('rcsite', "unknown")
+    r = requests.get(
+        'https://wlcg-cric.cern.ch/api/core/service/query/?json&state=ACTIVE&type=PerfSonar',
+        verify=False
+    )
+    res = r.json()
+    for _key, val in res.items():
+        if not val['endpoint']:
+            print('no hostname? should not happen:', val)
+            continue
+        p = ps(val['endpoint'])
 
-                usage = val.get('usage', 'unknown')
-                for exp in usage:
-                    setattr(p, exp+'_site', usage[exp][0]['site'])
-                    p.VO.append(exp)
+        try:
+            p.flavor = val.get('flavour', 'unknown')
+            p.rcsite = val.get('rcsite', "unknown")
+            usage = val.get('usage', {})
+            for exp in usage:
+                p.VO.append(exp)
+                p.sitename.append(usage[exp][0]['site'])
 
-                PerfSonars[p.hostname] = p
-            except AttributeError as e:
-                print('attribute missing.', e)
-            p.prnt()
+            client.set('vo_'+p.hostname, ','.join(p.VO))
+            client.set('sitename_'+p.hostname, ','.join(p.sitename))
+            client.set('rcsite_'+p.hostname, p.rcsite)
+            client.set('production_'+p.hostname, p.production)
 
-        print(len(PerfSonars.keys()), 'perfsonars reloaded.')
-    except:
-        print("Could not get perfsonars from CRIC. Exiting...")
-        print("Unexpected error: ", str(sys.exc_info()[0]))
+            PerfSonars[p.hostname] = p
+        except AttributeError as e:
+            print('attribute missing.', e)
+        print(p)
 
-    print('All done.')
+    print(len(PerfSonars.keys()), 'perfsonars reloaded.')
 
 
 if __name__ == "__main__":
