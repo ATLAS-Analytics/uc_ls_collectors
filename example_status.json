@@ -1,0 +1,31 @@
+{
+  "host": "psmsu02.aglt2.org",
+  "ps_esmond_freshness_throughput_wcount": 33,
+  "ps_esmond_freshness_throughput_total": 70,
+  "ps_esmond_freshness_throughput_mcount": 46,
+  "ps_esmond_freshness_throughput_complete": 41.77,
+  "_index": "ps_status_write",
+  "timestamp": 1674656673000
+}
+
+{
+  "host": "psmsu01.aglt2.org",
+  "ps_esmond_freshness_trace_wcount": 131,
+  "ps_esmond_freshness_trace_total": 133,
+  "ps_esmond_freshness_trace_mcount": 3,
+  "ps_esmond_freshness_trace_complete": 97.76,
+  "_index": "ps_status_write",
+  "timestamp": 1674656673000
+}
+
+{
+  "host": "psonar4.fnal.gov",
+  "ps_esmond_freshness_latency_wcount": 32,
+  "ps_esmond_freshness_latency_total": 59,
+  "ps_esmond_freshness_latency_mcount": 28,
+  "ps_esmond_freshness_latency_complete": 53.33,
+  "_index": "ps_status_write",
+  "timestamp": 1674656681000
+}
+
+
