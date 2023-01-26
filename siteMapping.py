@@ -1,6 +1,5 @@
 """ maps ips to sites """
 
-import sys
 import requests
 import psconfig.api
 from pymemcache.client import base

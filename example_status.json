@@ -1,4 +1,4 @@
-{
+[{
   "host": "psmsu02.aglt2.org",
   "ps_esmond_freshness_throughput_wcount": 33,
   "ps_esmond_freshness_throughput_total": 70,
@@ -15,8 +15,7 @@
   "ps_esmond_freshness_trace_complete": 97.76,
   "_index": "ps_status_write",
   "timestamp": 1674656673000
-}
-
+},
 {
   "host": "psonar4.fnal.gov",
   "ps_esmond_freshness_latency_wcount": 32,
@@ -26,5 +25,5 @@
   "_index": "ps_status_write",
   "timestamp": 1674656681000
 }
-
+]
 
