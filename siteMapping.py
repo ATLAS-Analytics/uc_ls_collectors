@@ -31,8 +31,8 @@ class ps:
             self.production = True
 
     def __str__(self):
-        s = f'host: {self.hostname} \tprod: {self.production} \tflavor: {self.flavor}'
-        s += f'\trcsite: {self.rcsite} \tvo: {self.VO} \tsitename:{self.sitename}'
+        s = f'sitename:{self.sitename} host:{self.hostname} prod:{self.production} flavor:{self.flavor}'
+        s += f' rcsite:{self.rcsite} vo:{self.VO}'
         return s
 
 
@@ -63,9 +63,13 @@ def reload():
             p.flavor = val.get('flavour', 'unknown')
             p.rcsite = val.get('rcsite', "unknown")
             usage = val.get('usage', {})
-            for exp in usage:
-                p.VO.append(exp)
-                p.sitename.append(usage[exp][0]['site'])
+            if usage:
+                for exp in usage:
+                    p.VO.append(exp)
+                    p.sitename.append(usage[exp][0]['site'])
+            else:
+                p.VO.append('unknown')
+                p.sitename.append('unknown')
 
             client.set('vo_'+p.hostname, ','.join(p.VO))
             client.set('sitename_'+p.hostname, ','.join(p.sitename))
