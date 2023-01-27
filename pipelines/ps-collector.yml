@@ -1,5 +1,4 @@
 - pipeline.id: intake
-  queue.type: persisted
   config.string: |
     input { 
       http {
