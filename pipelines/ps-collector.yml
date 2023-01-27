@@ -1,5 +1,8 @@
 - pipeline.id: ps-collector
   path.config: "/usr/share/logstash/configs/ps-collector.conf"
   pipeline.workers: 1
+- pipeline.id: ps-status
+  path.config: "/usr/share/logstash/configs/ps-status.conf"
+  pipeline.workers: 1
 #   queue.type: persisted
 #   queue.max_bytes: 4gb
