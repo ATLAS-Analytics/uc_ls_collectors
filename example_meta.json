@@ -1,5 +1,5 @@
 {
-  "_index": "ps_meta_write",
+  "type": "meta",
   "is_vm": 0,
   "tcp_info": {
     "tcp_cc_algorithm": "htcp",
@@ -77,7 +77,7 @@
   "privacy_link": "https://www.perfsonar.net/about/privacy-policy/",
   "cpu_cores": 8,
   "toolkit_name": "HOST",
-  "timestamp": 1674652162700,
+  "timestamp": 1675169857000,  
   "config": {
     "site_name": "Midwest Tier2",
     "access_policy": "public"
@@ -92,7 +92,7 @@
   ],
   "administrator": {
     "email": "support@mwt2.org",
-    "name": "MWT2"
+    "name": "Ilija"
   },
   "ntp": {
     "synchronized": 0
@@ -145,6 +145,6 @@
     "destination": "/exchange/osg.status-test.raw/perfsonar.summary.meta",
     "measurement_agent": "psetf-itb.opensciencegrid.org"
   },
-  "host": "mwt2-ps02.campuscluster.illinois.edu",
+  "ps_host": "atlas-npt2.bu.edu",
   "geolocation": "40.107487,-88.23"
 }
