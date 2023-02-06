@@ -18,6 +18,7 @@ COPY logstash.yml /usr/share/logstash/config/logstash.yml
 
 COPY configs/ps-collector.conf /usr/share/logstash/configs/ps-collector.conf
 COPY configs/ps-status.conf /usr/share/logstash/configs/ps-status.conf
+COPY configs/ps-meta.conf /usr/share/logstash/configs/ps-meta.conf
 
 COPY pipelines/ps-collector.yml /usr/share/logstash/config/pipelines.yml
 
