@@ -1,4 +1,4 @@
-FROM docker.elastic.co/logstash/logstash:8.3.3
+FROM docker.elastic.co/logstash/logstash:8.6.1
 
 LABEL maintainer="Ilija Vukotic <ivukotic@cern.ch>"
 
@@ -16,7 +16,7 @@ RUN mkdir /var/log/logstash && chown -R logstash /var/log/logstash
 
 COPY logstash.yml /usr/share/logstash/config/logstash.yml
 
-COPY configs/ps-collector.conf /usr/share/logstash/configs/ps-collector.conf
+# COPY configs/ps-collector.conf /usr/share/logstash/configs/ps-collector.conf
 COPY configs/ps-status.conf /usr/share/logstash/configs/ps-status.conf
 COPY configs/ps-meta.conf /usr/share/logstash/configs/ps-meta.conf
 COPY configs/ps-latencybg.conf /usr/share/logstash/configs/ps-latencybg.conf
