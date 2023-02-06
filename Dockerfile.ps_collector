@@ -19,6 +19,10 @@ COPY logstash.yml /usr/share/logstash/config/logstash.yml
 COPY configs/ps-collector.conf /usr/share/logstash/configs/ps-collector.conf
 COPY configs/ps-status.conf /usr/share/logstash/configs/ps-status.conf
 COPY configs/ps-meta.conf /usr/share/logstash/configs/ps-meta.conf
+COPY configs/ps-latencybg.conf /usr/share/logstash/configs/ps-latencybg.conf
+COPY configs/ps-throughput.conf /usr/share/logstash/configs/ps-throughput.conf
+COPY configs/ps-trace.conf /usr/share/logstash/configs/ps-trace.conf
+COPY configs/ps-intake.conf /usr/share/logstash/configs/ps-intake.conf
 
 COPY pipelines/ps-collector.yml /usr/share/logstash/config/pipelines.yml
 

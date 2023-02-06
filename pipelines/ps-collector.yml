@@ -8,26 +8,8 @@
   path.config: "/usr/share/logstash/configs/ps-meta.conf"
   pipeline.workers: 1
 - pipeline.id: intake
+  path.config: "/usr/share/logstash/configs/ps-intake.conf"
   queue.type: persisted
   pipeline.workers: 2
-  config.string: |
-    input { 
-      http {
-        host => "0.0.0.0"
-        port => "80"
-      }
-    }
-    output { 
-      if [type]=="meta" {
-        pipeline { send_to => ["ps-meta"] } 
-      }
-      else if [type]=="status" {
-        pipeline { send_to => ["ps-status"] } 
-      }
-      else {
-        pipeline { send_to => ["ps-collector"] } 
-      }
-    }
-
 #   queue.type: persisted
 #   queue.max_bytes: 4gb
