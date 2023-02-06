@@ -1,5 +1,11 @@
-- pipeline.id: ps-collector
-  path.config: "/usr/share/logstash/configs/ps-collector.conf"
+- pipeline.id: ps-trace
+  path.config: "/usr/share/logstash/configs/ps-trace.conf"
+  pipeline.workers: 1
+- pipeline.id: ps-latencybg
+  path.config: "/usr/share/logstash/configs/ps-latencybg.conf"
+  pipeline.workers: 1
+- pipeline.id: ps-throughput
+  path.config: "/usr/share/logstash/configs/ps-throughput.conf"
   pipeline.workers: 1
 - pipeline.id: ps-status
   path.config: "/usr/share/logstash/configs/ps-status.conf"
