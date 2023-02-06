@@ -1,3 +1,12 @@
+- pipeline.id: ps-collector
+  path.config: "/usr/share/logstash/configs/ps-collector.conf"
+  pipeline.workers: 1
+- pipeline.id: ps-status
+  path.config: "/usr/share/logstash/configs/ps-status.conf"
+  pipeline.workers: 1
+- pipeline.id: ps-meta
+  path.config: "/usr/share/logstash/configs/ps-meta.conf"
+  pipeline.workers: 1
 - pipeline.id: intake
   queue.type: persisted
   pipeline.workers: 2
@@ -19,11 +28,6 @@
         pipeline { send_to => ["ps-collector"] } 
       }
     }
-- pipeline.id: ps-collector
-  path.config: "/usr/share/logstash/configs/ps-collector.conf"
-  pipeline.workers: 1
-- pipeline.id: ps-status
-  path.config: "/usr/share/logstash/configs/ps-status.conf"
-  pipeline.workers: 1
+
 #   queue.type: persisted
 #   queue.max_bytes: 4gb
