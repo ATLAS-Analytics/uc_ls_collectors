@@ -17,5 +17,8 @@
   path.config: "/usr/share/logstash/configs/ps-intake.conf"
   queue.type: persisted
   pipeline.workers: 2
+- pipeline.id: es-output
+  path.config: "/usr/share/logstash/configs/es-output.conf"
+  pipeline.workers: 1
 #   queue.type: persisted
 #   queue.max_bytes: 4gb
