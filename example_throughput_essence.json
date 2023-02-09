@@ -1,0 +1,23 @@
+{
+    "result": {
+        "summary": {
+            "summary": {
+                "retransmits": 0,
+                "throughput-bytes": 27750563840
+            }
+        }
+    },
+    "run": {
+        "end-time": "2022-03-03T18:13:23Z"
+    },
+    "test": {
+        "type": "throughput",
+        "spec": {
+            "dest": "bdw.scinet.utoronto.ca",
+            "source": "psum02.aglt2.org",
+            "ip-version": 4
+        }
+    },
+    "@timestamp": "2022-03-03T18:13:29.601Z",
+    "id": "3c9a07a1-7fb5-49ce-a447-38383830d670"
+}
