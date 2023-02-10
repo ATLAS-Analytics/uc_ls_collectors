@@ -1,0 +1,118 @@
+{
+    "id": "1cba0413-887a-443a-b923-b591fef12111",
+    "run": {
+        "end-time": "2022-03-01T18:13:52Z"
+    },
+    "@timestamp": "2022-03-01T18:13:58.060Z",
+
+    "result": {
+        "succeeded": true,
+        "schema": 1,
+        "paths": [
+            [
+                {
+                    "rtt": "PT0.0006S",
+                    "as": {
+                        "owner": "MERIT-AS-14, US",
+                        "number": 237
+                    },
+                    "ip": "2001:48a8:68f7:1:fa6b:d9ff:fe2d:b1cb"
+                },
+                {
+                    "rtt": "PT0.0007S",
+                    "as": {
+                        "owner": "MERIT-AS-14, US",
+                        "number": 237
+                    },
+                    "ip": "2001:48a8:68f7:ff06::"
+                },
+                {
+                    "rtt": "PT0.0008S",
+                    "as": {
+                        "owner": "UMICH-AS-5, US",
+                        "number": 36375
+                    },
+                    "ip": "2607:f018:ffff:102::"
+                },
+                {
+                    "hostname": "star-cr6--aglt2-se303.lhcone.es.net",
+                    "rtt": "PT0.0055S",
+                    "as": {
+                        "owner": "ESNET, US",
+                        "number": 293
+                    },
+                    "ip": "2001:400:f002:38::5"
+                },
+                {
+                    "rtt": "PT0.0965S",
+                    "as": {
+                        "owner": "GEANT The GEANT IP Service, NL",
+                        "number": 20965
+                    },
+                    "ip": "2001:798:111:1::26"
+                },
+                {
+                    "rtt": "PT0.0966S",
+                    "as": {
+                        "owner": "GEANT The GEANT IP Service, NL",
+                        "number": 20965
+                    },
+                    "ip": "2001:798:111:1::26"
+                },
+                {
+                    "rtt": "PT0.1036S",
+                    "as": {
+                        "owner": "GEANT The GEANT IP Service, NL",
+                        "number": 20965
+                    },
+                    "ip": "2001:798:111:1::5d"
+                },
+                {},
+                {
+                    "hostname": "kr-fzk85-2.x-win.dfn.de",
+                    "rtt": "PT0.1062S",
+                    "as": {
+                        "owner": "DFN Verein zur Foerderung eines Deutschen Forschungsnetzes e.V., DE",
+                        "number": 680
+                    },
+                    "ip": "2001:638:c:da40::2"
+                },
+                {
+                    "hostname": "kr-fzk85-2.x-win.dfn.de",
+                    "rtt": "PT0.1064S",
+                    "as": {
+                        "owner": "DFN Verein zur Foerderung eines Deutschen Forschungsnetzes e.V., DE",
+                        "number": 680
+                    },
+                    "ip": "2001:638:c:da40::2"
+                },
+                {
+                    "hostname": "tn-v2103-vrf-rg1.gridka.de",
+                    "rtt": "PT0.1061S",
+                    "as": {
+                        "owner": "KIT Karlsruhe Institute of Technology, DE",
+                        "number": 34878
+                    },
+                    "ip": "2a00:139c:0:8104::1"
+                },
+                {
+                    "hostname": "perfsonar2-de-kit.gridka.de",
+                    "rtt": "PT0.1054S",
+                    "as": {
+                        "owner": "KIT Karlsruhe Institute of Technology, DE",
+                        "number": 34878
+                    },
+                    "ip": "2a00:139c:5:585:0:41:2:12"
+                }
+            ]
+        ]
+    },
+    "test": {
+        "type": "trace",
+        "spec": {
+            "dest": "perfsonar2-de-kit.gridka.de",
+            "source": "psum01.aglt2.org",
+            "ip-version": 6
+        }
+    }
+}

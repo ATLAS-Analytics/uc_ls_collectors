@@ -21,3 +21,28 @@
     "@timestamp": "2022-03-03T18:13:29.601Z",
     "id": "3c9a07a1-7fb5-49ce-a447-38383830d670"
 }
+
+{   
+    "result": {
+        "summary": {
+            "summary": {
+                "throughput-bytes": 957979914.0, 
+                "retransmits": 351.0
+            }
+        }
+    }, 
+    "test": {
+        "spec": {
+            "source": "138.253.60.81", 
+            "dest": "163.1.5.11", 
+            "ip-version": 4
+        }, 
+        "type": "throughput"
+    }, 
+    "run": {
+        "end-time": 1676051268
+    }, 
+    "@timestamp": 1676057089198.503, 
+    "id": "fceaa7da-6fda-42a8-8a77-c0ed8c1d037", 
+    "push": "false"
+}
