@@ -16,7 +16,7 @@
 - pipeline.id: intake
   path.config: "/usr/share/logstash/configs/ps-intake.conf"
   queue.type: persisted
-  pipeline.workers: 2
+  pipeline.workers: 4
 - pipeline.id: es-output
   path.config: "/usr/share/logstash/configs/es-output.conf"
   pipeline.workers: 1
