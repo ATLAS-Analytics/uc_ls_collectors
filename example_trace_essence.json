@@ -6,14 +6,11 @@
     "@timestamp": "2022-03-01T18:13:58.060Z",
 
     "result": {
-        "succeeded": true,
-        "schema": 1,
         "paths": [
             [
                 {
                     "rtt": "PT0.0006S",
                     "as": {
-                        "owner": "MERIT-AS-14, US",
                         "number": 237
                     },
                     "ip": "2001:48a8:68f7:1:fa6b:d9ff:fe2d:b1cb"
