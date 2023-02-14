@@ -13,7 +13,7 @@ def filter(event)
     rtts = []
     hs.each do |h|
         if h.length > 0
-            hops.push(h["ip"])
+            hops.push(h["ip"].strip)
             rtts.push(h["rtt"][2,6].to_f * 1000)
             ttls.push(c)
             if h["as"]
