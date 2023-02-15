@@ -25,7 +25,7 @@ def bulk_send(data):
     sends the data to logstash.
     """
     for d in data:
-        d['push'] = False
+        d['pull'] = True
         print(d)
         response = requests.put(
             "https://ps-collection.atlas-ml.org", json=d,

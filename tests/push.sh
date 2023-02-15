@@ -15,5 +15,5 @@ curl -X POST 'https://ps-collection.atlas-ml.org' --header 'Content-Type: applic
     }, 
     "@timestamp": "2023-02-14T18:34:23Z", 
     "id": "1234567892",
-    "push":false
+    "pull":true
 }'
