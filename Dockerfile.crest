@@ -13,9 +13,9 @@ RUN mkdir /var/log/logstash && chown -R logstash /var/log/logstash
 
 COPY logstash.yml /usr/share/logstash/config/logstash.yml
 
-COPY configs/servicex.conf /usr/share/logstash/configs/servicex.conf
+COPY configs/crest.conf /usr/share/logstash/configs/crest.conf
 
-COPY pipelines/servicex.yml /usr/share/logstash/config/pipelines.yml
+COPY pipelines/crest.yml /usr/share/logstash/config/pipelines.yml
 
 # COPY filters/* /usr/share/logstash/filters/
 
