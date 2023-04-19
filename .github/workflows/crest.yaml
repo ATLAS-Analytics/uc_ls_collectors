@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.5.2
 
       - name: Docker Build & Push Action
-        uses: mr-smithers-excellent/docker-build-push@v5.6
+        uses: mr-smithers-excellent/docker-build-push@v6.2
         with:
           image: atlasanalyticsservice/uc_ls_crest
           dockerfile: Dockerfile.crest
@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v1
+        uses: peter-evans/repository-dispatch@v2.1.1
         with:
           token: ${{ secrets.AAAS_GITOPS_DEPLOY_TRIGGER }}
           repository: maniaclab/river_apps
