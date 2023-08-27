@@ -40,7 +40,7 @@ print('loading net sites')
 netsites = requests.get('https://wlcg-cric.cern.ch/api/core/rcsite/query/list/?json', verify=False).json()
 netsites_mapping = get_subnets_mapping(netsites)
 
-client = base.Client(('localhost', 11211))
+client = base.Client(('memcached', 11211))
 
 
 class ps:
