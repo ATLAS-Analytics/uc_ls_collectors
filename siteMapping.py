@@ -113,6 +113,8 @@ def reload():
             (ip4, ip6) = get_ip(p.hostname)
             if ip4:
                 p.netsite = get_netsite(ip4)
+            if not p.netsite:
+                p.netsite = p.rcsite
             usage = val.get('usage', {})
             if usage:
                 for exp in usage:
