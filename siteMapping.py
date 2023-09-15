@@ -1,6 +1,8 @@
 """ maps ips to sites """
 
 import requests
+import socket
+import ipaddress
 import psconfig.api
 from pymemcache.client import base
 
@@ -16,6 +18,28 @@ psc = psconfig.api.PSConfig('https://psconfig.aglt2.org/pub/config',
 prod_hosts = psc.get_all_hosts()
 print(f'found {len(prod_hosts)} production hosts in PWA')
 
+
+def get_subnets_mapping(data):
+    subnets_mapping = {}
+    for _, site in data.items():
+        if 'netroutes' not in site.keys():
+            continue
+        for netroute, nets in site["netroutes"].items():
+            subnets = nets["networks"].get("ipv4", []) + nets["networks"].get("ipv6", [])
+            for subnet in subnets:
+                try:
+                    cidr_subnet = ipaddress.ip_network(subnet)
+                except ValueError:
+                    print(f'Subnet {subnet} is not a subnet')
+                    continue
+                subnets_mapping[cidr_subnet] = netroute
+    return subnets_mapping
+
+
+print('loading net sites')
+netsites = requests.get('https://wlcg-cric.cern.ch/api/core/rcsite/query/list/?json', verify=False).json()
+netsites_mapping = get_subnets_mapping(netsites)
+
 client = base.Client(('memcached', 11211))
 
 
@@ -25,6 +49,7 @@ class ps:
         self.sitename = []
         self.hostname = hostname
         self.rcsite = ''
+        self.netsite = ''
         self.flavor = ''
         self.production = False
         if self.hostname in prod_hosts:
@@ -32,7 +57,7 @@ class ps:
 
     def __str__(self):
         s = f'sitename:{self.sitename} host:{self.hostname} prod:{self.production} flavor:{self.flavor}'
-        s += f' rcsite:{self.rcsite} vo:{self.VO}'
+        s += f' rcsite:{self.rcsite} vo:{self.VO} netsite:{self.netsite}'
         return s
 
 
@@ -44,6 +69,29 @@ def request(url, hostcert=None, hostkey=None, verify=False):
         req = requests.get(url, timeout=120, verify=verify)
     req.raise_for_status()
     return req.content
+
+
+def get_ip(host):
+    try:
+        host_addr = socket.getaddrinfo(host, 80, 0, 0, socket.IPPROTO_TCP)
+    except socket.gaierror:
+        print(f'Unable to resolve {host}')
+        return None, None
+    ip4, ip6 = None
+
+    for family, _, _, _, sockaddr in host_addr:
+        if family == socket.AF_INET:
+            ip4 = ipaddress.ip_address(sockaddr[0])
+        elif family == socket.AF_INET6:
+            ip6 = ipaddress.ip_address(sockaddr[0])
+    return ip4, ip6
+
+
+def get_netsite(ip_address):
+    for subnet in netsites_mapping.keys():
+        if ip_address in subnet:
+            return netsites_mapping[subnet]
+    return ''
 
 
 def reload():
@@ -62,6 +110,11 @@ def reload():
         try:
             p.flavor = val.get('flavour', 'unknown')
             p.rcsite = val.get('rcsite', "unknown")
+            (ip4, ip6) = get_ip(p.hostname)
+            if ip4:
+                p.netsite = get_netsite(ip4)
+            if not p.netsite:
+                p.netsite = p.rcsite
             usage = val.get('usage', {})
             if usage:
                 for exp in usage:
@@ -74,6 +127,7 @@ def reload():
             client.set('vo_'+p.hostname, ','.join(p.VO))
             client.set('sitename_'+p.hostname, ','.join(p.sitename))
             client.set('rcsite_'+p.hostname, p.rcsite)
+            client.set('netsite_'+p.hostname, p.netsite)
             client.set('production_'+p.hostname, p.production)
 
             PerfSonars[p.hostname] = p
