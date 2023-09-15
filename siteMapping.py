@@ -37,7 +37,8 @@ def get_subnets_mapping(data):
 
 
 print('loading net sites')
-netsites = requests.get('https://wlcg-cric.cern.ch/api/core/rcsite/query/list/?json', verify=False).json()
+netsites = requests.get(
+    'https://wlcg-cric.cern.ch/api/core/rcsite/query/list/?json', verify=False).json()
 netsites_mapping = get_subnets_mapping(netsites)
 
 client = base.Client(('memcached', 11211))
@@ -56,8 +57,8 @@ class ps:
             self.production = True
 
     def __str__(self):
-        s = f'sitename:{self.sitename} host:{self.hostname} prod:{self.production} flavor:{self.flavor}'
-        s += f' rcsite:{self.rcsite} vo:{self.VO} netsite:{self.netsite}'
+        s = f'sitename:{self.sitename} host:{self.hostname} prod:{self.production}'
+        s += f' flavor:{self.flavor} rcsite:{self.rcsite} vo:{self.VO} netsite:{self.netsite}'
         return s
 
 
