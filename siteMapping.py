@@ -73,12 +73,14 @@ def request(url, hostcert=None, hostkey=None, verify=False):
 
 
 def get_ip(host):
+
+    ip4, ip6 = None, None
+
     try:
         host_addr = socket.getaddrinfo(host, 80, 0, 0, socket.IPPROTO_TCP)
     except socket.gaierror:
         print(f'Unable to resolve {host}')
-        return None, None
-    ip4, ip6 = None
+        return ip4, ip6
 
     for family, _, _, _, sockaddr in host_addr:
         if family == socket.AF_INET:
