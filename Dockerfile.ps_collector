@@ -18,6 +18,7 @@ COPY logstash.yml /usr/share/logstash/config/logstash.yml
 
 # COPY configs/ps-collector.conf /usr/share/logstash/configs/ps-collector.conf
 COPY configs/ps-status.conf /usr/share/logstash/configs/ps-status.conf
+COPY configs/ps-extra.conf /usr/share/logstash/configs/ps-extra.conf
 COPY configs/ps-meta.conf /usr/share/logstash/configs/ps-meta.conf
 COPY configs/ps-latencybg.conf /usr/share/logstash/configs/ps-latencybg.conf
 COPY configs/ps-throughput.conf /usr/share/logstash/configs/ps-throughput.conf

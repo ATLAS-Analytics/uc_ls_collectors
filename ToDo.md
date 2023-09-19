@@ -4,6 +4,5 @@
 
 * make logstash parser for "meta", "status".
 
-* add more sites for stress testing.
 * add scripted variables.
 * add trace hash calculation.
