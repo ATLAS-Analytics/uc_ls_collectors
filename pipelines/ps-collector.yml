@@ -1,6 +1,9 @@
 - pipeline.id: ps-extra
   path.config: "/usr/share/logstash/configs/ps-extra.conf"
   pipeline.workers: 1
+- pipeline.id: ps-rtt
+  path.config: "/usr/share/logstash/configs/ps-rtt.conf"
+  pipeline.workers: 1
 - pipeline.id: ps-trace
   path.config: "/usr/share/logstash/configs/ps-trace.conf"
   pipeline.workers: 1

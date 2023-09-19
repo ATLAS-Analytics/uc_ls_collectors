@@ -1,0 +1,155 @@
+{
+    "tags": "_extra",
+    "@version": "1",
+    "participants": [
+        "psmsu01.aglt2.org"
+    ],
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "schema": 1,
+            "dest": "psum01.aglt2.org",
+            "count": 5,
+            "interval": "PT0.1S",
+            "source": "psmsu01.aglt2.org"
+        }
+    },
+    "reference": {
+        "psconfig": {
+            "created-by": {
+                "user-agent": "psconfig-pscheduler-agent",
+                "uuid": "C17C0F24-F16E-11EB-9CE4-D9FBE18EB470"
+            }
+        }
+    },
+    "host": "192.168.26.11",
+    "schedule": {
+        "duration": "PT8S",
+        "start": "2023-09-19T16: 43: 57Z"
+    },
+    "task": {
+        "schedule": {
+            "until": "2023-09-20T16: 41: 59Z",
+            "sliprand": true,
+            "slip": "PT5M",
+            "repeat": "PT10M"
+        },
+        "detail": {
+            "multi-result": false,
+            "duration": "PT8S",
+            "hints": {
+                "server": "2001: 48a8: 68f7: 8001: 192: 41: 236: 31",
+                "requester": "2001: 48a8: 68f7: 8001: 192: 41: 236: 31"
+            },
+            "post": "P0D",
+            "diags": "Hints:\n  requester: 2001: 48a8: 68f7: 8001: 192: 41: 236: 31\n  server: 2001: 48a8: 68f7: 8001: 192: 41: 236: 31\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,1/1 passed,0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0",
+            "runs-started": 1,
+            "runs": 6,
+            "participants": [
+                "psmsu01.aglt2.org"
+            ],
+            "anytime": true,
+            "start": null,
+            "cli": [
+                "--count",
+                "5",
+                "--dest",
+                "psum01.aglt2.org",
+                "--interval",
+                "PT0.1S",
+                "--source",
+                "psmsu01.aglt2.org"
+            ],
+            "slip": "PT5M",
+            "exclusive": false,
+            "enabled": true,
+            "added": "2023-09-19T16:43:27+00:00",
+            "participant": 0
+        },
+        "test": {
+            "type": "rtt",
+            "spec": {
+                "schema": 1,
+                "dest": "psum01.aglt2.org",
+                "count": 5,
+                "interval": "PT0.1S",
+                "source": "psmsu01.aglt2.org"
+            }
+        },
+        "schema": 1,
+        "reference": {
+            "psconfig": {
+                "created-by": {
+                    "user-agent": "psconfig-pscheduler-agent",
+                    "uuid": "C17C0F24-F16E-11EB-9CE4-D9FBE18EB470"
+                }
+            }
+        },
+        "tool": "ping",
+        "href": "https://psmsu01.aglt2.org/pscheduler/tasks/ab271e26-c587-465a-887b-ec94e397982e"
+    },
+    "result": {
+        "reorders": 0,
+        "received": 0,
+        "succeeded": true,
+        "loss": 1.0,
+        "schema": 1,
+        "roundtrips": [],
+        "lost": 5,
+        "sent": 5,
+        "duplicates": 0
+    },
+    "tool": {
+        "name": "ping",
+        "version": "1.0"
+    },
+    "id": "33991702-7434-4a22-b1ac-c676656c3da0",
+    "run": {
+        "duration": "PT2S",
+        "state": "finished",
+        "participants": [
+            "psmsu01.aglt2.org"
+        ],
+        "result-merged": {
+            "reorders": 0,
+            "received": 0,
+            "succeeded": true,
+            "loss": 1.0,
+            "schema": 1,
+            "roundtrips": [],
+            "lost": 5,
+            "sent": 5,
+            "duplicates": 0
+        },
+        "end-time": "2023-09-19T16: 43: 59+00: 00",
+        "task-href": "https: //psmsu01.aglt2.org/pscheduler/tasks/ab271e26-c587-465a-887b-ec94e397982e",
+        "href": "https://psmsu01.aglt2.org/pscheduler/tasks/ab271e26-c587-465a-887b-ec94e397982e/runs/33991702-7434-4a22-b1ac-c676656c3da0",
+        "result-full": [
+            {
+                "schema": 1,
+                "error": null,
+                "succeeded": true,
+                "diags": "sudo ping6 -n -c 5 -i 0.1 -I 2001: 48a8: 68f7: 8001: 192: 41: 236: 31 -W 1.0 2001: 48a8: 68f7: 1: 192: 41: 230: 59\n\n",
+                "result": {
+                    "reorders": 0,
+                    "received": 0,
+                    "succeeded": true,
+                    "loss": 1.0,
+                    "schema": 1,
+                    "roundtrips": [],
+                    "lost": 5,
+                    "sent": 5,
+                    "duplicates": 0
+                }
+            }
+        ],
+        "errors": null,
+        "state-display": "Finished",
+        "start-time": "2023-09-19T16: 43: 57+00: 00",
+        "limit-diags": "Hints:\n  requester: 2001: 48a8: 68f7: 8001: 192: 41: 236: 31\n server: 2001: 48a8: 68f7: 8001: 192: 41: 236: 31\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,1/1 passed,0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set at 0:\n  Initial priority  (Set to 0)",
+        "priority": null,
+        "added": "2023-09-19T16: 43: 28+00: 00",
+        "participant": 0
+    },
+    "@timestamp": "2023-09-19T16: 43: 59.586043112Z"
+}
