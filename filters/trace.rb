@@ -32,6 +32,8 @@ def filter(event)
     event.set('ttls', ttls)
     event.set('asns', asns)
     event.set('rtts', rtts)
+    event.set('max_rtt', rtts.max)
+    event.set('looping',hops.uniq.length!=hops.length)
 
     if hops.last() == dest
         hops.pop()
