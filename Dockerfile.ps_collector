@@ -26,6 +26,7 @@ COPY configs/ps-throughput.conf /usr/share/logstash/configs/ps-throughput.conf
 COPY configs/ps-trace.conf /usr/share/logstash/configs/ps-trace.conf
 COPY configs/ps-intake.conf /usr/share/logstash/configs/ps-intake.conf
 COPY configs/es-output.conf /usr/share/logstash/configs/es-output.conf
+COPY configs/es-output.conf /usr/share/logstash/configs/ps-debug.conf
 
 COPY pipelines/ps-collector.yml /usr/share/logstash/config/pipelines.yml
 
