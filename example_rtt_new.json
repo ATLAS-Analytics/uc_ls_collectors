@@ -1,605 +1,1876 @@
 {
-    "dest_production": true,
-    "src_production": true,
-    "duplicates": 0,
-    "src_rcsite": "pic",
-    "lost": 10,
-    "src_site": "pic",
-    "dest_VO": "UNKNOWN",
-    "src_host": "picperfsonar-bandwidth.pic.es",
-    "@timestamp": "2023-12-14T15:33:11.244242176Z",
     "loss": 1.0,
-    "destination": {
-        "ipv6": "2400:4500:0:2:0:0:0:164c",
-        "ipv4": "202.140.176.76"
+    "dest_netsite": "RRC-KI-T1-LHCOPNE",
+    "src_host": "picperfsonar-bandwidth.pic.es",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
     },
+    "sent": 10,
     "reorders": 0,
-    "dest_rcsite": "Taiwan-LCG2",
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "btw-lat.t1.grid.kiae.ru",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "picperfsonar-bandwidth.pic.es"
+        }
+    },
+    "@timestamp": "2023-12-14T15:42:59.515117674Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T15:42:58+00:00",
+    "src_rcsite": "pic",
     "source": {
         "ipv6": "2001:67c:1148:204:0:0:0:250",
         "ipv4": "193.109.172.250"
     },
-    "src_netsite": "pic-LHCOPNE",
-    "dest": "2400:4500:0:2:0:0:0:164c",
-    "src_VO": "ATLAS",
+    "dest_VO": "ATLAS",
     "src": "2001:67c:1148:204:0:0:0:250",
-    "dest_site": "unknown",
-    "sent": 10,
-    "push": true,
-    "dest_host": "lhc-bandwidth.twgrid.org",
-    "@version": "1",
     "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "RRC-KI-T1",
+    "src_site": "pic",
+    "destination": {
+        "ipv6": "2001:67c:1bec:236:0:0:0:189",
+        "ipv4": "144.206.236.189"
+    },
+    "dest_site": "RRC-KI-T1",
+    "ingest_timestamp": "2023-12-14T15:42:59.515117674Z",
+    "dest_host": "btw-lat.t1.grid.kiae.ru",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "pic-LHCOPNE",
+    "ipv6": true,
+    "dest": "2001:67c:1bec:236:0:0:0:189"
+}{
+    "loss": 1.0,
+    "dest_netsite": "BNL-ATLAS-LHCOPNE",
+    "src_host": "btw-lat.t1.grid.kiae.ru",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "lhcperfmon.bnl.gov",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "btw-lat.t1.grid.kiae.ru"
+        }
+    },
+    "@timestamp": "2023-12-14T15:43:02.955407465Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T15:43:02+00:00",
+    "src_rcsite": "RRC-KI-T1",
+    "source": {
+        "ipv6": "2001:67c:1bec:236:0:0:0:189",
+        "ipv4": "144.206.236.189"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2001:67c:1bec:236:0:0:0:189",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "BNL-ATLAS",
+    "src_site": "RRC-KI-T1",
+    "destination": {
+        "ipv6": "2620:0:210:1:0:0:0:26",
+        "ipv4": "192.12.15.26"
+    },
+    "dest_site": "BNLLAKE",
+    "ingest_timestamp": "2023-12-14T15:43:02.955407465Z",
+    "dest_host": "lhcperfmon.bnl.gov",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "RRC-KI-T1-LHCOPNE",
+    "ipv6": true,
+    "dest": "2620:0:210:1:0:0:0:26"
+}{
+    "loss": 1.0,
     "dest_netsite": "Taiwan-LCG2-LHCOPNE",
-    "ingest_timestamp": "2023-12-14T15:33:10.218932748Z",
-    "ipv6": true,
-    "timestamp": "2023-12-14T15:33:09+00:00"
-}{
-    "dest_production": true,
-    "src_production": true,
-    "duplicates": 0,
-    "src_rcsite": "pic",
-    "lost": 10,
-    "src_site": "pic",
-    "dest_VO": "ATLAS",
-    "src_host": "picperfsonar-latency.pic.es",
-    "@timestamp": "2023-12-14T15:33:12.350975387Z",
-    "loss": 1.0,
-    "destination": {
-        "ipv6": "2001:660:5009:9:193:48:99:76",
-        "ipv4": "193.48.99.76"
-    },
-    "reorders": 0,
-    "dest_rcsite": "IN2P3-CC",
-    "source": {
-        "ipv6": "2001:67c:1148:203:0:0:0:242",
-        "ipv4": "193.109.172.242"
-    },
-    "src_netsite": "pic-LHCOPNE",
-    "dest": "2001:660:5009:9:193:48:99:76",
-    "src_VO": "ATLAS",
-    "src": "2001:67c:1148:203:0:0:0:242",
-    "dest_site": "IN2P3-CC-T3",
-    "sent": 10,
-    "push": true,
-    "dest_host": "ccperfsonar2.in2p3.fr",
-    "@version": "1",
-    "received": 0,
-    "dest_netsite": "IN2P3-CC-LHCOPNE",
-    "ingest_timestamp": "2023-12-14T15:33:11.678161574Z",
-    "ipv6": true,
-    "timestamp": "2023-12-14T15:33:11+00:00"
-}{
-    "dest_production": true,
-    "src_production": true,
-    "duplicates": 0,
-    "src_rcsite": "pic",
-    "lost": 10,
-    "src_site": "pic",
-    "dest_VO": "ATLAS",
-    "src_host": "picperfsonar-bandwidth.pic.es",
-    "@timestamp": "2023-12-14T15:33:18.071318524Z",
-    "loss": 1.0,
-    "destination": {
-        "ipv6": "2001:660:5009:9:193:48:99:76",
-        "ipv4": "193.48.99.76"
-    },
-    "reorders": 0,
-    "dest_rcsite": "IN2P3-CC",
-    "source": {
-        "ipv6": "2001:67c:1148:204:0:0:0:250",
-        "ipv4": "193.109.172.250"
-    },
-    "src_netsite": "pic-LHCOPNE",
-    "dest": "2001:660:5009:9:193:48:99:76",
-    "src_VO": "ATLAS",
-    "src": "2001:67c:1148:204:0:0:0:250",
-    "dest_site": "IN2P3-CC-T3",
-    "sent": 10,
-    "push": true,
-    "dest_host": "ccperfsonar2.in2p3.fr",
-    "@version": "1",
-    "received": 0,
-    "dest_netsite": "IN2P3-CC-LHCOPNE",
-    "ingest_timestamp": "2023-12-14T15:33:15.509326438Z",
-    "ipv6": true,
-    "timestamp": "2023-12-14T15:33:14+00:00"
-}{
-    "dest_production": true,
-    "src_production": true,
-    "duplicates": 0,
-    "src_rcsite": "NDGF-T1",
-    "lost": 10,
-    "src_site": "NDGF-T1",
-    "dest_VO": "ATLAS",
     "src_host": "perfsonar-ps.ndgf.org",
-    "@timestamp": "2023-12-14T15:33:21.955478757Z",
-    "loss": 1.0,
-    "destination": {
-        "ipv6": "2a00:139c:5:585:0:41:2:6",
-        "ipv4": "192.108.47.6"
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
     },
+    "sent": 10,
     "reorders": 0,
-    "dest_rcsite": "FZK-LCG2",
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "lhc-bandwidth.twgrid.org",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "perfsonar-ps.ndgf.org"
+        }
+    },
+    "@timestamp": "2023-12-14T15:43:03.510271302Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T15:43:02+00:00",
+    "src_rcsite": "NDGF-T1",
     "source": {
         "ipv6": "2001:948:40:3:0:0:0:86",
         "ipv4": "109.105.124.86"
     },
-    "src_netsite": "NDGF-T1-LHCOPNE",
-    "dest": "2a00:139c:5:585:0:41:2:6",
-    "src_VO": "ATLAS",
-    "src": "2001:948:40:3:0:0:0:86",
-    "dest_site": "FZK-LCG2",
-    "sent": 10,
-    "push": true,
-    "dest_host": "perfsonar-de-kit.gridka.de",
-    "@version": "1",
-    "received": 0,
-    "dest_netsite": "FZK-LCG2-LHCOPNE",
-    "ingest_timestamp": "2023-12-14T15:33:21.579621015Z",
-    "ipv6": true,
-    "timestamp": "2023-12-14T15:33:20+00:00"
-}{
-    "dest_production": true,
-    "src_production": true,
-    "duplicates": 0,
-    "src_rcsite": "INFN-T1",
-    "lost": 10,
-    "src_site": "INFN-T1",
     "dest_VO": "UNKNOWN",
-    "src_host": "perfsonar-ps.cnaf.infn.it",
-    "@timestamp": "2023-12-14T15:33:22.508240182Z",
-    "loss": 1.0,
+    "src": "2001:948:40:3:0:0:0:86",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "Taiwan-LCG2",
+    "src_site": "NDGF-T1",
     "destination": {
-        "ipv6": "2a05:81c5:301:228:0:0:0:e597",
-        "ipv4": "159.93.229.151"
+        "ipv6": "2400:4500:0:2:0:0:0:164c",
+        "ipv4": "202.140.176.76"
     },
-    "reorders": 0,
-    "dest_rcsite": "JINR-T1",
-    "source": {
-        "ipv6": "2001:760:4205:254:0:0:0:11",
-        "ipv4": "131.154.254.11"
-    },
-    "src_netsite": "INFN-T1-LHCOPNE",
-    "dest": "2a05:81c5:301:228:0:0:0:e597",
-    "src_VO": "ATLAS",
-    "src": "2001:760:4205:254:0:0:0:11",
     "dest_site": "unknown",
-    "sent": 10,
-    "push": true,
-    "dest_host": "t1-pfsn2.jinr-t1.ru",
-    "@version": "1",
-    "received": 0,
-    "dest_netsite": "JINR-T1-LHCOPNE",
-    "ingest_timestamp": "2023-12-14T15:33:21.931519696Z",
-    "ipv6": true,
-    "timestamp": "2023-12-14T15:33:20+00:00"
-}{
+    "ingest_timestamp": "2023-12-14T15:43:03.510271302Z",
+    "dest_host": "lhc-bandwidth.twgrid.org",
     "dest_production": true,
-    "src_production": true,
-    "duplicates": 0,
-    "src_rcsite": "AGLT2",
-    "lost": 10,
-    "src_site": "AGLT2",
-    "dest_VO": "ATLAS",
-    "src_host": "psmsu01.aglt2.org",
-    "@timestamp": "2023-12-14T15:33:27.613056452Z",
-    "loss": 1.0,
-    "destination": {
-        "ipv6": "2602:fd0f:0:1001:0:0:0:2",
-        "ipv4": "129.107.255.29"
-    },
-    "reorders": 0,
-    "dest_rcsite": "SWT2_CPB",
-    "source": {
-        "ipv6": "2001:48a8:68f7:8001:192:41:236:31",
-        "ipv4": "192.41.236.31"
-    },
-    "src_netsite": "AGLT2_MSU",
-    "dest": "2602:fd0f:0:1001:0:0:0:2",
     "src_VO": "ATLAS",
-    "src": "2001:48a8:68f7:8001:192:41:236:31",
-    "dest_site": "SWT2_CPB",
-    "sent": 10,
     "push": true,
-    "dest_host": "psuta01.atlas-swt2.org",
-    "@version": "1",
-    "received": 0,
-    "dest_netsite": "UTA_SWT2-LHCONE",
-    "ingest_timestamp": "2023-12-14T15:33:27.048313829Z",
+    "src_netsite": "NDGF-T1-LHCOPNE",
     "ipv6": true,
-    "timestamp": "2023-12-14T15:33:26+00:00"
+    "dest": "2400:4500:0:2:0:0:0:164c"
 }{
-    "dest_production": true,
-    "src_production": true,
-    "duplicates": 0,
+    "loss": 1.0,
+    "dest_netsite": "FZK-LCG2-LHCOPNE",
+    "src_host": "psonar3.fnal.gov",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "perfsonar2-de-kit.gridka.de",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "psonar3.fnal.gov"
+        }
+    },
+    "@timestamp": "2023-12-14T15:43:04.684402734Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T09:43:03-06:00",
     "src_rcsite": "USCMS-FNAL-WC1",
-    "lost": 10,
+    "source": {
+        "ipv6": "2620:6a:0:8420:0:0:0:44",
+        "ipv4": "131.225.205.23"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2620:6a:0:8420:0:0:0:44",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "FZK-LCG2",
     "src_site": "T1_US_FNAL",
-    "dest_VO": "ATLAS",
-    "src_host": "psonar4.fnal.gov",
-    "@timestamp": "2023-12-14T15:33:29.316712179Z",
-    "loss": 1.0,
-    "destination": {
-        "ipv6": "2001:630:58:1820:0:0:82f6:b06d",
-        "ipv4": "130.246.176.109"
-    },
-    "reorders": 0,
-    "dest_rcsite": "RAL-LCG2",
-    "source": {
-        "ipv6": "2620:6a:0:8420:0:0:0:45",
-        "ipv4": "131.225.205.12"
-    },
-    "src_netsite": "USCMS-FNAL-WC1-LHCOPNE",
-    "dest": "2001:630:58:1820:0:0:82f6:b06d",
-    "src_VO": "CMS",
-    "src": "2620:6a:0:8420:0:0:0:45",
-    "dest_site": "RAL-LCG2-ECHO",
-    "sent": 10,
-    "push": true,
-    "dest_host": "lcgps01.gridpp.rl.ac.uk",
-    "@version": "1",
-    "received": 0,
-    "dest_netsite": "RAL-LCG2-LHCOPN",
-    "ingest_timestamp": "2023-12-14T15:33:28.518017955Z",
-    "ipv6": true,
-    "timestamp": "2023-12-14T09:33:27-06:00"
-}{
-    "dest_production": true,
-    "src_production": true,
-    "duplicates": 0,
-    "src_rcsite": "Taiwan-LCG2",
-    "lost": 10,
-    "src_site": "unknown",
-    "dest_VO": "ATLAS",
-    "src_host": "lhc-latency.twgrid.org",
-    "@timestamp": "2023-12-14T15:33:44.388149567Z",
-    "loss": 1.0,
-    "destination": {
-        "ipv6": "2001:630:58:1820:0:0:82f6:b06e",
-        "ipv4": "130.246.176.110"
-    },
-    "reorders": 0,
-    "dest_rcsite": "RAL-LCG2",
-    "source": {
-        "ipv6": "2400:4500:0:2:0:0:0:164b",
-        "ipv4": "202.140.176.75"
-    },
-    "src_netsite": "Taiwan-LCG2-LHCOPNE",
-    "dest": "2001:630:58:1820:0:0:82f6:b06e",
-    "src_VO": "UNKNOWN",
-    "src": "2400:4500:0:2:0:0:0:164b",
-    "dest_site": "RAL-LCG2-ECHO",
-    "sent": 10,
-    "push": true,
-    "dest_host": "lcgps02.gridpp.rl.ac.uk",
-    "@version": "1",
-    "received": 0,
-    "dest_netsite": "RAL-LCG2-LHCOPN",
-    "ingest_timestamp": "2023-12-14T15:33:43.502387665Z",
-    "ipv6": true,
-    "timestamp": "2023-12-14T15:33:30Z"
-}{
-    "dest_production": true,
-    "src_production": true,
-    "duplicates": 0,
-    "src_rcsite": "TRIUMF-LCG2",
-    "lost": 10,
-    "src_site": "TRIUMF-LCG2",
-    "dest_VO": "ATLAS",
-    "src_host": "ps-bandwidth.lhcmon.triumf.ca",
-    "@timestamp": "2023-12-14T15:33:47.785942835Z",
-    "loss": 1.0,
     "destination": {
         "ipv6": "2a00:139c:5:585:0:41:2:12",
         "ipv4": "192.108.47.12"
     },
+    "dest_site": "FZK-LCG2",
+    "ingest_timestamp": "2023-12-14T15:43:04.684402734Z",
+    "dest_host": "perfsonar2-de-kit.gridka.de",
+    "dest_production": true,
+    "src_VO": "CMS",
+    "push": true,
+    "src_netsite": "USCMS-FNAL-WC1-LHCOPNE",
+    "ipv6": true,
+    "dest": "2a00:139c:5:585:0:41:2:12"
+}{
+    "loss": 1.0,
+    "dest_netsite": "FZK-LCG2-LHCOPNE",
+    "src_host": "lhc-bandwidth.twgrid.org",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
     "reorders": 0,
-    "dest_rcsite": "FZK-LCG2",
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "perfsonar-de-kit.gridka.de",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "lhc-bandwidth.twgrid.org"
+        }
+    },
+    "@timestamp": "2023-12-14T15:43:08.347636260Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T15:43:02Z",
+    "src_rcsite": "Taiwan-LCG2",
     "source": {
+        "ipv6": "2400:4500:0:2:0:0:0:164c",
+        "ipv4": "202.140.176.76"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2400:4500:0:2:0:0:0:164c",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "FZK-LCG2",
+    "src_site": "unknown",
+    "destination": {
+        "ipv6": "2a00:139c:5:585:0:41:2:6",
+        "ipv4": "192.108.47.6"
+    },
+    "dest_site": "FZK-LCG2",
+    "ingest_timestamp": "2023-12-14T15:43:08.347636260Z",
+    "dest_host": "perfsonar-de-kit.gridka.de",
+    "dest_production": true,
+    "src_VO": "UNKNOWN",
+    "push": true,
+    "src_netsite": "Taiwan-LCG2-LHCOPNE",
+    "ipv6": true,
+    "dest": "2a00:139c:5:585:0:41:2:6"
+}{
+    "loss": 1.0,
+    "dest_netsite": "RRC-KI-T1-LHCOPNE",
+    "src_host": "ccperfsonar2.in2p3.fr",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "btw-lat.t1.grid.kiae.ru",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "ccperfsonar2.in2p3.fr"
+        }
+    },
+    "@timestamp": "2023-12-14T15:43:20.630470941Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T16:43:19+01:00",
+    "src_rcsite": "IN2P3-CC",
+    "source": {
+        "ipv6": "2001:660:5009:9:193:48:99:76",
+        "ipv4": "193.48.99.76"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2001:660:5009:9:193:48:99:76",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "RRC-KI-T1",
+    "src_site": "IN2P3-CC-T3",
+    "destination": {
+        "ipv6": "2001:67c:1bec:236:0:0:0:189",
+        "ipv4": "144.206.236.189"
+    },
+    "dest_site": "RRC-KI-T1",
+    "ingest_timestamp": "2023-12-14T15:43:20.630470941Z",
+    "dest_host": "btw-lat.t1.grid.kiae.ru",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "IN2P3-CC-LHCOPNE",
+    "ipv6": true,
+    "dest": "2001:67c:1bec:236:0:0:0:189"
+}{
+    "loss": 1.0,
+    "dest_netsite": "Taiwan-LCG2-LHCOPNE",
+    "src_host": "lhc-latency.twgrid.org",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "lhc-bandwidth.twgrid.org",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "lhc-latency.twgrid.org"
+        }
+    },
+    "@timestamp": "2023-12-14T15:43:38.324173032Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T15:43:33Z",
+    "src_rcsite": "Taiwan-LCG2",
+    "source": {
+        "ipv6": "2400:4500:0:2:0:0:0:164b",
+        "ipv4": "202.140.176.75"
+    },
+    "dest_VO": "UNKNOWN",
+    "src": "2400:4500:0:2:0:0:0:164b",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "Taiwan-LCG2",
+    "src_site": "unknown",
+    "destination": {
+        "ipv6": "2400:4500:0:2:0:0:0:164c",
+        "ipv4": "202.140.176.76"
+    },
+    "dest_site": "unknown",
+    "ingest_timestamp": "2023-12-14T15:43:38.324173032Z",
+    "dest_host": "lhc-bandwidth.twgrid.org",
+    "dest_production": true,
+    "src_VO": "UNKNOWN",
+    "push": true,
+    "src_netsite": "Taiwan-LCG2-LHCOPNE",
+    "ipv6": true,
+    "dest": "2400:4500:0:2:0:0:0:164c"
+}{
+    "loss": 1.0,
+    "dest_netsite": "Taiwan-LCG2-LHCOPNE",
+    "src_host": "psonar3.fnal.gov",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "lhc-latency.twgrid.org",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "psonar3.fnal.gov"
+        }
+    },
+    "@timestamp": "2023-12-14T15:43:57.885598073Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T09:43:57-06:00",
+    "src_rcsite": "USCMS-FNAL-WC1",
+    "source": {
+        "ipv6": "2620:6a:0:8420:0:0:0:44",
+        "ipv4": "131.225.205.23"
+    },
+    "dest_VO": "UNKNOWN",
+    "src": "2620:6a:0:8420:0:0:0:44",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "Taiwan-LCG2",
+    "src_site": "T1_US_FNAL",
+    "destination": {
+        "ipv6": "2400:4500:0:2:0:0:0:164b",
+        "ipv4": "202.140.176.75"
+    },
+    "dest_site": "unknown",
+    "ingest_timestamp": "2023-12-14T15:43:57.885598073Z",
+    "dest_host": "lhc-latency.twgrid.org",
+    "dest_production": true,
+    "src_VO": "CMS",
+    "push": true,
+    "src_netsite": "USCMS-FNAL-WC1-LHCOPNE",
+    "ipv6": true,
+    "dest": "2400:4500:0:2:0:0:0:164b"
+}{
+    "loss": 1.0,
+    "dest_netsite": "TRIUMF-LCG2-LHCOPNE",
+    "src_host": "ccperfsonar1.in2p3.fr",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "ps-bandwidth.lhcmon.triumf.ca",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "ccperfsonar1.in2p3.fr"
+        }
+    },
+    "@timestamp": "2023-12-14T15:43:59.190739713Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T16:42:57+01:00",
+    "src_rcsite": "IN2P3-CC",
+    "source": {
+        "ipv6": "2001:660:5009:9:193:48:99:77",
+        "ipv4": "193.48.99.77"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2001:660:5009:9:193:48:99:77",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "TRIUMF-LCG2",
+    "src_site": "IN2P3-CC-T3",
+    "destination": {
         "ipv6": "2607:f8f0:660:2:0:0:0:2",
         "ipv4": "206.12.9.1"
     },
-    "src_netsite": "TRIUMF-LCG2-LHCOPNE",
-    "dest": "2a00:139c:5:585:0:41:2:12",
-    "src_VO": "ATLAS",
-    "src": "2607:f8f0:660:2:0:0:0:2",
-    "dest_site": "FZK-LCG2",
-    "sent": 10,
-    "push": true,
-    "dest_host": "perfsonar2-de-kit.gridka.de",
-    "@version": "1",
-    "received": 0,
-    "dest_netsite": "FZK-LCG2-LHCOPNE",
-    "ingest_timestamp": "2023-12-14T15:33:47.631838877Z",
-    "ipv6": true,
-    "timestamp": "2023-12-14T07:33:47-08:00"
-}{
-    "dest_production": true,
-    "src_production": true,
-    "duplicates": 0,
-    "src_rcsite": "IN2P3-CC",
-    "lost": 10,
-    "src_site": "IN2P3-CC-T3",
-    "dest_VO": "ATLAS",
-    "src_host": "ccperfsonar1.in2p3.fr",
-    "@timestamp": "2023-12-14T15:33:48.849264577Z",
-    "loss": 1.0,
-    "destination": {
-        "ipv6": "2607:f8f0:660:2:0:0:0:3",
-        "ipv4": "206.12.9.2"
-    },
-    "reorders": 0,
-    "dest_rcsite": "TRIUMF-LCG2",
-    "source": {
-        "ipv6": "2001:660:5009:9:193:48:99:77",
-        "ipv4": "193.48.99.77"
-    },
-    "src_netsite": "IN2P3-CC-LHCOPNE",
-    "dest": "2607:f8f0:660:2:0:0:0:3",
-    "src_VO": "ATLAS",
-    "src": "2001:660:5009:9:193:48:99:77",
     "dest_site": "TRIUMF-LCG2",
-    "sent": 10,
-    "push": true,
-    "dest_host": "ps-latency.lhcmon.triumf.ca",
-    "@version": "1",
-    "received": 0,
-    "dest_netsite": "TRIUMF-LCG2-LHCOPNE",
-    "ingest_timestamp": "2023-12-14T15:33:47.941790318Z",
-    "ipv6": true,
-    "timestamp": "2023-12-14T16:33:47+01:00"
-}{
+    "ingest_timestamp": "2023-12-14T15:43:59.190739713Z",
+    "dest_host": "ps-bandwidth.lhcmon.triumf.ca",
     "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "IN2P3-CC-LHCOPNE",
+    "ipv6": true,
+    "dest": "2607:f8f0:660:2:0:0:0:2"
+}{
+    "loss": 1.0,
+    "dest_netsite": "UTA_SWT2-LHCONE",
+    "src_host": "psum01.aglt2.org",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "psuta01.atlas-swt2.org",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "psum01.aglt2.org"
+        }
+    },
+    "@timestamp": "2023-12-14T15:44:01.399357557Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T15:44:01+00:00",
+    "src_rcsite": "AGLT2",
+    "source": {
+        "ipv6": "2001:48a8:68f7:1:192:41:230:59",
+        "ipv4": "192.41.230.59"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2001:48a8:68f7:1:192:41:230:59",
+    "received": 0,
     "src_production": true,
     "duplicates": 0,
-    "src_rcsite": "SARA-MATRIX",
-    "lost": 10,
-    "src_site": "SARA-MATRIX",
-    "dest_VO": "ATLAS",
-    "src_host": "perfsonar-latency.grid.surfsara.nl",
-    "@timestamp": "2023-12-14T15:34:03.947053945Z",
-    "loss": 1.0,
+    "dest_rcsite": "SWT2_CPB",
+    "src_site": "AGLT2",
     "destination": {
-        "ipv6": "2001:610:108:203a:0:0:0:32",
-        "ipv4": "145.100.32.32"
+        "ipv6": "2602:fd0f:0:1001:0:0:0:2",
+        "ipv4": "129.107.255.29"
     },
-    "reorders": 0,
-    "dest_rcsite": "SARA-MATRIX",
-    "source": {
-        "ipv6": "2001:610:108:203a:0:0:0:31",
-        "ipv4": "145.100.32.31"
-    },
-    "src_netsite": "NLT1-SARA-LHCOPNE",
-    "dest": "2001:610:108:203a:0:0:0:32",
-    "src_VO": "ATLAS",
-    "src": "2001:610:108:203a:0:0:0:31",
-    "dest_site": "SARA-MATRIX",
-    "sent": 10,
-    "push": true,
-    "dest_host": "perfsonar-bandwidth.grid.surfsara.nl",
-    "@version": "1",
-    "received": 0,
-    "dest_netsite": "NLT1-SARA-LHCOPNE",
-    "ingest_timestamp": "2023-12-14T15:34:03.440531918Z",
-    "ipv6": true,
-    "timestamp": "2023-12-14T16:33:02+01:00"
-}{
+    "dest_site": "SWT2_CPB",
+    "ingest_timestamp": "2023-12-14T15:44:01.399357557Z",
+    "dest_host": "psuta01.atlas-swt2.org",
     "dest_production": true,
-    "src_production": true,
-    "duplicates": 0,
-    "src_rcsite": "TRIUMF-LCG2",
-    "lost": 10,
-    "src_site": "TRIUMF-LCG2",
-    "dest_VO": "ATLAS",
-    "src_host": "ps-latency.lhcmon.triumf.ca",
-    "@timestamp": "2023-12-14T15:34:03.947078451Z",
-    "loss": 1.0,
-    "destination": {
-        "ipv6": "2001:67c:1148:204:0:0:0:250",
-        "ipv4": "193.109.172.250"
-    },
-    "reorders": 0,
-    "dest_rcsite": "pic",
-    "source": {
-        "ipv6": "2607:f8f0:660:2:0:0:0:3",
-        "ipv4": "206.12.9.2"
-    },
-    "src_netsite": "TRIUMF-LCG2-LHCOPNE",
-    "dest": "2001:67c:1148:204:0:0:0:250",
     "src_VO": "ATLAS",
-    "src": "2607:f8f0:660:2:0:0:0:3",
-    "dest_site": "pic",
-    "sent": 10,
     "push": true,
-    "dest_host": "picperfsonar-bandwidth.pic.es",
-    "@version": "1",
-    "received": 0,
-    "dest_netsite": "pic-LHCOPNE",
-    "ingest_timestamp": "2023-12-14T15:34:03.647687852Z",
+    "src_netsite": "AGLT2_UM",
     "ipv6": true,
-    "timestamp": "2023-12-14T07:34:03-08:00"
+    "dest": "2602:fd0f:0:1001:0:0:0:2"
 }{
-    "dest_production": true,
-    "src_production": true,
-    "duplicates": 0,
-    "src_rcsite": "TRIUMF-LCG2",
-    "lost": 10,
-    "src_site": "TRIUMF-LCG2",
-    "dest_VO": "ATLAS",
-    "src_host": "ps-latency.lhcmon.triumf.ca",
-    "@timestamp": "2023-12-14T15:34:14.448957408Z",
     "loss": 1.0,
-    "destination": {
-        "ipv6": "2001:1458:301:86:0:0:100:6",
-        "ipv4": "128.142.208.134"
-    },
-    "reorders": 0,
-    "dest_rcsite": "CERN-PROD",
-    "source": {
-        "ipv6": "2607:f8f0:660:2:0:0:0:3",
-        "ipv4": "206.12.9.2"
-    },
-    "src_netsite": "TRIUMF-LCG2-LHCOPNE",
-    "dest": "2001:1458:301:86:0:0:100:6",
-    "src_VO": "ATLAS",
-    "src": "2607:f8f0:660:2:0:0:0:3",
-    "dest_site": "CERN-PROD",
-    "sent": 10,
-    "push": true,
-    "dest_host": "psl01-gva.cern.ch",
-    "@version": "1",
-    "received": 0,
-    "dest_netsite": "CERN-PROD-LHCOPNE",
-    "ingest_timestamp": "2023-12-14T15:34:13.886215976Z",
-    "ipv6": true,
-    "timestamp": "2023-12-14T07:34:13-08:00"
-}{
-    "dest_production": true,
-    "src_production": true,
-    "duplicates": 0,
-    "src_rcsite": "TRIUMF-LCG2",
-    "lost": 10,
-    "src_site": "TRIUMF-LCG2",
-    "dest_VO": "ATLAS",
-    "src_host": "ps-latency.lhcmon.triumf.ca",
-    "@timestamp": "2023-12-14T15:34:15.936305586Z",
-    "loss": 1.0,
-    "destination": {
-        "ipv6": "2001:630:58:1820:0:0:82f6:b06e",
-        "ipv4": "130.246.176.110"
-    },
-    "reorders": 0,
-    "dest_rcsite": "RAL-LCG2",
-    "source": {
-        "ipv6": "2607:f8f0:660:2:0:0:0:3",
-        "ipv4": "206.12.9.2"
-    },
-    "src_netsite": "TRIUMF-LCG2-LHCOPNE",
-    "dest": "2001:630:58:1820:0:0:82f6:b06e",
-    "src_VO": "ATLAS",
-    "src": "2607:f8f0:660:2:0:0:0:3",
-    "dest_site": "RAL-LCG2-ECHO",
-    "sent": 10,
-    "push": true,
-    "dest_host": "lcgps02.gridpp.rl.ac.uk",
-    "@version": "1",
-    "received": 0,
     "dest_netsite": "RAL-LCG2-LHCOPN",
-    "ingest_timestamp": "2023-12-14T15:34:15.457344527Z",
-    "ipv6": true,
-    "timestamp": "2023-12-14T07:34:15-08:00"
-}{
-    "dest_production": true,
-    "src_production": true,
-    "duplicates": 0,
-    "src_rcsite": "INFN-T1",
-    "lost": 10,
-    "src_site": "INFN-T1",
-    "dest_VO": "ATLAS",
-    "src_host": "perfsonar-ps.cnaf.infn.it",
-    "@timestamp": "2023-12-14T15:34:22.484028974Z",
-    "loss": 1.0,
-    "destination": {
-        "ipv6": "2001:610:108:203a:0:0:0:32",
-        "ipv4": "145.100.32.32"
-    },
-    "reorders": 0,
-    "dest_rcsite": "SARA-MATRIX",
-    "source": {
-        "ipv6": "2001:760:4205:254:0:0:0:11",
-        "ipv4": "131.154.254.11"
-    },
-    "src_netsite": "INFN-T1-LHCOPNE",
-    "dest": "2001:610:108:203a:0:0:0:32",
-    "src_VO": "ATLAS",
-    "src": "2001:760:4205:254:0:0:0:11",
-    "dest_site": "SARA-MATRIX",
-    "sent": 10,
-    "push": true,
-    "dest_host": "perfsonar-bandwidth.grid.surfsara.nl",
-    "@version": "1",
-    "received": 0,
-    "dest_netsite": "NLT1-SARA-LHCOPNE",
-    "ingest_timestamp": "2023-12-14T15:34:21.645758149Z",
-    "ipv6": true,
-    "timestamp": "2023-12-14T15:34:20+00:00"
-}{
-    "dest_production": true,
-    "src_production": true,
-    "duplicates": 0,
-    "src_rcsite": "TRIUMF-LCG2",
-    "lost": 10,
-    "src_site": "TRIUMF-LCG2",
-    "dest_VO": "ATLAS",
     "src_host": "ps-latency.lhcmon.triumf.ca",
-    "@timestamp": "2023-12-14T15:34:48.891116586Z",
-    "loss": 1.0,
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "lcgps01.gridpp.rl.ac.uk",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "ps-latency.lhcmon.triumf.ca"
+        }
+    },
+    "@timestamp": "2023-12-14T15:44:01.640845619Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T07:44:01-08:00",
+    "src_rcsite": "TRIUMF-LCG2",
+    "source": {
+        "ipv6": "2607:f8f0:660:2:0:0:0:3",
+        "ipv4": "206.12.9.2"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2607:f8f0:660:2:0:0:0:3",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "RAL-LCG2",
+    "src_site": "TRIUMF-LCG2",
     "destination": {
+        "ipv6": "2001:630:58:1820:0:0:82f6:b06d",
+        "ipv4": "130.246.176.109"
+    },
+    "dest_site": "RAL-LCG2-ECHO",
+    "ingest_timestamp": "2023-12-14T15:44:01.640845619Z",
+    "dest_host": "lcgps01.gridpp.rl.ac.uk",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "TRIUMF-LCG2-LHCOPNE",
+    "ipv6": true,
+    "dest": "2001:630:58:1820:0:0:82f6:b06d"
+}{
+    "loss": 1.0,
+    "dest_netsite": "BNL-ATLAS-LHCOPNE",
+    "src_host": "ccperfsonar1.in2p3.fr",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "lhcmon.bnl.gov",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "ccperfsonar1.in2p3.fr"
+        }
+    },
+    "@timestamp": "2023-12-14T15:44:17.155001031Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T16:44:16+01:00",
+    "src_rcsite": "IN2P3-CC",
+    "source": {
         "ipv6": "2001:660:5009:9:193:48:99:77",
         "ipv4": "193.48.99.77"
     },
-    "reorders": 0,
-    "dest_rcsite": "IN2P3-CC",
-    "source": {
-        "ipv6": "2607:f8f0:660:2:0:0:0:3",
-        "ipv4": "206.12.9.2"
-    },
-    "src_netsite": "TRIUMF-LCG2-LHCOPNE",
-    "dest": "2001:660:5009:9:193:48:99:77",
-    "src_VO": "ATLAS",
-    "src": "2607:f8f0:660:2:0:0:0:3",
-    "dest_site": "IN2P3-CC-T3",
-    "sent": 10,
-    "push": true,
-    "dest_host": "ccperfsonar1.in2p3.fr",
-    "@version": "1",
+    "dest_VO": "ATLAS",
+    "src": "2001:660:5009:9:193:48:99:77",
     "received": 0,
-    "dest_netsite": "IN2P3-CC-LHCOPNE",
-    "ingest_timestamp": "2023-12-14T15:34:26.935986657Z",
-    "ipv6": true,
-    "timestamp": "2023-12-14T07:34:26-08:00"
-}{
-    "dest_production": true,
     "src_production": true,
     "duplicates": 0,
-    "src_rcsite": "pic",
-    "lost": 10,
-    "src_site": "pic",
-    "dest_VO": "ATLAS",
-    "src_host": "picperfsonar-bandwidth.pic.es",
-    "@timestamp": "2023-12-14T15:34:49.202708859Z",
-    "loss": 1.0,
+    "dest_rcsite": "BNL-ATLAS",
+    "src_site": "IN2P3-CC-T3",
     "destination": {
         "ipv6": "2620:0:210:1:0:0:0:23",
         "ipv4": "192.12.15.23"
     },
+    "dest_site": "BNLLAKE",
+    "ingest_timestamp": "2023-12-14T15:44:17.155001031Z",
+    "dest_host": "lhcmon.bnl.gov",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "IN2P3-CC-LHCOPNE",
+    "ipv6": true,
+    "dest": "2620:0:210:1:0:0:0:23"
+}{
+    "loss": 1.0,
+    "dest_netsite": "USCMS-FNAL-WC1-LHCOPNE",
+    "src_host": "ps-bandwidth.lhcmon.triumf.ca",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
     "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "psonar3.fnal.gov",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "ps-bandwidth.lhcmon.triumf.ca"
+        }
+    },
+    "@timestamp": "2023-12-14T15:44:19.714335147Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T07:44:19-08:00",
+    "src_rcsite": "TRIUMF-LCG2",
+    "source": {
+        "ipv6": "2607:f8f0:660:2:0:0:0:2",
+        "ipv4": "206.12.9.1"
+    },
+    "dest_VO": "CMS",
+    "src": "2607:f8f0:660:2:0:0:0:2",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "USCMS-FNAL-WC1",
+    "src_site": "TRIUMF-LCG2",
+    "destination": {
+        "ipv6": "2620:6a:0:8420:0:0:0:44",
+        "ipv4": "131.225.205.23"
+    },
+    "dest_site": "T1_US_FNAL",
+    "ingest_timestamp": "2023-12-14T15:44:19.714335147Z",
+    "dest_host": "psonar3.fnal.gov",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "TRIUMF-LCG2-LHCOPNE",
+    "ipv6": true,
+    "dest": "2620:6a:0:8420:0:0:0:44"
+}{
+    "loss": 0.0,
+    "src_host": "ps-bandwidth.lhcmon.triumf.ca",
+    "result": {
+        "sent": 10,
+        "loss": 0.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 0,
+        "roundtrips": [
+            {
+                "ttl": 51,
+                "rtt": "PT0.182S",
+                "length": 64,
+                "ip": "144.206.237.141",
+                "seq": 1,
+                "hostname": "btw-bw.grid.kiae.ru"
+            },
+            {
+                "ttl": 51,
+                "rtt": "PT0.182S",
+                "length": 64,
+                "ip": "144.206.237.141",
+                "seq": 2,
+                "hostname": "btw-bw.grid.kiae.ru"
+            },
+            {
+                "ttl": 51,
+                "rtt": "PT0.182S",
+                "length": 64,
+                "ip": "144.206.237.141",
+                "seq": 3,
+                "hostname": "btw-bw.grid.kiae.ru"
+            },
+            {
+                "ttl": 51,
+                "rtt": "PT0.182S",
+                "length": 64,
+                "ip": "144.206.237.141",
+                "seq": 4,
+                "hostname": "btw-bw.grid.kiae.ru"
+            },
+            {
+                "ttl": 51,
+                "rtt": "PT0.182S",
+                "length": 64,
+                "ip": "144.206.237.141",
+                "seq": 5,
+                "hostname": "btw-bw.grid.kiae.ru"
+            },
+            {
+                "ttl": 51,
+                "rtt": "PT0.182S",
+                "length": 64,
+                "ip": "144.206.237.141",
+                "seq": 6,
+                "hostname": "btw-bw.grid.kiae.ru"
+            },
+            {
+                "ttl": 51,
+                "rtt": "PT0.182S",
+                "length": 64,
+                "ip": "144.206.237.141",
+                "seq": 7,
+                "hostname": "btw-bw.grid.kiae.ru"
+            },
+            {
+                "ttl": 51,
+                "rtt": "PT0.182S",
+                "length": 64,
+                "ip": "144.206.237.141",
+                "seq": 8,
+                "hostname": "btw-bw.grid.kiae.ru"
+            },
+            {
+                "ttl": 51,
+                "rtt": "PT0.182S",
+                "length": 64,
+                "ip": "144.206.237.141",
+                "seq": 9,
+                "hostname": "btw-bw.grid.kiae.ru"
+            },
+            {
+                "ttl": 51,
+                "rtt": "PT0.182S",
+                "length": 64,
+                "ip": "144.206.237.141",
+                "seq": 10,
+                "hostname": "btw-bw.grid.kiae.ru"
+            }
+        ],
+        "schema": 1,
+        "received": 10
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "btw-bw.grid.kiae.ru",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "ps-bandwidth.lhcmon.triumf.ca"
+        }
+    },
+    "@timestamp": "2023-12-14T15:44:21.703545449Z",
+    "@version": "1",
+    "lost": 0,
+    "timestamp": "2023-12-14T07:44:21-08:00",
+    "received": 10,
+    "src": "206.12.9.1",
+    "source": {
+        "ipv6": "2607:f8f0:660:2:0:0:0:2",
+        "ipv4": "206.12.9.1"
+    },
+    "src_production": true,
+    "src_rcsite": "TRIUMF-LCG2",
+    "duplicates": 0,
+    "src_site": "TRIUMF-LCG2",
+    "destination": {
+        "ipv6": null,
+        "ipv4": "144.206.237.141"
+    },
+    "ingest_timestamp": "2023-12-14T15:44:21.703545449Z",
+    "dest_host": "btw-bw.grid.kiae.ru",
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "TRIUMF-LCG2-LHCOPNE",
+    "ipv6": false,
+    "dest": "144.206.237.141"
+}{
+    "loss": 1.0,
+    "dest_netsite": "INFN-T1-LHCOPNE",
+    "src_host": "psl01-gva.cern.ch",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "perfsonar-ps.cnaf.infn.it",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "psl01-gva.cern.ch"
+        }
+    },
+    "@timestamp": "2023-12-14T15:44:26.541197789Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T16:44:25+01:00",
+    "src_rcsite": "CERN-PROD",
+    "source": {
+        "ipv6": "2001:1458:301:86:0:0:100:6",
+        "ipv4": "128.142.208.134"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2001:1458:301:86:0:0:100:6",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "INFN-T1",
+    "src_site": "CERN-PROD",
+    "destination": {
+        "ipv6": "2001:760:4205:254:0:0:0:11",
+        "ipv4": "131.154.254.11"
+    },
+    "dest_site": "INFN-T1",
+    "inge2023-12-14T15:44:27.112939272Z st_timestamp": "2023-12-14T15:44:26.541197789Z",
+    "dest_host": "perfsonar-ps.cnaf.infn.it",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "CERN-PROD-LHCOPNE",
+    "ipv6": true,
+    "dest": "2001:760:4205:254:0:0:0:11"
+}{
+    "loss": 1.0,
+    "dest_netsite": "NDGF-T1-LHCOPNE",
+    "src_host": "psonar3.fnal.gov",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "perfsonar-ps.ndgf.org",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "psonar3.fnal.gov"
+        }
+    },
+    "@timestamp": "2023-12-14T15:44:35.902470168Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T09:44:35-06:00",
+    "src_rcsite": "USCMS-FNAL-WC1",
+    "source": {
+        "ipv6": "2620:6a:0:8420:0:0:0:44",
+        "ipv4": "131.225.205.23"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2620:6a:0:8420:0:0:0:44",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "NDGF-T1",
+    "src_site": "T1_US_FNAL",
+    "destination": {
+        "ipv6": "2001:948:40:3:0:0:0:86",
+        "ipv4": "109.105.124.86"
+    },
+    "dest_site": "NDGF-T1",
+    "ingest_timestamp": "2023-12-14T15:44:35.902470168Z",
+    "dest_host": "perfsonar-ps.ndgf.org",
+    "dest_production": true,
+    "src_VO": "CMS",
+    "push": true,
+    "src_netsite": "USCMS-FNAL-WC1-LHCOPNE",
+    "ipv6": true,
+    "dest": "2001:948:40:3:0:0:0:86"
+}{
+    "loss": 1.0,
+    "dest_netsite": "BNL-ATLAS-LHCOPNE",
+    "src_host": "uct2-net2.mwt2.org",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "lhcmon.bnl.gov",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "uct2-net2.mwt2.org"
+        }
+    },
+    "@timestamp": "2023-12-14T15:44:53.171618811Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T09:44:52-06:00",
+    "src_rcsite": "MWT2",
+    "source": {
+        "ipv6": "2605:9a00:10:200a:be97:e1ff:fee8:a1b0",
+        "ipv4": "192.170.240.17"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2605:9a00:10:200a:be97:e1ff:fee8:a1b0",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
     "dest_rcsite": "BNL-ATLAS",
+    "src_site": "MWT2",
+    "destination": {
+        "ipv6": "2620:0:210:1:0:0:0:23",
+        "ipv4": "192.12.15.23"
+    },
+    "dest_site": "BNLLAKE",
+    "ingest_timestamp": "2023-12-14T15:44:53.171618811Z",
+    "dest_host": "lhcmon.bnl.gov",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "MWT2_UC",
+    "ipv6": true,
+    "dest": "2620:0:210:1:0:0:0:23"
+}{
+    "loss": 1.0,
+    "dest_netsite": "MWT2_UC",
+    "src_host": "psmsu02.aglt2.org",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "uct2-net2.mwt2.org",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "psmsu02.aglt2.org"
+        }
+    },
+    "@timestamp": "2023-12-14T15:44:56.743679022Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T15:44:56+00:00",
+    "src_rcsite": "AGLT2",
+    "source": {
+        "ipv6": "2001:48a8:68f7:8001:192:41:236:32",
+        "ipv4": "192.41.236.32"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2001:48a8:68f7:8001:192:41:236:32",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "MWT2",
+    "src_site": "AGLT2",
+    "destination": {
+        "ipv6": "2605:9a00:10:200a:be97:e1ff:fee8:a1b0",
+        "ipv4": "192.170.240.17"
+    },
+    "dest_site": "MWT2",
+    "ingest_timestamp": "2023-12-14T15:44:56.743679022Z",
+    "dest_host": "uct2-net2.mwt2.org",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "AGLT2_MSU",
+    "ipv6": true,
+    "dest": "2605:9a00:10:200a:be97:e1ff:fee8:a1b0"
+}{
+    "loss": 1.0,
+    "dest_netsite": "RRC-KI-T1-LHCOPNE",
+    "src_host": "ps-bandwidth.lhcmon.triumf.ca",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "btw-lat.t1.grid.kiae.ru",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "ps-bandwidth.lhcmon.triumf.ca"
+        }
+    },
+    "@timestamp": "2023-12-14T15:45:01.155079153Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T07:45:00-08:00",
+    "src_rcsite": "TRIUMF-LCG2",
+    "source": {
+        "ipv6": "2607:f8f0:660:2:0:0:0:2",
+        "ipv4": "206.12.9.1"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2607:f8f0:660:2:0:0:0:2",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "RRC-KI-T1",
+    "src_site": "TRIUMF-LCG2",
+    "destination": {
+        "ipv6": "2001:67c:1bec:236:0:0:0:189",
+        "ipv4": "144.206.236.189"
+    },
+    "dest_site": "RRC-KI-T1",
+    "ingest_timestamp": "2023-12-14T15:45:01.155079153Z",
+    "dest_host": "btw-lat.t1.grid.kiae.ru",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "TRIUMF-LCG2-LHCOPNE",
+    "ipv6": true,
+    "dest": "2001:67c:1bec:236:0:0:0:189"
+}{
+    "loss": 1.0,
+    "dest_netsite": "TRIUMF-LCG2-LHCOPNE",
+    "src_host": "lhc-bandwidth.twgrid.org",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "ps-latency.lhcmon.triumf.ca",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "lhc-bandwidth.twgrid.org"
+        }
+    },
+    "@timestamp": "2023-12-14T15:45:24.981115462Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T15:45:17Z",
+    "src_rcsite": "Taiwan-LCG2",
+    "source": {
+        "ipv6": "2400:4500:0:2:0:0:0:164c",
+        "ipv4": "202.140.176.76"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2400:4500:0:2:0:0:0:164c",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "TRIUMF-LCG2",
+    "src_site": "unknown",
+    "destination": {
+        "ipv6": "2607:f8f0:660:2:0:0:0:3",
+        "ipv4": "206.12.9.2"
+    },
+    "dest_site": "TRIUMF-LCG2",
+    "ingest_timestamp": "2023-12-14T15:45:24.981115462Z",
+    "dest_host": "ps-latency.lhcmon.triumf.ca",
+    "dest_production": true,
+    "src_VO": "UNKNOWN",
+    "push": true,
+    "src_netsite": "Taiwan-LCG2-LHCOPNE",
+    "ipv6": true,
+    "dest": "2607:f8f0:660:2:0:0:0:3"
+}{
+    "loss": 1.0,
+    "dest_netsite": "FZK-LCG2-LHCOPNE",
+    "src_host": "picperfsonar-bandwidth.pic.es",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "perfsonar2-de-kit.gridka.de",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "picperfsonar-bandwidth.pic.es"
+        }
+    },
+    "@timestamp": "2023-12-14T15:45:36.659227348Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T15:45:36+00:00",
+    "src_rcsite": "pic",
     "source": {
         "ipv6": "2001:67c:1148:204:0:0:0:250",
         "ipv4": "193.109.172.250"
     },
-    "src_netsite": "pic-LHCOPNE",
-    "dest": "2620:0:210:1:0:0:0:23",
-    "src_VO": "ATLAS",
+    "dest_VO": "ATLAS",
     "src": "2001:67c:1148:204:0:0:0:250",
-    "dest_site": "BNLLAKE",
-    "sent": 10,
-    "push": true,
-    "dest_host": "lhcmon.bnl.gov",
-    "@version": "1",
     "received": 0,
-    "dest_netsite": "BNL-ATLAS-LHCOPNE",
-    "ingest_timestamp": "2023-12-14T15:34:35.241616549Z",
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "FZK-LCG2",
+    "src_site": "pic",
+    "destination": {
+        "ipv6": "2a00:139c:5:585:0:41:2:12",
+        "ipv4": "192.108.47.12"
+    },
+    "dest_site": "FZK-LCG2",
+    "ingest_timestamp": "2023-12-14T15:45:36.659227348Z",
+    "dest_host": "perfsonar2-de-kit.gridka.de",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "pic-LHCOPNE",
     "ipv6": true,
-    "timestamp": "2023-12-14T15:34:34+00:00"
+    "dest": "2a00:139c:5:585:0:41:2:12"
+}{
+    "loss": 1.0,
+    "dest_netsite": "MWT2_UC",
+    "src_host": "psuta02.atlas-swt2.org",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "uct2-net1.mwt2.org",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "psuta02.atlas-swt2.org"
+        }
+    },
+    "@timestamp": "2023-12-14T15:45:36.950682673Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T09:45:36-06:00",
+    "src_rcsite": "SWT2_CPB",
+    "source": {
+        "ipv6": "2602:fd0f:0:1001:0:0:0:3",
+        "ipv4": "129.107.255.30"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2602:fd0f:0:1001:0:0:0:3",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "MWT2",
+    "src_site": "SWT2_CPB",
+    "destination": {
+        "ipv6": "2605:9a00:10:200a:be97:e1ff:feeb:b320",
+        "ipv4": "192.170.240.16"
+    },
+    "dest_site": "MWT2",
+    "ingest_timestamp": "2023-12-14T15:45:36.950682673Z",
+    "dest_host": "uct2-net1.mwt2.org",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "UTA_SWT2-LHCONE",
+    "ipv6": true,
+    "dest": "2605:9a00:10:200a:be97:e1ff:feeb:b320"
+}{
+    "loss": 1.0,
+    "dest_netsite": "USCMS-FNAL-WC1-LHCOPNE",
+    "src_host": "psb01-gva.cern.ch",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "psonar4.fnal.gov",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "psb01-gva.cern.ch"
+        }
+    },
+    "@timestamp": "2023-12-14T15:45:51.251876557Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T16:45:50+01:00",
+    "src_rcsite": "CERN-PROD",
+    "source": {
+        "ipv6": "2001:1458:301:86:0:0:100:4",
+        "ipv4": "128.142.208.132"
+    },
+    "dest_VO": "CMS",
+    "src": "2001:1458:301:86:0:0:100:4",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "USCMS-FNAL-WC1",
+    "src_site": "CERN-PROD",
+    "destination": {
+        "ipv6": "2620:6a:0:8420:0:0:0:45",
+        "ipv4": "131.225.205.12"
+    },
+    "dest_site": "T1_US_FNAL",
+    "ingest_timestamp": "2023-12-14T15:45:51.251876557Z",
+    "dest_host": "psonar4.fnal.gov",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "CERN-PROD-LHCOPNE",
+    "ipv6": true,
+    "dest": "2620:6a:0:8420:0:0:0:45"
+}{
+    "loss": 1.0,
+    "dest_netsite": "BNL-ATLAS-LHCOPNE",
+    "src_host": "psonar3.fnal.gov",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "lhcperfmon.bnl.gov",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "psonar3.fnal.gov"
+        }
+    },
+    "@timestamp": "2023-12-14T15:45:59.341867946Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T09:45:58-06:00",
+    "src_rcsite": "USCMS-FNAL-WC1",
+    "source": {
+        "ipv6": "2620:6a:0:8420:0:0:0:44",
+        "ipv4": "131.225.205.23"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2620:6a:0:8420:0:0:0:44",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "BNL-ATLAS",
+    "src_site": "T1_US_FNAL",
+    "destination": {
+        "ipv6": "2620:0:210:1:0:0:0:26",
+        "ipv4": "192.12.15.26"
+    },
+    "dest_site": "BNLLAKE",
+    "ingest_timestamp": "2023-12-14T15:45:59.341867946Z",
+    "dest_host": "lhcperfmon.bnl.gov",
+    "dest_production": true,
+    "src_VO": "CMS",
+    "push": true,
+    "src_netsite": "USCMS-FNAL-WC1-LHCOPNE",
+    "ipv6": true,
+    "dest": "2620:0:210:1:0:0:0:26"
+}{
+    "loss": 1.0,
+    "dest_netsite": "FZK-LCG2-LHCOPNE",
+    "src_host": "perfsonar-ps.ndgf.org",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "perfsonar2-de-kit.gridka.de",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "perfsonar-ps.ndgf.org"
+        }
+    },
+    "@timestamp": "2023-12-14T15:46:08.862549671Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T15:46:08+00:00",
+    "src_rcsite": "NDGF-T1",
+    "source": {
+        "ipv6": "2001:948:40:3:0:0:0:86",
+        "ipv4": "109.105.124.86"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2001:948:40:3:0:0:0:86",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "FZK-LCG2",
+    "src_site": "NDGF-T1",
+    "destination": {
+        "ipv6": "2a00:139c:5:585:0:41:2:12",
+        "ipv4": "192.108.47.12"
+    },
+    "dest_site": "FZK-LCG2",
+    "ingest_timestamp": "2023-12-14T15:46:08.862549671Z",
+    "dest_host": "perfsonar2-de-kit.gridka.de",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "NDGF-T1-LHCOPNE",
+    "ipv6": true,
+    "dest": "2a00:139c:5:585:0:41:2:12"
+}{
+    "loss": 1.0,
+    "dest_netsite": "UTA_SWT2-LHCONE",
+    "src_host": "psmsu02.aglt2.org",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "psuta02.atlas-swt2.org",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "psmsu02.aglt2.org"
+        }
+    },
+    "@timestamp": "2023-12-14T15:46:13.158919017Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T15:46:12+00:00",
+    "src_rcsite": "AGLT2",
+    "source": {
+        "ipv6": "2001:48a8:68f7:8001:192:41:236:32",
+        "ipv4": "192.41.236.32"
+    },
+    "dest_VO": "ATLAS",
+    "src": "2001:48a8:68f7:8001:192:41:236:32",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "SWT2_CPB",
+    "src_site": "AGLT2",
+    "destination": {
+        "ipv6": "2602:fd0f:0:1001:0:0:0:3",
+        "ipv4": "129.107.255.30"
+    },
+    "dest_site": "SWT2_CPB",
+    "ingest_timestamp": "2023-12-14T15:46:13.158919017Z",
+    "dest_host": "psuta02.atlas-swt2.org",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "AGLT2_MSU",
+    "ipv6": true,
+    "dest": "2602:fd0f:0:1001:0:0:0:3"
+}{
+    "loss": 1.0,
+    "dest_netsite": "KR-KISTI-GSDC-1-LHCOPNE",
+    "src_host": "picperfsonar-latency.pic.es",
+    "result": {
+        "sent": 10,
+        "loss": 1.0,
+        "reorders": 0,
+        "duplicates": 0,
+        "succeeded": true,
+        "lost": 10,
+        "roundtrips": [],
+        "schema": 1,
+        "received": 0
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "ps-gsdc01.sdfarm.kr",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "picperfsonar-latency.pic.es"
+        }
+    },
+    "@timestamp": "2023-12-14T15:46:15.646358849Z",
+    "@version": "1",
+    "lost": 10,
+    "timestamp": "2023-12-14T15:46:15+00:00",
+    "src_rcsite": "pic",
+    "source": {
+        "ipv6": "2001:67c:1148:203:0:0:0:242",
+        "ipv4": "193.109.172.242"
+    },
+    "dest_VO": "UNKNOWN",
+    "src": "2001:67c:1148:203:0:0:0:242",
+    "received": 0,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "KR-KISTI-GSDC-01",
+    "src_site": "pic",
+    "destination": {
+        "ipv6": "2001:320:15:125:a1:da:ec:1001",
+        "ipv4": "134.75.125.241"
+    },
+    "dest_site": "unknown",
+    "ingest_timestamp": "2023-12-14T15:46:15.646358849Z",
+    "dest_host": "ps-gsdc01.sdfarm.kr",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "pic-LHCOPNE",
+    "ipv6": true,
+    "dest": "2001:320:15:125:a1:da:ec:1001"
+}{
+    "loss": 0.0,
+    "src_host": "psmsu02.aglt2.org",
+    "result": {
+        "loss": 0.0,
+        "stddev": "PT0.000103S",
+        "duplicates": 0,
+        "succeeded": true,
+        "schema": 1,
+        "sent": 10,
+        "reorders": 0,
+        "max": "PT0.02339S",
+        "lost": 0,
+        "roundtrips": [
+            {
+                "ttl": 56,
+                "rtt": "PT0.0232S",
+                "length": 64,
+                "ip": "129.15.40.231",
+                "seq": 1,
+                "hostname": "ps1.ochep.ou.edu"
+            },
+            {
+                "ttl": 56,
+                "rtt": "PT0.0231S",
+                "length": 64,
+                "ip": "129.15.40.231",
+                "seq": 2,
+                "hostname": "ps1.ochep.ou.edu"
+            },
+            {
+                "ttl": 56,
+                "rtt": "PT0.023S",
+                "length": 64,
+                "ip": "129.15.40.231",
+                "seq": 3,
+                "hostname": "ps1.ochep.ou.edu"
+            },
+            {
+                "ttl": 56,
+                "rtt": "PT0.0233S",
+                "length": 64,
+                "ip": "129.15.40.231",
+                "seq": 4,
+                "hostname": "ps1.ochep.ou.edu"
+            },
+            {
+                "ttl": 56,
+                "rtt": "PT0.0233S",
+                "length": 64,
+                "ip": "129.15.40.231",
+                "seq": 5,
+                "hostname": "ps1.ochep.ou.edu"
+            },
+            {
+                "ttl": 56,
+                "rtt": "PT0.023S",
+                "length": 64,
+                "ip": "129.15.40.231",
+                "seq": 6,
+                "hostname": "ps1.ochep.ou.edu"
+            },
+            {
+                "ttl": 56,
+                "rtt": "PT0.0231S",
+                "length": 64,
+                "ip": "129.15.40.231",
+                "seq": 7,
+                "hostname": "ps1.ochep.ou.edu"
+            },
+            {
+                "ttl": 56,
+                "rtt": "PT0.0232S",
+                "length": 64,
+                "ip": "129.15.40.231",
+                "seq": 8,
+                "hostname": "ps1.ochep.ou.edu"
+            },
+            {
+                "ttl": 56,
+                "rtt": "PT0.0231S",
+                "length": 64,
+                "ip": "129.15.40.231",
+                "seq": 9,
+                "hostname": "ps1.ochep.ou.edu"
+            },
+            {
+                "ttl": 56,
+                "rtt": "PT0.0231S",
+                "length": 64,
+                "ip": "129.15.40.231",
+                "seq": 10,
+                "hostname": "ps1.ochep.ou.edu"
+            }
+        ],
+        "mean": "PT0.023202S",
+        "min": "PT0.02306S",
+        "received": 10
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "ps1.ochep.ou.edu",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "psmsu02.aglt2.org"
+        }
+    },
+    "@timestamp": "2023-12-14T15:46:19.520338736Z",
+    "@version": "1",
+    "lost": 0,
+    "timestamp": "2023-12-14T15:46:19+00:00",
+    "received": 10,
+    "src": "192.41.236.32",
+    "source": {
+        "ipv6": "2001:48a8:68f7:8001:192:41:236:32",
+        "ipv4": "192.41.236.32"
+    },
+    "src_production": true,
+    "src_rcsite": "AGLT2",
+    "duplicates": 0,
+    "src_site": "AGLT2",
+    "destination": {
+        "ipv6": null,
+        "ipv4": "129.15.40.231"
+    },
+    "ingest_timestamp": "2023-12-14T15:46:19.520338736Z",
+    "dest_host": "ps1.ochep.ou.edu",
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "AGLT2_MSU",
+    "ipv6": false,
+    "dest": "129.15.40.231"
+}{
+    "loss": 0.0,
+    "dest_netsite": "US-SLAC-LHCONE",
+    "src_host": "psum01.aglt2.org",
+    "result": {
+        "loss": 0.0,
+        "stddev": "PT0.000912S",
+        "duplicates": 0,
+        "succeeded": true,
+        "schema": 1,
+        "sent": 10,
+        "reorders": 0,
+        "max": "PT0.06041S",
+        "lost": 0,
+        "roundtrips": [
+            {
+                "ttl": 47,
+                "rtt": "PT0.0587S",
+                "length": 64,
+                "ip": "134.79.118.72",
+                "seq": 1,
+                "hostname": "psnr-farm10.slac.stanford.edu"
+            },
+            {
+                "ttl": 47,
+                "rtt": "PT0.0603S",
+                "length": 64,
+                "ip": "134.79.118.72",
+                "seq": 2,
+                "hostname": "psnr-farm10.slac.stanford.edu"
+            },
+            {
+                "ttl": 47,
+                "rtt": "PT0.0599S",
+                "length": 64,
+                "ip": "134.79.118.72",
+                "seq": 3,
+                "hostname": "psnr-farm10.slac.stanford.edu"
+            },
+            {
+                "ttl": 47,
+                "rtt": "PT0.0584S",
+                "length": 64,
+                "ip": "134.79.118.72",
+                "seq": 4,
+                "hostname": "psnr-farm10.slac.stanford.edu"
+            },
+            {
+                "ttl": 47,
+                "rtt": "PT0.0583S",
+                "length": 64,
+                "ip": "134.79.118.72",
+                "seq": 5,
+                "hostname": "psnr-farm10.slac.stanford.edu"
+            },
+            {
+                "ttl": 47,
+                "rtt": "PT0.0581S",
+                "length": 64,
+                "ip": "134.79.118.72",
+                "seq": 6,
+                "hostname": "psnr-farm10.slac.stanford.edu"
+            },
+            {
+                "ttl": 47,
+                "rtt": "PT0.0586S",
+                "length": 64,
+                "ip": "134.79.118.72",
+                "seq": 7,
+                "hostname": "psnr-farm10.slac.stanford.edu"
+            },
+            {
+                "ttl": 47,
+                "rtt": "PT0.0604S",
+                "length": 64,
+                "ip": "134.79.118.72",
+                "seq": 8,
+                "hostname": "psnr-farm10.slac.stanford.edu"
+            },
+            {
+                "ttl": 47,
+                "rtt": "PT0.0579S",
+                "length": 64,
+                "ip": "134.79.118.72",
+                "seq": 9,
+                "hostname": "psnr-farm10.slac.stanford.edu"
+            },
+            {
+                "ttl": 47,
+                "rtt": "PT0.058S",
+                "length": 64,
+                "ip": "134.79.118.72",
+                "seq": 10,
+                "hostname": "psnr-farm10.slac.stanford.edu"
+            }
+        ],
+        "mean": "PT0.058909S",
+        "min": "PT0.057998S",
+        "received": 10
+    },
+    "sent": 10,
+    "reorders": 0,
+    "test": {
+        "type": "rtt",
+        "spec": {
+            "dest": "psnr-farm10.slac.stanford.edu",
+            "schema": 1,
+            "count": 10,
+            "interval": "PT0.1S",
+            "source": "psum01.aglt2.org"
+        }
+    },
+    "@timestamp": "2023-12-14T15:46:22.451718930Z",
+    "@version": "1",
+    "lost": 0,
+    "timestamp": "2023-12-14T15:46:22+00:00",
+    "src_rcsite": "AGLT2",
+    "source": {
+        "ipv6": "2001:48a82023-12-14T15:44:27.112939272Z :68f7:1:192:41:230:59",
+        "ipv4": "192.41.230.59"
+    },
+    "dest_VO": "ATLAS",
+    "src": "192.41.230.59",
+    "received": 10,
+    "src_production": true,
+    "duplicates": 0,
+    "dest_rcsite": "WT2",
+    "src_site": "AGLT2",
+    "destination": {
+        "ipv6": null,
+        "ipv4": "134.79.118.72"
+    },
+    "dest_site": "WT2",
+    "ingest_timestamp": "2023-12-14T15:46:22.451718930Z",
+    "dest_host": "psnr-farm10.slac.stanford.edu",
+    "dest_production": true,
+    "src_VO": "ATLAS",
+    "push": true,
+    "src_netsite": "AGLT2_UM",
+    "ipv6": false,
+    "dest": "134.79.118.72"
 }[
-    2023-12-14T15: 34: 49,
-    363
+    2023-12-14T15: 46: 26,
+    209
 ][INFO
 ][logstash.outputs.file
 ][es-output
-][fb147c310201af18f294da40faa574ec85a24127272cd053daef31235934b4d4
+][
+    71c0421bdeb962d6397a1af37ceb250e857949c9978d63846f6432d202e3730b
 ] Opening file {
     :path=>"/var/log/logstash/extra.json"
 }
