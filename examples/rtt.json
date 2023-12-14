@@ -1,0 +1,525 @@
+{
+    "participants": [
+        "perfsonar-bandwidth.grid.surfsara.nl"
+    ],
+    "schedule": {
+        "duration": "PT8S",
+        "start": "2023-12-15T00:01:56+01:00"
+    },
+    "test": {
+        "spec": {
+            "dest":"lhc
+-bandwidth.twgrid.org","schema":1,"interval":"PT0.1S","count":10,"source":"perfsonar-bandwidth.grid.surfsara.nl"},"type":"rtt"},"@timestamp":"2023-12-1
+4T23: 01: 58.630188257Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT1H","until":"2023-12-15T21: 33: 39Z","slip":"PT3
+0M","start":"2023-12-14T21: 33: 39Z"},"test":{"spec":{"dest":"lhc-bandwidth.twgrid.org","schema":1,"interval":"PT0.1S","count":10,"source":"perfsonar-ban
+dwidth.grid.surfsara.nl"},"type":"rtt"},"reference":{"psconfig":{"created-by":{"uuid":"DF1A73D8-D211-11E8-9C7C-5D8E46B88F63","user-agent":"psconfig-psc
+heduler-agent"}}},"href":"https: //perfsonar.grid.surfsara.nl/pscheduler/tasks/cd5f6ca2-022c-4c2f-aaa1-2c9f38b2adf7","detail":{"participants":["perfsona
+r-bandwidth.grid.surfsara.nl"],"added":"2023-12-14T15: 54: 29+01: 00","duration":"PT8S","enabled":true,"multi-result":false,"start":"2023-12-14T22: 33: 39+0
+1: 00","post":"P0D","runs":24,"cli":["--count","10","--dest","lhc-bandwidth.twgrid.org","--interval","PT0.1S","--source","perfsonar-bandwidth.grid.surfs
+ara.nl"],"exclusive":false,"diags":"Hints:\n  requester: 2001: 610: 108: 203a: : 32\n  server: 2001: 610: 108: 203a: : 32\nIdentified as everybody, local-interfa
+ces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+            1/1 passed
+,
+            0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hint
+s":{"server":"2001: 610: 108: 203a: : 32","requester":"2001: 610: 108: 203a: : 32"},"runs-started":2,"slip":"PT30M","participant":0},"tool":"ping"},"headers":{"x
+_request_id":"973c69c33e193f0aee82767b44bc13e0","x_forwarded_for":"145.100.32.31","request_path":"/","request_method":"POST","x_forwarded_host":"ps-col
+lection.atlas-ml.org","http_host":"ps-collection.atlas-ml.org","x_real_ip":"145.100.32.31","x_forwarded_scheme":"https","x_forwarded_proto":"https","co
+ntent_type":"application/json","http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.
+1","x_scheme":"https","http_accept":"* /*","content_length":"3449","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"DF1A73D8-D21
+1-11E8-9C7C-5D8E46B88F63","user-agent":"psconfig-pscheduler-agent"}}},"run":{"participants":["perfsonar-bandwidth.grid.surfsara.nl"],"state":"finished"
+,"result-merged":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"href":"https://
+perfsonar.grid.surfsara.nl/pscheduler/tasks/cd5f6ca2-022c-4c2f-aaa1-2c9f38b2adf7/runs/6c98fe5e-538d-4757-95c3-421760527d9d","added":"2023-12-14T15:54:3
+6+01:00","duration":"PT2S","priority":null,"errors":null,"start-time":"2023-12-15T00:01:56+01:00","result-full":[{"succeeded":true,"diags":"sudo ping6
+-n -c 10 -i 0.1 -I 2001:610:108:203a::32 -W 1.0 2400:4500:0:2::164c\n\n","error":null,"result":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss
+":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"schema":1}],"task-href":"https://perfsonar.grid.surfsara.nl/pscheduler/tasks/cd5f6ca2-02
+2c-4c2f-aaa1-2c9f38b2adf7","state-display":"Finished","end-time":"2023-12-15T00:01:58+01:00","limit-diags":"Hints:\n  requester: 2001:610:108:203a::32\
+n  server: 2001:610:108:203a::32\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do every
+thing\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nP
+roposal meets limits\nPriority set at 0:\n  Initial priority  (Set to 0)","participant":0},"result":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,
+"loss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"tool":{"name":"ping","version":"1.0"},"id":"6c98fe5e-538d-4757-95c3-421760527d9d","
+@version":"1"}
+{"participants":["picperfsonar-latency.pic.es"],"schedule":{"duration":"PT8S","start":"2023-12-14T23:01:59Z"},"test":{"spec":{"dest":"ccperfsonar2.in2p
+3.fr","schema":1,"interval":"PT0.1S","count":10,"source":"picperfsonar-latency.pic.es"},"type":"rtt"},"@timestamp":"2023-12-14T23:02:02.032224969Z","ho
+st":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT1H","until":"2023-12-15T20:48:40Z","slip":"PT30M","start":"2023-12-14T20
+:48:40Z"},"test":{"spec":{"dest":"ccperfsonar2.in2p3.fr","schema":1,"interval":"PT0.1S","count":10,"source":"picperfsonar-latency.pic.es"},"type":"rtt"
+},"reference":{"psconfig":{"created-by":{"uuid":"43853F02-F437-11EB-8BD2-DA261C653453","user-agent":"psconfig-pscheduler-agent"}}},"href":"https://picp
+erfsonar-bandwidth.pic.es/pscheduler/tasks/eea904ed-16ff-4263-86e3-21e167c216df","detail":{"participants":["picperfsonar-latency.pic.es"],"added":"2023
+-12-14T14:19:06+00:00","duration":"PT8S","enabled":true,"multi-result":false,"start":"2023-12-14T20:48:40+00:00","post":"P0D","runs":24,"cli":["--count
+","10","--dest","ccperfsonar2.in2p3.fr","--interval","PT0.1S","--source","picperfsonar-latency.pic.es"],"exclusive":false,"diags":"Hints:\n  requester:
+ 2001:67c:1148:203::242\n  server: 2001:67c:1148:203::242\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: H
+osts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed one a
+pplication.  Stopping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2001:67c:1148:203::242","requester":"200
+1:67c:1148:203::242"},"runs-started":3,"slip":"PT30M","participant":0},"tool":"ping"},"headers":{"x_request_id":"cbf6a1bc4edb84735759c430ae43de75","x_f
+orwarded_for":"193.109.172.242","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":"ps-collection.a
+tlas-ml.org","x_real_ip":"193.109.172.242","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json","http_user_agent"
+:"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept":"*/*","conte
+nt_length":"3406","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"43853F02-F437-11EB-8BD2-DA261C653453","user-agent":"psconfig
+-pscheduler-agent"}}},"run":{"participants":["picperfsonar-latency.pic.es"],"state":"finished","result-merged":{"sent":10,"roundtrips":[],"schema":1,"r
+eorders":0,"loss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"href":"https: //picperfsonar-bandwidth.pic.es/pscheduler/tasks/eea904ed-1
+            6ff-4263-86e3-21e167c216df/runs/00a1e89a-f5cd-4bb9-8c79-dd3a272094c2","added":"2023-12-14T14: 19: 13+00: 00","duration":"PT2S","priority":null,"errors":nu
+ll,
+            "start-time": "2023-12-14T23:01:59+00:00",
+            "result-full": [
+                {
+                    "succeeded": true,
+                    "diags":"sudo ping6 -n -c 10 -i 0.1 -I 2001:67c:1148:203::242 -W 1.0 2001:660: 5009: 9: 193: 48: 99: 76\n\n","error":null,"result":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"succeeded":true,"recei
+ved":0,"lost":10},"schema":1}],"task-href":"https: //picperfsonar-bandwidth.pic.es/pscheduler/tasks/eea904ed-16ff-4263-86e3-21e167c216df","state-display
+                    ":"Finished","end-time":"2023-12-14T23: 02: 01+00: 00","limit-diags":"Hints:\n  requester: 2001: 67c: 1148: 203: : 242\n  server: 2001: 67c: 1148: 203: : 242\nIdent
+ified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed
+\n  Group 1: Want all,
+                    1/1 passed,
+                    0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set at 0
+:\n  Initial priority  (Set to 0)","participant":0},"result":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"succeeded":t
+rue,
+                    "received": 0,
+                    "lost": 10
+                },
+                "tool": {
+                    "name": "ping",
+                    "version": "1.0"
+                },
+                "id": "00a1e89a-f5cd-4bb9-8c79-dd3a272094c2",
+                "@version": "1"
+            }
+{
+                "participants": [
+                    "picperfsonar-bandwidth.pic.es"
+                ],
+                "schedule": {
+                    "duration": "PT8S",
+                    "start": "2023-12-14T23:02:04Z"
+                },
+                "test": {
+                    "spec": {
+                        "dest":"lhc-bandwidth.t
+wgrid.org","schema":1,"interval":"PT0.1S","count":10,"source":"picperfsonar-bandwidth.pic.es"},"type":"rtt"},"@timestamp":"2023-12-14T23: 02: 06.38764970
+6Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT1H","until":"2023-12-15T20: 48: 40Z","slip":"PT30M","start":"2023-1
+2-14T20: 48: 40Z"},"test":{"spec":{"dest":"lhc-bandwidth.twgrid.org","schema":1,"interval":"PT0.1S","count":10,"source":"picperfsonar-bandwidth.pic.es"},"type": "rtt"
+                    },
+                    "reference": {
+                        "psconfig": {
+                            "created-by": {
+                                "uuid": "43853F02-F437-11EB-8BD2-DA261C653453",
+                                "user-agent": "psconfig-pscheduler-agent"
+                            }
+                        }
+                    },
+                    "href":"
+https: //picperfsonar-bandwidth.pic.es/pscheduler/tasks/010a931a-efd9-490d-ac05-a8f88a98b071","detail":{"participants":["picperfsonar-bandwidth.pic.es"]
+                    ,
+                    "added": "2023-12-14T14:15:48+00:00",
+                    "duration": "PT8S",
+                    "enabled": true,
+                    "multi-result": false,
+                    "start": "2023-12-14T20:48:40+00:00",
+                    "post": "P0D",
+                    "runs": 24,"
+cli":["--count","10","--dest","lhc-bandwidth.twgrid.org","--interval","PT0.1S","--source","picperfsonar-bandwidth.pic.es"],"exclusive":false,"diags":"H
+ints:\n  requester: 2001: 67c: 1148: 204: : 250\n  server: 2001: 67c: 1148: 204: : 250\nIdentified as everybody, local-interfaces\nClassified as default, friendl
+ies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                    1/1 passed,
+                    0/1 failed: PASS\n  Application P
+ASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2001: 67c: 1148: 204: : 25
+0","requester":"2001: 67c: 1148: 204: : 250"},"runs-started":3,"slip":"PT30M","participant":0},"tool":"ping"},"headers":{"x_request_id":"cb6674defb5a7b4d8fb
+f0207930477c5","x_forwarded_for":"193.109.172.242","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_hos
+t":"ps-collection.atlas-ml.org","x_real_ip":"193.109.172.242","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json
+","http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_a
+ccept":"* /*","content_length":"3418","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"43853F02-F437-11EB-8BD2-DA261C653453","us
+er-agent":"psconfig-pscheduler-agent"}}},"run":{"participants":["picperfsonar-bandwidth.pic.es"],"state":"finished","result-merged":{"sent":10,"roundtr
+ips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"href":"https://picperfsonar-bandwidth.pic.es/psched
+uler/tasks/010a931a-efd9-490d-ac05-a8f88a98b071/runs/210d3699-501f-4a38-b7b8-0c91772d4969","added":"2023-12-14T14:15:59+00:00","duration":"PT1S","prior
+ity":null,"errors":null,"start-time":"2023-12-14T23:02:04+00:00","result-full":[{"succeeded":true,"diags":"sudo ping6 -n -c 10 -i 0.1 -I 2001:67c:1148:
+204::250 -W 1.0 2400:4500:0:2::164c\n\n","error":null,"result":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"succeeded"
+:true,"received":0,"lost":10},"schema":1}],"task-href":"https://picperfsonar-bandwidth.pic.es/pscheduler/tasks/010a931a-efd9-490d-ac05-a8f88a98b071","s
+tate-display":"Finished","end-time":"2023-12-14T23:02:05+00:00","limit-diags":"Hints:\n  requester: 2001:67c:1148:204::250\n  server: 2001:67c:1148:204
+::250\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'al
+ways' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPrior
+ity set at 0:\n  Initial priority  (Set to 0)","participant":0},"result":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"
+succeeded":true,"received":0,"lost":10},"tool":{"name":"ping","version":"1.0"},"id":"210d3699-501f-4a38-b7b8-0c91772d4969","@version":"1"}
+{"participants":["ps-latency.lhcmon.triumf.ca"],"schedule":{"duration":"PT8S","start":"2023-12-14T15:02:04-08:00"},"test":{"spec":{"dest":"lhc-bandwidt
+h.twgrid.org","schema":1,"interval":"PT0.1S","count":10,"source":"ps-latency.lhcmon.triumf.ca"},"type":"rtt"},"@timestamp":"2023-12-14T23:02:06.4351619
+23Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT1H","until":"2023-12-15T20:54:15Z","slip":"PT30M","start":"2023-
+12-14T20:54:15Z"},"test":{"spec":{"dest":"lhc-bandwidth.twgrid.org","schema":1,"interval":"PT0.1S","count":10,"source":"ps-latency.lhcmon.triumf.ca"},"
+type":"rtt"},"reference":{"psconfig":{"created-by":{"uuid":"E540E5C4-A9D6-11E9-BC53-8ACF4A3D9C24","user-agent":"psconfig-pscheduler-agent"}}},"href":"h
+ttps://ps-bandwidth.lhcmon.triumf.ca/pscheduler/tasks/7f6d2971-774f-4b2b-87f3-beab00de2986","detail":{"participants":["ps-latency.lhcmon.triumf.ca"],"a
+dded":"2023-12-14T06:23:15-08:00","duration":"PT8S","enabled":true,"multi-result":false,"start":"2023-12-14T12:54:15-08:00","post":"P0D","runs":24,"cli
+":["--count","10","--dest","lhc-bandwidth.twgrid.org","--interval","PT0.1S","--source","ps-latency.lhcmon.triumf.ca"],"exclusive":false,"diags":"Hints:
+\n  requester: 2607:f8f0:660:2::3\n  server: 2607:f8f0:660:2::3\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplicat
+ion: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed
+ one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2607:f8f0:660:2::3","requester":"2
+607:f8f0:660:2::3"},"runs-started":3,"slip":"PT30M","participant":0},"tool":"ping"},"headers":{"x_request_id":"7bcda1a50c1baede407cdd5098925de4","x_for
+warded_for":"206.12.9.2","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":"ps-collection.atlas-ml
+.org","x_real_ip":"206.12.9.2","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json","http_user_agent":"PycURL/7.4
+3.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept":"*/*","content_length":"3361","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"E540E5C4-A9D6-11E9-BC53-8ACF4A3D9C24","user-agent":"psconfig-pscheduler-
+agent"}}},"run":{"participants":["ps-latency.lhcmon.triumf.ca"],"state":"finished","result-merged":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"
+loss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"href":"https: //ps-bandwidth.lhcmon.triumf.ca/pscheduler/tasks/7f6d2971-774f-4b2b-87f
+                    3-beab00de2986/runs/53d3948c-2422-4250-9cdd-b35956d7917d","added":"2023-12-14T06: 23: 28-08: 00","duration":"PT1S","priority":null,"errors":null,"start-ti
+me":"2023-12-14T15: 02: 04-08: 00","result-full":[{"succeeded":true,"diags":"sudo ping6 -n -c 10 -i 0.1 -I 2607:f8f0: 660: 2: : 3 -W 1.0 2400: 4500: 0: 2: : 164c\n
+\n","error":null,"result":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"schema
+":1}],"task-href":"https: //ps-bandwidth.lhcmon.triumf.ca/pscheduler/tasks/7f6d2971-774f-4b2b-87f3-beab00de2986","state-display":"Finished","end-time":"
+                    2023-12-14T15: 02: 05-08: 00","limit-diags":"Hints:\n  requester: 2607:f8f0: 660: 2: : 3\n  server: 2607:f8f0: 660: 2: : 3\nIdentified as everybody, local-interfa
+ces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                    1/1 passed
+,
+                    0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","participant":0},"re
+sult":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"tool":{"name":"ping","vers
+ion":"1.0"},"id":"53d3948c-2422-4250-9cdd-b35956d7917d","@version":"1"}{
+                        "participants": [
+                            "lhc-bandwidth.twgrid.org"
+                        ],
+                        "schedule": {
+                            "duration": "PT8S",
+                            "start": "2023-12-14T23:01:58Z"
+                        },
+                        "test": {
+                            "spec": {
+                                "dest":"perfsonar-ps.ndgf.or
+g","schema":1,"interval":"PT0.1S","count":10,"source":"lhc-bandwidth.twgrid.org"},"type":"rtt"},"@timestamp":"2023-12-14T23: 02: 08.689890548Z","host":"1
+92.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT1H","until":"2023-12-15T21: 39: 17Z","slip":"PT30M","start":"2023-12-14T21: 39: 17
+Z"},"test":{"spec":{"dest":"perfsonar-ps.ndgf.org","schema":1,"interval":"PT0.1S","count":10,"source":"lhc-bandwidth.twgrid.org"},"type":"rtt"},"refere
+nce":{"psconfig":{"created-by":{"uuid":"F8BE4A08-4E86-11ED-986A-92DA2CB6F787","user-agent":"psconfig-pscheduler-agent"}}},"href":"https: //localhost/psc
+heduler/tasks/175f8aa9-822d-4856-9777-347af2b23e7a","detail":{"participants":["lhc-bandwidth.twgrid.org"],"added":"2023-12-14T15: 34: 01Z","duration":"PT
+8S","enabled":true,"multi-result":false,"spec-limits-passed":[],"start":"2023-12-14T21: 39: 17Z","post":"P0D","runs":24,"cli":["--count","10","--dest","p
+erfsonar-ps.ndgf.org","--interval","PT0.1S","--source","lhc-bandwidth.twgrid.org"],"exclusive":false,"diags":"Hints:\n  requester: 2400: 4500: 0: 2: : 164c\
+n  server: 2400: 4500: 0: 2: : 164c\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everyth
+ing\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                                1/1 passed,
+                                0/1 failed: PASS\n  Application PASSES\nApplication: Defaults applied to non-fr
+iendly hosts\n  Group 1: Limit 'innocuous-tests' passed\n  Group 1: Limit 'throughput-default-time' failed: Test is not 'throughput'\n  Group 1: Limit
+'throughput-default-udp' failed: Test is not 'throughput'\n  Group 1: Limit 'idleex-default' failed: Test is not 'idleex'\n  Group 1: Want any,
+                                1/4 pas
+sed,
+                                3/4 failed: PASS\n  Application PASSES\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2400: 4500: 0: 2: : 164c
+","requester":"2400: 4500: 0: 2: : 164c"},"runs-started":2,"slip":"PT30M","participant":0},"tool":"ping"},"headers":{"x_request_id":"afae5096022450d0c4a4095
+d45a5ddb3","x_forwarded_for":"202.140.176.76","request_path":"/?","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":"
+ps-collection.atlas-ml.org","x_real_ip":"202.140.176.76","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json","ht
+tp_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept
+":"* /*","content_length":"4206","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"F8BE4A08-4E86-11ED-986A-92DA2CB6F787","user-ag
+ent":"psconfig-pscheduler-agent"}}},"run":{"participants":["lhc-bandwidth.twgrid.org"],"state":"finished","result-merged":{"sent":10,"roundtrips":[],"s
+chema":1,"reorders":0,"loss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"href":"https://localhost/pscheduler/tasks/175f8aa9-822d-4856-
+9777-347af2b23e7a/runs/74f0cb67-2a76-4417-9b06-a4a5ba6b1727","added":"2023-12-14T15:34:11Z","duration":"PT8S","priority":null,"errors":null,"start-time
+":"2023-12-14T23:01:58Z","result-full":[{"succeeded":true,"diags":"sudo ping6 -n -c 10 -i 0.1 -I 2400:4500:0:2::164c -W 1.0 2001:948:40:3::86\n\n","err
+or":null,"result":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"schema":1}],"t
+ask-href":"https://localhost/pscheduler/tasks/175f8aa9-822d-4856-9777-347af2b23e7a","state-display":"Finished","end-time":"2023-12-14T23:02:06Z","limit
+-diags":"Hints:\n  requester: 2400:4500:0:2::164c\n  server: 2400:4500:0:2::164c\nIdentified as everybody, local-interfaces\nClassified as default, fri
+endlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Applicati
+on PASSES\nApplication: Defaults applied to non-friendly hosts\n  Group 1: Limit 'innocuous-tests' passed\n  Group 1: Limit 'throughput-default-time' f
+ailed: Test is not 'throughput'\n  Group 1: Limit 'throughput-default-udp' failed: Test is not 'throughput'\n  Group 1: Limit 'idleex-default' failed:
+Test is not 'idleex'\n  Group 1: Want any, 1/4 passed, 3/4 failed: PASS\n  Application PASSES\nProposal meets limits\nPriority set at 0:\n  Initial pri
+ority  (Set to 0)","participant":0},"result":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"succeeded":true,"received":0
+,"lost":10},"tool":{"name":"ping","version":"1.0"},"id":"74f0cb67-2a76-4417-9b06-a4a5ba6b1727","@version":"1"}
+{"participants":["ps-latency.lhcmon.triumf.ca"],"schedule":{"duration":"PT8S","start":"2023-12-14T15:02:08-08:00"},"test":{"spec":{"dest":"lhcmon.bnl.g
+ov","schema":1,"interval":"PT0.1S","count":10,"source":"ps-latency.lhcmon.triumf.ca"},"type":"rtt"},"@timestamp":"2023-12-14T23:02:10.620671997Z","host
+":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT1H","until":"2023-12-15T20:54:15Z","slip":"PT30M","start":"2023-12-14T20:5
+4:15Z"},"test":{"spec":{"dest":"lhcmon.bnl.gov","schema":1,"interval":"PT0.1S","count":10,"source":"ps-latency.lhcmon.triumf.ca"},"type":"rtt"},"refere
+nce":{"psconfig":{"created-by":{"uuid":"E540E5C4-A9D6-11E9-BC53-8ACF4A3D9C24","user-agent":"psconfig-pscheduler-agent"}}},"href":"https://ps-bandwidth.
+lhcmon.triumf.ca/pscheduler/tasks/d10a6ea7-0b0b-4cb3-87c5-764660cb5976","detail":{"participants":["ps-latency.lhcmon.triumf.ca"],"added":"2023-12-14T06
+:24:08-08:00","duration":"PT8S","enabled":true,"multi-result":false,"start":"2023-12-14T12:54:15-08:00","post":"P0D","runs":24,"cli":["--count","10","-
+-dest","lhcmon.bnl.gov","--interval","PT0.1S","--source","ps-latency.lhcmon.triumf.ca"],"exclusive":false,"diags":"Hints:\n  requester: 2607:f8f0:660:2
+::3\n  server: 2607:f8f0:660:2::3\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do ever
+ything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\n
+Proposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2607:f8f0:660:2::3","requester":"2607:f8f0:660:2::3"},"runs-star
+ted":3,"slip":"PT30M","participant":0},"tool":"ping"},"headers":{"x_request_id":"e8ce80796b4dde8452c8f1e2ece4703b","x_forwarded_for":"206.12.9.2","requ
+est_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":"ps-collection.atlas-ml.org","x_real_ip":"206.12.9.2"
+,"x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json","http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1
+zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept":"*/*","content_length":"3328","x_forwarded_port":"443"
+                            },
+                            "reference": {
+                                "psconfig": {
+                                    "created-by": {
+                                        "uuid": "E540E5C4-A9D6-11E9-BC53-8ACF4A3D9C24",
+                                        "user-agent": "psconfig-pscheduler-agent"
+                                    }
+                                }
+                            },
+                            "run": {"participants":["ps-latency.lhcmon.triumf.ca"],"state":"finished","result-merged":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"succ
+eeded":true,"received":0,"lost":10},"href":"https: //ps-bandwidth.lhcmon.triumf.ca/pscheduler/tasks/d10a6ea7-0b0b-4cb3-87c5-764660cb5976/runs/4129dbae-b
+                                987-4192-b1e0-898623cbdc2d","added":"2023-12-14T06: 24: 21-08: 00","duration":"PT2S","priority":null,"errors":null,"start-time":"2023-12-14T15: 02: 08-08: 00
+","result-full":[{"succeeded":true,"diags":"sudo ping6 -n -c 10 -i 0.1 -I 2607:f8f0: 660: 2: : 3 -W 1.0 2620: 0: 210: 1: : 23\n\n","error":null,"result":{"sent": 10,
+                                "roundtrips": [],
+                                "schema": 1,
+                                "reorders": 0,
+                                "loss": 1.0,
+                                "duplicates": 0,
+                                "succeeded": true,
+                                "received": 0,
+                                "lost": 10
+                            },
+                            "schema": 1
+                        }
+                    ],
+                    "task-href":"https://ps-ban
+dwidth.lhcmon.triumf.ca/pscheduler/tasks/d10a6ea7-0b0b-4cb3-87c5-764660cb5976","state-display":"Finished","end-time":"2023-12-14T15: 02: 10-08: 00","limit
+-diags":"Hints:\n  requester: 2607:f8f0: 660: 2: : 3\n  server: 2607:f8f0: 660: 2: : 3\nIdentified as everybody, local-interfaces\nClassified as default, frien
+dlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                    1/1 passed,
+                    0/1 failed: PASS\n  Application
+ PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","participant":0},"result":{"sent":10,"roundtrips":[],"schema": 1,
+                    "reorders": 0,
+                    "loss": 1.0,
+                    "duplicates": 0,
+                    "succeeded": true,
+                    "received": 0,
+                    "lost": 10
+                },
+                "tool": {
+                    "name": "ping",
+                    "version": "1.0"
+                },
+                "id":"4129dbae-b987-4192-b1e0-898623cbdc2d","@version":"1"}{
+                    "participants": [
+                        "psmsu01.aglt2.org"
+                    ],
+                    "schedule": {
+                        "duration": "PT8S",
+                        "start": "2023-12-14T23:02:11Z"
+                    },
+                    "test": {
+                        "spec": {
+                            "dest": "psuta02.atlas-swt2.org","sc
+hema":1,"interval":"PT0.1S","count":10,"source":"psmsu01.aglt2.org"},"type":"rtt"},"@timestamp":"2023-12-14T23: 02: 13.519243411Z","host":"192.168.26.60",
+                            "task": {
+                                "schema": 1,
+                                "schedule": {
+                                    "sliprand": true,
+                                    "repeat": "PT1H",
+                                    "until": "2023-12-15T20:46:40Z",
+                                    "slip": "PT30M",
+                                    "start": "2023-12-14T20:46:40Z"
+                                },
+                                "test": {"
+spec":{"dest":"psuta02.atlas-swt2.org","schema":1,"interval":"PT0.1S","count":10,"source":"psmsu01.aglt2.org"},"type":"rtt"},"reference":{"psconfig":{"
+created-by":{"uuid":"C17C0F24-F16E-11EB-9CE4-D9FBE18EB470","user-agent":"psconfig-pscheduler-agent"}}},"href":"https: //psmsu01.aglt2.org/pscheduler/tas
+ks/5a579160-d226-4b6b-8019-dd56cb438086","detail":{"participants":["psmsu01.aglt2.org"],"added":"2023-12-14T15: 08: 15+00: 00","duration":"PT8S","enabled": true,
+                                    "multi-result": false,
+                                    "start": "2023-12-14T20:46:40+00:00",
+                                    "post": "P0D",
+                                    "runs": 24,
+                                    "cli": [
+                                        "--count",
+                                        "10",
+                                        "--dest",
+                                        "psuta02.atlas-swt2.org","--interv
+al","PT0.1S","--source","psmsu01.aglt2.org"],"exclusive":false,"diags":"Hints:\n  requester: 2001: 48a8: 68f7: 8001: 192: 41: 236: 31\n  server: 2001: 48a8: 68f
+7: 8001: 192: 41: 236: 31\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Gro
+up 1: Limit 'always' passed\n  Group 1: Want all,
+                                        1/1 passed,
+                                        0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meet
+s limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2001: 48a8: 68f7: 8001: 192: 41: 236: 31","requester":"2001: 48a8: 68f7: 8001: 192: 41: 23
+6: 31"},"runs-started":3,"slip":"PT30M","participant":0},"tool":"ping"},"headers":{"x_request_id":"fca3a7dde25225b2b8fe080fd8a06afc","x_forwarded_for":"192.41.236.31","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":"ps-collection.atlas-ml.org","x_r
+eal_ip":"192.41.236.31","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json","http_user_agent":"PycURL/7.43.0 lib
+curl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept":"* /*","content_length":"3381","
+x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"C17C0F24-F16E-11EB-9CE4-D9FBE18EB470","user-agent":"psconfig-pscheduler-agent"}
+}},"run":{"participants":["psmsu01.aglt2.org"],"state":"finished","result-merged":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplic
+ates":0,"succeeded":true,"received":0,"lost":10},"href":"https://psmsu01.aglt2.org/pscheduler/tasks/5a579160-d226-4b6b-8019-dd56cb438086/runs/e347413a-
+0370-443c-bcdc-0cb611ab96de","added":"2023-12-14T15:08:35+00:00","duration":"PT2S","priority":null,"errors":null,"start-time":"2023-12-14T23:02:11+00:0
+0","result-full":[{"succeeded":true,"diags":"sudo ping6 -n -c 10 -i 0.1 -I 2001:48a8:68f7:8001:192:41:236:31 -W 1.0 2602:fd0f:0:1001::3\n\n","error":nu
+ll,"result":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"schema":1}],"task-hr
+ef":"https://psmsu01.aglt2.org/pscheduler/tasks/5a579160-d226-4b6b-8019-dd56cb438086","state-display":"Finished","end-time":"2023-12-14T23:02:13+00:00"
+,"limit-diags":"Hints:\n  requester: 2001:48a8:68f7:8001:192:41:236:31\n  server: 2001:48a8:68f7:8001:192:41:236:31\nIdentified as everybody, local-int
+erfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 pa
+ssed, 0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set at 0:\n  Initial priority  (Set t
+o 0)","participant":0},"result":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"
+tool":{"name":"ping","version":"1.0"},"id":"e347413a-0370-443c-bcdc-0cb611ab96de","@version":"1"}
+{"participants":["ps-bandwidth.lhcmon.triumf.ca"],"schedule":{"duration":"PT8S","start":"2023-12-14T15:02:22-08:00"},"test":{"spec":{"dest":"lhcmon.bnl
+.gov","schema":1,"interval":"PT0.1S","count":10,"source":"ps-bandwidth.lhcmon.triumf.ca"},"type":"rtt"},"@timestamp":"2023-12-14T23:02:24.511723888Z","
+host":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT1H","until":"2023-12-15T20:54:15Z","slip":"PT30M","start":"2023-12-14T
+20:54:15Z"},"test":{"spec":{"dest":"lhcmon.bnl.gov","schema":1,"interval":"PT0.1S","count":10,"source":"ps-bandwidth.lhcmon.triumf.ca"},"type":"rtt"},"
+reference":{"psconfig":{"created-by":{"uuid":"E540E5C4-A9D6-11E9-BC53-8ACF4A3D9C24","user-agent":"psconfig-pscheduler-agent"}}},"href":"https://ps-band
+width.lhcmon.triumf.ca/pscheduler/tasks/d830da8b-7498-48d4-851e-1c92cd7cc261","detail":{"participants":["ps-bandwidth.lhcmon.triumf.ca"],"added":"2023-
+12-14T06:21:25-08:00","duration":"PT8S","enabled":true,"multi-result":false,"start":"2023-12-14T12:54:15-08:00","post":"P0D","runs":24,"cli":["--count"
+,"10","--dest","lhcmon.bnl.gov","--interval","PT0.1S","--source","ps-bandwidth.lhcmon.triumf.ca"],"exclusive":false,"diags":"Hints:\n  requester: 2607:
+f8f0:660:2::2\n  server: 2607:f8f0:660:2::2\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust
+to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed one application.  S
+topping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2607:f8f0:660:2::2","requester":"2607:f8f0:660:2::2"},
+"runs-started":3,"slip":"PT30M","participant":0},"tool":"ping"},"headers":{"x_request_id":"b3895c62e7cee5d96ca90b842f744186","x_forwarded_for":"206.12.
+9.2","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":"ps-collection.atlas-ml.org","x_real_ip":"2
+06.12.9.2","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json","http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 N
+SS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept":"*/*","content_length":"3340","x_forwarded_p
+ort":"443"},"reference":{"psconfig":{"created-by":{"uuid":"E540E5C4-A9D6-11E9-BC53-8ACF4A3D9C24","user-agent":"psconfig-pscheduler-agent"}}},"run":{"pa
+rticipants":["ps-bandwidth.lhcmon.triumf.ca"],"state":"finished","result-merged":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplica
+tes":0,"succeeded":true,"received":0,"lost":10},"href":"https: //ps-bandwidth.lhcmon.triumf.ca/pscheduler/tasks/d830da8b-7498-48d4-851e-1c92cd7cc261/run
+s/b31d22fd-33d0-4fbe-b728-1a57368485ca","added":"2023-12-14T06: 21: 38-08: 00","duration":"PT2S","priority":null,"errors":null,"start-time":"2023-12-14T15
+: 02: 22-08: 00","result-full":[{"succeeded":true,"diags":"sudo ping6 -n -c 10 -i 0.1 -I 2607:f8f0: 660: 2: : 2 -W 1.0 2620: 0: 210: 1: : 23\n\n","error":null,"res
+ult":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"schema":1}],"task-href":"ht
+tps: //ps-bandwidth.lhcmon.triumf.ca/pscheduler/tasks/d830da8b-7498-48d4-851e-1c92cd7cc261","state-display":"Finished","end-time":"2023-12-14T15:02:24-0
+                                        8: 00","limit-diags":"Hints:\n  requester: 2607:f8f0: 660: 2: : 2\n  server: 2607:f8f0: 660: 2: : 2\nIdentified as everybody, local-interfaces\nClassified as de
+fault, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                                        1/1 passed,
+                                        0/1 failed: PASS\n
+ Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","participant":0},"result":{"sent":10,"rou
+ndtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"tool":{"name":"ping","version":"1.0"},"id":"b31
+d22fd-33d0-4fbe-b728-1a57368485ca","@version":"1"}{
+                                            "participants": [
+                                                "psonar4.fnal.gov"
+                                            ],
+                                            "schedule": {
+                                                "duration": "PT8S",
+                                                "start": "2023-12-14T17:02:23-06:00"
+                                            },
+                                            "test": {
+                                                "spec": {
+                                                    "dest":"perfsonar2-de-kit.gridk
+a.de","schema":1,"interval":"PT0.1S","count":10,"source":"psonar4.fnal.gov"},"type":"rtt"},"@timestamp":"2023-12-14T23: 02: 25.836107924Z","host":"192.16
+8.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT1H","until":"2023-12-15T20: 47: 55Z","slip":"PT30M","start":"2023-12-14T20: 47: 55Z"},"
+test":{"spec":{"dest":"perfsonar2-de-kit.gridka.de","schema":1,"interval":"PT0.1S","count":10,"source":"psonar4.fnal.gov"},"type":"rtt"},"reference":{"
+psconfig":{"created-by":{"uuid":"32132C9E-D4E9-11E9-A000-E5464ECF2CBA","user-agent":"psconfig-pscheduler-agent"}}},"href":"https: //psonar4.fnal.gov/psc
+heduler/tasks/66bc3d1a-5318-4f47-b5cb-9e865d39bbcb","detail":{"participants":["psonar4.fnal.gov"],"added":"2023-12-14T08: 13: 34-06: 00","duration":"PT8S",
+                                                    "enabled": true,
+                                                    "multi-result": false,
+                                                    "start": "2023-12-14T14:47:55-06:00",
+                                                    "post": "P0D",
+                                                    "runs": 24,
+                                                    "cli": [
+                                                        "--count",
+                                                        "10",
+                                                        "--dest","perfsonar2-de-kit.gridk
+a.de","--interval","PT0.1S","--source","psonar4.fnal.gov"],"exclusive":false,"diags":"Hints:\n  requester: 2620: 6a: 0: 8420: : 45\n  server: 2620: 6a: 0: 8420
+: : 45\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'alw
+ays' passed\n  Group 1: Want all,
+                                                        1/1 passed,
+                                                        0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriori
+ty set to default of 0","anytime":true,"hints":{"server":"2620: 6a: 0: 8420: : 45","requester":"2620: 6a: 0: 8420: : 45"},"runs-started":3,"slip":"PT30M","partic
+ipant":0},"tool":"ping"},"headers":{"x_request_id":"4ee4e7eaaf089ec7f8a328b9939891bb","x_forwarded_for":"131.225.205.12","request_path":"/","request_me
+thod":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":"ps-collection.atlas-ml.org","x_real_ip":"131.225.205.12","x_forwarded_scheme": "https",
+                                                        "x_forwarded_proto": "https",
+                                                        "content_type": "application/json",
+                                                        "http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept":"* /*","content_length":"3293","x_forwarded_port":"443"},"reference":{"pscon
+fig":{"created-by":{"uuid":"32132C9E-D4E9-11E9-A000-E5464ECF2CBA","user-agent":"psconfig-pscheduler-agent"}}},"run":{"participants":["psonar4.fnal.gov"
+],"state":"finished","result-merged":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"loss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":
+10},"href":"https://psonar4.fnal.gov/pscheduler/tasks/66bc3d1a-5318-4f47-b5cb-9e865d39bbcb/runs/56e30656-9061-4713-bbfe-11777a08d28b","added":"2023-12-
+14T08:13:56-06:00","duration":"PT2S","priority":null,"errors":null,"start-time":"2023-12-14T17:02:23-06:00","result-full":[{"succeeded":true,"diags":"s
+udo ping6 -n -c 10 -i 0.1 -I 2620:6a:0:8420::45 -W 1.0 2a00:139c:5:585:0:41:2:12\n\n","error":null,"result":{"sent":10,"roundtrips":[],"schema":1,"reor
+ders":0,"loss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"schema":1}],"task-href":"https://psonar4.fnal.gov/pscheduler/tasks/66bc3d1a
+-5318-4f47-b5cb-9e865d39bbcb","state-display":"Finished","end-time":"2023-12-14T17:02:25-06:00","limit-diags":"Hints:\n  requester: 2620:6a:0:8420::45\
+n  server: 2620:6a:0:8420::45\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everythi
+ng\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProp
+osal meets limits\nPriority set at 0:\n  Initial priority  (Set to 0)","participant":0},"result":{"sent":10,"roundtrips":[],"schema":1,"reorders":0,"lo
+ss":1.0,"duplicates":0,"succeeded":true,"received":0,"lost":10},"tool":{"name":"ping","version":"1.0"},"id":"56e30656-9061-4713-bbfe-11777a08d28b","@ve
+rsion":"1"}
+{"participants":["perfsonar-latency.grid.surfsara.nl"],"schedule":{"duration":"PT8S","start":"2023-12-15T00:02:35+01:00"},"test":{"spec":{"dest":"psona
+r3.fnal.gov","schema":1,"interval":"PT0.1S","count":10,"source":"perfsonar-latency.grid.surfsara.nl"},"type":"rtt"},"@timestamp":"2023-12-14T23:02:36.6
+64254395Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT1H","until":"2023-12-15T21:33:39Z","slip":"PT30M","start":
+"2023-12-14T21:33:39Z"},"test":{"spec":{"dest":"psonar3.fnal.gov","schema":1,"interval":"PT0.1S","count":10,"source":"perfsonar-latency.grid.surfsara.n
+l"},"type":"rtt"},"reference":{"psconfig":{"created-by":{"uuid":"DF1A73D8-D211-11E8-9C7C-5D8E46B88F63","user-agent":"psconfig-pscheduler-agent"}}},"hre
+f":"https://perfsonar.grid.surfsara.nl/pscheduler/tasks/58093f59-75ff-4f86-9813-b7376e1bd6a6","detail":{"participants":["perfsonar-latency.grid.surfsar
+a.nl"],"added":"2023-12-14T15:58:27+01:00","duration":"PT8S","enabled":true,"multi-result":false,"start":"2023-12-14T22:33:39+01:00","post":"P0D","runs
+":24,"cli":["--count","10","--dest","psonar3.fnal.gov","--interval","PT0.1S","--source","perfsonar-latency.grid.surfsara.nl"],"exclusive":false,"diags"
+:"Hints:\n  requester: 2001:610:108:203a::31\n  server: 2001:610:108:203a::31\nIdentified as everybody, local-interfaces\nClassified as default, friend
+lies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application
+PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2001:610:108:203a::3
+1","requester":"2001:610:108:203a::31"},"runs-started":2,"slip":"PT30M","participant":0},"tool":"ping"},"headers":{"x_request_id":"c1fad36cb95f827ccc14
+52509910efde","x_forwarded_for":"145.100.32.31","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":
+"ps-collection.atlas-ml.org","x_real_ip":"145.100.32.31","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json","ht
+tp_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept
+":"*/*","content_length":"7263","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"DF1A73D8-D211-11E8-9C7C-5D8E46B88F63","user-ag
+ent":"psconfig-pscheduler-agent"}}},"run":{"participants":["perfsonar-latency.grid.surfsara.nl"],"state":"finished","result-merged":{"sent":10,"roundtr
+ips":[{"seq":1,"hostname":"psonar3.fnal.gov","ttl":50,"length":64,"ip":"131.225.205.23","rtt":"PT0.111S"},{"seq":2,"hostname":"psonar3.fnal.gov","ttl":50,
+                                                        "length": 64,
+                                                        "ip": "131.225.205.23",
+                                                        "rtt": "PT0.111S"
+                                                    },
+                                                    {
+                                                        "seq": 3,
+                                                        "hostname": "psonar3.fnal.gov",
+                                                        "ttl": 50,
+                                                        "length": 64,
+                                                        "ip": "131.225.205.23",
+                                                        "rtt":"PT0.111
+S"},{"seq":4,"hostname":"psonar3.fnal.gov","ttl":50,"length":64,"ip":"131.225.205.23","rtt":"PT0.111S"},{"seq":5,"hostname":"psonar3.fnal.gov","ttl":50,
+                                                        "length": 64,
+                                                        "ip": "131.225.205.23",
+                                                        "rtt": "PT0.111S"
+                                                    },
+                                                    {
+                                                        "seq": 6,
+                                                        "hostname": "psonar3.fnal.gov",
+                                                        "ttl": 50,
+                                                        "length": 64,
+                                                        "ip": "131.225.205.23",
+                                                        "rtt": "PT0.111S"
+                                                    },
+                                                    {
+                                                        "seq": 7,
+                                                        "hostname": "psonar3.fnal.gov",
+                                                        "ttl": 50,
+                                                        "length": 64,
+                                                        "ip": "131.225.205.23",
+                                                        "rtt": "PT0.111S"
+                                                    },
+                                                    {
+                                                        "seq": 8,
+                                                        "hostname": "psonar3.fnal.gov",
+                                                        "ttl": 50,"
+length":64,"ip":"131.225.205.23","rtt":"PT0.111S"},{"seq":9,"hostname":"psonar3.fnal.gov","ttl":50,"length":64,"ip":"131.225.205.23","rtt":"PT0.111S"},{
+                                                            "seq": 10,
+                                                            "hostname": "psonar3.fnal.gov",
+                                                            "ttl": 50,
+                                                            "length": 64,
+                                                            "ip": "131.225.205.23",
+                                                            "rtt": "PT0.111S"
+                                                        }
+                                                    ],
+                                                    "schema": 1,
+                                                    "reorders": 0,
+                                                    "loss": 0.0,
+                                                    "duplicates": 0,
+                                                    "succeeded": true,
+                                                    "received": 10,
+                                                    "lost": 0
+                                                },
+                                                "href":"https://perfsonar.grid.surfsara.nl/pscheduler/tasks/58093f59-75ff-4f86-9813-b7376e1bd6a6/runs/3cf9b6d
+c-c861-4a3a-bd13-6b3537ef0494","added":"2023-12-14T15: 58: 35+01: 00","duration":"PT1S","priority":null,"errors":null,"start-time":"2023-12-15T00: 02: 35+01
+: 00","result-full":[{"succeeded":true,"diags":"sudo ping -n -c 10 -i 0.1 -I 145.100.32.31 -W 1.0 131.225.205.23\n\nPING 131.225.205.23 (131.225.205.23)
+ from 145.100.32.31 : 56(84) bytes of data.\n64 bytes from 131.225.205.23: icmp_seq=1 ttl=50 time=111 ms\n64 bytes from 131.225.205.23: icmp_seq=2 ttl=
+50 time=111 ms\n64 bytes from 131.225.205.23: icmp_seq=3 ttl=50 time=111 ms\n64 bytes from 131.225.205.23: icmp_seq=4 ttl=50 time=111 ms\n64 bytes from
+ 131.225.205.23: icmp_seq=5 ttl=50 time=111 ms\n64 bytes from 131.225.205.23: icmp_seq=6 ttl=50 time=111 ms\n64 bytes from 131.225.205.23: icmp_seq=7 t
+tl=50 time=111 ms\n64 bytes from 131.225.205.23: icmp_seq=8 ttl=50 time=111 ms\n64 bytes from 131.225.205.23: icmp_seq=9 ttl=50 time=111 ms\n64 bytes f
+rom 131.225.205.23: icmp_seq=10 ttl=50 time=111 ms\n\n--- 131.225.205.23 ping statistics ---\n10 packets transmitted,
+                                                10 received,
+                                                0% packet loss, time
+ 911ms\nrtt min/avg/max/mdev = 111.265/111.333/111.468/0.426 ms, pipe 2\n","error":null,"result":{"sent":10,"roundtrips":[{"seq":1,"hostname":"psonar3.
+fnal.gov","ttl":50,"length":64,"ip":"131.225.205.23","rtt":"PT0.111S"},{"seq":2,"hostname":"psonar3.fnal.gov","ttl":50,"length":64,"ip":"131.225.205.23
+","rtt":"PT0.111S"},{"seq":3,"hostname":"psonar3.fnal.gov","ttl":50,"length":64,"ip":"131.225.205.23","rtt":"PT0.111S"},{"seq":4,"hostname":"psonar3.fn
+al.gov","ttl":50,"length":64,"ip":"131.225.205.23","rtt":"PT0.111S"},{"seq":5,"hostname":"psonar3.fnal.gov","ttl":50,"length":64,"ip":"131.225.205.23","rtt": "PT0.111S"
+                                            },
+                                            {
+                                                "seq": 6,
+                                                "hostname": "psonar3.fnal.gov",
+                                                "ttl": 50,
+                                                "length": 64,
+                                                "ip": "131.225.205.23",
+                                                "rtt": "PT0.111S"
+                                            },
+                                            {
+                                                "seq": 7,
+                                                "hostname":"psonar3.fnal
+.gov","ttl":50,"length":64,"ip":"131.225.205.23","rtt":"PT0.111S"},{"seq":8,"hostname":"psonar3.fnal.gov","ttl":50,"length":64,"ip":"131.225.205.23","r
+tt":"PT0.111S"},{"seq":9,"hostname":"psonar3.fnal.gov","ttl":50,"length":64,"ip":"131.225.205.23","rtt":"PT0.111S"},{"seq":10,"hostname":"psonar3.fnal.
+gov","ttl":50,"length":64,"ip":"131.225.205.23","rtt":"PT0.111S"}],"schema":1,"reorders":0,"loss":0.0,"duplicates":0,"succeeded":true,"received":10,"lo
+st":0},"schema":1}],"task-href":"https: //perfsonar.grid.surfsara.nl/pscheduler/tasks/58093f59-75ff-4f86-9813-b7376e1bd6a6","state-display":"Finished","
+end-time":"2023-12-15T00: 02: 36+01: 00","limit-diags":"Hints:\n  requester: 2001: 610: 108: 203a: : 31\n  server: 2001: 610: 108: 203a: : 31\nIdentified as everybo
+dy, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Wan
+t all,
+                                                1/1 passed,
+                                                0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set at 0:\n  Initial pri
+ority  (Set to 0)","participant":0},"result":{"sent":10,"roundtrips":[{"seq":1,"hostname":"psonar3.fnal.gov","ttl":50,"length":64,"ip":"131.225.205.23",
+                                                "rtt": "PT0.111S"
+                                            },
+                                            {
+                                                "seq": 2,
+                                                "hostname": "psonar3.fnal.gov",
+                                                "ttl": 50,
+                                                "length": 64,
+                                                "ip": "131.225.205.23",
+                                                "rtt": "PT0.111S"
+                                            },
+                                            {
+                                                "seq": 3,
+                                                "hostname":"psonar3.fna
+l.gov","ttl":50,"length":64,"ip":"131.225.205.23","rtt":"PT0.111S"},{"seq":4,"hostname":"psonar3.fnal.gov","ttl":50,"length":64,"ip":"131.225.205.23","
+rtt":"PT0.111S"},{"seq":5,"hostname":"psonar3.fnal.gov","ttl":50,"length":64,"ip":"131.225.205.23","rtt":"PT0.111S"},{"seq":6,"hostname":"psonar3.fnal.
+gov","ttl":50,"length":64,"ip":"131.225.205.23","rtt":"PT0.111S"},{"seq":7,"hostname":"psonar3.fnal.gov","ttl":50,"length":64,"ip":"131.225.205.23","rt
+t":"PT0.111S"},{"seq":8,"hostname":"psonar3.fnal.gov","ttl":50,"length":64,"ip":"131.225.205.23","rtt":"PT0.111S"},{"seq":9,"hostname":"psonar3.fnal.go
+v","ttl":50,"length":64,"ip":"131.225.205.23","rtt":"PT0.111S"},{"seq":10,"hostname":"psonar3.fnal.gov","ttl":50,"length":64,"ip":"131.225.205.23","rtt
+":"PT0.111S"}],"schema":1,"reorders":0,"loss":0.0,"duplicates":0,"succeeded":true,"received":10,"lost":0},"tool":{"name":"ping","version":"1.0"},"id":"3cf9b6dc-c861-4a3a-bd13-6b3537ef0494","@version":"1"}

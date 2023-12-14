@@ -1,0 +1,916 @@
+{
+    "participants": [
+        "ccperfsonar2.in2p3.fr"
+    ],
+    "schedule": {
+        "duration": "P1DT2S",
+        "start": "2023-12-15T00:03:15+01:00"
+    },
+    "test": {
+        "spec": {
+            "bucket-width": 0.001,"pa
+cket-count":600,"schema":1,"packet-interval":0.1,"dest":"hepsonar2.ph.liv.ac.uk","data-ports":{"lower":8760,"upper":9960},"ip-version":4,"source":"ccpe
+rfsonar2.in2p3.fr"},"type":"latencybg"},"@timestamp":"2023-12-14T23: 03: 15.664409313Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"until":"20
+23-12-15T16: 04: 00Z","start":"2023-12-14T16: 04: 00Z"},"test":{"spec":{"bucket-width":0.001,"packet-count":600,"schema":1,"packet-interval":0.1,"dest":"he
+psonar2.ph.liv.ac.uk","data-ports":{"lower":8760,"upper":9960},"ip-version":4,"source":"ccperfsonar2.in2p3.fr"},"type":"latencybg"},"reference":{"pscon
+fig":{"created-by":{"uuid":"1E330C1C-B767-11E8-A783-F90FFB5C71E9","user-agent":"psconfig-pscheduler-agent"}}},"href":"https: //ccperfsonar2.in2p3.fr/psc
+heduler/tasks/d8d6aeeb-9045-4033-97b9-bfd56d45a3c6","detail":{"participants":["ccperfsonar2.in2p3.fr"],"added":"2023-12-14T12: 50: 38+01: 00","duration":"
+P1DT2S","enabled":true,"multi-result":true,"start":"2023-12-14T17: 04: 00+01: 00","post":"P0D","runs":419,"cli":["--source","ccperfsonar2.in2p3.fr","--des
+t","hepsonar2.ph.liv.ac.uk","--packet-count","600","--packet-interval","0.1","--data-ports","8760-9960","--ip-version","4","--bucket-width","0.001"],"e
+xclusive":false,"diags":"Hints:\n  requester: 2001: 660: 5009: 9: 193: 48: 99: 76\n  server: 2001: 660: 5009: 9: 193: 48: 99: 76\nIdentified as everybody, local-inte
+rfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+            1/1 pas
+sed,
+            0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"h
+ints":{"server":"2001: 660: 5009: 9: 193: 48: 99: 76","requester":"2001: 660: 5009: 9: 193: 48: 99: 76"},"runs-started":1,"slip":"P0D","participant":0},"tool":"powst
+ream"},"headers":{"x_request_id":"9ab5b582eb06be26aa74255efcd47e43","x_forwarded_for":"193.48.99.76","request_path":"/","request_method":"POST","x_forw
+arded_host":"ps-collection.atlas-ml.org","http_host":"ps-collection.atlas-ml.org","x_real_ip":"193.48.99.76","x_forwarded_scheme":"https","x_forwarded_
+proto":"https","content_type":"application/json","http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http
+_version":"HTTP/1.1","x_scheme":"https","http_accept":"* /*","content_length":"3037","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"u
+uid":"1E330C1C-B767-11E8-A783-F90FFB5C71E9","user-agent":"psconfig-pscheduler-agent"}}},"run":{"participants":["ccperfsonar2.in2p3.fr"],"state":"finish
+ed","result-merged":{"schema":1,"histogram-ttl":{},"packets-lost":600,"succeeded":true,"histogram-latency":{},"packets-duplicated":0,"packets-sent":600
+,"packets-reordered":0,"packets-received":0},"href":"https://ccperfsonar2.in2p3.fr/pscheduler/tasks/d8d6aeeb-9045-4033-97b9-bfd56d45a3c6/runs/a93a1d69-
+6216-4330-9ba3-c1fa46ced165","added":"2023-12-15T00:03:15+01:00","duration":"P0D","priority":0,"errors":null,"start-time":"2023-12-15T00:03:15+01:00","
+result-full":null,"task-href":"https://ccperfsonar2.in2p3.fr/pscheduler/tasks/d8d6aeeb-9045-4033-97b9-bfd56d45a3c6","state-display":"Finished","end-tim
+e":"2023-12-15T00:03:15+01:00","limit-diags":null,"participant":0},"result":{"schema":1,"histogram-ttl":{},"packets-lost":600,"succeeded":true,"histogr
+am-latency":{},"packets-duplicated":0,"packets-sent":600,"packets-reordered":0,"packets-received":0},"tool":{"name":"powstream","version":"1.0"},"id":"
+a93a1d69-6216-4330-9ba3-c1fa46ced165","@version":"1"}
+{"participants":["ccperfsonar2.in2p3.fr"],"schedule":{"duration":"P1DT2S","start":"2023-12-15T00:03:13+01:00"},"test":{"spec":{"bucket-width":0.001,"pa
+cket-count":600,"schema":1,"packet-interval":0.1,"dest":"t1-pfsn2.jinr-t1.ru","data-ports":{"lower":8760,"upper":9960},"source":"ccperfsonar2.in2p3.fr"
+},"type":"latencybg"},"@timestamp":"2023-12-14T23:03:15.674721396Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"until":"2023-12-15T16:03:51Z
+","start":"2023-12-14T16:03:51Z"},"test":{"spec":{"bucket-width":0.001,"packet-count":600,"schema":1,"packet-interval":0.1,"dest":"t1-pfsn2.jinr-t1.ru"
+,"data-ports":{"lower":8760,"upper":9960},"source":"ccperfsonar2.in2p3.fr"},"type":"latencybg"},"reference":{"psconfig":{"created-by":{"uuid":"1E330C1C
+-B767-11E8-A783-F90FFB5C71E9","user-agent":"psconfig-pscheduler-agent"}}},"href":"https://ccperfsonar2.in2p3.fr/pscheduler/tasks/f5fa65b4-1926-41c2-aaf
+4-dcafa954c00a","detail":{"participants":["ccperfsonar2.in2p3.fr"],"added":"2023-12-14T12:31:47+01:00","duration":"P1DT2S","enabled":true,"multi-result
+":true,"start":"2023-12-14T17:03:51+01:00","post":"P0D","runs":417,"cli":["--source","ccperfsonar2.in2p3.fr","--dest","t1-pfsn2.jinr-t1.ru","--packet-c
+ount","600","--packet-interval","0.1","--data-ports","8760-9960","--bucket-width","0.001"],"exclusive":false,"diags":"Hints:\n  requester: 2001:660:500
+9:9:193:48:99:76\n  server: 2001:660:5009:9:193:48:99:76\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Ho
+sts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed one ap
+plication.  Stopping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2001:660:5009:9:193:48:99:76","requester"
+:"2001:660:5009:9:193:48:99:76"},"runs-started":1,"slip":"P0D","participant":0},"tool":"powstream"},"headers":{"x_request_id":"2f25712b9b31014c80215dc8
+ed631048","x_forwarded_for":"193.48.99.76","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":"ps-c
+ollection.atlas-ml.org","x_real_ip":"193.48.99.76","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json","http_use
+r_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept":"*/*
+","content_length":"3317","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"1E330C1C-B767-11E8-A783-F90FFB5C71E9","user-agent":"
+psconfig-pscheduler-agent"}}},"run":{"participants":["ccperfsonar2.in2p3.fr"],"state":"finished","result-merged":{"schema":1,"histogram-ttl":{"253":600
+        },
+        "packets-lost": 0,
+        "succeeded": true,
+        "max-clock-error": 1.87,
+        "histogram-latency": {
+            "26.14": 9,
+            "26.37": 1,
+            "26.13": 32,
+            "26.10": 143,
+            "26.11": 269,
+            "26.09": 24,"26.12":114,"26.34":1,"26.15":2,"26.25":1,"26.17":2,"26.32":1,"26.38":1},"packets-duplicated":0,"packets-sent":600,"packets-reordered":0,"packets-received":600
+        },
+        "href": "https://ccperfsonar2.in2p3.fr/pscheduler/tasks/f5fa65b4-1926-41c2-aaf4-dcafa954c00a/runs/94b79aaa-4947-4271-bace-2f4ff5a309cb",
+        "added":"2023-12-15T00: 03: 13+01: 00","duration":"P0D","priority":0,"errors":null,"start-time":"2023-12-15T00: 03: 13+01: 00","result-full":null,"task-href":"https: //c
+cperfsonar2.in2p3.fr/pscheduler/tasks/f5fa65b4-1926-41c2-aaf4-dcafa954c00a","state-display":"Finished","end-time":"2023-12-15T00: 03: 13+01: 00","limit-di
+ags":null,"participant":0},"result":{"schema":1,"histogram-ttl":{"253":600},"packets-lost":0,"succeeded":true,"max-clock-error":1.87,"histogram-latency
+":{"26.14":9,"26.37":1,"26.13":32,"26.10":143,"26.11":269,"26.09":24,"26.12":114,"26.34":1,"26.15":2,"26.25":1,"26.17":2,"26.32":1,"26.38":1},"packets-
+duplicated":0,"packets-sent":600,"packets-reordered":0,"packets-received":600},"tool":{"name":"powstream","version":"1.0"},"id":"94b79aaa-4947-4271-bac
+e-2f4ff5a309cb","@version":"1"}{
+            "participants": [
+                "lhc-latency.twgrid.org"
+            ],
+            "schedule": {
+                "duration": "P1DT2S",
+                "start": "2023-12-14T23:03:12Z"
+            },
+            "test": {
+                "spec": {
+                    "bucket-width": 0.001,"packet
+-count":600,"schema":1,"packet-interval":0.1,"dest":"uct2-net1.mwt2.org","data-ports":{"lower":8760,"upper":9960},"source":"lhc-latency.twgrid.org"},"t
+ype":"latencybg"},"@timestamp":"2023-12-14T23: 03: 15.698117485Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"until":"2023-12-15T18: 02: 50Z","s
+tart":"2023-12-14T18: 02: 50Z"},"test":{"spec":{"bucket-width":0.001,"packet-count":600,"schema":1,"packet-interval":0.1,"dest":"uct2-net1.mwt2.org","dat
+a-ports":{"lower":8760,"upper":9960},"source":"lhc-latency.twgrid.org"},"type":"latencybg"},"reference":{"psconfig":{"created-by":{"uuid":"A7076E6C-4E7
+5-11ED-ABFF-A646530685C4","user-agent":"psconfig-pscheduler-agent"}}},"href":"https: //localhost/pscheduler/tasks/61c9ab5a-50be-4541-b89d-ed33370664e6",
+                    "detail": {
+                        "participants": [
+                            "lhc-latency.twgrid.org"
+                        ],
+                        "added": "2023-12-14T11:33:51Z",
+                        "duration": "P1DT2S",
+                        "enabled": true,
+                        "multi-result": true,"spec-limits-
+passed":[],"start":"2023-12-14T18: 02: 50Z","post":"P0D","runs":300,"cli":["--source","lhc-latency.twgrid.org","--dest","uct2-net1.mwt2.org","--packet-co
+unt","600","--packet-interval","0.1","--data-ports","8760-9960","--bucket-width","0.001"],"exclusive":false,"diags":"Hints:\n  requester: 2400: 4500: 0: 2
+: : 164b\n  server: 2400: 4500: 0: 2: : 164b\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do
+everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                        1/1 passed,
+                        0/1 failed: PASS\n  Application PASSES\nApplication: Defaults applied to
+ non-friendly hosts\n  Group 1: Limit 'innocuous-tests' passed\n  Group 1: Limit 'throughput-default-time' failed: Test is not 'throughput'\n  Group 1:
+ Limit 'throughput-default-udp' failed: Test is not 'throughput'\n  Group 1: Limit 'idleex-default' failed: Test is not 'idleex'\n  Group 1: Want any,
+                        1/4 passed,
+                        3/4 failed: PASS\n  Application PASSES\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2400: 4500: 0: 2: : 164b","requester":"2400: 4500: 0: 2: : 164b"},"runs-started":1,"slip":"P0D","participant":0},"tool":"powstream"},"headers":{"x_request_id":"1247db4e3ce45
+776f2d1d8e4601278a7","x_forwarded_for":"202.140.176.75","request_path":"/?","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","ht
+tp_host":"ps-collection.atlas-ml.org","x_real_ip":"202.140.176.75","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application
+/json","http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","h
+ttp_accept":"* /*","content_length":"4983","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"A7076E6C-4E75-11ED-ABFF-A646530685C4
+","user-agent":"psconfig-pscheduler-agent"}}},"run":{"participants":["lhc-latency.twgrid.org"],"state":"finished","result-merged":{"schema":1,"histogra
+m-ttl":{"249":600},"packets-lost":0,"succeeded":true,"max-clock-error":4.56,"histogram-latency":{"160.13":24,"163.58":5,"160.15":53,"163.78":1,"160.47"
+:1,"160.35":1,"160.18":26,"163.79":1,"163.72":3,"160.31":1,"163.63":27,"163.80":2,"163.62":39,"160.12":6,"163.74":2,"160.26":3,"163.89":1,"163.64":32,"
+163.67":10,"160.19":17,"160.53":1,"160.77":1,"163.56":3,"163.69":4,"160.28":1,"163.70":6,"160.16":40,"160.38":2,"160.32":1,"160.17":30,"163.60":31,"164
+.10":2,"160.54":1,"160.27":1,"160.10":1,"160.14":41,"163.57":1,"160.51":1,"163.81":1,"163.76":3,"160.25":2,"163.65":20,"160.20":15,"160.21":12,"163.61"
+:55,"163.59":21,"163.66":10,"160.23":8,"160.22":4,"160.24":5,"160.33":2,"160.37":2,"163.71":6,"163.68":8,"160.29":3},"packets-duplicated":0,"packets-se
+nt":600,"packets-reordered":0,"packets-received":600},"href":"https://localhost/pscheduler/tasks/61c9ab5a-50be-4541-b89d-ed33370664e6/runs/6e5d81ce-cbd
+4-4e8a-bda8-b5fa29668e0b","added":"2023-12-14T23:03:12Z","duration":"P0D","priority":0,"errors":null,"start-time":"2023-12-14T23:03:12Z","result-full":
+null,"task-href":"https://localhost/pscheduler/tasks/61c9ab5a-50be-4541-b89d-ed33370664e6","state-display":"Finished","end-time":"2023-12-14T23:03:12Z"
+,"limit-diags":null,"participant":0},"result":{"schema":1,"histogram-ttl":{"249":600},"packets-lost":0,"succeeded":true,"max-clock-error":4.56,"histogr
+am-latency":{"160.13":24,"163.58":5,"160.15":53,"163.78":1,"160.47":1,"160.35":1,"160.18":26,"163.79":1,"163.72":3,"160.31":1,"163.63":27,"163.80":2,"1
+63.62":39,"160.12":6,"163.74":2,"160.26":3,"163.89":1,"163.64":32,"163.67":10,"160.19":17,"160.53":1,"160.77":1,"163.56":3,"163.69":4,"160.28":1,"163.7
+0":6,"160.16":40,"160.38":2,"160.32":1,"160.17":30,"163.60":31,"164.10":2,"160.54":1,"160.27":1,"160.10":1,"160.14":41,"163.57":1,"160.51":1,"163.81":1
+,"163.76":3,"160.25":2,"163.65":20,"160.20":15,"160.21":12,"163.61":55,"163.59":21,"163.66":10,"160.23":8,"160.22":4,"160.24":5,"160.33":2,"160.37":2,"
+163.71":6,"163.68":8,"160.29":3},"packets-duplicated":0,"packets-sent":600,"packets-reordered":0,"packets-received":600},"tool":{"name":"powstream","ve
+rsion":"1.0"},"id":"6e5d81ce-cbd4-4e8a-bda8-b5fa29668e0b","@version":"1"}
+{"participants":["lt2ps00-lat.grid.hep.ph.ic.ac.uk"],"schedule":{"duration":"P1DT2S","start":"2023-12-14T23:03:15Z"},"test":{"spec":{"bucket-width":0.0
+01,"packet-count":600,"schema":1,"packet-interval":0.1,"dest":"ps01-l.farm.particle.cz","ip-version":4,"source":"lt2ps00-lat.grid.hep.ph.ic.ac.uk"},"ty
+pe":"latencybg"},"@timestamp":"2023-12-14T23:03:15.700298155Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"until":"2023-12-15T19:06:50Z","st
+art":"2023-12-14T19:06:50Z"},"test":{"spec":{"bucket-width":0.001,"packet-count":600,"schema":1,"packet-interval":0.1,"dest":"ps01-l.farm.particle.cz",
+"ip-version":4,"source":"lt2ps00-lat.grid.hep.ph.ic.ac.uk"},"type":"latencybg"},"reference":{"psconfig":{"created-by":{"uuid":"83FC2D8A-15BD-11EE-84F0-
+0FB22D65F14E","user-agent":"psconfig-pscheduler-agent"}}},"href":"https://lt2ps00.grid.hep.ph.ic.ac.uk/pscheduler/tasks/7c1e422b-775c-4cbf-9e0b-1dc2084
+15b4a","detail":{"participants":["lt2ps00-lat.grid.hep.ph.ic.ac.uk"],"added":"2023-12-14T13:37:39+00:00","duration":"P1DT2S","enabled":true,"multi-resu
+lt":true,"start":"2023-12-14T19:06:50+00:00","post":"P0D","runs":236,"cli":["--source","lt2ps00-lat.grid.hep.ph.ic.ac.uk","--dest","ps01-l.farm.particl
+e.cz","--packet-count","600","--packet-interval","0.1","--ip-version","4","--bucket-width","0.001"],"exclusive":false,"diags":"Hints:\n  requester: 2a0
+c:5bc0:c8:2:1e34:daff:fe49:1b04\n  server: 2a0c:5bc0:c8:2:1e34:daff:fe49:1b04\nIdentified as everybody, local-interfaces\nClassified as default, friend
+lies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application
+PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2a0c:5bc0:c8:2:1e34:
+daff:fe49:1b04","requester":"2a0c:5bc0:c8:2:1e34:daff:fe49:1b04"},"runs-started":1,"slip":"P0D","participant":0},"tool":"powstream"},"headers":{"x_requ
+est_id":"f9a4ba4d434c657e319b7ae29299e51b","x_forwarded_for":"146.179.233.218","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collec
+tion.atlas-ml.org","http_host":"ps-collection.atlas-ml.org","x_real_ip":"146.179.233.218","x_forwarded_scheme":"https","x_forwarded_proto":"https","con
+tent_type":"application/json","http_user_agent":"PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.0.7 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+li
+bidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept":"*/*","content_length":"3465","x_for
+warded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"83FC2D8A-15BD-11EE-84F0-0FB22D65F14E","user-agent":"psconfig-pscheduler-agent"}}},"r
+un":{"participants":["lt2ps00-lat.grid.hep.ph.ic.ac.uk"],"state":"finished","result-merged":{"schema":1,"histogram-ttl":{"244":600},"packets-lost":0,"s
+ucceeded":true,"max-clock-error":0.22,"histogram-latency":{"9.60":1,"9.43":69,"9.49":11,"9.57":1,"9.47":28,"9.42":80,"9.40":89,"9.45":30,"9.52":1,"9.44
+":39,"9.55":1,"9.53":2,"9.51":2,"9.48":15,"9.41":130,"9.39":57,"9.46":37,"9.50":3,"9.38":4},"packets-duplicated":0,"packets-sent":600,"packets-reordere
+d":0,"packets-received":600},"href":"https: //lt2ps00.grid.hep.ph.ic.ac.uk/pscheduler/tasks/7c1e422b-775c-4cbf-9e0b-1dc208415b4a/runs/23aa05bd-73e3-4c6a
+-bdf6-aa9e2cb99f00","added":"2023-12-14T23: 03: 15+00: 00","duration":"P0D","priority":0,"errors":null,"start-time":"2023-12-14T23: 03: 15+00: 00","result-fu
+ll":null,"task-href":"https: //lt2ps00.grid.hep.ph.ic.ac.uk/pscheduler/tasks/7c1e422b-775c-4cbf-9e0b-1dc208415b4a","state-display":"Finished","end-time"
+                        : "2023-12-14T23:03:15+00:00",
+                        "limit-diags": null,
+                        "participant": 0
+                    },
+                    "result": {
+                        "schema": 1,
+                        "histogram-ttl": {
+                            "244": 600
+                        },
+                        "packets-lost": 0,
+                        "succeeded": true,"ma
+x-clock-error":0.22,"histogram-latency":{"9.60":1,"9.43":69,"9.49":11,"9.57":1,"9.47":28,"9.42":80,"9.40":89,"9.45":30,"9.52":1,"9.44":39,"9.55":1,"9.5
+3":2,"9.51":2,"9.48":15,"9.41":130,"9.39":57,"9.46":37,"9.50":3,"9.38":4},"packets-duplicated":0,"packets-sent":600,"packets-reordered":0,"packets-rece
+ived":600},"tool":{"name":"powstream","version":"1.0"},"id":"23aa05bd-73e3-4c6a-bdf6-aa9e2cb99f00","@version":"1"}{
+                            "participants": [
+                                "ccperfsonar2.in2p3.fr"
+                            ],
+                            "schedule": {
+                                "duration": "P1DT2S",
+                                "start": "2023-12-15T00:03:15+01:00"
+                            },
+                            "test": {
+                                "spec": {
+                                    "bucket-width": 0.001,"pa
+cket-count":600,"schema":1,"packet-interval":0.1,"dest":"lcgperf.shef.ac.uk","data-ports":{"lower":8760,"upper":9960},"ip-version":6,"source":"ccperfso
+nar2.in2p3.fr"},"type":"latencybg"},"@timestamp":"2023-12-14T23: 03: 15.701068957Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"until":"2023-1
+2-15T16: 03: 58Z","start":"2023-12-14T16: 03: 58Z"},"test":{"spec":{"bucket-width":0.001,"packet-count":600,"schema":1,"packet-interval":0.1,"dest":"lcgper
+f.shef.ac.uk","data-ports":{"lower":8760,"upper":9960},"ip-version":6,"source":"ccperfsonar2.in2p3.fr"},"type":"latencybg"},"reference":{"psconfig":{"c
+reated-by":{"uuid":"1E330C1C-B767-11E8-A783-F90FFB5C71E9","user-agent":"psconfig-pscheduler-agent"}}},"href":"https: //ccperfsonar2.in2p3.fr/pscheduler/
+tasks/a6bf214a-4c30-438c-8821-71db18155f85","detail":{"participants":["ccperfsonar2.in2p3.fr"],"added":"2023-12-14T12: 43: 31+01: 00","duration":"P1DT2S","enabled": true,
+                                    "multi-result": true,
+                                    "start": "2023-12-14T17:03:58+01:00",
+                                    "post": "P0D",
+                                    "runs": 420,
+                                    "cli": [
+                                        "--source",
+                                        "ccperfsonar2.in2p3.fr",
+                                        "--dest","lcgp
+erf.shef.ac.uk","--packet-count","600","--packet-interval","0.1","--data-ports","8760-9960","--ip-version","6","--bucket-width","0.001"],"exclusive":fa
+lse,
+                                        "diags":"Hints:\n  requester: 2001:660:5009:9:193:48:99:76\n  server: 2001:660:5009:9:193:48:99:76\nIdentified as everybody, local-interfaces\nClas
+sified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                                        1/1 passed,
+                                        0/1 fai
+led: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"serv
+er":"2001: 660: 5009: 9: 193: 48: 99: 76","requester":"2001: 660: 5009: 9: 193: 48: 99: 76"},"runs-started":1,"slip":"P0D","participant":0},"tool":"powstream"},"head
+ers":{"x_request_id":"1bbb956a28ad778c033d877e863030fa","x_forwarded_for":"193.48.99.76","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org",
+                                        "http_host": "ps-collection.atlas-ml.org",
+                                        "x_real_ip": "193.48.99.76",
+                                        "x_forwarded_scheme": "https",
+                                        "x_forwarded_proto":"http
+s","content_type":"application/json","http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"H
+TTP/1.1","x_scheme":"https","http_accept":"* /*","content_length":"3347","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"1E330C
+1C-B767-11E8-A783-F90FFB5C71E9","user-agent":"psconfig-pscheduler-agent"}}},"run":{"participants":["ccperfsonar2.in2p3.fr"],"state":"finished","result-
+merged":{"schema":1,"histogram-ttl":{"236":600},"packets-lost":0,"succeeded":true,"max-clock-error":0.53,"histogram-latency":{"12.62":199,"12.64":48,"1
+2.61":134,"12.63":125,"12.67":7,"12.60":50,"12.69":1,"12.59":3,"12.80":1,"12.65":21,"12.66":10,"12.72":1},"packets-duplicated":0,"packets-sent":600,"pa
+ckets-reordered":0,"packets-received":600},"href":"https://ccperfsonar2.in2p3.fr/pscheduler/tasks/a6bf214a-4c30-438c-8821-71db18155f85/runs/f0464581-c6
+f3-44ba-bcef-5d5b5a2eb08d","added":"2023-12-15T00:03:15+01:00","duration":"P0D","priority":0,"errors":null,"start-time":"2023-12-15T00:03:15+01:00","re
+sult-full":null,"task-href":"https://ccperfsonar2.in2p3.fr/pscheduler/tasks/a6bf214a-4c30-438c-8821-71db18155f85","state-display":"Finished","end-time"
+:"2023-12-15T00:03:15+01:00","limit-diags":null,"participant":0},"result":{"schema":1,"histogram-ttl":{"236":600},"packets-lost":0,"succeeded":true,"ma
+x-clock-error":0.53,"histogram-latency":{"12.62":199,"12.64":48,"12.61":134,"12.63":125,"12.67":7,"12.60":50,"12.69":1,"12.59":3,"12.80":1,"12.65":21,"
+12.66":10,"12.72":1},"packets-duplicated":0,"packets-sent":600,"packets-reordered":0,"packets-received":600},"tool":{"name":"powstream","version":"1.0"
+},"id":"f0464581-c6f3-44ba-bcef-5d5b5a2eb08d","@version":"1"}
+{"participants":["lhc-latency.twgrid.org"],"schedule":{"duration":"P1DT2S","start":"2023-12-14T23:03:12Z"},"test":{"spec":{"bucket-width":0.001,"packet
+-count":600,"schema":1,"packet-interval":0.1,"dest":"marperf02.in2p3.fr","data-ports":{"lower":8760,"upper":9960},"source":"lhc-latency.twgrid.org"},"t
+ype":"latencybg"},"@timestamp":"2023-12-14T23:03:15.719096941Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"until":"2023-12-15T18:02:50Z","s
+tart":"2023-12-14T18:02:50Z"},"test":{"spec":{"bucket-width":0.001,"packet-count":600,"schema":1,"packet-interval":0.1,"dest":"marperf02.in2p3.fr","dat
+a-ports":{"lower":8760,"upper":9960},"source":"lhc-latency.twgrid.org"},"type":"latencybg"},"reference":{"psconfig":{"created-by":{"uuid":"A7076E6C-4E7
+5-11ED-ABFF-A646530685C4","user-agent":"psconfig-pscheduler-agent"}}},"href":"https://localhost/pscheduler/tasks/2ecba33b-a73b-45a5-b291-c55b3371ae45",
+"detail":{"participants":["lhc-latency.twgrid.org"],"added":"2023-12-14T11:35:56Z","duration":"P1DT2S","enabled":true,"multi-result":true,"spec-limits-
+passed":[],"start":"2023-12-14T18:02:50Z","post":"P0D","runs":300,"cli":["--source","lhc-latency.twgrid.org","--dest","marperf02.in2p3.fr","--packet-co
+unt","600","--packet-interval","0.1","--data-ports","8760-9960","--bucket-width","0.001"],"exclusive":false,"diags":"Hints:\n  requester: 2400:4500:0:2
+::164b\n  server: 2400:4500:0:2::164b\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do
+everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nApplication: Defaults applied to
+ non-friendly hosts\n  Group 1: Limit 'innocuous-tests' passed\n  Group 1: Limit 'throughput-default-time' failed: Test is not 'throughput'\n  Group 1:
+ Limit 'throughput-default-udp' failed: Test is not 'throughput'\n  Group 1: Limit 'idleex-default' failed: Test is not 'idleex'\n  Group 1: Want any,
+1/4 passed, 3/4 failed: PASS\n  Application PASSES\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2400:4500:0:
+2::164b","requester":"2400:4500:0:2::164b"},"runs-started":1,"slip":"P0D","participant":0},"tool":"powstream"},"headers":{"x_request_id":"9464ca6438c78
+60d7544331368078790","x_forwarded_for":"202.140.176.75","request_path":"/?","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","ht
+tp_host":"ps-collection.atlas-ml.org","x_real_ip":"202.140.176.75","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application
+/json","http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","h
+ttp_accept":"*/*","content_length":"5173","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"A7076E6C-4E75-11ED-ABFF-A646530685C4
+","user-agent":"psconfig-pscheduler-agent"}}},"run":{"participants":["lhc-latency.twgrid.org"],"state":"finished","result-merged":{"schema":1,"histogra
+m-ttl":{"242":597},"packets-lost":3,"succeeded":true,"max-clock-error":6.36,"histogram-latency":{"111.77":7,"112.08":1,"111.79":1,"106.37":3,"106.12":23,
+                                        "111.80": 2,
+                                        "111.83": 1,
+                                        "106.16": 24,
+                                        "106.08": 8,
+                                        "111.67": 9,
+                                        "112.00": 2,
+                                        "106.18": 25,
+                                        "106.41": 1,
+                                        "106.17": 31,
+                                        "111.92": 2,
+                                        "106.09": 8,
+                                        "106.15": 40,
+                                        "106.26": 9,"111.74":6,"111.86":4,"106.34":1,"106.22":10,"106.27":5,"111.65":10,"111.72":13,"106.10":16,"111.73":5,"106.06":1,"106.29":3,"106.28":6,"112.27":1,"106.5
+3":1,"106.14":38,"106.13":25,"111.78":2,"112.02":1,"106.33":1,"111.64":3,"111.76":6,"111.85":1,"106.30":6,"111.69":16,"111.81":1,"106.20":29,"106.19":31,
+                                        "111.71": 21,
+                                        "106.11": 15,
+                                        "111.75": 5,
+                                        "106.21": 29,
+                                        "111.62": 1,
+                                        "106.07": 6,
+                                        "111.66": 5,
+                                        "106.25": 13,
+                                        "111.70": 13,
+                                        "112.33": 1,
+                                        "106.23": 13,
+                                        "106.32": 1,
+                                        "111.82": 2,
+                                        "111.84": 1,
+                                        "106.24": 15,
+                                        "111.68": 14,
+                                        "111.63": 3
+                                    },
+                                    "packets-duplicated": 0,
+                                    "packets-sent": 600,
+                                    "packets-reordered": 0,
+                                    "packets-received": 597
+                                },
+                                "href":"https://
+localhost/pscheduler/tasks/2ecba33b-a73b-45a5-b291-c55b3371ae45/runs/8a4ea720-e24f-4c7e-b3c2-6f545ac25675","added":"2023-12-14T23: 03: 12Z","duration":"P
+0D","priority":0,"errors":null,"start-time":"2023-12-14T23: 03: 12Z","result-full":null,"task-href":"https: //localhost/pscheduler/tasks/2ecba33b-a73b-45a
+                                5-b291-c55b3371ae45","state-display":"Finished","end-time":"2023-12-14T23: 03: 12Z","limit-diags":null,"participant":0},"result":{"schema":1,"histogram-t
+tl":{"242":597},"packets-lost":3,"succeeded":true,"max-clock-error":6.36,"histogram-latency":{"111.77":7,"112.08":1,"111.79":1,"106.37":3,"106.12":23,"111.80":2,"111.83":1,"106.16":24,"106.08":8,"111.67":9,"112.00":2,"106.18":25,"106.41":1,"106.17":31,"111.92":2,"106.09":8,"106.15":40,"106.26":9,"111.
+74":6,"111.86":4,"106.34":1,"106.22":10,"106.27":5,"111.65":10,"111.72":13,"106.10":16,"111.73":5,"106.06":1,"106.29":3,"106.28":6,"112.27":1,"106.53":1,
+                                "106.14": 38,
+                                "106.13": 25,
+                                "111.78": 2,
+                                "112.02": 1,
+                                "106.33": 1,
+                                "111.64": 3,
+                                "111.76": 6,
+                                "111.85": 1,
+                                "106.30": 6,
+                                "111.69": 16,
+                                "111.81": 1,
+                                "106.20": 29,
+                                "106.19": 31,"111.71":21,"106.11":15,"111.75":5,"106.21":29,"111.62":1,"106.07":6,"111.66":5,"106.25":13,"111.70":13,"112.33":1,"106.23":13,"106.32":1,"111.82":2,"11
+1.84":1,"106.24":15,"111.68":14,"111.63":3},"packets-duplicated":0,"packets-sent":600,"packets-reordered":0,"packets-received":597},"tool":{"name":"pow
+stream","version":"1.0"},"id":"8a4ea720-e24f-4c7e-b3c2-6f545ac25675","@version":"1"}{
+                                    "participants": [
+                                        "hepsonar2.ph.liv.ac.uk"
+                                    ],
+                                    "schedule": {
+                                        "duration": "P1DT2S",
+                                        "start": "2023-12-14T23:03:15Z"
+                                    },
+                                    "test": {
+                                        "spec": {
+                                            "bucket-width": 0.001,"packet
+-count":600,"schema":1,"packet-interval":0.1,"dest":"pygrid-sonar2.lancs.ac.uk","data-ports":{"lower":8760,"upper":9960},"ip-version":4,"source":"hepso
+nar2.ph.liv.ac.uk"},"type":"latencybg"},"@timestamp":"2023-12-14T23: 03: 15.739161142Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"until":"20
+23-12-15T04: 05: 12Z","start":"2023-12-14T04: 05: 12Z"},"test":{"spec":{"bucket-width":0.001,"packet-count":600,"schema":1,"packet-interval":0.1,"dest":"py
+grid-sonar2.lancs.ac.uk","data-ports":{"lower":8760,"upper":9960},"ip-version":4,"source":"hepsonar2.ph.liv.ac.uk"},"type":"latencybg"},"reference":{"p
+sconfig":{"created-by":{"uuid":"B3D80ADA-0DF3-11EB-A985-F82FBBEE2464","user-agent":"psconfig-pscheduler-agent"}}},"href":"https: //hepsonar1.ph.liv.ac.u
+k/pscheduler/tasks/cbc1ca38-8635-4ff5-bd94-be601ed63481","detail":{"participants":["hepsonar2.ph.liv.ac.uk"],"added":"2023-12-13T23: 43: 08+00: 00","durat
+ion":"P1DT2S","enabled":true,"multi-result":true,"start":"2023-12-14T04: 05: 12+00: 00","post":"P0D","runs":1140,"cli":["--source","hepsonar2.ph.liv.ac.uk
+","--dest","pygrid-sonar2.lancs.ac.uk","--packet-count","600","--packet-interval","0.1","--data-ports","8760-9960","--ip-version","4","--bucket-width","0.001"
+                                        ],
+                                        "exclusive": false,
+                                        "diags":"Hints:\n  requester: 2001:630:21:8d80::8afd:3c52\n  server: 2001:630:21:8d80::8afd:3c52\nIdentified as everybody, l
+ocal-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all
+,
+                                        1/1 passed,
+                                        0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","anytime
+":true,"hints":{"server":"2001: 630: 21: 8d80: : 8afd: 3c52","requester":"2001: 630: 21: 8d80: : 8afd: 3c52"},"runs-started":1,"slip":"P0D","participant":0},"tool": "powstream"
+                                    },
+                                    "headers": {
+                                        "x_request_id": "6f42edd9a000d84b9e57a2ceaa3dbb59",
+                                        "x_forwarded_for": "138.253.60.81",
+                                        "request_path": "/",
+                                        "request_method": "POST",
+                                        "x_forwarded_host": "ps-collection.atlas-ml.org",
+                                        "http_host": "ps-collection.atlas-ml.org",
+                                        "x_real_ip": "138.253.60.81",
+                                        "x_forwarded_scheme": "https","x_f
+orwarded_proto":"https","content_type":"application/json","http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8
+.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept":"* /*","content_length":"3945","x_forwarded_port":"443"},"reference":{"psconfig":{"create
+d-by":{"uuid":"B3D80ADA-0DF3-11EB-A985-F82FBBEE2464","user-agent":"psconfig-pscheduler-agent"}}},"run":{"participants":["hepsonar2.ph.liv.ac.uk"],"stat
+e":"finished","result-merged":{"schema":1,"histogram-ttl":{"247":600},"packets-lost":0,"succeeded":true,"max-clock-error":0.45,"histogram-latency":{"1.
+76":62,"1.85":9,"1.89":6,"1.92":2,"1.99":1,"1.69":1,"2.02":1,"2.01":2,"1.84":6,"1.82":33,"1.81":33,"1.90":5,"1.80":38,"1.93":2,"1.71":8,"1.72":14,"1.96
+":2,"1.91":4,"4.58":1,"1.74":41,"1.88":5,"1.98":1,"2.35":1,"1.97":5,"2.20":1,"1.94":2,"2.09":1,"2.06":2,"1.86":11,"3.94":1,"1.73":29,"3.20":1,"1.78":66
+,"1.70":4,"2.04":1,"2.05":2,"2.03":1,"3.18":1,"1.79":47,"1.87":7,"1.83":14,"1.75":52,"1.95":1,"1.77":72,"2.08":1},"packets-duplicated":0,"packets-sent"
+:600,"packets-reordered":0,"packets-received":600},"href":"https://hepsonar1.ph.liv.ac.uk/pscheduler/tasks/cbc1ca38-8635-4ff5-bd94-be601ed63481/runs/52
+09e302-f7ca-40a3-862b-19a96d235b16","added":"2023-12-14T23:03:15+00:00","duration":"P0D","priority":0,"errors":null,"start-time":"2023-12-14T23:03:15+0
+0:00","result-full":null,"task-href":"https://hepsonar1.ph.liv.ac.uk/pscheduler/tasks/cbc1ca38-8635-4ff5-bd94-be601ed63481","state-display":"Finished",
+"end-time":"2023-12-14T23:03:15+00:00","limit-diags":null,"participant":0},"result":{"schema":1,"histogram-ttl":{"247":600},"packets-lost":0,"succeeded
+":true,"max-clock-error":0.45,"histogram-latency":{"1.76":62,"1.85":9,"1.89":6,"1.92":2,"1.99":1,"1.69":1,"2.02":1,"2.01":2,"1.84":6,"1.82":33,"1.81":3
+3,"1.90":5,"1.80":38,"1.93":2,"1.71":8,"1.72":14,"1.96":2,"1.91":4,"4.58":1,"1.74":41,"1.88":5,"1.98":1,"2.35":1,"1.97":5,"2.20":1,"1.94":2,"2.09":1,"2
+.06":2,"1.86":11,"3.94":1,"1.73":29,"3.20":1,"1.78":66,"1.70":4,"2.04":1,"2.05":2,"2.03":1,"3.18":1,"1.79":47,"1.87":7,"1.83":14,"1.75":52,"1.95":1,"1.
+77":72,"2.08":1},"packets-duplicated":0,"packets-sent":600,"packets-reordered":0,"packets-received":600},"tool":{"name":"powstream","version":"1.0"},"i
+d":"5209e302-f7ca-40a3-862b-19a96d235b16","@version":"1"}
+{"participants":["psmsu01.aglt2.org"],"schedule":{"duration":"P1DT2S","start":"2023-12-14T23:03:15Z"},"test":{"spec":{"bucket-width":0.001,"packet-coun
+t":600,"schema":1,"packet-interval":0.1,"dest":"tech-ps.hep.technion.ac.il","data-ports":{"lower":8760,"upper":9960},"source":"psmsu01.aglt2.org"},"typ
+e":"latencybg"},"@timestamp":"2023-12-14T23:03:15.750299132Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"until":"2023-12-15T19:59:43Z","sta
+rt":"2023-12-14T19:59:43Z"},"test":{"spec":{"bucket-width":0.001,"packet-count":600,"schema":1,"packet-interval":0.1,"dest":"tech-ps.hep.technion.ac.il
+","data-ports":{"lower":8760,"upper":9960},"source":"psmsu01.aglt2.org"},"type":"latencybg"},"reference":{"psconfig":{"created-by":{"uuid":"C17C0F24-F1
+6E-11EB-9CE4-D9FBE18EB470","user-agent":"psconfig-pscheduler-agent"}}},"href":"https://psmsu01.aglt2.org/pscheduler/tasks/6d3dc238-f2c6-4b8d-9b79-0252f
+44d580e","detail":{"participants":["psmsu01.aglt2.org"],"added":"2023-12-14T14:40:27+00:00","duration":"P1DT2S","enabled":true,"multi-result":true,"sta
+rt":"2023-12-14T19:59:43+00:00","post":"P0D","runs":184,"cli":["--source","psmsu01.aglt2.org","--dest","tech-ps.hep.technion.ac.il","--packet-count","6
+00","--packet-interval","0.1","--data-ports","8760-9960","--bucket-width","0.001"],"exclusive":false,"diags":"Hints:\n  requester: 2001:48a8:68f7:8001:
+192:41:236:31\n  server: 2001:48a8:68f7:8001:192:41:236:31\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication:
+Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed one
+application.  Stopping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2001:48a8:68f7:8001:192:41:236:31","req
+uester":"2001:48a8:68f7:8001:192:41:236:31"},"runs-started":1,"slip":"P0D","participant":0},"tool":"powstream"},"headers":{"x_request_id":"998e105cc57c
+35835baa368e05bc9120","x_forwarded_for":"192.41.236.31","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","htt
+p_host":"ps-collection.atlas-ml.org","x_real_ip":"192.41.236.31","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/j
+son","http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","htt
+p_accept":"*/*","content_length":"3631","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"C17C0F24-F16E-11EB-9CE4-D9FBE18EB470","user-agent": "psconfig-pscheduler-agent"
+                                    }
+                                }
+                            },
+                            "run": {
+                                "participants": [
+                                    "psmsu01.aglt2.org"
+                                ],
+                                "state": "finished",
+                                "result-merged": {
+                                    "schema": 1,
+                                    "histogram-ttl": {
+                                        "236": 600
+                                    },
+                                    "packets-lost": 0,
+                                    "succeeded": true,
+                                    "max-clock-error": 2.52,
+                                    "histogram-latency": {
+                                        "79.03": 10,
+                                        "79.05": 34,
+                                        "79.16": 16,
+                                        "79.00": 8,
+                                        "79.08": 57,
+                                        "79.04": 26,
+                                        "79.07": 49,
+                                        "79.20": 2,
+                                        "79.29": 1,
+                                        "79.12": 54,
+                                        "79.19": 6,
+                                        "79.11": 52,
+                                        "79.21": 2,
+                                        "79.15": 18,
+                                        "79.17": 12,
+                                        "79.01": 4,
+                                        "79.14": 32,
+                                        "79.06": 43,
+                                        "79.10": 62,
+                                        "79.36": 1,
+                                        "79.56": 1,
+                                        "79.02": 5,
+                                        "78.99": 2,
+                                        "78.98": 1,
+                                        "79.09": 59,
+                                        "79.13": 33,
+                                        "79.22": 2,
+                                        "79.18": 8
+                                    },
+                                    "packets-duplicated": 0,
+                                    "packets-sent": 600,
+                                    "packets-reordered": 0,"pa
+ckets-received":600},"href":"https: //psmsu01.aglt2.org/pscheduler/tasks/6d3dc238-f2c6-4b8d-9b79-0252f44d580e/runs/b2290236-ce5a-46c6-8769-7041649f2651"
+                                    ,
+                                    "added": "2023-12-14T23:03:15+00:00",
+                                    "duration": "P0D",
+                                    "priority": 0,
+                                    "errors": null,
+                                    "start-time": "2023-12-14T23:03:15+00:00",
+                                    "result-full": null,"task-href":"https: //psmsu01.aglt2.org/pscheduler/tasks/6d3dc238-f2c6-4b8d-9b79-0252f44d580e","state-display":"Finished","end-time":"2023-12-14T23:03:15+00:00","
+limit-diags":null,"participant":0},"result":{"schema":1,"histogram-ttl":{"236":600},"packets-lost":0,"succeeded":true,"max-clock-error":2.52,"histogram
+-latency":{"79.03":10,"79.05":34,"79.16":16,"79.00":8,"79.08":57,"79.04":26,"79.07":49,"79.20":2,"79.29":1,"79.12":54,"79.19":6,"79.11":52,"79.21":2,"7
+9.15":18,"79.17":12,"79.01":4,"79.14":32,"79.06":43,"79.10":62,"79.36":1,"79.56":1,"79.02":5,"78.99":2,"78.98":1,"79.09":59,"79.13":33,"79.22":2,"79.18
+":8},"packets-duplicated":0,"packets-sent":600,"packets-reordered":0,"packets-received":600},"tool":{"name":"powstream","version":"1.0"},"id":"b2290236
+-ce5a-46c6-8769-7041649f2651","@version":"1"}{
+                                        "participants": [
+                                            "hepsonar2.ph.liv.ac.uk"
+                                        ],
+                                        "schedule": {
+                                            "duration": "P1DT2S",
+                                            "start": "2023-12-14T23:03:15Z"
+                                        },
+                                        "test": {
+                                            "spec": {
+                                                "bucket-width": 0.001,"packet
+-count":600,"schema":1,"packet-interval":0.1,"dest":"lpnhe-psl.in2p3.fr","data-ports":{"lower":8760,"upper":9960},"source":"hepsonar2.ph.liv.ac.uk"},"t
+ype":"latencybg"},"@timestamp":"2023-12-14T23: 03: 15.770852164Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"until":"2023-12-15T04: 05: 10Z","s
+tart":"2023-12-14T04: 05: 10Z"},"test":{"spec":{"bucket-width":0.001,"packet-count":600,"schema":1,"packet-interval":0.1,"dest":"lpnhe-psl.in2p3.fr","dat
+a-ports":{"lower":8760,"upper":9960},"source":"hepsonar2.ph.liv.ac.uk"},"type":"latencybg"},"reference":{"psconfig":{"created-by":{"uuid":"B3D80ADA-0DF
+3-11EB-A985-F82FBBEE2464","user-agent":"psconfig-pscheduler-agent"}}},"href":"https: //hepsonar1.ph.liv.ac.uk/pscheduler/tasks/8dabc57c-88ef-4227-92a8-5
+                                                418594a42ec","detail":{"participants":["hepsonar2.ph.liv.ac.uk"],"added":"2023-12-13T22: 57: 49+00: 00","duration":"P1DT2S","enabled":true,"multi-result":true,
+                                                "start": "2023-12-14T04:05:10+00:00",
+                                                "post": "P0D",
+                                                "runs": 1139,
+                                                "cli": [
+                                                    "--source",
+                                                    "hepsonar2.ph.liv.ac.uk",
+                                                    "--dest",
+                                                    "lpnhe-psl.in2p3.fr","--packet-co
+unt","600","--packet-interval","0.1","--data-ports","8760-9960","--bucket-width","0.001"],"exclusive":false,"diags":"Hints:\n  requester: 2001: 630: 21: 8
+d80: : 8afd: 3c52\n  server: 2001: 630: 21: 8d80: : 8afd: 3c52\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts
+ we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                                                    1/1 passed,
+                                                    0/1 failed: PASS\n  Application PASSES\nPassed one appli
+cation.  Stopping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2001: 630: 21: 8d80: : 8afd: 3c52","requester":"20
+01: 630: 21: 8d80: : 8afd: 3c52"},"runs-started":1,"slip":"P0D","participant":0},"tool":"powstream"},"headers":{"x_request_id":"904ed229fd2a908ec4953609d59cc
+d35","x_forwarded_for":"138.253.60.81","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":"ps-colle
+ction.atlas-ml.org","x_real_ip":"138.253.60.81","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json","http_user_a
+gent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept":"* /*","
+content_length":"4395","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"B3D80ADA-0DF3-11EB-A985-F82FBBEE2464","user-agent":"psc
+onfig-pscheduler-agent"}}},"run":{"participants":["hepsonar2.ph.liv.ac.uk"],"state":"finished","result-merged":{"schema":1,"histogram-ttl":{"238":600},
+"packets-lost":0,"succeeded":true,"max-clock-error":0.82,"histogram-latency":{"13.13":1,"8.46":3,"8.36":4,"13.34":1,"8.38":6,"8.60":2,"8.56":2,"14.48":
+1,"8.28":43,"9.09":1,"8.51":3,"8.19":18,"8.50":3,"16.06":1,"8.17":5,"8.25":41,"8.32":16,"8.20":30,"8.21":33,"8.35":11,"8.24":23,"8.43":2,"12.52":1,"8.2
+2":46,"13.11":1,"8.27":35,"8.70":2,"11.29":1,"8.75":1,"9.26":1,"8.53":2,"8.34":14,"11.47":1,"12.62":1,"12.64":1,"8.49":1,"8.47":1,"17.30":1,"8.30":17,"
+9.24":1,"8.33":19,"8.78":1,"8.39":3,"8.72":1,"8.52":1,"25.89":1,"8.37":5,"11.69":1,"8.58":1,"19.23":1,"8.48":1,"8.16":1,"8.40":5,"14.60":1,"18.44":1,"8
+.26":48,"15.50":1,"8.31":21,"8.15":1,"8.42":5,"8.44":1,"8.71":2,"13.01":1,"8.18":11,"8.73":1,"11.73":1,"16.93":1,"12.34":1,"8.29":41,"8.23":36,"8.41":7
+},"packets-duplicated":0,"packets-sent":600,"packets-reordered":0,"packets-received":600},"href":"https://hepsonar1.ph.liv.ac.uk/pscheduler/tasks/8dabc
+57c-88ef-4227-92a8-5418594a42ec/runs/8e2c6291-4cbd-48d2-934c-6adcc9cf0cef","added":"2023-12-14T23:03:15+00:00","duration":"P0D","priority":0,"errors":n
+ull,"start-time":"2023-12-14T23:03:15+00:00","result-full":null,"task-href":"https://hepsonar1.ph.liv.ac.uk/pscheduler/tasks/8dabc57c-88ef-4227-92a8-54
+18594a42ec","state-display":"Finished","end-time":"2023-12-14T23:03:15+00:00","limit-diags":null,"participant":0},"result":{"schema":1,"histogram-ttl":
+{"238":600},"packets-lost":0,"succeeded":true,"max-clock-error":0.82,"histogram-latency":{"13.13":1,"8.46":3,"8.36":4,"13.34":1,"8.38":6,"8.60":2,"8.56
+":2,"14.48":1,"8.28":43,"9.09":1,"8.51":3,"8.19":18,"8.50":3,"16.06":1,"8.17":5,"8.25":41,"8.32":16,"8.20":30,"8.21":33,"8.35":11,"8.24":23,"8.43":2,"1
+2.52":1,"8.22":46,"13.11":1,"8.27":35,"8.70":2,"11.29":1,"8.75":1,"9.26":1,"8.53":2,"8.34":14,"11.47":1,"12.62":1,"12.64":1,"8.49":1,"8.47":1,"17.30":1
+,"8.30":17,"9.24":1,"8.33":19,"8.78":1,"8.39":3,"8.72":1,"8.52":1,"25.89":1,"8.37":5,"11.69":1,"8.58":1,"19.23":1,"8.48":1,"8.16":1,"8.40":5,"14.60":1,
+"18.44":1,"8.26":48,"15.50":1,"8.31":21,"8.15":1,"8.42":5,"8.44":1,"8.71":2,"13.01":1,"8.18":11,"8.73":1,"11.73":1,"16.93":1,"12.34":1,"8.29":41,"8.23"
+:36,"8.41":7},"packets-duplicated":0,"packets-sent":600,"packets-reordered":0,"packets-received":600},"tool":{"name":"powstream","version":"1.0"},"id":
+"8e2c6291-4cbd-48d2-934c-6adcc9cf0cef","@version":"1"}
+{"participants":["lapp-ps02.in2p3.fr"],"schedule":{"duration":"P1DT2S","start":"2023-12-15T00:03:15+01:00"},"test":{"spec":{"bucket-width":0.001,"packe
+t-count":600,"schema":1,"packet-interval":0.1,"dest":"tech-ps.hep.technion.ac.il","data-ports":{"lower":8760,"upper":9960},"source":"lapp-ps02.in2p3.fr
+"},"type":"latencybg"},"@timestamp":"2023-12-14T23:03:15.838727775Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"until":"2023-12-15T16:24:55
+Z","start":"2023-12-14T16:24:55Z"},"test":{"spec":{"bucket-width":0.001,"packet-count":600,"schema":1,"packet-interval":0.1,"dest":"tech-ps.hep.technio
+n.ac.il","data-ports":{"lower":8760,"upper":9960},"source":"lapp-ps02.in2p3.fr"},"type":"latencybg"},"reference":{"psconfig":{"created-by":{"uuid":"4EF
+9818C-4CDD-11E7-B422-98643FE1B6E8","user-agent":"psconfig-pscheduler-agent"}}},"href":"https://lapp-ps02.in2p3.fr/pscheduler/tasks/87b53ecf-f920-454a-a
+980-7be0d4fdcb91","detail":{"participants":["lapp-ps02.in2p3.fr"],"added":"2023-12-14T11:48:02+01:00","duration":"P1DT2S","enabled":true,"multi-result"
+:true,"start":"2023-12-14T17:24:55+01:00","post":"P0D","runs":398,"cli":["--source","lapp-ps02.in2p3.fr","--dest","tech-ps.hep.technion.ac.il","--packe
+t-count","600","--packet-interval","0.1","--data-ports","8760-9960","--bucket-width","0.001"],"exclusive":false,"diags":"Hints:\n  requester: 2001:660:
+5310:420::2\n  server: 2001:660:5310:420::2\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust
+to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed one application.  S
+topping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2001:660:5310:420::2","requester":"2001:660:5310:420::
+2"},"runs-started":1,"slip":"P0D","participant":0},"tool":"powstream"},"headers":{"x_request_id":"f8c03efa50054248d64219c8e318f94e","x_forwarded_for":"
+134.158.84.141","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":"ps-collection.atlas-ml.org","x_
+real_ip":"134.158.84.141","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json","http_user_agent":"PycURL/7.43.0 l
+ibcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept":"*/*","content_length":"12463
+","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"4EF9818C-4CDD-11E7-B422-98643FE1B6E8","user-agent":"psconfig-pscheduler-agen
+t"}}},"run":{"participants":["lapp-ps02.in2p3.fr"],"state":"finished","result-merged":{"schema":1,"histogram-ttl":{"243":600},"packets-lost":0,"succeed
+ed":true,"max-clock-error":4.82,"histogram-latency":{"34.54":1,"35.67":2,"21.03":1,"36.23":1,"33.89":1,"27.74":1,"33.51":1,"34.38":1,"38.69":1,"31.61":3,
+                                                    "34.62": 1,
+                                                    "26.70": 1,
+                                                    "35.31": 1,
+                                                    "36.75": 1,
+                                                    "30.63": 1,
+                                                    "33.40": 1,
+                                                    "22.18": 1,
+                                                    "31.67": 1,
+                                                    "25.49": 1,
+                                                    "24.22": 1,
+                                                    "30.97": 2,
+                                                    "33.42": 1,
+                                                    "31.81": 2,
+                                                    "34.68": 2,
+                                                    "37.01": 1,
+                                                    "37.20": 1,
+                                                    "35.40": 1,
+                                                    "34.46": 1,
+                                                    "33.26": 2,
+                                                    "37.57": 1,
+                                                    "36.21": 1,
+                                                    "33.61": 2,
+                                                    "35.05": 1,
+                                                    "37.10": 1,
+                                                    "30.08": 1,
+                                                    "36.45": 1,
+                                                    "29.44": 1,
+                                                    "29.99": 1,
+                                                    "34.11": 1,
+                                                    "32.93": 1,
+                                                    "36.40": 2,
+                                                    "33.80": 1,
+                                                    "30.64": 1,
+                                                    "37.84": 1,
+                                                    "30.53": 1,
+                                                    "31.68": 3,
+                                                    "34.43": 1,
+                                                    "31.98": 1,
+                                                    "32.27": 1,
+                                                    "35.74": 1,
+                                                    "36.37": 1,
+                                                    "24.76": 1,
+                                                    "34.94": 2,
+                                                    "29.98": 1,
+                                                    "29.24": 1,"23.06":1,"31.73":1,"36.02":1,"35.23":1,"34.66":1,"33.87":1,"22.91":1,"35.30":1,"33.65":2,"33.43":2,"36.30":1,"31.34":3,"35.86":1,"37.59":1,"34.59":1,"3
+3.37":2,"31.65":1,"34.51":1,"24.39":1,"35.13":1,"31.50":2,"32.59":2,"28.52":1,"33.96":1,"34.45":1,"30.73":2,"35.81":1,"37.15":2,"33.36":1,"33.94":1,"34
+.82":2,"35.33":1,"37.00":1,"37.53":1,"37.75":1,"38.84":1,"24.61":1,"28.57":1,"39.85":1,"37.76":1,"34.70":1,"31.63":1,"34.77":1,"36.29":1,"34.64":3,"24.
+08":1,"35.03":1,"36.70":1,"29.42":1,"31.56":1,"33.95":2,"26.56":1,"33.00":1,"36.65":1,"34.67":1,"37.03":1,"30.31":1,"21.54":1,"36.44":1,"31.53":2,"29.8
+5":1,"32.78":1,"35.77":1,"30.39":1,"34.44":2,"29.89":2,"34.14":1,"37.73":1,"24.38":1,"30.37":1,"27.83":1,"35.02":2,"37.02":2,"37.87":2,"34.05":1,"26.95
+":1,"30.48":1,"32.33":2,"34.88":2,"31.15":1,"32.11":1,"32.54":3,"36.28":1,"30.95":1,"24.63":1,"25.10":1,"32.62":1,"37.22":3,"29.53":1,"35.93":1,"33.81": 3,
+                                                    "31.82": 1,
+                                                    "32.96": 1,
+                                                    "33.78": 2,
+                                                    "36.22": 2,
+                                                    "30.20": 1,
+                                                    "33.21": 1,
+                                                    "26.84": 1,
+                                                    "33.56": 2,
+                                                    "26.53": 1,
+                                                    "38.23": 1,
+                                                    "36.60": 1,
+                                                    "31.78": 2,
+                                                    "31.95": 1,
+                                                    "30.10": 2,
+                                                    "35.09": 1,
+                                                    "35.70": 1,
+                                                    "29.41": 1,
+                                                    "32.39": 1,
+                                                    "37.27": 2,
+                                                    "32.25": 1,
+                                                    "27.68": 1,
+                                                    "34.72": 1,
+                                                    "38.44": 1,
+                                                    "38.19": 1,
+                                                    "37.94": 1,
+                                                    "36.18": 1,
+                                                    "36.38": 1,
+                                                    "34.47": 3,
+                                                    "39.34": 1,
+                                                    "40.44": 1,
+                                                    "31.09": 1,
+                                                    "34.61": 1,
+                                                    "37.71": 1,
+                                                    "36.78": 1,
+                                                    "26.74": 1,
+                                                    "39.20": 1,
+                                                    "35.64": 2,
+                                                    "33.60": 2,
+                                                    "37.18": 1,
+                                                    "36.14": 1,
+                                                    "35.32": 1,
+                                                    "35.69": 2,
+                                                    "36.03": 1,
+                                                    "30.89": 1,
+                                                    "37.36": 1,
+                                                    "33.55": 1,
+                                                    "38.33": 1,
+                                                    "36.85": 1,
+                                                    "24.21": 1,
+                                                    "39.61": 1,
+                                                    "36.72": 2,
+                                                    "26.39": 1,
+                                                    "36.49": 3,
+                                                    "28.93": 1,
+                                                    "33.71": 1,
+                                                    "25.40": 1,
+                                                    "34.69": 1,
+                                                    "35.96": 1,
+                                                    "30.74": 1,
+                                                    "31.43": 1,"39.26":1,"34.87":1,"35.48":1,"34.24":1,"35.01":1,"34.25":1,"27.26":1,"35.41":1,"38.87":1,"32.13":1,"22.68":1,"32.31":1,"33.45":1,"33.70":2,"31.88":1,"3
+1.35":1,"33.47":1,"34.78":1,"35.24":1,"33.44":1,"37.09":1,"26.99":1,"31.05":1,"36.41":1,"33.05":1,"37.41":2,"31.64":1,"34.63":1,"35.99":1,"32.80":1,"37
+.86":1,"38.13":1,"36.31":1,"27.39":1,"35.17":2,"30.07":1,"36.51":1,"39.70":1,"32.73":1,"31.91":1,"27.16":1,"34.65":1,"34.19":4,"30.27":1,"36.58":2,"27.
+96":1,"32.60":1,"28.71":1,"28.30":2,"31.01":1,"37.23":3,"36.32":1,"28.78":1,"34.13":1,"36.33":1,"34.09":1,"39.38":1,"36.00":2,"31.62":1,"30.85":1,"32.0
+3":1,"33.08":1,"31.47":1,"32.56":1,"34.57":2,"34.84":1,"27.01":1,"35.46":2,"35.51":1,"34.33":2,"41.35":1,"30.82":2,"38.10":1,"37.98":1,"30.67":1,"25.23
+":1,"30.26":1,"24.06":1,"37.60":1,"33.92":1,"32.58":1,"29.81":2,"35.83":1,"39.45":2,"40.70":1,"37.88":1,"33.73":1,"29.77":2,"31.99":1,"30.25":1,"27.61": 1,
+                                                    "34.39": 1,
+                                                    "24.46": 1,
+                                                    "38.34": 2,
+                                                    "31.87": 2,
+                                                    "35.68": 2,
+                                                    "35.90": 1,
+                                                    "34.49": 2,
+                                                    "30.84": 2,
+                                                    "37.80": 1,
+                                                    "23.09": 1,
+                                                    "23.60": 1,
+                                                    "30.45": 1,
+                                                    "29.47": 1,
+                                                    "34.42": 2,
+                                                    "34.96": 1,
+                                                    "32.44": 1,
+                                                    "25.16": 1,
+                                                    "36.79": 2,
+                                                    "37.39": 1,
+                                                    "38.49": 1,
+                                                    "25.17": 1,
+                                                    "34.35": 1,
+                                                    "34.52": 2,
+                                                    "37.83": 1,
+                                                    "37.93": 1,
+                                                    "37.99": 1,
+                                                    "38.67": 1,
+                                                    "36.15": 1,
+                                                    "31.85": 1,
+                                                    "26.04": 1,
+                                                    "27.86": 1,
+                                                    "28.47": 1,
+                                                    "21.51": 1,
+                                                    "29.94": 1,
+                                                    "34.12": 1,
+                                                    "37.35": 2,
+                                                    "37.49": 1,
+                                                    "39.14": 1,
+                                                    "31.54": 1,
+                                                    "30.24": 3,
+                                                    "32.98": 2,
+                                                    "38.18": 1,
+                                                    "36.25": 1,
+                                                    "31.86": 2,
+                                                    "33.20": 2,
+                                                    "32.53": 1,
+                                                    "27.04": 1,
+                                                    "33.23": 2,
+                                                    "33.82": 2,
+                                                    "37.68": 1,
+                                                    "29.65": 1,
+                                                    "26.80": 1,
+                                                    "36.66": 2,
+                                                    "36.90": 2,
+                                                    "32.94": 1,
+                                                    "30.21": 1,
+                                                    "35.14": 2,
+                                                    "35.39": 3,
+                                                    "36.98": 2,
+                                                    "37.90": 1,"36.04":3,"31.33":1,"38.75":1,"35.53":1,"31.38":1,"32.91":2,"28.83":1,"36.68":2,"32.89":1,"35.00":1,"37.08":1,"36.52":2,"32.43":2,"33.63":1,"34.89":1,"3
+2.84":2,"25.38":1,"30.92":1,"32.45":1,"37.33":1,"31.13":1,"35.08":1,"35.34":2,"35.12":1,"32.76":2,"32.82":1,"35.79":1,"32.81":1,"37.96":1,"36.10":1,"21
+.60":1,"35.65":1,"24.40":1,"35.37":1,"40.79":1,"27.15":1,"38.30":1,"33.02":1,"29.79":2,"34.23":1,"37.97":1,"29.86":1,"35.52":1,"33.52":3,"32.83":1,"33.
+07":4,"33.33":1,"32.99":1,"35.38":1,"40.56":1,"34.21":1,"30.18":1,"31.58":1,"33.16":1,"32.38":1,"34.90":1,"30.52":3,"22.75":1,"32.72":1,"37.92":1,"28.9
+5":1,"26.38":1,"38.35":1,"31.32":1,"30.30":1,"30.42":1,"35.60":2,"35.29":2,"32.67":1,"31.44":1,"35.07":1,"32.06":1,"31.21":1,"30.80":2,"33.62":1,"30.81
+":2,"33.68":1,"28.14":1,"31.42":1,"33.93":2,"34.31":2,"36.87":1,"35.76":1,"36.20":1,"38.32":1,"27.91":1,"36.69":1,"35.84":1,"34.32":2,"33.39":1,"34.41": 1,
+                                                    "27.18": 1,
+                                                    "36.43": 1,
+                                                    "30.23": 2,
+                                                    "30.86": 1,
+                                                    "30.69": 3,
+                                                    "32.29": 3,
+                                                    "39.02": 2,
+                                                    "36.05": 1,
+                                                    "30.02": 1,
+                                                    "31.16": 1,
+                                                    "37.95": 2,
+                                                    "37.64": 1,
+                                                    "33.67": 1,
+                                                    "32.46": 1,
+                                                    "39.75": 1,
+                                                    "24.14": 1,
+                                                    "35.75": 1,
+                                                    "26.07": 1,
+                                                    "33.86": 3,
+                                                    "34.02": 2,
+                                                    "30.88": 1,
+                                                    "29.66": 1,
+                                                    "31.84": 1,
+                                                    "19.50": 1,
+                                                    "28.49": 1
+                                                },
+                                                "packets-duplicated": 0,
+                                                "packets-sent": 600,"packe
+ts-reordered":0,"packets-received":600},"href":"https: //lapp-ps02.in2p3.fr/pscheduler/tasks/87b53ecf-f920-454a-a980-7be0d4fdcb91/runs/ddb60839-7f5a-46c
+                                                6-896b-8429f454e687","added":"2023-12-15T00: 03: 15+01: 00","duration":"P0D","priority":0,"errors":null,"start-time":"2023-12-15T00: 03: 15+01: 00","result-f
+ull":null,"task-href":"https: //lapp-ps02.in2p3.fr/pscheduler/tasks/87b53ecf-f920-454a-a980-7be0d4fdcb91","state-display":"Finished","end-time":"2023-12
+                                                -15T00: 03: 15+01: 00","limit-diags":null,"participant":0},"result":{"schema":1,"histogram-ttl":{"243":600},"packets-lost":0,"succeeded":true,"max-clock-e
+rror":4.82,"histogram-latency":{"34.54":1,"35.67":2,"21.03":1,"36.23":1,"33.89":1,"27.74":1,"33.51":1,"34.38":1,"38.69":1,"31.61":3,"34.62":1,"26.70":1,
+                                                "35.31": 1,
+                                                "36.75": 1,
+                                                "30.63": 1,
+                                                "33.40": 1,
+                                                "22.18": 1,
+                                                "31.67": 1,
+                                                "25.49": 1,
+                                                "24.22": 1,
+                                                "30.97": 2,
+                                                "33.42": 1,
+                                                "31.81": 2,
+                                                "34.68": 2,
+                                                "37.01": 1,
+                                                "37.20": 1,
+                                                "35.40": 1,
+                                                "34.46": 1,
+                                                "33.26": 2,
+                                                "37.57": 1,
+                                                "36.21": 1,
+                                                "33.61": 2,
+                                                "35.05": 1,
+                                                "37.10": 1,
+                                                "30.08": 1,
+                                                "36.45": 1,
+                                                "29.44": 1,
+                                                "29.99": 1,
+                                                "34.11": 1,
+                                                "32.93": 1,
+                                                "36.40": 2,
+                                                "33.80": 1,"30.64":1,"37.84":1,"30.53":1,"31.68":3,"34.43":1,"31.98":1,"32.27":1,"35.74":1,"36.37":1,"24.76":1,"34.94":2,"29.98":1,"29.24":1,"23.06":1,"31.73":1,"3
+6.02":1,"35.23":1,"34.66":1,"33.87":1,"22.91":1,"35.30":1,"33.65":2,"33.43":2,"36.30":1,"31.34":3,"35.86":1,"37.59":1,"34.59":1,"33.37":2,"31.65":1,"34
+.51":1,"24.39":1,"35.13":1,"31.50":2,"32.59":2,"28.52":1,"33.96":1,"34.45":1,"30.73":2,"35.81":1,"37.15":2,"33.36":1,"33.94":1,"34.82":2,"35.33":1,"37.
+00":1,"37.53":1,"37.75":1,"38.84":1,"24.61":1,"28.57":1,"39.85":1,"37.76":1,"34.70":1,"31.63":1,"34.77":1,"36.29":1,"34.64":3,"24.08":1,"35.03":1,"36.7
+0":1,"29.42":1,"31.56":1,"33.95":2,"26.56":1,"33.00":1,"36.65":1,"34.67":1,"37.03":1,"30.31":1,"21.54":1,"36.44":1,"31.53":2,"29.85":1,"32.78":1,"35.77
+":1,"30.39":1,"34.44":2,"29.89":2,"34.14":1,"37.73":1,"24.38":1,"30.37":1,"27.83":1,"35.02":2,"37.02":2,"37.87":2,"34.05":1,"26.95":1,"30.48":1,"32.33": 2,
+                                                "34.88": 2,
+                                                "31.15": 1,
+                                                "32.11": 1,
+                                                "32.54": 3,
+                                                "36.28": 1,
+                                                "30.95": 1,
+                                                "24.63": 1,
+                                                "25.10": 1,
+                                                "32.62": 1,
+                                                "37.22": 3,
+                                                "29.53": 1,
+                                                "35.93": 1,
+                                                "33.81": 3,
+                                                "31.82": 1,
+                                                "32.96": 1,
+                                                "33.78": 2,
+                                                "36.22": 2,
+                                                "30.20": 1,
+                                                "33.21": 1,
+                                                "26.84": 1,
+                                                "33.56": 2,
+                                                "26.53": 1,
+                                                "38.23": 1,
+                                                "36.60": 1,
+                                                "31.78": 2,
+                                                "31.95": 1,
+                                                "30.10": 2,
+                                                "35.09": 1,
+                                                "35.70": 1,
+                                                "29.41": 1,
+                                                "32.39": 1,
+                                                "37.27": 2,
+                                                "32.25": 1,
+                                                "27.68": 1,
+                                                "34.72": 1,
+                                                "38.44": 1,
+                                                "38.19": 1,
+                                                "37.94": 1,
+                                                "36.18": 1,
+                                                "36.38": 1,
+                                                "34.47": 3,
+                                                "39.34": 1,
+                                                "40.44": 1,
+                                                "31.09": 1,
+                                                "34.61": 1,
+                                                "37.71": 1,
+                                                "36.78": 1,
+                                                "26.74": 1,
+                                                "39.20": 1,
+                                                "35.64": 2,
+                                                "33.60": 2,
+                                                "37.18": 1,
+                                                "36.14": 1,
+                                                "35.32": 1,
+                                                "35.69": 2,
+                                                "36.03": 1,
+                                                "30.89": 1,
+                                                "37.36": 1,
+                                                "33.55": 1,
+                                                "38.33": 1,"36.85":1,"24.21":1,"39.61":1,"36.72":2,"26.39":1,"36.49":3,"28.93":1,"33.71":1,"25.40":1,"34.69":1,"35.96":1,"30.74":1,"31.43":1,"39.26":1,"34.87":1,"3
+5.48":1,"34.24":1,"35.01":1,"34.25":1,"27.26":1,"35.41":1,"38.87":1,"32.13":1,"22.68":1,"32.31":1,"33.45":1,"33.70":2,"31.88":1,"31.35":1,"33.47":1,"34
+.78":1,"35.24":1,"33.44":1,"37.09":1,"26.99":1,"31.05":1,"36.41":1,"33.05":1,"37.41":2,"31.64":1,"34.63":1,"35.99":1,"32.80":1,"37.86":1,"38.13":1,"36.
+31":1,"27.39":1,"35.17":2,"30.07":1,"36.51":1,"39.70":1,"32.73":1,"31.91":1,"27.16":1,"34.65":1,"34.19":4,"30.27":1,"36.58":2,"27.96":1,"32.60":1,"28.7
+1":1,"28.30":2,"31.01":1,"37.23":3,"36.32":1,"28.78":1,"34.13":1,"36.33":1,"34.09":1,"39.38":1,"36.00":2,"31.62":1,"30.85":1,"32.03":1,"33.08":1,"31.47
+":1,"32.56":1,"34.57":2,"34.84":1,"27.01":1,"35.46":2,"35.51":1,"34.33":2,"41.35":1,"30.82":2,"38.10":1,"37.98":1,"30.67":1,"25.23":1,"30.26":1,"24.06": 1,
+                                                "37.60": 1,
+                                                "33.92": 1,
+                                                "32.58": 1,
+                                                "29.81": 2,
+                                                "35.83": 1,
+                                                "39.45": 2,
+                                                "40.70": 1,
+                                                "37.88": 1,
+                                                "33.73": 1,
+                                                "29.77": 2,
+                                                "31.99": 1,
+                                                "30.25": 1,
+                                                "27.61": 1,
+                                                "34.39": 1,
+                                                "24.46": 1,
+                                                "38.34": 2,
+                                                "31.87": 2,
+                                                "35.68": 2,
+                                                "35.90": 1,
+                                                "34.49": 2,
+                                                "30.84": 2,
+                                                "37.80": 1,
+                                                "23.09": 1,
+                                                "23.60": 1,
+                                                "30.45": 1,
+                                                "29.47": 1,
+                                                "34.42": 2,
+                                                "34.96": 1,
+                                                "32.44": 1,
+                                                "25.16": 1,
+                                                "36.79": 2,
+                                                "37.39": 1,
+                                                "38.49": 1,
+                                                "25.17": 1,
+                                                "34.35": 1,
+                                                "34.52": 2,
+                                                "37.83": 1,
+                                                "37.93": 1,
+                                                "37.99": 1,
+                                                "38.67": 1,
+                                                "36.15": 1,
+                                                "31.85": 1,
+                                                "26.04": 1,
+                                                "27.86": 1,
+                                                "28.47": 1,
+                                                "21.51": 1,
+                                                "29.94": 1,
+                                                "34.12": 1,
+                                                "37.35": 2,
+                                                "37.49": 1,
+                                                "39.14": 1,
+                                                "31.54": 1,
+                                                "30.24": 3,
+                                                "32.98": 2,
+                                                "38.18": 1,
+                                                "36.25": 1,
+                                                "31.86": 2,
+                                                "33.20": 2,
+                                                "32.53": 1,
+                                                "27.04": 1,"33.23":2,"33.82":2,"37.68":1,"29.65":1,"26.80":1,"36.66":2,"36.90":2,"32.94":1,"30.21":1,"35.14":2,"35.39":3,"36.98":2,"37.90":1,"36.04":3,"31.33":1,"3
+8.75":1,"35.53":1,"31.38":1,"32.91":2,"28.83":1,"36.68":2,"32.89":1,"35.00":1,"37.08":1,"36.52":2,"32.43":2,"33.63":1,"34.89":1,"32.84":2,"25.38":1,"30
+.92":1,"32.45":1,"37.33":1,"31.13":1,"35.08":1,"35.34":2,"35.12":1,"32.76":2,"32.82":1,"35.79":1,"32.81":1,"37.96":1,"36.10":1,"21.60":1,"35.65":1,"24.
+40":1,"35.37":1,"40.79":1,"27.15":1,"38.30":1,"33.02":1,"29.79":2,"34.23":1,"37.97":1,"29.86":1,"35.52":1,"33.52":3,"32.83":1,"33.07":4,"33.33":1,"32.9
+9":1,"35.38":1,"40.56":1,"34.21":1,"30.18":1,"31.58":1,"33.16":1,"32.38":1,"34.90":1,"30.52":3,"22.75":1,"32.72":1,"37.92":1,"28.95":1,"26.38":1,"38.35
+":1,"31.32":1,"30.30":1,"30.42":1,"35.60":2,"35.29":2,"32.67":1,"31.44":1,"35.07":1,"32.06":1,"31.21":1,"30.80":2,"33.62":1,"30.81":2,"33.68":1,"28.14": 1,
+                                                "31.42": 1,
+                                                "33.93": 2,
+                                                "34.31": 2,
+                                                "36.87": 1,
+                                                "35.76": 1,
+                                                "36.20": 1,
+                                                "38.32": 1,
+                                                "27.91": 1,
+                                                "36.69": 1,
+                                                "35.84": 1,
+                                                "34.32": 2,
+                                                "33.39": 1,
+                                                "34.41": 1,
+                                                "27.18": 1,
+                                                "36.43": 1,
+                                                "30.23": 2,
+                                                "30.86": 1,
+                                                "30.69": 3,
+                                                "32.29": 3,
+                                                "39.02": 2,
+                                                "36.05": 1,
+                                                "30.02": 1,
+                                                "31.16": 1,
+                                                "37.95": 2,
+                                                "37.64": 1,
+                                                "33.67": 1,
+                                                "32.46": 1,
+                                                "39.75": 1,
+                                                "24.14": 1,
+                                                "35.75": 1,
+                                                "26.07": 1,
+                                                "33.86": 3,
+                                                "34.02": 2,
+                                                "30.88": 1,
+                                                "29.66": 1,
+                                                "31.84": 1,
+                                                "19.50": 1,
+                                                "28.49": 1
+                                            },
+                                            "packets-duplicated": 0,
+                                            "packets-sent": 600,
+                                            "packets-reordered": 0,"pack
+ets-received":600},"tool":{"name":"powstream","version":"1.0"},"id":"ddb60839-7f5a-46c6-896b-8429f454e687","@version":"1"}

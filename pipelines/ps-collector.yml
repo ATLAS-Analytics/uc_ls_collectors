@@ -1,34 +1,34 @@
-# - pipeline.id: ps-extra
-#   path.config: "/usr/share/logstash/configs/ps-extra.conf"
-#   pipeline.workers: 1
-# - pipeline.id: ps-rtt
-#   path.config: "/usr/share/logstash/configs/ps-rtt.conf"
-#   pipeline.workers: 1
-# - pipeline.id: ps-trace
-#   path.config: "/usr/share/logstash/configs/ps-trace.conf"
-#   pipeline.workers: 1
-# - pipeline.id: ps-latencybg
-#   path.config: "/usr/share/logstash/configs/ps-latencybg.conf"
-#   pipeline.workers: 1
-# - pipeline.id: ps-throughput
-#   path.config: "/usr/share/logstash/configs/ps-throughput.conf"
-#   pipeline.workers: 1
-# - pipeline.id: ps-status
-#   path.config: "/usr/share/logstash/configs/ps-status.conf"
-#   pipeline.workers: 1
-# - pipeline.id: ps-meta
-#   path.config: "/usr/share/logstash/configs/ps-meta.conf"
-#   pipeline.workers: 1
-# - pipeline.id: intake
-#   path.config: "/usr/share/logstash/configs/ps-intake.conf"
-#   queue.type: persisted
-#   pipeline.workers: 4
-# - pipeline.id: es-output
-#   path.config: "/usr/share/logstash/configs/es-output.conf"
+- pipeline.id: ps-extra
+  path.config: "/usr/share/logstash/configs/ps-extra.conf"
+  pipeline.workers: 1
+- pipeline.id: ps-rtt
+  path.config: "/usr/share/logstash/configs/ps-rtt.conf"
+  pipeline.workers: 1
+- pipeline.id: ps-trace
+  path.config: "/usr/share/logstash/configs/ps-trace.conf"
+  pipeline.workers: 1
+- pipeline.id: ps-latencybg
+  path.config: "/usr/share/logstash/configs/ps-latencybg.conf"
+  pipeline.workers: 1
+- pipeline.id: ps-throughput
+  path.config: "/usr/share/logstash/configs/ps-throughput.conf"
+  pipeline.workers: 1
+- pipeline.id: ps-status
+  path.config: "/usr/share/logstash/configs/ps-status.conf"
+  pipeline.workers: 1
+- pipeline.id: ps-meta
+  path.config: "/usr/share/logstash/configs/ps-meta.conf"
+  pipeline.workers: 1
+- pipeline.id: intake
+  path.config: "/usr/share/logstash/configs/ps-intake.conf"
+  queue.type: persisted
+  pipeline.workers: 4
+- pipeline.id: es-output
+  path.config: "/usr/share/logstash/configs/es-output.conf"
+  pipeline.workers: 1
+# - pipeline.id: ps-debug
+#   path.config: "/usr/share/logstash/configs/ps-debug.conf"
 #   pipeline.workers: 1
 
-- pipeline.id: ps-debug
-  path.config: "/usr/share/logstash/configs/ps-debug.conf"
-  pipeline.workers: 1
 #   queue.type: persisted
 #   queue.max_bytes: 4gb

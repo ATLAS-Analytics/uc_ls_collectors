@@ -1,0 +1,1113 @@
+{
+    "participants": [
+        "ps-bandwidth.lhcmon.triumf.ca"
+    ],
+    "schedule": {
+        "duration": "PT1M8S",
+        "start": "2023-12-14T14:58:42-08:00"
+    },
+    "test": {
+        "spec": {
+            "probe-type":"ud
+p","schema":1,"wait":"PT1M","first-ttl":1,"dest":"psmsu02.aglt2.org","length":1200,"ip-version":4,"source":"ps-bandwidth.lhcmon.triumf.ca"},"type":"tra
+ce"},"@timestamp":"2023-12-14T22: 59: 42.965076404Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT10M","until":"2023
+-12-15T14: 27: 11Z","slip":"PT5M","start":"2023-12-14T14: 27: 11Z"},"test":{"spec":{"probe-type":"udp","schema":1,"wait":"PT1M","first-ttl":1,"dest":"psmsu
+02.aglt2.org","length":1200,"ip-version":4,"source":"ps-bandwidth.lhcmon.triumf.ca"},"type":"trace"},"reference":{"psconfig":{"created-by":{"uuid":"E54
+0E5C4-A9D6-11E9-BC53-8ACF4A3D9C24","user-agent":"psconfig-pscheduler-agent"}}},"href":"https: //ps-bandwidth.lhcmon.triumf.ca/pscheduler/tasks/d03eb396-
+e16b-4d5f-a8b3-24e3a1e490a0","detail":{"participants":["ps-bandwidth.lhcmon.triumf.ca"],"added":"2023-12-14T00: 12: 00-08: 00","duration":"PT1M8S","enable
+d":true,"multi-result":false,"start":"2023-12-14T06: 27: 11-08: 00","post":"P0D","runs":144,"cli":["--dest","psmsu02.aglt2.org","--ip-version","4","--leng
+th","1200","--probe-type","udp","--first-ttl","1","--source","ps-bandwidth.lhcmon.triumf.ca","--wait","PT1M"],"exclusive":false,"diags":"Hints:\n  requ
+ester: 2607:f8f0: 660: 2: : 2\n  server: 2607:f8f0: 660: 2: : 2\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hos
+ts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+            1/1 passed,
+            0/1 failed: PASS\n  Application PASSES\nPassed one app
+lication.  Stopping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2607:f8f0: 660: 2: : 2","requester":"2607:f8f0
+: 660: 2: : 2"},"runs-started":52,"slip":"PT5M","participant":0},"tool":"traceroute","tools":["bwctltraceroute","traceroute"]},"headers":{"x_request_id":"6
+b830e2f60aee89c5e9e054f14638c7d","x_forwarded_for":"206.12.9.2","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.o
+rg","http_host":"ps-collection.atlas-ml.org","x_real_ip":"206.12.9.2","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"applicat
+ion/json","http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https",
+            "http_accept": "*/*",
+            "content_length": "7708",
+            "x_forwarded_port": "443"
+        },
+        "reference": {
+            "psconfig": {
+                "created-by": {
+                    "uuid":"E540E5C4-A9D6-11E9-BC53-8ACF4A3D9
+C24","user-agent":"psconfig-pscheduler-agent"}}},"run":{"participants":["ps-bandwidth.lhcmon.triumf.ca"],"state":"finished","result-merged":{"succeeded
+":true,"schema":1,"paths":[[{"hostname":"gw.lhcmon.triumf.ca","as":{"owner":"TRIUMF, CA","number":36391},"ip":"206.12.9.6","rtt":"PT0.0044S"},{"hostnam
+e":"wnpg2rtr3.network.canarie.ca","ip":"205.189.32.122","rtt":"PT0.0004S"},{"hostname":"mtrl2rtr1.network.canarie.ca","ip":"205.189.32.193","rtt":"PT0.
+0631S"},{"ip":"64.57.30.229","rtt":"PT0.0747S"},{"hostname":"wash-cr6--eqxdc4-bb-d.igp.es.net","as":{"owner":"ESNET, US","number":293},"ip":"134.55.57.
+131","rtt":"PT0.0939S"},{"hostname":"eqxdc4-cr6--eqxch2-bb-e.igp.es.net","as":{"owner":"ESNET, US","number":293},"ip":"134.55.58.11","rtt":"PT0.0938S"},
+                    {
+                        "hostname": "eqxch2-cr6--star-bb-e.igp.es.net",
+                        "as": {
+                            "owner": "ESNET, US",
+                            "number": 293
+                        },
+                        "ip": "134.55.57.163",
+                        "rtt": "PT0.0941S"
+                    },
+                    {
+                        "hostname":"star-cr55-
+-aglt2-msu.es.net","as":{"owner":"ESNET-EAST, US","number":291},"ip":"198.124.80.118","rtt":"PT0.0938S"},{"hostname":"aglt2-msu--star-cr55.es.net","as": {
+                            "owner": "ESNET-EAST, US",
+                            "number": 291
+                        },
+                        "ip": "198.124.80.119",
+                        "rtt": "PT0.0942S"
+                    },
+                    {},
+                    {
+                        "hostname": "msu-gw.aglt2.org",
+                        "as": {
+                            "owner": "MERIT-AS-6, US","num
+ber":229},"ip":"192.41.236.1","rtt":"PT0.1096S"},{"hostname":"msu-gw.aglt2.org","as":{"owner":"MERIT-AS-6, US","number":229},"ip":"192.41.236.1","rtt":"PT0.1006S"
+                        },
+                        {
+                            "hostname": "psmsu02.aglt2.org",
+                            "as": {
+                                "owner": "MERIT-AS-6, US",
+                                "number": 229
+                            },
+                            "ip": "192.41.236.32",
+                            "rtt": "PT0.0994S"
+                        }
+                    ]
+                ]
+            },
+            "href":"https://ps
+-bandwidth.lhcmon.triumf.ca/pscheduler/tasks/d03eb396-e16b-4d5f-a8b3-24e3a1e490a0/runs/d7ab35b2-c89a-4052-976d-24e0164be372","added":"2023-12-14T00: 17: 54-08: 00","duration":"PT1M","priority":null,"errors":null,"start-time":"2023-12-14T14: 58: 42-08: 00","result-full":[{"succeeded":true,"diags":"traceroute
+ -q 1 -4 -f 1 -s 206.12.9.1 -N 30 -n -w 60.0 psmsu02.aglt2.org 1200\n\ntraceroute to psmsu02.aglt2.org (192.41.236.32),
+            30 hops max,
+            1200 byte packets\
+n 1  206.12.9.6  4.461 ms\n 2  205.189.32.122  0.494 ms\n 3  205.189.32.193  63.158 ms\n 4  64.57.30.229  74.719 ms\n 5  134.55.57.131  93.909 ms\n 6
+134.55.58.11  93.819 ms\n 7  134.55.57.163  94.117 ms\n 8  198.124.80.118  93.894 ms\n 9  198.124.80.119  94.212 ms\n10  *\n11  192.41.236.1  109.600 m
+s\n12  192.41.236.1  100.648 ms\n13  192.41.236.32  99.440 ms\n","error":null,"result":{"succeeded":true,"schema":1,"paths":[[{"hostname":"gw.lhcmon.tr
+iumf.ca","as":{"owner":"TRIUMF, CA","number":36391},"ip":"206.12.9.6","rtt":"PT0.0044S"},{"hostname":"wnpg2rtr3.network.canarie.ca","ip":"205.189.32.12
+2","rtt":"PT0.0004S"},{"hostname":"mtrl2rtr1.network.canarie.ca","ip":"205.189.32.193","rtt":"PT0.0631S"},{"ip":"64.57.30.229","rtt":"PT0.0747S"},{"hos
+tname":"wash-cr6--eqxdc4-bb-d.igp.es.net","as":{"owner":"ESNET, US","number":293},"ip":"134.55.57.131","rtt":"PT0.0939S"},{"hostname":"eqxdc4-cr6--eqxc
+h2-bb-e.igp.es.net","as":{"owner":"ESNET, US","number":293},"ip":"134.55.58.11","rtt":"PT0.0938S"},{"hostname":"eqxch2-cr6--star-bb-e.igp.es.net","as":{
+                "owner": "ESNET, US",
+                "number": 293
+            },
+            "ip": "134.55.57.163",
+            "rtt": "PT0.0941S"
+        },
+        {
+            "hostname": "star-cr55--aglt2-msu.es.net",
+            "as": {
+                "owner": "ESNET-EAST, US","nu
+mber":291},"ip":"198.124.80.118","rtt":"PT0.0938S"},{"hostname":"aglt2-msu--star-cr55.es.net","as":{"owner":"ESNET-EAST, US","number":291},"ip":"198.12
+4.80.119","rtt":"PT0.0942S"},{},{"hostname":"msu-gw.aglt2.org","as":{"owner":"MERIT-AS-6, US","number":229},"ip":"192.41.236.1","rtt":"PT0.1096S"},{"ho
+stname":"msu-gw.aglt2.org","as":{"owner":"MERIT-AS-6, US","number":229},"ip":"192.41.236.1","rtt":"PT0.1006S"},{"hostname":"psmsu02.aglt2.org","as":{"o
+wner":"MERIT-AS-6, US","number":229},"ip":"192.41.236.32","rtt":"PT0.0994S"}]]},"schema":1}],"task-href":"https: //ps-bandwidth.lhcmon.triumf.ca/pschedu
+ler/tasks/d03eb396-e16b-4d5f-a8b3-24e3a1e490a0","state-display":"Finished","end-time":"2023-12-14T14: 59: 42-08: 00","limit-diags":"Hints:\n  requester: 2
+607:f8f0: 660: 2: : 2\n  server: 2607:f8f0: 660: 2: : 2\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we tr
+ust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                1/1 passed,
+                0/1 failed: PASS\n  Application PASSES\nPassed one application
+.  Stopping.\nProposal meets limits\nPriority set to default of 0","participant":0},"result":{"succeeded":true,"schema":1,"paths":[[{"hostname":"gw.lhc
+mon.triumf.ca","as":{"owner":"TRIUMF, CA","number":36391},"ip":"206.12.9.6","rtt":"PT0.0044S"},{"hostname":"wnpg2rtr3.network.canarie.ca","ip":"205.189
+.32.122","rtt":"PT0.0004S"},{"hostname":"mtrl2rtr1.network.canarie.ca","ip":"205.189.32.193","rtt":"PT0.0631S"},{"ip":"64.57.30.229","rtt":"PT0.0747S"},
+                {
+                    "hostname": "wash-cr6--eqxdc4-bb-d.igp.es.net",
+                    "as": {
+                        "owner": "ESNET, US",
+                        "number": 293
+                    },
+                    "ip": "134.55.57.131",
+                    "rtt": "PT0.0939S"
+                },
+                {
+                    "hostname":"eqxdc4-cr6
+--eqxch2-bb-e.igp.es.net","as":{"owner":"ESNET, US","number":293},"ip":"134.55.58.11","rtt":"PT0.0938S"},{"hostname":"eqxch2-cr6--star-bb-e.igp.es.net",
+                    "as": {
+                        "owner": "ESNET, US",
+                        "number": 293
+                    },
+                    "ip": "134.55.57.163",
+                    "rtt": "PT0.0941S"
+                },
+                {
+                    "hostname": "star-cr55--aglt2-msu.es.net",
+                    "as": {
+                        "owner":"ESNET-EAST, U
+S","number":291},"ip":"198.124.80.118","rtt":"PT0.0938S"},{"hostname":"aglt2-msu--star-cr55.es.net","as":{"owner":"ESNET-EAST, US","number":291},"ip":"198.124.80.119","rtt":"PT0.0942S"},{},{"hostname":"msu-gw.aglt2.org","as":{"owner":"MERIT-AS-6, US","number":229},"ip":"192.41.236.1","rtt":"PT0.1096S"
+                    },
+                    {
+                        "hostname": "msu-gw.aglt2.org",
+                        "as": {
+                            "owner": "MERIT-AS-6, US",
+                            "number": 229
+                        },
+                        "ip": "192.41.236.1",
+                        "rtt": "PT0.1006S"
+                    },
+                    {
+                        "hostname": "psmsu02.aglt2.org","a
+s":{"owner":"MERIT-AS-6, US","number":229},"ip":"192.41.236.32","rtt":"PT0.0994S"}]]},"tool":{"name":"traceroute","version":"1.0"},"id":"d7ab35b2-c89a-
+4052-976d-24e0164be372","@version":"1"}{
+                            "participants": [
+                                "lcgperf.shef.ac.uk"
+                            ],
+                            "schedule": {
+                                "duration": "PT1M8S",
+                                "start": "2023-12-14T22:58:42Z"
+                            },
+                            "test": {
+                                "spec": {
+                                    "probe-type": "udp",
+                                    "schema": 1,"w
+ait":"PT1M","first-ttl":1,"dest":"ps-london-lat.perf.ja.net","length":1200,"ip-version":4,"source":"lcgperf.shef.ac.uk"},"type":"trace"},"@timestamp":"2023-12-14T22: 59: 42.965160803Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT10M","until":"2023-12-15T03: 44: 19Z","
+slip":"PT5M","start":"2023-12-14T03: 44: 19Z"},"test":{"spec":{"probe-type":"udp","schema":1,"wait":"PT1M","first-ttl":1,"dest":"ps-london-lat.perf.ja.ne
+t","length":1200,"ip-version":4,"source":"lcgperf.shef.ac.uk"},"type":"trace"},"reference":{"psconfig":{"created-by":{"uuid":"2E4002E8-481D-11EA-9EBE-8
+FF4B5273C53","user-agent":"psconfig-pscheduler-agent"}}},"href":"https: //lcgperf.shef.ac.uk/pscheduler/tasks/28846615-c258-481f-bc96-05d41294d911","det
+ail":{"participants":["lcgperf.shef.ac.uk"],"added":"2023-12-13T21: 07: 23+00: 00","duration":"PT1M8S","enabled":true,"multi-result":false,"start":"2023-1
+2-14T03: 44: 19+00: 00","post":"P0D","runs":144,"cli":["--dest","ps-london-lat.perf.ja.net","--ip-version","4","--length","1200","--probe-type","udp","--f
+irst-ttl","1","--source","lcgperf.shef.ac.uk","--wait","PT1M"],"exclusive":false,"diags":"Hints:\n  requester: 2001: 630: 63: 3: : 41c5: 116\n  server: 2001: 630: 63: 3: : 41c5: 116\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group
+ 1: Limit 'always' passed\n  Group 1: Want all,
+                                    1/1 passed,
+                                    0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets
+limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2001: 630: 63: 3: : 41c5: 116","requester":"2001: 630: 63: 3: : 41c5: 116"},"runs-started":116,
+                                    "slip": "PT5M",
+                                    "participant": 0
+                                },
+                                "tool": "traceroute",
+                                "tools": [
+                                    "bwctltraceroute",
+                                    "traceroute"
+                                ]
+                            },
+                            "headers": {
+                                "x_request_id":"bfa397d63767779807abe7e14239f174","x_forwarded_for":"143.167.3.116","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":"ps-col
+lection.atlas-ml.org","x_real_ip":"143.167.3.116","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json","http_user
+_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept":"* /*"
+,"content_length":"8168","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"2E4002E8-481D-11EA-9EBE-8FF4B5273C53","user-agent":"p
+sconfig-pscheduler-agent"}}},"run":{"participants":["lcgperf.shef.ac.uk"],"state":"finished","result-merged":{"succeeded":true,"schema":1,"paths":[[{"h
+ostname":"gateway","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"143.167.3.254","rtt":"PT0.0004S"},{"ip":"172.22.20.1","rtt":"PT0
+.0003S"},{"ip":"172.22.20.22","rtt":"PT0.0002S"},{"ip":"172.22.8.9","rtt":"P0D"},{"as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"1
+43.167.254.182","rtt":"PT0.0003S"},{"hostname":"xe-2-0-3.shefcb-rbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97
+.150.29","rtt":"PT0.0003S"},{"hostname":"ae8.leedlu-rbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.71.81","rtt
+":"PT0.0041S"},{"hostname":"ae0.leedaq-rbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.71.126","rtt":"PT0.0014S
+"},{"hostname":"ae19.leedaq-sbr2.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.35.13","rtt":"PT0.0021S"},{"hostnam
+e":"ae29.lowdss-sbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.33.50","rtt":"PT0.0111S"},{"hostname":"ae31.lon
+dtw-sbr2.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.33.30","rtt":"PT0.0063S"},{"hostname":"ae28.londtt-sbr1.ja.
+net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.33.61","rtt":"PT0.0065S"},{},{"hostname":"ps-london-lat.perf.ja.net","a
+s":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"194.82.175.99","rtt":"PT0.0063S"}]]},"href":"https://lcgperf.shef.ac.uk/pscheduler/ta
+sks/28846615-c258-481f-bc96-05d41294d911/runs/1992da88-599e-407e-8320-7f6ef7945daf","added":"2023-12-13T22:59:25+00:00","duration":"PT1M","priority":nu
+ll,"errors":null,"start-time":"2023-12-14T22:58:42+00:00","result-full":[{"succeeded":true,"diags":"traceroute -q 1 -4 -f 1 -s 143.167.3.116 -N 30 -n -
+w 60.0 ps-london-lat.perf.ja.net 1200\n\ntraceroute to ps-london-lat.perf.ja.net (194.82.175.99), 30 hops max, 1200 byte packets\n 1  143.167.3.254  0.
+449 ms\n 2  172.22.20.1  0.308 ms\n 3  172.22.20.22  0.266 ms\n 4  172.22.8.9  0.099 ms\n 5  143.167.254.182  0.328 ms\n 6  146.97.150.29  0.312 ms\n 7
+  146.97.71.81  4.104 ms\n 8  146.97.71.126  1.417 ms\n 9  146.97.35.13  2.196 ms\n10  146.97.33.50  11.164 ms\n11  146.97.33.30  6.332 ms\n12  146.97.
+33.61  6.503 ms\n13  *\n14  194.82.175.99  6.349 ms\n","error":null,"result":{"succeeded":true,"schema":1,"paths":[[{"hostname":"gateway","as":{"owner"
+:"JANET Jisc Services Limited, GB","number":786},"ip":"143.167.3.254","rtt":"PT0.0004S"},{"ip":"172.22.20.1","rtt":"PT0.0003S"},{"ip":"172.22.20.22","r
+tt":"PT0.0002S"},{"ip":"172.22.8.9","rtt":"P0D"},{"as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"143.167.254.182","rtt":"PT0.0003S
+"},{"hostname":"xe-2-0-3.shefcb-rbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.150.29","rtt":"PT0.0003S"},{"ho
+stname":"ae8.leedlu-rbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.71.81","rtt":"PT0.0041S"},{"hostname":"ae0.
+leedaq-rbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.71.126","rtt":"PT0.0014S"},{"hostname":"ae19.leedaq-sbr2
+.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.35.13","rtt":"PT0.0021S"},{"hostname":"ae29.lowdss-sbr1.ja.net","as
+":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.33.50","rtt":"PT0.0111S"},{"hostname":"ae31.londtw-sbr2.ja.net","as":{"owner":"
+JANET Jisc Services Limited, GB","number":786},"ip":"146.97.33.30","rtt":"PT0.0063S"},{"hostname":"ae28.londtt-sbr1.ja.net","as":{"owner":"JANET Jisc S
+ervices Limited, GB","number":786},"ip":"146.97.33.61","rtt":"PT0.0065S"},{},{"hostname":"ps-london-lat.perf.ja.net","as":{"owner":"JANET Jisc Services
+ Limited, GB","number":786},"ip":"194.82.175.99","rtt":"PT0.0063S"}]]},"schema":1}],"task-href":"https://lcgperf.shef.ac.uk/pscheduler/tasks/28846615-c
+258-481f-bc96-05d41294d911","state-display":"Finished","end-time":"2023-12-14T22:59:42+00:00","limit-diags":"Hints:\n  requester: 2001:630:63:3::41c5:1
+16\n  server: 2001:630:63:3::41c5:116\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do
+everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stoppin
+g.\nProposal meets limits\nPriority set at 0:\n  Initial priority  (Set to 0)","participant":0},"result":{"succeeded":true,"schema":1,"paths":[[{"hostn
+ame":"gateway","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"143.167.3.254","rtt":"PT0.0004S"},{"ip":"172.22.20.1","rtt":"PT0.000
+3S"},{"ip":"172.22.20.22","rtt":"PT0.0002S"},{"ip":"172.22.8.9","rtt":"P0D"},{"as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"143.1
+67.254.182","rtt":"PT0.0003S"},{"hostname":"xe-2-0-3.shefcb-rbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.150
+.29","rtt":"PT0.0003S"},{"hostname":"ae8.leedlu-rbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.71.81","rtt":"P
+T0.0041S"},{"hostname":"ae0.leedaq-rbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.71.126","rtt":"PT0.0014S"},{
+"hostname":"ae19.leedaq-sbr2.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.35.13","rtt":"PT0.0021S"},{"hostname":"
+ae29.lowdss-sbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.33.50","rtt":"PT0.0111S"},{"hostname":"ae31.londtw-
+sbr2.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.33.30","rtt":"PT0.0063S"},{"hostname":"ae28.londtt-sbr1.ja.net"
+,"as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.33.61","rtt":"PT0.0065S"},{},{"hostname":"ps-london-lat.perf.ja.net","as":{
+"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"194.82.175.99","rtt":"PT0.0063S"}]]},"tool":{"name":"traceroute","version":"1.0"},"id":"1
+992da88-599e-407e-8320-7f6ef7945daf","@version":"1"}
+{"participants":["gridpp-ps-lat.ecdf.ed.ac.uk"],"schedule":{"duration":"PT1M8S","start":"2023-12-14T22:58:42Z"},"test":{"spec":{"schema":1,"wait":"PT1M
+","first-ttl":1,"dest":"ps01-l.farm.particle.cz","length":1200,"ip-version":6,"source":"gridpp-ps-lat.ecdf.ed.ac.uk"},"type":"trace"},"@timestamp":"202
+3-12-14T22:59:42.968942580Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT10M","until":"2023-12-15T04:18:14Z","sli
+p":"PT5M","start":"2023-12-14T04:18:14Z"},"test":{"spec":{"schema":1,"wait":"PT1M","first-ttl":1,"dest":"ps01-l.farm.particle.cz","length":1200,"ip-ver
+sion":6,"source":"gridpp-ps-lat.ecdf.ed.ac.uk"},"type":"trace"},"reference":{"psconfig":{"created-by":{"uuid":"4EA12FC2-6865-11EA-AB3B-DE58811007B0","u
+ser-agent":"psconfig-pscheduler-agent"}}},"href":"https://gridpp-ps-band.ecdf.ed.ac.uk/pscheduler/tasks/74aa4577-9a54-43eb-811c-77cbf249768e","detail":
+{"participants":["gridpp-ps-lat.ecdf.ed.ac.uk"],"added":"2023-12-13T22:47:28+00:00","duration":"PT1M8S","enabled":true,"multi-result":false,"start":"20
+23-12-14T04:18:14+00:00","post":"P0D","runs":144,"cli":["--dest","ps01-l.farm.particle.cz","--ip-version","6","--length","1200","--first-ttl","1","--so
+urce","gridpp-ps-lat.ecdf.ed.ac.uk","--wait","PT1M"],"exclusive":false,"diags":"Hints:\n  requester: 2001:630:3c1:638::d546\n  server: 2001:630:3c1:638
+::d546\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'a
+lways' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPrio
+rity set to default of 0","anytime":true,"hints":{"server":"2001:630:3c1:638::d546","requester":"2001:630:3c1:638::d546"},"runs-started":113,"slip":"PT
+5M","participant":0},"tool":"traceroute","tools":["bwctltraceroute","traceroute"]},"headers":{"x_request_id":"2a400d7b803f2ed31ea4c62b748ca639","x_forw
+arded_for":"129.215.213.69","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":"ps-collection.atlas
+-ml.org","x_real_ip":"129.215.213.69","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json","http_user_agent":"Pyc
+URL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept":"*/*","content_le
+ngth":"4628","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"4EA12FC2-6865-11EA-AB3B-DE58811007B0","user-agent":"psconfig-psch
+eduler-agent"}}},"run":{"participants":["gridpp-ps-lat.ecdf.ed.ac.uk"],"state":"finished","result-merged":{"succeeded":true,"schema":1,"paths":[[{"as":{
+                                    "owner": "JANET Jisc Services Limited, GB",
+                                    "number": 786
+                                },
+                                "ip": "2001:630:3c1:638::acf2",
+                                "rtt": "PT0.0007S"
+                            },
+                            {
+                                "as": {
+                                    "owner":"JANET Jisc Services Limited,
+GB","number":786},"ip":"2001: 630: 3c1:a348: : 2","rtt":"PT0.0003S"},{},{"hostname":"ps01-l.farm.particle.cz","as":{"owner":"CESNET2, CZ","number":2852},"i
+p":"2001: 718: 401: 6025: 1: : 192","rtt":"PT0.0311S"}]]},"href":"https: //gridpp-ps-band.ecdf.ed.ac.uk/pscheduler/tasks/74aa4577-9a54-43eb-811c-77cbf249768e/
+runs/e2bdcc6c-87a7-4b0b-b3a2-9e05e64d1826","added":"2023-12-13T23: 03: 32+00: 00","duration":"PT1M","priority":null,"errors":null,"start-time":"2023-12-14
+T22: 58: 42+00: 00","result-full":[{"succeeded":true,"diags":"traceroute -q 1 -6 -f 1 -s 2001: 630: 3c1: 638: :d546 -N 30 -n -w 60.0 ps01-l.farm.particle.cz 1
+200\n\ntraceroute to ps01-l.farm.particle.cz (2001: 718: 401: 6025: 1: : 192),
+                                    30 hops max,
+                                    1200 byte packets\n 1  2001: 630: 3c1: 638: :acf2  0.771 ms\n 2  2001
+: 630: 3c1:a348: : 2  0.363 ms\n 3  *\n 4  2001: 718: 401: 6025: 1: : 192  31.183 ms\n","error":null,"result":{"succeeded":true,"schema":1,"paths":[[{"as":{"owne
+r":"JANET Jisc Services Limited, GB","number":786},"ip":"2001: 630: 3c1: 638: :acf2","rtt":"PT0.0007S"},{"as":{"owner":"JANET Jisc Services Limited, GB","n
+umber":786},"ip":"2001: 630: 3c1:a348: : 2","rtt":"PT0.0003S"},{},{"hostname":"ps01-l.farm.particle.cz","as":{"owner":"CESNET2, CZ","number":2852},"ip":"20
+01: 718: 401: 6025: 1: : 192","rtt":"PT0.0311S"}]]},"schema":1}],"task-href":"https: //gridpp-ps-band.ecdf.ed.ac.uk/pscheduler/tasks/74aa4577-9a54-43eb-811c-7
+                                    7cbf249768e","state-display":"Finished","end-time":"2023-12-14T22: 59: 42+00: 00","limit-diags":"Hints:\n  requester: 2001: 630: 3c1: 638: :d546\n  server: 20
+01: 630: 3c1: 638: :d546\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Gro
+up 1: Limit 'always' passed\n  Group 1: Want all,
+                                    1/1 passed,
+                                    0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meet
+s limits\nPriority set at 0:\n  Initial priority  (Set to 0)","participant":0},"result":{"succeeded":true,"schema":1,"paths":[[{"as":{"owner":"JANET Ji
+sc Services Limited, GB","number":786},"ip":"2001: 630: 3c1: 638: :acf2","rtt":"PT0.0007S"},{"as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip": "2001:630:3c1:a348::2",
+                                    "rtt": "PT0.0003S"
+                                },
+                                {},
+                                {
+                                    "hostname": "ps01-l.farm.particle.cz",
+                                    "as": {
+                                        "owner": "CESNET2, CZ",
+                                        "number": 2852
+                                    },
+                                    "ip":"2001:718:401:6025: 1: : 192","rtt":"PT0.0311S"}]]},"tool":{"name":"traceroute","version":"1.0"},"id":"e2bdcc6c-87a7-4b0b-b3a2-9e05e64d1826","@version":"1"}{
+                                        "participants": [
+                                            "perfsonar01-iep-grid.saske.sk"
+                                        ],
+                                        "schedule": {
+                                            "duration": "PT1M8S",
+                                            "start": "2023-12-14T23:59:42+01:00"
+                                        },
+                                        "test": {
+                                            "spec": {
+                                                "probe-type":"ud
+p","schema":1,"wait":"PT1M","first-ttl":1,"dest":"ps-latency.lhcmon.triumf.ca","length":1200,"ip-version":4,"source":"perfsonar01-iep-grid.saske.sk"},"
+type":"trace"},"@timestamp":"2023-12-14T22: 59: 43.028815711Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT10M","un
+til":"2023-12-15T13: 29: 30Z","slip":"PT5M","start":"2023-12-14T13: 29: 30Z"},"test":{"spec":{"probe-type":"udp","schema":1,"wait":"PT1M","first-ttl":1,"de
+st":"ps-latency.lhcmon.triumf.ca","length":1200,"ip-version":4,"source":"perfsonar01-iep-grid.saske.sk"},"type":"trace"},"reference":{"psconfig":{"crea
+ted-by":{"uuid":"9ECFE4A4-434D-11EE-9F39-6F8E4D2660B6","user-agent":"psconfig-pscheduler-agent"}}},"href":"https: //perfsonar01-iep-grid.saske.sk/psched
+uler/tasks/d1ea72b3-730e-43a4-9952-905d7dabd31a","detail":{"participants":["perfsonar01-iep-grid.saske.sk"],"added":"2023-12-14T08: 39: 01+01: 00","durati
+on":"PT1M8S","enabled":true,"multi-result":false,"start":"2023-12-14T14: 29: 30+01: 00","post":"P0D","runs":144,"cli":["--dest","ps-latency.lhcmon.triumf.
+ca","--ip-version","4","--length","1200","--probe-type","udp","--first-ttl","1","--source","perfsonar01-iep-grid.saske.sk","--wait","PT1M"],"exclusive": false,
+                                                "diags":"Hints:\n  requester: 2001:4118:900:cc00::118\n  server: 2001:4118:900:cc00::118\nIdentified as everybody, local-interfaces\nClassified
+as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                                                1/1 passed,
+                                                0/1 failed: PA
+SS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"20
+01: 4118: 900:cc00: : 118","requester":"2001: 4118: 900:cc00: : 118"},"runs-started":58,"slip":"PT5M","participant":0},"tool":"traceroute","tools":["bwctltrace
+route","traceroute"]},"headers":{"x_request_id":"421ed4ab9af8514a03b99269d3cb4ffe","x_forwarded_for":"147.213.204.118","request_path":"/","request_meth
+od":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":"ps-collection.atlas-ml.org","x_real_ip":"147.213.204.118","x_forwarded_scheme":"https",
+                                                "x_forwarded_proto": "https",
+                                                "content_type": "application/json",
+                                                "http_user_agent":"PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.0.7 zlib/1.2.11 brotl
+i/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0","http_version":"HTTP/1.1","x_scheme":"https","http_acce
+pt":"* /*","content_length":"10221","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"9ECFE4A4-434D-11EE-9F39-6F8E4D2660B6","user
+-agent":"psconfig-pscheduler-agent"}}},"run":{"participants":["perfsonar01-iep-grid.saske.sk"],"state":"finished","result-merged":{"succeeded":true,"sc
+hema":1,"paths":[[{"hostname":"_gateway","as":{"owner":"SANET Slovak Academic Network, SK","number":2607},"ip":"147.213.204.1","rtt":"PT0.0004S"},{"hos
+tname":"tu-kosice.sanet2.sk","as":{"owner":"SANET Slovak Academic Network, SK","number":2607},"ip":"147.232.14.61","rtt":"PT0.0009S"},{"hostname":"CVT-
+Bratislava-2.sanet2.sk","as":{"owner":"SANET Slovak Academic Network, SK","number":2607},"ip":"194.160.8.2","rtt":"PT0.0058S"},{"hostname":"sanet.rt1.b
+ra.sk.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.125.5","rtt":"PT0.0058S"},{"hostname":"ae8.mx1.vie.at.geant
+.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.253","rtt":"PT0.0295S"},{"hostname":"ae5.rt1.pra.cz.geant.net","as"
+:{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.242","rtt":"PT0.0294S"},{"hostname":"ae6.rt1.fra.de.geant.net","as":{"owner":
+"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.158","rtt":"PT0.0181S"},{"hostname":"ae3.mx1.lon.uk.geant.net","as":{"owner":"GEANT The
+ GEANT IP Service, NL","number":20965},"ip":"62.40.98.179","rtt":"PT0.0293S"},{"hostname":"canarie.lon.uk.geant.net","as":{"owner":"GEANT The GEANT IP
+Service, NL","number":20965},"ip":"62.40.124.242","rtt":"PT0.1556S"},{"hostname":"toro3rtr1.network.canarie.ca","ip":"205.189.32.118","rtt":"PT0.1307S"
+},{"hostname":"wnpg2rtr3.network.canarie.ca","ip":"205.189.32.211","rtt":"PT0.1487S"},{"hostname":"clgr2rtr3.network.canarie.ca","ip":"205.189.32.176",
+"rtt":"PT0.1631S"},{"hostname":"vncv1rtr3.network.canarie.ca","ip":"205.189.32.174","rtt":"PT0.1742S"},{"hostname":"288-canarie-oran-cr1.vncv1.bc.net",
+"ip":"205.189.32.173","rtt":"PT0.1743S"},{"hostname":"708-oran-triumfcc-cr1.vncv1.bc.net","as":{"owner":"BCNET-AS, CA","number":271},"ip":"134.87.2.168
+","rtt":"PT0.1819S"},{"hostname":"atlas-p-oran-vrf-v4.lcg.triumf.ca","as":{"owner":"TRIUMF, CA","number":36391},"ip":"206.12.9.10","rtt":"PT0.1751S"},{
+"hostname":"ps-latency.lhcmon.triumf.ca","as":{"owner":"TRIUMF, CA","number":36391},"ip":"206.12.9.2","rtt":"PT0.1743S"}]]},"href":"https://perfsonar01
+-iep-grid.saske.sk/pscheduler/tasks/d1ea72b3-730e-43a4-9952-905d7dabd31a/runs/cebaa9fa-b429-488c-beea-9d53a3a916a3","added":"2023-12-14T09:00:48+01:00"
+,"duration":"P0D","priority":null,"errors":null,"start-time":"2023-12-14T23:59:42+01:00","result-full":[{"succeeded":true,"diags":"traceroute -q 1 -4 -
+f 1 -s 147.213.204.118 -N 30 -n -w 60.0 ps-latency.lhcmon.triumf.ca 1200\n\ntraceroute to ps-latency.lhcmon.triumf.ca (206.12.9.2), 30 hops max, 1200 b
+yte packets\n 1  147.213.204.1  0.450 ms\n 2  147.232.14.61  0.917 ms\n 3  194.160.8.2  5.844 ms\n 4  62.40.125.5  5.806 ms\n 5  62.40.98.253  29.568 m
+s\n 6  62.40.98.242  29.440 ms\n 7  62.40.98.158  18.191 ms\n 8  62.40.98.179  29.326 ms\n 9  62.40.124.242  155.603 ms\n10  205.189.32.118  130.737 ms
+\n11  205.189.32.211  148.779 ms\n12  205.189.32.176  163.194 ms\n13  205.189.32.174  174.204 ms\n14  205.189.32.173  174.398 ms\n15  134.87.2.168  181
+.953 ms\n16  206.12.9.10  175.114 ms\n17  206.12.9.2  174.366 ms\n","error":null,"result":{"succeeded":true,"schema":1,"paths":[[{"hostname":"_gateway"
+,"as":{"owner":"SANET Slovak Academic Network, SK","number":2607},"ip":"147.213.204.1","rtt":"PT0.0004S"},{"hostname":"tu-kosice.sanet2.sk","as":{"owne
+r":"SANET Slovak Academic Network, SK","number":2607},"ip":"147.232.14.61","rtt":"PT0.0009S"},{"hostname":"CVT-Bratislava-2.sanet2.sk","as":{"owner":"S
+ANET Slovak Academic Network, SK","number":2607},"ip":"194.160.8.2","rtt":"PT0.0058S"},{"hostname":"sanet.rt1.bra.sk.geant.net","as":{"owner":"GEANT Th
+e GEANT IP Service, NL","number":20965},"ip":"62.40.125.5","rtt":"PT0.0058S"},{"hostname":"ae8.mx1.vie.at.geant.net","as":{"owner":"GEANT The GEANT IP
+Service, NL","number":20965},"ip":"62.40.98.253","rtt":"PT0.0295S"},{"hostname":"ae5.rt1.pra.cz.geant.net","as":{"owner":"GEANT The GEANT IP Service, N
+L","number":20965},"ip":"62.40.98.242","rtt":"PT0.0294S"},{"hostname":"ae6.rt1.fra.de.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number
+":20965},"ip":"62.40.98.158","rtt":"PT0.0181S"},{"hostname":"ae3.mx1.lon.uk.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"
+ip":"62.40.98.179","rtt":"PT0.0293S"},{"hostname":"canarie.lon.uk.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40
+.124.242","rtt":"PT0.1556S"},{"hostname":"toro3rtr1.network.canarie.ca","ip":"205.189.32.118","rtt":"PT0.1307S"},{"hostname":"wnpg2rtr3.network.canarie
+.ca","ip":"205.189.32.211","rtt":"PT0.1487S"},{"hostname":"clgr2rtr3.network.canarie.ca","ip":"205.189.32.176","rtt":"PT0.1631S"},{"hostname":"vncv1rtr
+3.network.canarie.ca","ip":"205.189.32.174","rtt":"PT0.1742S"},{"hostname":"288-canarie-oran-cr1.vncv1.bc.net","ip":"205.189.32.173","rtt":"PT0.1743S"}
+,{"hostname":"708-oran-triumfcc-cr1.vncv1.bc.net","as":{"owner":"BCNET-AS, CA","number":271},"ip":"134.87.2.168","rtt":"PT0.1819S"},{"hostname":"atlas-
+p-oran-vrf-v4.lcg.triumf.ca","as":{"owner":"TRIUMF, CA","number":36391},"ip":"206.12.9.10","rtt":"PT0.1751S"},{"hostname":"ps-latency.lhcmon.triumf.ca"
+,"as":{"owner":"TRIUMF, CA","number":36391},"ip":"206.12.9.2","rtt":"PT0.1743S"}]]},"schema":1}],"task-href":"https://perfsonar01-iep-grid.saske.sk/psc
+heduler/tasks/d1ea72b3-730e-43a4-9952-905d7dabd31a","state-display":"Finished","end-time":"2023-12-14T23:59:42+01:00","limit-diags":"Hints:\n  requeste
+r: 2001:4118:900:cc00::118\n  server: 2001:4118:900:cc00::118\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplicatio
+n: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed o
+ne application.  Stopping.\nProposal meets limits\nPriority set at 0:\n  Initial priority  (Set to 0)","participant":0},"result":{"succeeded":true,"sch
+ema":1,"paths":[[{"hostname":"_gateway","as":{"owner":"SANET Slovak Academic Network, SK","number":2607},"ip":"147.213.204.1","rtt":"PT0.0004S"},{"host
+name":"tu-kosice.sanet2.sk","as":{"owner":"SANET Slovak Academic Network, SK","number":2607},"ip":"147.232.14.61","rtt":"PT0.0009S"},{"hostname":"CVT-B
+ratislava-2.sanet2.sk","as":{"owner":"SANET Slovak Academic Network, SK","number":2607},"ip":"194.160.8.2","rtt":"PT0.0058S"},{"hostname":"sanet.rt1.br
+a.sk.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.125.5","rtt":"PT0.0058S"},{"hostname":"ae8.mx1.vie.at.geant.
+net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.253","rtt":"PT0.0295S"},{"hostname":"ae5.rt1.pra.cz.geant.net","as":
+{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.242","rtt":"PT0.0294S"},{"hostname":"ae6.rt1.fra.de.geant.net","as":{"owner":"
+GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.158","rtt":"PT0.0181S"},{"hostname":"ae3.mx1.lon.uk.geant.net","as":{"owner":"GEANT The
+GEANT IP Service, NL","number":20965},"ip":"62.40.98.179","rtt":"PT0.0293S"},{"hostname":"canarie.lon.uk.geant.net","as":{"owner":"GEANT The GEANT IP S
+ervice, NL","number":20965},"ip":"62.40.124.242","rtt":"PT0.1556S"},{"hostname":"toro3rtr1.network.canarie.ca","ip":"205.189.32.118","rtt":"PT0.1307S"}
+,{"hostname":"wnpg2rtr3.network.canarie.ca","ip":"205.189.32.211","rtt":"PT0.1487S"},{"hostname":"clgr2rtr3.network.canarie.ca","ip":"205.189.32.176","
+rtt":"PT0.1631S"},{"hostname":"vncv1rtr3.network.canarie.ca","ip":"205.189.32.174","rtt":"PT0.1742S"},{"hostname":"288-canarie-oran-cr1.vncv1.bc.net","
+ip":"205.189.32.173","rtt":"PT0.1743S"},{"hostname":"708-oran-triumfcc-cr1.vncv1.bc.net","as":{"owner":"BCNET-AS, CA","number":271},"ip":"134.87.2.168"
+,"rtt":"PT0.1819S"},{"hostname":"atlas-p-oran-vrf-v4.lcg.triumf.ca","as":{"owner":"TRIUMF, CA","number":36391},"ip":"206.12.9.10","rtt":"PT0.1751S"},{"
+hostname":"ps-latency.lhcmon.triumf.ca","as":{"owner":"TRIUMF, CA","number":36391},"ip":"206.12.9.2","rtt":"PT0.1743S"}]]},"tool":{"name":"traceroute",
+"version":"1.0"},"id":"cebaa9fa-b429-488c-beea-9d53a3a916a3","@version":"1"}
+{"participants":["grid-perfsonar.hpc.susx.ac.uk"],"schedule":{"duration":"PT1M8S","start":"2023-12-14T22:58:42Z"},"test":{"spec":{"schema":1,"wait":"PT
+1M","first-ttl":1,"dest":"t2ps-bandwidth2.physics.ox.ac.uk","length":1200,"ip-version":6,"source":"grid-perfsonar.hpc.susx.ac.uk"},"type":"trace"},"@ti
+mestamp":"2023-12-14T22:59:43.052303032Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT10M","until":"2023-12-15T04
+:18:34Z","slip":"PT5M","start":"2023-12-14T04:18:34Z"},"test":{"spec":{"schema":1,"wait":"PT1M","first-ttl":1,"dest":"t2ps-bandwidth2.physics.ox.ac.uk"
+,"length":1200,"ip-version":6,"source":"grid-perfsonar.hpc.susx.ac.uk"},"type":"trace"},"reference":{"psconfig":{"created-by":{"uuid":"4CD9008A-4E12-11
+E8-88B6-AC69AB6BE931","user-agent":"psconfig-pscheduler-agent"}}},"href":"https://grid-perfsonar.hpc.susx.ac.uk/pscheduler/tasks/a183f7d1-9479-42ef-8e3
+9-955c0fbab27f","detail":{"participants":["grid-perfsonar.hpc.susx.ac.uk"],"added":"2023-12-13T21:58:12+00:00","duration":"PT1M8S","enabled":true,"mult
+i-result":false,"start":"2023-12-14T04:18:34+00:00","post":"P0D","runs":144,"cli":["--dest","t2ps-bandwidth2.physics.ox.ac.uk","--ip-version","6","--le
+ngth","1200","--first-ttl","1","--source","grid-perfsonar.hpc.susx.ac.uk","--wait","PT1M"],"exclusive":false,"diags":"Hints:\n  requester: 2001:678:718
+:80::80:18\n  server: 2001:678:718:80::80:18\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust
+ to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed one application.
+Stopping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2001:678:718:80::80:18","requester":"2001:678:718:80:
+:80:18"},"runs-started":113,"slip":"PT5M","participant":0},"tool":"traceroute","tools":["bwctltraceroute","traceroute"]},"headers":{"x_request_id":"d01
+0255b2fb5c821b2e48031b5347906","x_forwarded_for":"139.184.80.18","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.
+org","http_host":"ps-collection.atlas-ml.org","x_real_ip":"139.184.80.18","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"appl
+ication/json","http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"ht
+tps","http_accept":"*/*","content_length":"6893","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"4CD9008A-4E12-11E8-88B6-AC69A
+B6BE931","user-agent":"psconfig-pscheduler-agent"}}},"run":{"participants":["grid-perfsonar.hpc.susx.ac.uk"],"state":"finished","result-merged":{"succe
+eded":true,"schema":1,"paths":[[{"as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"2001: 678: 718: 80: : 80: 3","rtt":"PT0.0014S"},{"as":{"
+owner":"JANET Jisc Services Limited, GB","number":786},"ip":"2001: 630: 0: 9006: :b5","rtt":"PT0.0035S"},{"as":{"owner":"JANET Jisc Services Limited, GB","
+number":786},"ip":"2001: 630: 0: 1006: 10: :e","rtt":"PT0.0047S"},{"hostname":"ae23-0.londpg-sbr2.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","n
+umber":786},"ip":"2001: 630: 0: 10: : 1a9","rtt":"PT0.0058S"},{"hostname":"ae19.readdy-rbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number": 786
+                                            },
+                                            "ip": "2001:630:0:10::22e",
+                                            "rtt": "PT0.0067S"
+                                        },
+                                        {
+                                            "hostname": "ae7.harwat-rbr1.ja.net",
+                                            "as": {
+                                                "owner": "JANET Jisc Services Limited, GB",
+                                                "number": 786
+                                            },"
+ip":"2001: 630: 52: 10: : 6","rtt":"PT0.0078S"},{"as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"2001: 630: 52: 8002: : 16","rtt":"PT0.0085S"
+                                        },
+                                        {},
+                                        {},
+                                        {
+                                            "hostname": "t2ps-bandwidth2.physics.ox.ac.uk",
+                                            "as": {
+                                                "owner": "JANET Jisc Services Limited, GB",
+                                                "number": 786
+                                            },
+                                            "ip": "2001:630:441:905::b",
+                                            "rtt":"
+PT0.008S"}]]},"href":"https: //grid-perfsonar.hpc.susx.ac.uk/pscheduler/tasks/a183f7d1-9479-42ef-8e39-955c0fbab27f/runs/139f9b65-7162-4b97-9804-609a98c3
+f563","added":"2023-12-13T23: 03: 46+00: 00","duration":"PT1M","priority":null,"errors":null,"start-time":"2023-12-14T22: 58: 42+00: 00","result-full":[{"suc
+ceeded":true,"diags":"traceroute -q 1 -6 -f 1 -s 2001: 678: 718: 80: : 80: 18 -N 30 -n -w 60.0 t2ps-bandwidth2.physics.ox.ac.uk 1200\n\ntraceroute to t2ps-ba
+ndwidth2.physics.ox.ac.uk (2001: 630: 441: 905: :b),
+                                            30 hops max,
+                                            1200 byte packets\n 1  2001: 678: 718: 80: : 80: 3  1.467 ms\n 2  2001: 630: 0: 9006: :b5  3.530 ms
+\n 3  2001: 630: 0: 1006: 10: :e  4.716 ms\n 4  2001: 630: 0: 10: : 1a9  5.871 ms\n 5  2001: 630: 0: 10: :22e  6.714 ms\n 6  2001: 630: 52: 10: : 6  7.814 ms\n 7  2001: 63
+0: 52: 8002: : 16  8.567 ms\n 8  *\n 9  *\n10  2001: 630: 441: 905: :b  8.034 ms\n","error":null,"result":{"succeeded":true,"schema":1,"paths":[[{"as":{"owner": "JANET Jisc Services Limited, GB",
+                                            "number": 786
+                                        },
+                                        "ip": "2001:678:718:80::80:3",
+                                        "rtt": "PT0.0014S"
+                                    },
+                                    {
+                                        "as": {
+                                            "owner": "JANET Jisc Services Limited, GB","numb
+er":786},"ip":"2001: 630: 0: 9006: :b5","rtt":"PT0.0035S"},{"as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"2001: 630: 0: 1006: 10: :e","rtt
+":"PT0.0047S"},{"hostname":"ae23-0.londpg-sbr2.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"2001: 630: 0: 10: : 1a9","rtt":"P
+T0.0058S"},{"hostname":"ae19.readdy-rbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"2001: 630: 0: 10: :22e","rtt":"PT0.006
+7S"},{"hostname":"ae7.harwat-rbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"2001: 630: 52: 10: : 6","rtt":"PT0.0078S"},{"a
+s":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"2001: 630: 52: 8002: : 16","rtt":"PT0.0085S"},{},{},{"hostname":"t2ps-bandwidth2.physics.o
+x.ac.uk","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"2001: 630: 441: 905: :b","rtt":"PT0.008S"}]]},"schema":1}],"task-href":"https:
+                                            //grid-perfsonar.hpc.susx.ac.uk/pscheduler/tasks/a183f7d1-9479-42ef-8e39-955c0fbab27f","state-display":"Finished","end-time":"2023-12-14T22:59:42+00:00
+                                            ","limit-diags":"Hints:\n  requester: 2001: 678: 718: 80: : 80: 18\n  server: 2001: 678: 718: 80: : 80: 18\nIdentified as everybody, local-interfaces\nClassified a
+s default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                                            1/1 passed,
+                                            0/1 failed: PAS
+S\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set at 0:\n  Initial priority  (Set to 0)","participant":0
+                                        },
+                                        "result": {
+                                            "succeeded": true,
+                                            "schema": 1,
+                                            "paths": [
+                                                [
+                                                    {
+                                                        "as": {
+                                                            "owner": "JANET Jisc Services Limited, GB",
+                                                            "number": 786
+                                                        },
+                                                        "ip": "2001:678:718:80::80:3",
+                                                        "rtt":"PT0.0014S"},{"as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"2001: 630: 0: 9006: :b5","rtt":"PT0.0035S"},{"as":{"owner":"JANET Jisc Servi
+ces Limited, GB","number":786},"ip":"2001: 630: 0: 1006: 10: :e","rtt":"PT0.0047S"},{"hostname":"ae23-0.londpg-sbr2.ja.net","as":{"owner":"JANET Jisc Servic
+es Limited, GB","number":786},"ip":"2001: 630: 0: 10: : 1a9","rtt":"PT0.0058S"},{"hostname":"ae19.readdy-rbr1.ja.net","as":{"owner":"JANET Jisc Services Lim
+ited, GB","number":786},"ip":"2001: 630: 0: 10: :22e","rtt":"PT0.0067S"},{"hostname":"ae7.harwat-rbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, G
+B","number":786},"ip":"2001: 630: 52: 10: : 6","rtt":"PT0.0078S"},{"as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"2001: 630: 52: 8002: : 16",
+                                                        "rtt": "PT0.0085S"
+                                                    },
+                                                    {},
+                                                    {},
+                                                    {
+                                                        "hostname": "t2ps-bandwidth2.physics.ox.ac.uk",
+                                                        "as": {
+                                                            "owner": "JANET Jisc Services Limited, GB",
+                                                            "number": 786
+                                                        },
+                                                        "ip":"2001:630:441: 905: :b","rtt":"PT0.008S"}]]},"tool":{"name":"traceroute","version":"1.0"},"id":"139f9b65-7162-4b97-9804-609a98c3f563","@version":"1"}{
+                                                            "participants": [
+                                                                "lapp-ps01.in2p3.fr"
+                                                            ],
+                                                            "schedule": {
+                                                                "duration": "PT1M8S",
+                                                                "start": "2023-12-14T23:58:42+01:00"
+                                                            },
+                                                            "test": {
+                                                                "spec": {
+                                                                    "probe-type": "udp",
+                                                                    "schema": 1,
+                                                                    "wait": "PT1M",
+                                                                    "first-ttl": 1,
+                                                                    "dest": "lhcone.test.wix.internet2.edu",
+                                                                    "length": 1200,
+                                                                    "ip-version": 4,
+                                                                    "source": "lapp-ps01.in2p3.fr"
+                                                                },
+                                                                "type": "trace"
+                                                            },"@tim
+estamp":"2023-12-14T22: 59: 43.129590139Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT10M","until":"2023-12-15T15: 26: 11Z","slip":"PT5M","start":"2023-12-14T15: 26: 11Z"},"test":{"spec":{"probe-type":"udp","schema":1,"wait":"PT1M","first-ttl":1,"dest":"lhcone.test.wix
+.internet2.edu","length":1200,"ip-version":4,"source":"lapp-ps01.in2p3.fr"},"type":"trace"},"reference":{"psconfig":{"created-by":{"uuid":"832337F6-4CD
+7-11E7-A91A-BC99FE9AD50C","user-agent":"psconfig-pscheduler-agent"}}},"href":"https: //lapp-ps01.in2p3.fr/pscheduler/tasks/74aa0362-21ed-40ef-9ee9-cc1cc
+                                                            1b3a6a2","detail":{"participants":["lapp-ps01.in2p3.fr"],"added":"2023-12-14T11: 08: 40+01: 00","duration":"PT1M8S","enabled":true,"multi-result":false,"s
+tart":"2023-12-14T16: 26: 11+01: 00","post":"P0D","runs":144,"cli":["--dest","lhcone.test.wix.internet2.edu","--ip-version","4","--length","1200","--probe
+-type","udp","--first-ttl","1","--source","lapp-ps01.in2p3.fr","--wait","PT1M"],"exclusive":false,"diags":"Hints:\n  requester: 2001: 660: 5310: 420: : 1\n
+ server: 2001: 660: 5310: 420: : 1\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everythi
+ng\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                                                            1/1 passed,
+                                                            0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProp
+osal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2001: 660: 5310: 420: : 1","requester":"2001: 660: 5310: 420: : 1"},"runs-star
+ted":46,"slip":"PT5M","participant":0},"tool":"traceroute","tools":["bwctltraceroute","traceroute"]},"headers":{"x_request_id":"fc3771c55bc36ec9f7ada26
+cc5f7b630","x_forwarded_for":"134.158.84.140","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":"p
+s-collection.atlas-ml.org","x_real_ip":"134.158.84.140","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json","htt
+p_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept": "*/*",
+                                                            "content_length": "7502",
+                                                            "x_forwarded_port": "443"
+                                                        },
+                                                        "reference": {
+                                                            "psconfig": {
+                                                                "created-by": {
+                                                                    "uuid": "832337F6-4CD7-11E7-A91A-BC99FE9AD50C","user-age
+nt":"psconfig-pscheduler-agent"}}},"run":{"participants":["lapp-ps01.in2p3.fr"],"state":"finished","result-merged":{"succeeded":true,"schema":1,"paths": [
+                                                                        [
+                                                                            {
+                                                                                "hostname": "lapp-84-189.in2p3.fr",
+                                                                                "as": {
+                                                                                    "owner": "IN2P3 IN2P3 Autonomous System, EU",
+                                                                                    "number": 789
+                                                                                },
+                                                                                "ip": "134.158.84.189",
+                                                                                "rtt": "PT0.0002S"
+                                                                            },
+                                                                            {
+                                                                                "ip":"10.255.255.17","rtt":"PT0.0088S"},{"hostname":"annecy-lapp.in2p3.fr","as":{"owner":"FR-RENATER Reseau National de telecommunications pour la Technologie
+, FR","number":2200},"ip":"192.70.69.45","rtt":"PT0.0005S"},{"hostname":"lyon-ext-inter.in2p3.fr","as":{"owner":"FR-RENATER Reseau National de telecomm
+unications pour la Technologie, FR","number":2200},"ip":"192.70.69.21","rtt":"PT0.0122S"},{"as":{"owner":"FR-RENATER Reseau National de telecommunicati
+ons pour la Technologie, FR","number":2200},"ip":"193.51.187.137","rtt":"PT0.009S"},{"hostname":"et-2-0-3-ren-nr-lyon1-rtr-131.noc.renater.fr","as":{"o
+wner":"FR-RENATER Reseau National de telecommunications pour la Technologie, FR","number":2200},"ip":"193.55.204.196","rtt":"PT0.0126S"},{"hostname":"r
+enater.mx1.gen.ch.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.124.61","rtt":"PT0.0117S"},{"hostname":"ae7.mx1
+.par.fr.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.239","rtt":"PT0.0197S"},{},{},{},{},{},{},{},{},{},{},{},
+                                                                                {},
+                                                                                {},
+                                                                                {},
+                                                                                {},
+                                                                                {},
+                                                                                {},
+                                                                                {},
+                                                                                {},
+                                                                                {},
+                                                                                {},
+                                                                                {}
+                                                                            ]
+                                                                        ]
+                                                                    },
+                                                                    "href":"https://lapp-ps01.in2p3.fr/pscheduler/tasks/74aa0362-21ed-40ef-9ee9-cc1cc1b3a6a2/runs/2b917f31-271a-4ec8
+-bac5-a9c5eb9d5de4","added":"2023-12-14T11: 13: 55+01: 00","duration":"PT1M","priority":null,"errors":null,"start-time":"2023-12-14T23: 58: 42+01: 00","resul
+t-full":[{"succeeded":true,"diags":"traceroute -q 1 -4 -f 1 -s 134.158.84.140 -N 30 -n -w 60.0 lhcone.test.wix.internet2.edu 1200\n\ntraceroute to lhco
+ne.test.wix.internet2.edu (64.57.30.149),
+                                                                    30 hops max,
+                                                                    1200 byte packets\n 1  134.158.84.189  0.236 ms\n 2  10.255.255.17  8.872 ms\n 3  192.70.69.45
+0.539 ms\n 4  192.70.69.21  12.237 ms\n 5  193.51.187.137  9.095 ms\n 6  193.55.204.196  12.632 ms\n 7  62.40.124.61  11.741 ms\n 8  62.40.98.239  19.7
+20 ms\n 9  *\n10  *\n11  *\n12  *\n13  *\n14  *\n15  *\n16  *\n17  *\n18  *\n19  *\n20  *\n21  *\n22  *\n23  *\n24  *\n25  *\n26  *\n27  *\n28  *\n29
+*\n30  *\n","error":null,"result":{"succeeded":true,"schema":1,"paths":[[{"hostname":"lapp-84-189.in2p3.fr","as":{"owner":"IN2P3 IN2P3 Autonomous Syste
+m, EU","number":789},"ip":"134.158.84.189","rtt":"PT0.0002S"},{"ip":"10.255.255.17","rtt":"PT0.0088S"},{"hostname":"annecy-lapp.in2p3.fr","as":{"owner": "FR-RENATER Reseau National de telecommunications pour la Technologie, FR",
+                                                                    "number": 2200
+                                                                },
+                                                                "ip": "192.70.69.45",
+                                                                "rtt": "PT0.0005S"
+                                                            },
+                                                            {
+                                                                "hostname":"lyon-ext
+-inter.in2p3.fr","as":{"owner":"FR-RENATER Reseau National de telecommunications pour la Technologie, FR","number":2200},"ip":"192.70.69.21","rtt":"PT0
+.0122S"},{"as":{"owner":"FR-RENATER Reseau National de telecommunications pour la Technologie, FR","number":2200},"ip":"193.51.187.137","rtt":"PT0.009S
+"},{"hostname":"et-2-0-3-ren-nr-lyon1-rtr-131.noc.renater.fr","as":{"owner":"FR-RENATER Reseau National de telecommunications pour la Technologie, FR","number": 2200
+                                                            },
+                                                            "ip": "193.55.204.196",
+                                                            "rtt": "PT0.0126S"
+                                                        },
+                                                        {
+                                                            "hostname": "renater.mx1.gen.ch.geant.net",
+                                                            "as": {
+                                                                "owner": "GEANT The GEANT IP Service, NL","numb
+er":20965},"ip":"62.40.124.61","rtt":"PT0.0117S"},{"hostname":"ae7.mx1.par.fr.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},
+                                                                "ip": "62.40.98.239",
+                                                                "rtt": "PT0.0197S"
+                                                            },
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {},
+                                                            {}
+                                                        ]
+                                                    ]
+                                                },
+                                                "schema": 1
+                                            }
+                                        ],
+                                        "task-href":"https://lapp-ps0
+1.in2p3.fr/pscheduler/tasks/74aa0362-21ed-40ef-9ee9-cc1cc1b3a6a2","state-display":"Finished","end-time":"2023-12-14T23: 59: 42+01: 00","limit-diags":"Hint
+s:\n  requester: 2001: 660: 5310: 420: : 1\n  server: 2001: 660: 5310: 420: : 1\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nAp
+plication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                                        1/1 passed,
+                                        0/1 failed: PASS\n  Application PASSES\n
+Passed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","participant":0},"result":{"succeeded":true,"schema":1,"paths": [
+                                            [
+                                                {
+                                                    "hostname": "lapp-84-189.in2p3.fr",
+                                                    "as": {
+                                                        "owner": "IN2P3 IN2P3 Autonomous System, EU",
+                                                        "number": 789
+                                                    },
+                                                    "ip": "134.158.84.189",
+                                                    "rtt": "PT0.0002S"
+                                                },
+                                                {
+                                                    "ip":"10.255.255.17","rtt":"PT0.0088S"},{"hostname":"annecy-lapp.in2p3.fr","as":{"owner":"FR-RENATER Reseau National de telecommunications pour la Technologie
+, FR","number":2200},"ip":"192.70.69.45","rtt":"PT0.0005S"},{"hostname":"lyon-ext-inter.in2p3.fr","as":{"owner":"FR-RENATER Reseau National de telecomm
+unications pour la Technologie, FR","number":2200},"ip":"192.70.69.21","rtt":"PT0.0122S"},{"as":{"owner":"FR-RENATER Reseau National de telecommunicati
+ons pour la Technologie, FR","number":2200},"ip":"193.51.187.137","rtt":"PT0.009S"},{"hostname":"et-2-0-3-ren-nr-lyon1-rtr-131.noc.renater.fr","as":{"o
+wner":"FR-RENATER Reseau National de telecommunications pour la Technologie, FR","number":2200},"ip":"193.55.204.196","rtt":"PT0.0126S"},{"hostname":"r
+enater.mx1.gen.ch.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.124.61","rtt":"PT0.0117S"},{"hostname":"ae7.mx1
+.par.fr.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.239","rtt":"PT0.0197S"},{},{},{},{},{},{},{},{},{},{},{},
+                                                    {},
+                                                    {},
+                                                    {},
+                                                    {},
+                                                    {},
+                                                    {},
+                                                    {},
+                                                    {},
+                                                    {},
+                                                    {},
+                                                    {}
+                                                ]
+                                            ]
+                                        },
+                                        "tool": {
+                                            "name": "traceroute",
+                                            "version": "1.0"
+                                        },
+                                        "id": "2b917f31-271a-4ec8-bac5-a9c5eb9d5de4",
+                                        "@version": "1"
+                                    }
+{
+                                        "participants": [
+                                            "lapp-ps02.in2p3.fr"
+                                        ],
+                                        "schedule": {
+                                            "duration": "PT1M8S",
+                                            "start": "2023-12-14T23:58:42+01:00"
+                                        },
+                                        "test": {
+                                            "spec": {
+                                                "probe-type": "udp",
+                                                "schema": 1,
+                                                "wait": "PT1M",
+                                                "first-ttl": 1,
+                                                "dest": "t2ps-latency2.physics.ox.ac.uk",
+                                                "length": 1200,
+                                                "ip-version": 4,
+                                                "source": "lapp-ps02.in2p3.fr"
+                                            },
+                                            "type": "trace"
+                                        },"@ti
+mestamp":"2023-12-14T22: 59: 43.207932916Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT10M","until":"2023-12-15T16
+: 24: 52Z","slip":"PT5M","start":"2023-12-14T16: 24: 52Z"},"test":{"spec":{"probe-type":"udp","schema":1,"wait":"PT1M","first-ttl":1,"dest":"t2ps-latency2.
+physics.ox.ac.uk","length":1200,"ip-version":4,"source":"lapp-ps02.in2p3.fr"},"type":"trace"},"reference":{"psconfig":{"created-by":{"uuid":"4EF9818C-4
+CDD-11E7-B422-98643FE1B6E8","user-agent":"psconfig-pscheduler-agent"}}},"href":"https: //lapp-ps02.in2p3.fr/pscheduler/tasks/b32729be-5446-49f2-8ce3-4a6
+                                        222d7643d","detail":{"participants":["lapp-ps02.in2p3.fr"],"added":"2023-12-14T11: 39: 20+01: 00","duration":"PT1M8S","enabled":true,"multi-result":false,"start": "2023-12-14T17:24:52+01:00",
+                                        "post": "P0D",
+                                        "runs": 145,
+                                        "cli": [
+                                            "--dest",
+                                            "t2ps-latency2.physics.ox.ac.uk",
+                                            "--ip-version",
+                                            "4",
+                                            "--length",
+                                            "1200","--pr
+obe-type","udp","--first-ttl","1","--source","lapp-ps02.in2p3.fr","--wait","PT1M"],"exclusive":false,"diags":"Hints:\n  requester: 2001: 660: 5310: 420: : 2
+\n  server: 2001: 660: 5310: 420: : 2\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do every
+thing\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                                            1/1 passed,
+                                            0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nP
+roposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2001: 660: 5310: 420: : 2","requester":"2001: 660: 5310: 420: : 2"},"runs-s
+tarted":40,"slip":"PT5M","participant":0},"tool":"traceroute","tools":["bwctltraceroute","traceroute"]},"headers":{"x_request_id":"c05a2acb857f249185fe
+b7aa01a4ed22","x_forwarded_for":"134.158.84.141","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host": "ps-collection.atlas-ml.org",
+                                            "x_real_ip": "134.158.84.141",
+                                            "x_forwarded_scheme": "https",
+                                            "x_forwarded_proto": "https",
+                                            "content_type": "application/json","
+http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_acce
+pt":"* /*","content_length":"10368","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uuid":"4EF9818C-4CDD-11E7-B422-98643FE1B6E8","user
+-agent":"psconfig-pscheduler-agent"}}},"run":{"participants":["lapp-ps02.in2p3.fr"],"state":"finished","result-merged":{"succeeded":true,"schema":1,"pa
+ths":[[{},{"ip":"10.255.255.17","rtt":"PT0.0057S"},{"hostname":"annecy-lapp.in2p3.fr","as":{"owner":"FR-RENATER Reseau National de telecommunications p
+our la Technologie, FR","number":2200},"ip":"192.70.69.45","rtt":"PT0.005S"},{"hostname":"lyon-ext-inter.in2p3.fr","as":{"owner":"FR-RENATER Reseau Nat
+ional de telecommunications pour la Technologie, FR","number":2200},"ip":"192.70.69.21","rtt":"PT0.0105S"},{"as":{"owner":"FR-RENATER Reseau National d
+e telecommunications pour la Technologie, FR","number":2200},"ip":"193.51.187.137","rtt":"PT0.0114S"},{"hostname":"et-2-0-3-ren-nr-lyon1-rtr-131.noc.re
+nater.fr","as":{"owner":"FR-RENATER Reseau National de telecommunications pour la Technologie, FR","number":2200},"ip":"193.55.204.196","rtt":"PT0.01S"
+},{"hostname":"renater.mx1.gen.ch.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.124.61","rtt":"PT0.031S"},{"hos
+tname":"ae7.mx1.par.fr.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.239","rtt":"PT0.0266S"},{"hostname":"ae
+8.mx1.lon2.uk.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.106","rtt":"PT0.0257S"},{"hostname":"ae2.mx1.lon
+.uk.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.64","rtt":"PT0.0259S"},{"hostname":"janet-gw.mx1.lon.uk.ge
+ant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.124.198","rtt":"PT0.0274S"},{"hostname":"ae29.londpg-sbr2.ja.net","
+as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.33.2","rtt":"PT0.0287S"},{"hostname":"ae19.readdy-rbr1.ja.net","as":{"owner":
+"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.37.194","rtt":"PT0.0289S"},{"hostname":"ae7.harwat-rbr1.ja.net","as":{"owner":"JANET Jisc
+Services Limited, GB","number":786},"ip":"193.63.108.70","rtt":"PT0.0288S"},{"hostname":"oxford-university.ja.net","as":{"owner":"JANET Jisc Services L
+imited, GB","number":786},"ip":"193.63.109.42","rtt":"PT0.0297S"},{},{},{"hostname":"t2ps-latency2.physics.ox.ac.uk","as":{"owner":"JANET Jisc Services
+ Limited, GB","number":786},"ip":"163.1.5.12","rtt":"PT0.0306S"}]]},"href":"https://lapp-ps02.in2p3.fr/pscheduler/tasks/b32729be-5446-49f2-8ce3-4a6222d
+7643d/runs/db83c5d0-2a3c-418b-a0bc-1e4c61523dd3","added":"2023-12-14T11:47:08+01:00","duration":"PT1M","priority":null,"errors":null,"start-time":"2023
+-12-14T23:58:42+01:00","result-full":[{"succeeded":true,"diags":"traceroute -q 1 -4 -f 1 -s 134.158.84.141 -N 30 -n -w 60.0 t2ps-latency2.physics.ox.ac
+.uk 1200\n\ntraceroute to t2ps-latency2.physics.ox.ac.uk (163.1.5.12), 30 hops max, 1200 byte packets\n 1  *\n 2  10.255.255.17  5.765 ms\n 3  192.70.6
+9.45  5.062 ms\n 4  192.70.69.21  10.575 ms\n 5  193.51.187.137  11.441 ms\n 6  193.55.204.196  10.007 ms\n 7  62.40.124.61  31.046 ms\n 8  62.40.98.23
+9  26.674 ms\n 9  62.40.98.106  25.784 ms\n10  62.40.98.64  25.901 ms\n11  62.40.124.198  27.465 ms\n12  146.97.33.2  28.788 ms\n13  146.97.37.194  28.
+995 ms\n14  193.63.108.70  28.801 ms\n15  193.63.109.42  29.788 ms\n16  *\n17  *\n18  163.1.5.12  30.677 ms\n","error":null,"result":{"succeeded":true,
+"schema":1,"paths":[[{},{"ip":"10.255.255.17","rtt":"PT0.0057S"},{"hostname":"annecy-lapp.in2p3.fr","as":{"owner":"FR-RENATER Reseau National de teleco
+mmunications pour la Technologie, FR","number":2200},"ip":"192.70.69.45","rtt":"PT0.005S"},{"hostname":"lyon-ext-inter.in2p3.fr","as":{"owner":"FR-RENA
+TER Reseau National de telecommunications pour la Technologie, FR","number":2200},"ip":"192.70.69.21","rtt":"PT0.0105S"},{"as":{"owner":"FR-RENATER Res
+eau National de telecommunications pour la Technologie, FR","number":2200},"ip":"193.51.187.137","rtt":"PT0.0114S"},{"hostname":"et-2-0-3-ren-nr-lyon1-
+rtr-131.noc.renater.fr","as":{"owner":"FR-RENATER Reseau National de telecommunications pour la Technologie, FR","number":2200},"ip":"193.55.204.196","
+rtt":"PT0.01S"},{"hostname":"renater.mx1.gen.ch.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.124.61","rtt":"PT
+0.031S"},{"hostname":"ae7.mx1.par.fr.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.239","rtt":"PT0.0266S"},{
+"hostname":"ae8.mx1.lon2.uk.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.106","rtt":"PT0.0257S"},{"hostname
+":"ae2.mx1.lon.uk.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.64","rtt":"PT0.0259S"},{"hostname":"janet-gw
+.mx1.lon.uk.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.124.198","rtt":"PT0.0274S"},{"hostname":"ae29.londpg-
+sbr2.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.33.2","rtt":"PT0.0287S"},{"hostname":"ae19.readdy-rbr1.ja.net",
+"as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":"146.97.37.194","rtt":"PT0.0289S"},{"hostname":"ae7.harwat-rbr1.ja.net","as":{"owner
+":"JANET Jisc Services Limited, GB","number":786},"ip":"193.63.108.70","rtt":"PT0.0288S"},{"hostname":"oxford-university.ja.net","as":{"owner":"JANET J
+isc Services Limited, GB","number":786},"ip":"193.63.109.42","rtt":"PT0.0297S"},{},{},{"hostname":"t2ps-latency2.physics.ox.ac.uk","as":{"owner":"JANET
+ Jisc Services Limited, GB","number":786},"ip":"163.1.5.12","rtt":"PT0.0306S"}]]},"schema":1}],"task-href":"https://lapp-ps02.in2p3.fr/pscheduler/tasks
+/b32729be-5446-49f2-8ce3-4a6222d7643d","state-display":"Finished","end-time":"2023-12-14T23:59:42+01:00","limit-diags":"Hints:\n  requester: 2001:660:5
+310:420::2\n  server: 2001:660:5310:420::2\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust t
+o do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed one application.  St
+opping.\nProposal meets limits\nPriority set to default of 0","participant":0},"result":{"succeeded":true,"schema":1,"paths":[[{},{"ip":"10.255.255.17"
+,"rtt":"PT0.0057S"},{"hostname":"annecy-lapp.in2p3.fr","as":{"owner":"FR-RENATER Reseau National de telecommunications pour la Technologie, FR","number
+":2200},"ip":"192.70.69.45","rtt":"PT0.005S"},{"hostname":"lyon-ext-inter.in2p3.fr","as":{"owner":"FR-RENATER Reseau National de telecommunications pou
+r la Technologie, FR","number":2200},"ip":"192.70.69.21","rtt":"PT0.0105S"},{"as":{"owner":"FR-RENATER Reseau National de telecommunications pour la Te
+chnologie, FR","number":2200},"ip":"193.51.187.137","rtt":"PT0.0114S"},{"hostname":"et-2-0-3-ren-nr-lyon1-rtr-131.noc.renater.fr","as":{"owner":"FR-REN
+ATER Reseau National de telecommunications pour la Technologie, FR","number":2200},"ip":"193.55.204.196","rtt":"PT0.01S"},{"hostname":"renater.mx1.gen.
+ch.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.124.61","rtt":"PT0.031S"},{"hostname":"ae7.mx1.par.fr.geant.ne
+t","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.239","rtt":"PT0.0266S"},{"hostname":"ae8.mx1.lon2.uk.geant.net","as":{
+"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.106","rtt":"PT0.0257S"},{"hostname":"ae2.mx1.lon.uk.geant.net","as":{"owner":"G
+EANT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.64","rtt":"PT0.0259S"},{"hostname":"janet-gw.mx1.lon.uk.geant.net","as":{"owner":"GEANT T
+he GEANT IP Service, NL","number":20965},"ip":"62.40.124.198","rtt":"PT0.0274S"},{"hostname":"ae29.londpg-sbr2.ja.net","as":{"owner":"JANET Jisc Servic
+es Limited, GB","number":786},"ip":"146.97.33.2","rtt":"PT0.0287S"},{"hostname":"ae19.readdy-rbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, G
+B","number":786},"ip":"146.97.37.194","rtt":"PT0.0289S"},{"hostname":"ae7.harwat-rbr1.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":
+786},"ip":"193.63.108.70","rtt":"PT0.0288S"},{"hostname":"oxford-university.ja.net","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip":
+"193.63.109.42","rtt":"PT0.0297S"},{},{},{"hostname":"t2ps-latency2.physics.ox.ac.uk","as":{"owner":"JANET Jisc Services Limited, GB","number":786},"ip
+":"163.1.5.12","rtt":"PT0.0306S"}]]},"tool":{"name":"traceroute","version":"1.0"},"id":"db83c5d0-2a3c-418b-a0bc-1e4c61523dd3","@version":"1"}
+{"participants":["perfsonar-ps.cnaf.infn.it"],"schedule":{"duration":"PT1M8S","start":"2023-12-14T22:58:42Z"},"test":{"spec":{"schema":1,"wait":"PT1M",
+"first-ttl":1,"dest":"perfsonar1.nipne.ro","length":1200,"ip-version":6,"source":"perfsonar-ps.cnaf.infn.it"},"type":"trace"},"@timestamp":"2023-12-14T
+22:59:43.337734917Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT10M","until":"2023-12-15T22:37:30Z","slip":"PT5M
+","start":"2023-12-14T22:37:30Z"},"test":{"spec":{"schema":1,"wait":"PT1M","first-ttl":1,"dest":"perfsonar1.nipne.ro","length":1200,"ip-version":6,"sou
+rce":"perfsonar-ps.cnaf.infn.it"},"type":"trace"},"reference":{"psconfig":{"created-by":{"uuid":"AB3E855C-198A-11E9-8594-0A7BA1FED1B1","user-agent":"ps
+config-pscheduler-agent"}}},"href":"https://perfsonar-ps.cnaf.infn.it/pscheduler/tasks/4391dbd3-2879-47a9-9b65-9fe2d08507b3","detail":{"participants":[
+"perfsonar-ps.cnaf.infn.it"],"added":"2023-12-14T17:33:30+00:00","duration":"PT1M8S","enabled":true,"multi-result":false,"start":"2023-12-14T22:37:30+0
+0:00","post":"P0D","runs":144,"cli":["--dest","perfsonar1.nipne.ro","--ip-version","6","--length","1200","--first-ttl","1","--source","perfsonar-ps.cna
+f.infn.it","--wait","PT1M"],"exclusive":false,"diags":"Hints:\n  requester: 2001:760:4205:254::11\n  server: 2001:760:4205:254::11\nIdentified as every
+body, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: W
+ant all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","
+anytime":true,"hints":{"server":"2001:760:4205:254::11","requester":"2001:760:4205:254::11"},"runs-started":3,"slip":"PT5M","participant":0},"tool":"tr
+aceroute","tools":["bwctltraceroute","traceroute"]},"headers":{"x_request_id":"551ff6ca21eacfcfde08e82164235ffe","x_forwarded_for":"131.154.254.11","re
+quest_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_host":"ps-collection.atlas-ml.org","x_real_ip":"131.154.2
+54.11","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json","http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3
+.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept":"*/*","content_length":"9233","x_forwarded_port": "443"
+                                        },
+                                        "reference": {
+                                            "psconfig": {
+                                                "created-by": {
+                                                    "uuid": "AB3E855C-198A-11E9-8594-0A7BA1FED1B1",
+                                                    "user-agent": "psconfig-pscheduler-agent"
+                                                }
+                                            }
+                                        },
+                                        "run": {"partic
+ipants":["perfsonar-ps.cnaf.infn.it"],"state":"finished","result-merged":{"succeeded":true,"schema":1,"paths":[[{"hostname":"gw2-254.cnaf.infn.it","as": {
+                                                "owner": "ASGARR Consortium GARR, IT",
+                                                "number": 137
+                                            },
+                                            "ip": "2001:760:4205:254::2",
+                                            "rtt": "PT0.0016S"
+                                        },
+                                        {
+                                            "as": {
+                                                "owner": "ASGARR Consortium GARR, IT","number":137},"ip":"2001: 760:ffff: 110: : 2a","rtt":"PT0.0003S"},{},{"hostname":"garr-lhcone-gw.gen.ch.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number": 20965
+                                            },
+                                            "ip": "2001:798:111:1::1e",
+                                            "rtt": "PT0.0054S"
+                                        },
+                                        {
+                                            "hostname": "geant-lhcone-gw.mx1.gen.ch.geant.net",
+                                            "as": {
+                                                "owner":"GEANT The GEANT IP Servi
+ce, NL","number":20965},"ip":"2001: 798: 111: 1: : 1d","rtt":"PT0.0419S"},{"hostname":"ae5.rt1.fra.de.geant.net","as":{"owner":"GEANT The GEANT IP Service,
+NL","number":20965},"ip":"2001: 798:cc: 1: :e1","rtt":"PT0.0441S"},{"hostname":"ae6.rt1.pra.cz.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","
+number":20965},"ip":"2001: 798:cc: 1: :c6","rtt":"PT0.044S"},{"hostname":"ae5.mx1.vie.at.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number
+":20965},"ip":"2001: 798:cc: 1: :ce","rtt":"PT0.0294S"},{"hostname":"roedunet-lhcone-gw-mx1.vie.at.geant.net","as":{"owner":"GEANT The GEANT IP Service, N
+L","number":20965},"ip":"2001: 798: 111: 1: :b6","rtt":"PT0.0451S"},{"hostname":"te-0-1-0-0.core1.nat.roedu.net","as":{"owner":"ROEDUNET, RO","number":2614
+                                            },
+                                            "ip": "2001:b30:0:a::2",
+                                            "rtt": "PT0.0483S"
+                                        },
+                                        {
+                                            "hostname": "hu-0-2-0-0.core2.buc.roedu.net",
+                                            "as": {
+                                                "owner": "ROEDUNET, RO",
+                                                "number": 2614
+                                            },
+                                            "ip":"2001:b30:0:a
+b: : 2","rtt":"PT0.0447S"},{"hostname":"hu-0-0-0-0.core2.buc.roedu.net","as":{"owner":"ROEDUNET, RO","number":2614},"ip":"2001:b30: 0:a0: : 2","rtt":"PT0.04
+81S"},{"hostname":"be-1.crs.mag.roedu.net","as":{"owner":"ROEDUNET, RO","number":2614},"ip":"2001:b30: 0: 108a: : 2","rtt":"PT0.0464S"},{"hostname":"perfso
+nar1.nipne.ro","as":{"owner":"ROEDUNET, RO","number":2614},"ip":"2001:b30: 4202: 100: : 3","rtt":"PT0.0432S"}]]},"href":"https: //perfsonar-ps.cnaf.infn.it/
+pscheduler/tasks/4391dbd3-2879-47a9-9b65-9fe2d08507b3/runs/5e3457e8-415f-4704-a199-7d99c58e8e7d","added":"2023-12-14T17: 33: 56+00: 00","duration":"PT1M","priority": null,
+                                            "errors": null,
+                                            "start-time": "2023-12-14T22:58:42+00:00",
+                                            "result-full": [
+                                                {
+                                                    "succeeded": true,
+                                                    "diags":"traceroute -q 1 -6 -f 1 -s 2001:760:4205: 254: : 11 -N 30 -n -w 60.0 perfsonar1.nipne.ro 1200\n\ntraceroute to perfsonar1.nipne.ro (2001:b30: 4202: 100: : 3),
+                                                    30 hops max,
+                                                    1200 byte packets\n 1  2
+001: 760: 4205: 254: : 2  1.647 ms\n 2  2001: 760:ffff: 110: : 2a  0.319 ms\n 3  *\n 4  2001: 798: 111: 1: :1e  5.461 ms\n 5  2001: 798: 111: 1: : 1d  41.971 ms\n 6  200
+1: 798:cc: 1: :e1  44.110 ms\n 7  2001: 798:cc: 1: :c6  44.060 ms\n 8  2001: 798:cc: 1: :ce  29.456 ms\n 9  2001: 798: 111: 1: :b6  45.183 ms\n10  2001:b30: 0:a: : 2
+48.329 ms\n11  2001:b30: 0:ab: : 2  44.700 ms\n12  2001:b30: 0:a0: : 2  48.147 ms\n13  2001:b30: 0: 108a: : 2  46.405 ms\n14  2001:b30: 4202: 100: : 3  43.297 ms\n","error": null,
+                                                    "result": {
+                                                        "succeeded": true,
+                                                        "schema": 1,
+                                                        "paths": [
+                                                            [
+                                                                {
+                                                                    "hostname": "gw2-254.cnaf.infn.it",
+                                                                    "as": {
+                                                                        "owner": "ASGARR Consortium GARR, IT",
+                                                                        "number": 137
+                                                                    },
+                                                                    "ip": "2001:760:4205:254::2",
+                                                                    "rtt": "PT0.0016S"
+                                                                },
+                                                                {
+                                                                    "as": {
+                                                                        "owner": "ASGARR Consortium GARR, IT",
+                                                                        "number": 137
+                                                                    },
+                                                                    "ip": "2001:760:ffff:110::2a",
+                                                                    "rtt":"PT0.0003
+S"},{},{"hostname":"garr-lhcone-gw.gen.ch.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"2001: 798: 111: 1: :1e","rtt":"PT
+0.0054S"},{"hostname":"geant-lhcone-gw.mx1.gen.ch.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"2001: 798: 111: 1: : 1d","
+rtt":"PT0.0419S"},{"hostname":"ae5.rt1.fra.de.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"2001: 798:cc: 1: :e1","rtt":"PT0.0441S"
+                                                                },
+                                                                {
+                                                                    "hostname": "ae6.rt1.pra.cz.geant.net",
+                                                                    "as": {
+                                                                        "owner": "GEANT The GEANT IP Service, NL",
+                                                                        "number": 20965
+                                                                    },
+                                                                    "ip": "2001:798:cc:1::c6",
+                                                                    "rtt":"PT0.044S"},{"hostname":"ae5.mx1.vie.at.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"2001: 798:cc: 1: :ce","rtt":"PT0.0294S"
+                                                                },
+                                                                {
+                                                                    "hostname": "roedunet-lhcone-gw-mx1.vie.at.geant.net",
+                                                                    "as": {
+                                                                        "owner": "GEANT The GEANT IP Service, NL",
+                                                                        "number": 20965
+                                                                    },
+                                                                    "ip": "2001:798:111:1::b6",
+                                                                    "rtt": "PT0.0451S"
+                                                                },
+                                                                {
+                                                                    "hostname": "te-0-1-0-0.core1.nat.roedu.net",
+                                                                    "as": {
+                                                                        "owner": "ROEDUNET, RO",
+                                                                        "number": 2614
+                                                                    },
+                                                                    "ip": "2001:b30:0:a::2",
+                                                                    "rtt": "PT0.0483S"
+                                                                },
+                                                                {"hostn
+ame":"hu-0-2-0-0.core2.buc.roedu.net","as":{"owner":"ROEDUNET, RO","number":2614},"ip":"2001:b30: 0:ab: : 2","rtt":"PT0.0447S"},{"hostname":"hu-0-0-0-0.co
+re2.buc.roedu.net","as":{"owner":"ROEDUNET, RO","number":2614},"ip":"2001:b30: 0:a0: : 2","rtt":"PT0.0481S"},{"hostname":"be-1.crs.mag.roedu.net","as":{"o
+wner":"ROEDUNET, RO","number":2614},"ip":"2001:b30: 0: 108a: : 2","rtt":"PT0.0464S"},{"hostname":"perfsonar1.nipne.ro","as":{"owner":"ROEDUNET, RO","number
+":2614},"ip":"2001:b30: 4202: 100: : 3","rtt":"PT0.0432S"}]]},"schema":1}],"task-href":"https: //perfsonar-ps.cnaf.infn.it/pscheduler/tasks/4391dbd3-2879-47
+a9-9b65-9fe2d08507b3","state-display":"Finished","end-time":"2023-12-14T22: 59: 42+00: 00","limit-diags":"Hints:\n  requester: 2001: 760: 4205: 254: : 11\n  se
+rver: 2001: 760: 4205: 254: : 11\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything
+\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                                                                    1/1 passed,
+                                                                    0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nPropos
+al meets limits\nPriority set to default of 0","participant":0},"result":{"succeeded":true,"schema":1,"paths":[[{"hostname":"gw2-254.cnaf.infn.it","as": {
+                                                                        "owner": "ASGARR Consortium GARR, IT",
+                                                                        "number": 137
+                                                                    },
+                                                                    "ip": "2001:760:4205:254::2",
+                                                                    "rtt": "PT0.0016S"
+                                                                },
+                                                                {
+                                                                    "as": {
+                                                                        "owner": "ASGARR Consortium GARR, IT","number":137},"ip":"2001: 760:ffff: 110: : 2a","rtt":"PT0.0003S"},{},{"hostname":"garr-lhcone-gw.gen.ch.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number": 20965
+                                                                    },
+                                                                    "ip": "2001:798:111:1::1e",
+                                                                    "rtt": "PT0.0054S"
+                                                                },
+                                                                {
+                                                                    "hostname": "geant-lhcone-gw.mx1.gen.ch.geant.net",
+                                                                    "as": {
+                                                                        "owner":"GEANT The GEANT IP Servi
+ce, NL","number":20965},"ip":"2001: 798: 111: 1: : 1d","rtt":"PT0.0419S"},{"hostname":"ae5.rt1.fra.de.geant.net","as":{"owner":"GEANT The GEANT IP Service,
+NL","number":20965},"ip":"2001: 798:cc: 1: :e1","rtt":"PT0.0441S"},{"hostname":"ae6.rt1.pra.cz.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","
+number":20965},"ip":"2001: 798:cc: 1: :c6","rtt":"PT0.044S"},{"hostname":"ae5.mx1.vie.at.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number
+":20965},"ip":"2001: 798:cc: 1: :ce","rtt":"PT0.0294S"},{"hostname":"roedunet-lhcone-gw-mx1.vie.at.geant.net","as":{"owner":"GEANT The GEANT IP Service, N
+L","number":20965},"ip":"2001: 798: 111: 1: :b6","rtt":"PT0.0451S"},{"hostname":"te-0-1-0-0.core1.nat.roedu.net","as":{"owner":"ROEDUNET, RO","number":2614
+                                                                    },
+                                                                    "ip": "2001:b30:0:a::2",
+                                                                    "rtt": "PT0.0483S"
+                                                                },
+                                                                {
+                                                                    "hostname": "hu-0-2-0-0.core2.buc.roedu.net",
+                                                                    "as": {
+                                                                        "owner": "ROEDUNET, RO",
+                                                                        "number": 2614
+                                                                    },
+                                                                    "ip":"2001:b30:0:a
+b: : 2","rtt":"PT0.0447S"},{"hostname":"hu-0-0-0-0.core2.buc.roedu.net","as":{"owner":"ROEDUNET, RO","number":2614},"ip":"2001:b30: 0:a0: : 2","rtt":"PT0.04
+81S"},{"hostname":"be-1.crs.mag.roedu.net","as":{"owner":"ROEDUNET, RO","number":2614},"ip":"2001:b30: 0: 108a: : 2","rtt":"PT0.0464S"},{"hostname":"perfso
+nar1.nipne.ro","as":{"owner":"ROEDUNET, RO","number":2614},"ip":"2001:b30: 4202: 100: : 3","rtt":"PT0.0432S"}]]},"tool":{"name":"traceroute","version":"1.0
+"},"id":"5e3457e8-415f-4704-a199-7d99c58e8e7d","@version":"1"}{
+                                                                        "participants": [
+                                                                            "hcc-shor-ps-lt.unl.edu"
+                                                                        ],
+                                                                        "schedule": {
+                                                                            "duration": "PT1M8S",
+                                                                            "start": "2023-12-14T16:59:43-06:00"
+                                                                        },
+                                                                        "test": {
+                                                                            "spec": {
+                                                                                "schema": 1,
+                                                                                "wait":"PT1M","first-ttl":1,"dest":"perfsonar01.hep.wisc.edu","length":1200,"ip-version":6,"source":"hcc-shor-ps-lt.unl.edu"},"type":"trace"},"@timestamp":"2023-12
+-14T22: 59: 43.379542093Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT10M","until":"2023-12-15T20: 46: 52Z","slip":"
+PT5M","start":"2023-12-14T20: 46: 52Z"},"test":{"spec":{"schema":1,"wait":"PT1M","first-ttl":1,"dest":"perfsonar01.hep.wisc.edu","length":1200,"ip-versio
+n":6,"source":"hcc-shor-ps-lt.unl.edu"},"type":"trace"},"reference":{"psconfig":{"created-by":{"uuid":"643FBB86-72DF-11EE-ACD7-902A77326932","user-agen
+t":"psconfig-pscheduler-agent"}}},"href":"https: //hcc-shor-ps-lt.unl.edu/pscheduler/tasks/0c50a6e3-4974-4a1e-9d0a-ce9638f4e382","detail":{"participants
+                                                                                ":["hcc-shor-ps-lt.unl.edu"],"added":"2023-12-14T08: 42: 56-06: 00","duration":"PT1M8S","enabled":true,"multi-result":false,"start":"2023-12-14T14: 46: 52-0
+6: 00","post":"P0D","runs":144,"cli":["--dest","perfsonar01.hep.wisc.edu","--ip-version","6","--length","1200","--first-ttl","1","--source","hcc-shor-ps
+-lt.unl.edu","--wait","PT1M"],"exclusive":false,"diags":"Hints:\n  requester: 2600: 900: 6: 1102:21e: 67ff:fe4d:ad6f\n  server: 2600: 900: 6: 1102:21e: 67ff:fe
+4d:ad6f\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit '
+always' passed\n  Group 1: Want all,
+                                                                                1/1 passed,
+                                                                                0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPri
+ority set to default of 0","anytime":true,"hints":{"server":"2600: 900: 6: 1102:21e: 67ff:fe4d:ad6f","requester":"2600: 900: 6: 1102:21e: 67ff:fe4d:ad6f"},"run
+s-started":14,"slip":"PT5M","participant":0},"tool":"traceroute","tools":["bwctltraceroute","traceroute"]},"headers":{"x_request_id":"8ebd48989f49807d5
+8e061a92af43189","x_forwarded_for":"129.93.183.251","request_path":"/","request_method":"POST","x_forwarded_host":"ps-collection.atlas-ml.org","http_ho
+st":"ps-collection.atlas-ml.org","x_real_ip":"129.93.183.251","x_forwarded_scheme":"https","x_forwarded_proto":"https","content_type":"application/json
+","http_user_agent":"PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.0.7 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/o
+penssl/zlib nghttp2/1.43.0","http_version":"HTTP/1.1","x_scheme":"https","http_accept":"* /*","content_length":"5844","x_forwarded_port":"443"},"referen
+ce":{"psconfig":{"created-by":{"uuid":"643FBB86-72DF-11EE-ACD7-902A77326932","user-agent":"psconfig-pscheduler-agent"}}},"run":{"participants":["hcc-sh
+or-ps-lt.unl.edu"],"state":"finished","result-merged":{"succeeded":true,"schema":1,"paths":[[{"as":{"owner":"NU-AS, US","number":7896},"ip":"2600:900:6
+:1102::28","rtt":"PT0.0005S"},{"as":{"owner":"NU-AS, US","number":7896},"ip":"2600:900:6:1048::1","rtt":"PT0.0006S"},{"hostname":"kans-cr6--unl-se620.l
+hcone.es.net","as":{"owner":"ESNET, US","number":293},"ip":"2001:400:f002:50::2","rtt":"PT0.0048S"},{"hostname":"chic-cr6--uwmadison_se-203.es.net","as
+":{"owner":"ESNET, US","number":293},"ip":"2001:400:f002:19::2","rtt":"PT0.0159S"},{"hostname":"uwmadison_se-203--chic-cr6.es.net","as":{"owner":"ESNET
+, US","number":293},"ip":"2001:400:f002:19::3","rtt":"PT0.0336S"},{"hostname":"perfsonar01.hep.wisc.edu","as":{"owner":"WISC-MADISON-AS, US","number":5
+9},"ip":"2607:f388:101c:1000::441","rtt":"PT0.0335S"}]]},"href":"https://hcc-shor-ps-lt.unl.edu/pscheduler/tasks/0c50a6e3-4974-4a1e-9d0a-ce9638f4e382/r
+uns/5da1e9bb-fdf8-462e-820d-68af6a95e3e7","added":"2023-12-14T08:43:55-06:00","duration":"P0D","priority":null,"errors":null,"start-time":"2023-12-14T1
+6:59:43-06:00","result-full":[{"succeeded":true,"diags":"traceroute -q 1 -6 -f 1 -s 2600:900:6:1102:21e:67ff:fe4d:ad6f -N 30 -n -w 60.0 perfsonar01.hep
+.wisc.edu 1200\n\ntraceroute to perfsonar01.hep.wisc.edu (2607:f388:101c:1000::441), 30 hops max, 1200 byte packets\n 1  2600:900:6:1102::28  0.564 ms\
+n 2  2600:900:6:1048::1  0.644 ms\n 3  2001:400:f002:50::2  4.810 ms\n 4  2001:400:f002:19::2  15.923 ms\n 5  2001:400:f002:19::3  33.603 ms\n 6  2607:
+f388:101c:1000::441  33.582 ms\n","error":null,"result":{"succeeded":true,"schema":1,"paths":[[{"as":{"owner":"NU-AS, US","number":7896},"ip":"2600:900
+:6:1102::28","rtt":"PT0.0005S"},{"as":{"owner":"NU-AS, US","number":7896},"ip":"2600:900:6:1048::1","rtt":"PT0.0006S"},{"hostname":"kans-cr6--unl-se620
+.lhcone.es.net","as":{"owner":"ESNET, US","number":293},"ip":"2001:400:f002:50::2","rtt":"PT0.0048S"},{"hostname":"chic-cr6--uwmadison_se-203.es.net","
+as":{"owner":"ESNET, US","number":293},"ip":"2001:400:f002:19::2","rtt":"PT0.0159S"},{"hostname":"uwmadison_se-203--chic-cr6.es.net","as":{"owner":"ESN
+ET, US","number":293},"ip":"2001:400:f002:19::3","rtt":"PT0.0336S"},{"hostname":"perfsonar01.hep.wisc.edu","as":{"owner":"WISC-MADISON-AS, US","number"
+:59},"ip":"2607:f388:101c:1000::441","rtt":"PT0.0335S"}]]},"schema":1}],"task-href":"https://hcc-shor-ps-lt.unl.edu/pscheduler/tasks/0c50a6e3-4974-4a1e
+-9d0a-ce9638f4e382","state-display":"Finished","end-time":"2023-12-14T16:59:43-06:00","limit-diags":"Hints:\n  requester: 2600:900:6:1102:21e:67ff:fe4d
+:ad6f\n  server: 2600:900:6:1102:21e:67ff:fe4d:ad6f\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts w
+e trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Application PASSES\nPassed one applica
+tion.  Stopping.\nProposal meets limits\nPriority set at 0:\n  Initial priority  (Set to 0)","participant":0},"result":{"succeeded":true,"schema":1,"pa
+ths":[[{"as":{"owner":"NU-AS, US","number":7896},"ip":"2600:900:6:1102::28","rtt":"PT0.0005S"},{"as":{"owner":"NU-AS, US","number":7896},"ip":"2600:900
+:6:1048::1","rtt":"PT0.0006S"},{"hostname":"kans-cr6--unl-se620.lhcone.es.net","as":{"owner":"ESNET, US","number":293},"ip":"2001:400:f002:50::2","rtt"
+:"PT0.0048S"},{"hostname":"chic-cr6--uwmadison_se-203.es.net","as":{"owner":"ESNET, US","number":293},"ip":"2001:400:f002:19::2","rtt":"PT0.0159S"},{"h
+ostname":"uwmadison_se-203--chic-cr6.es.net","as":{"owner":"ESNET, US","number":293},"ip":"2001:400:f002:19::3","rtt":"PT0.0336S"},{"hostname":"perfson
+ar01.hep.wisc.edu","as":{"owner":"WISC-MADISON-AS, US","number":59},"ip":"2607:f388:101c:1000::441","rtt":"PT0.0335S"}]]},"tool":{"name":"traceroute","
+version":"1.0"},"id":"5da1e9bb-fdf8-462e-820d-68af6a95e3e7","@version":"1"}
+{"participants":["perfsonar-ps.cnaf.infn.it"],"schedule":{"duration":"PT1M8S","start":"2023-12-14T22:58:42Z"},"test":{"spec":{"probe-type":"udp","schem
+a":1,"wait":"PT1M","first-ttl":1,"dest":"ps-bandwidth.atlas.unimelb.edu.au","length":1200,"ip-version":4,"source":"perfsonar-ps.cnaf.infn.it"},"type":"
+trace"},"@timestamp":"2023-12-14T22:59:43.498738678Z","host":"192.168.26.60","task":{"schema":1,"schedule":{"sliprand":true,"repeat":"PT10M","until":"2
+023-12-15T22:37:25Z","slip":"PT5M","start":"2023-12-14T22:37:25Z"},"test":{"spec":{"probe-type":"udp","schema":1,"wait":"PT1M","first-ttl":1,"dest":"ps
+-bandwidth.atlas.unimelb.edu.au","length":1200,"ip-version":4,"source":"perfsonar-ps.cnaf.infn.it"},"type":"trace"},"reference":{"psconfig":{"created-b
+y":{"uuid":"AB3E855C-198A-11E9-8594-0A7BA1FED1B1","user-agent":"psconfig-pscheduler-agent"}}},"href":"https://perfsonar-ps.cnaf.infn.it/pscheduler/task
+s/c1036197-0c6a-41ad-b03b-b25620303bc7","detail":{"participants":["perfsonar-ps.cnaf.infn.it"],"added":"2023-12-14T17:03:08+00:00","duration":"PT1M8S",
+"enabled":true,"multi-result":false,"start":"2023-12-14T22:37:25+00:00","post":"P0D","runs":144,"cli":["--dest","ps-bandwidth.atlas.unimelb.edu.au","--
+ip-version","4","--length","1200","--probe-type","udp","--first-ttl","1","--source","perfsonar-ps.cnaf.infn.it","--wait","PT1M"],"exclusive":false,"dia
+gs":"Hints:\n  requester: 2001:760:4205:254::11\n  server: 2001:760:4205:254::11\nIdentified as everybody, local-interfaces\nClassified as default, fri
+endlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all, 1/1 passed, 0/1 failed: PASS\n  Applicati
+on PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","anytime":true,"hints":{"server":"2001:760:4205:254
+::11","requester":"2001:760:4205:254::11"},"runs-started":3,"slip":"PT5M","participant":0},"tool":"traceroute","tools":["bwctltraceroute","traceroute"]
+},"headers":{"x_request_id":"68f76caf514463c644556c2e17fcf51f","x_forwarded_for":"131.154.254.11","request_path":"/","request_method":"POST","x_forward
+ed_host":"ps-collection.atlas-ml.org","http_host":"ps-collection.atlas-ml.org","x_real_ip":"131.154.254.11","x_forwarded_scheme":"https","x_forwarded_p
+roto":"https","content_type":"application/json","http_user_agent":"PycURL/7.43.0 libcurl/7.29.0 NSS/3.53.1 zlib/1.2.7 libidn/1.28 libssh2/1.8.0","http_
+version":"HTTP/1.1","x_scheme":"https","http_accept":"*/*","content_length":"8020","x_forwarded_port":"443"},"reference":{"psconfig":{"created-by":{"uu
+id":"AB3E855C-198A-11E9-8594-0A7BA1FED1B1","user-agent":"psconfig-pscheduler-agent"}}},"run":{"participants":["perfsonar-ps.cnaf.infn.it"],"state":"fin
+ished","result-merged":{"succeeded":true,"schema":1,"paths":[[{"hostname":"gw1-254.cnaf.infn.it","as":{"owner":"ASGARR Consortium GARR, IT","number":137
+                                                                            },
+                                                                            "ip": "131.154.254.1",
+                                                                            "rtt": "PT0.1606S"
+                                                                        },
+                                                                        {
+                                                                            "hostname": "ru-infn-cnaf-lhcone-l1-rx1.bo1.bo1.garr.net",
+                                                                            "as": {
+                                                                                "owner": "ASGARR Consortium GARR, IT","number":137},"ip":"193.206.128.173","rtt":"PT0.0002S"},{},{"hostname":"garr-lhcone-gw.gen.ch.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","numbe
+r":20965},"ip":"62.40.126.202","rtt":"PT0.0054S"},{"hostname":"geant-lhcone-gw.mx1.gen.ch.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","nu
+mber":20965},"ip":"62.40.126.201","rtt":"PT0.0109S"},{"hostname":"ae7.mx1.par.fr.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965
+                                                                            },
+                                                                            "ip": "62.40.98.239",
+                                                                            "rtt": "PT0.0256S"
+                                                                        },
+                                                                        {
+                                                                            "hostname": "ae8.mx1.lon2.uk.geant.net",
+                                                                            "as": {
+                                                                                "owner": "GEANT The GEANT IP Service, NL",
+                                                                                "number": 20965
+                                                                            },
+                                                                            "ip": "62.40.98.106",
+                                                                            "rtt": "PT0.0264S"
+                                                                        },
+                                                                        {
+                                                                            "hostname": "psmp-lhc-owd-01-gw-lon-uk-v4.geant.net",
+                                                                            "as": {
+                                                                                "owner": "GEANT The GEANT IP Service, NL",
+                                                                                "number": 20965
+                                                                            },"
+ip":"62.40.126.190","rtt":"PT0.0266S"},{"as":{"owner":"AARNET-AS-AP Australian Academic and Research Network AARNet, AU","number":7575},"ip":"138.44.22
+6.8","rtt":"PT0.1895S"},{"as":{"owner":"AARNET-AS-AP Australian Academic and Research Network AARNet, AU","number":7575},"ip":"138.44.79.164","rtt":"PT
+0.2734S"},{},{},{},{"hostname":"ps-bandwidth.atlas.unimelb.edu.au","ip":"192.231.127.40","rtt":"PT0.2681S"}]]},"href":"https: //perfsonar-ps.cnaf.infn.i
+t/pscheduler/tasks/c1036197-0c6a-41ad-b03b-b25620303bc7/runs/367d6521-3e68-45cf-a6ee-b677f9c2fc37","added":"2023-12-14T17: 03: 35+00: 00","duration":"PT1M
+","priority":null,"errors":null,"start-time":"2023-12-14T22: 58: 42+00: 00","result-full":[{"succeeded":true,"diags":"traceroute -q 1 -4 -f 1 -s 131.154.2
+54.11 -N 30 -n -w 60.0 ps-bandwidth.atlas.unimelb.edu.au 1200\n\ntraceroute to ps-bandwidth.atlas.unimelb.edu.au (192.231.127.40),
+                                                                            30 hops max,
+                                                                            1200 by
+te packets\n 1  131.154.254.1  160.637 ms\n 2  193.206.128.173  0.297 ms\n 3  *\n 4  62.40.126.202  5.420 ms\n 5  62.40.126.201  10.930 ms\n 6  62.40.9
+8.239  25.672 ms\n 7  62.40.98.106  26.424 ms\n 8  62.40.126.190  26.674 ms\n 9  138.44.226.8  189.545 ms\n10  138.44.79.164  273.448 ms\n11  *\n12  *\
+n13  *\n14  192.231.127.40  268.149 ms\n","error":null,"result":{"succeeded":true,"schema":1,"paths":[[{"hostname":"gw1-254.cnaf.infn.it","as":{"owner": "ASGARR Consortium GARR, IT",
+                                                                            "number": 137
+                                                                        },
+                                                                        "ip": "131.154.254.1",
+                                                                        "rtt": "PT0.1606S"
+                                                                    },
+                                                                    {
+                                                                        "hostname": "ru-infn-cnaf-lhcone-l1-rx1.bo1.bo1.garr.net",
+                                                                        "as": {"ow
+ner":"ASGARR Consortium GARR, IT","number":137},"ip":"193.206.128.173","rtt":"PT0.0002S"},{},{"hostname":"garr-lhcone-gw.gen.ch.geant.net","as":{"owner
+":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.126.202","rtt":"PT0.0054S"},{"hostname":"geant-lhcone-gw.mx1.gen.ch.geant.net","as":{"ow
+ner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.126.201","rtt":"PT0.0109S"},{"hostname":"ae7.mx1.par.fr.geant.net","as":{"owner":"GEA
+NT The GEANT IP Service, NL","number":20965},"ip":"62.40.98.239","rtt":"PT0.0256S"},{"hostname":"ae8.mx1.lon2.uk.geant.net","as":{"owner":"GEANT The GE
+ANT IP Service, NL","number":20965},"ip":"62.40.98.106","rtt":"PT0.0264S"},{"hostname":"psmp-lhc-owd-01-gw-lon-uk-v4.geant.net","as":{"owner":"GEANT Th
+e GEANT IP Service, NL","number":20965},"ip":"62.40.126.190","rtt":"PT0.0266S"},{"as":{"owner":"AARNET-AS-AP Australian Academic and Research Network A
+ARNet, AU","number":7575},"ip":"138.44.226.8","rtt":"PT0.1895S"},{"as":{"owner":"AARNET-AS-AP Australian Academic and Research Network AARNet, AU","num
+ber":7575},"ip":"138.44.79.164","rtt":"PT0.2734S"},{},{},{},{"hostname":"ps-bandwidth.atlas.unimelb.edu.au","ip":"192.231.127.40","rtt":"PT0.2681S"}]]},
+                                                                            "schema": 1
+                                                                        }
+                                                                    ],
+                                                                    "task-href": "https://perfsonar-ps.cnaf.infn.it/pscheduler/tasks/c1036197-0c6a-41ad-b03b-b25620303bc7",
+                                                                    "state-display": "Finished","end-tim
+e":"2023-12-14T22: 59: 42+00: 00","limit-diags":"Hints:\n  requester: 2001: 760: 4205: 254: : 11\n  server: 2001: 760: 4205: 254: : 11\nIdentified as everybody, loc
+al-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,
+                                                                    1/1 passed,
+                                                                    0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0","participa
+nt":0},"result":{"succeeded":true,"schema":1,"paths":[[{"hostname":"gw1-254.cnaf.infn.it","as":{"owner":"ASGARR Consortium GARR, IT","number":137},"ip": "131.154.254.1",
+                                                                    "rtt": "PT0.1606S"
+                                                                },
+                                                                {
+                                                                    "hostname": "ru-infn-cnaf-lhcone-l1-rx1.bo1.bo1.garr.net",
+                                                                    "as": {
+                                                                        "owner": "ASGARR Consortium GARR, IT",
+                                                                        "number": 137
+                                                                    },
+                                                                    "ip": "193.206.128.173",
+                                                                    "rtt": "PT0.0002S"
+                                                                },
+                                                                {},
+                                                                {
+                                                                    "hostname": "garr-lhcone-gw.gen.ch.geant.net",
+                                                                    "as": {
+                                                                        "owner": "GEANT The GEANT IP Service, NL",
+                                                                        "number": 2096
+5
+                                                                    },
+                                                                    "ip": "62.40.126.202",
+                                                                    "rtt": "PT0.0054S"
+                                                                },
+                                                                {
+                                                                    "hostname": "geant-lhcone-gw.mx1.gen.ch.geant.net",
+                                                                    "as": {
+                                                                        "owner": "GEANT The GEANT IP Service, NL",
+                                                                        "number": 2
+0965
+                                                                    },
+                                                                    "ip": "62.40.126.201",
+                                                                    "rtt": "PT0.0109S"
+                                                                },
+                                                                {
+                                                                    "hostname": "ae7.mx1.par.fr.geant.net",
+                                                                    "as": {
+                                                                        "owner": "GEANT The GEANT IP Service, NL",
+                                                                        "number": 20965
+                                                                    },"ip":"62.40.98.239","rtt":"PT0.0256S"},{"hostname":"ae8.mx1.lon2.uk.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62.40.
+98.106","rtt":"PT0.0264S"},{"hostname":"psmp-lhc-owd-01-gw-lon-uk-v4.geant.net","as":{"owner":"GEANT The GEANT IP Service, NL","number":20965},"ip":"62
+.40.126.190","rtt":"PT0.0266S"},{"as":{"owner":"AARNET-AS-AP Australian Academic and Research Network AARNet, AU","number":7575},"ip":"138.44.226.8","r
+tt":"PT0.1895S"},{"as":{"owner":"AARNET-AS-AP Australian Academic and Research Network AARNet, AU","number":7575},"ip":"138.44.79.164","rtt":"PT0.2734S
+"},{},{},{},{"hostname":"ps-bandwidth.atlas.unimelb.edu.au","ip":"192.231.127.40","rtt":"PT0.2681S"}]]},"tool":{"name":"traceroute","version":"1.0"},"i
+d":"367d6521-3e68-45cf-a6ee-b677f9c2fc37","@version":"1"}
