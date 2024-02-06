@@ -13,6 +13,7 @@ test_logger.info('python-logstash: test logstash info message.')
 test_logger.warning('python-logstash: test logstash warning mdessage.')
 
 metric = {
+    'token': 'crest',
     'metric_string': 'python version: ' + repr(sys.version_info),
     'metric_boolean': True,
     'metric_dict': {'a': 1, 'b': 'c'},
