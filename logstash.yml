@@ -1,4 +1,4 @@
-http.host: "0.0.0.0"
+# http.host: "0.0.0.0"
 # just logstash monitoring. Should be done properly with a k8s secret etc.
 xpack.monitoring.enabled: false
 # xpack.monitoring.elasticsearch.hosts: ["https://atlas-kibana.mwt2.org:9200"]
