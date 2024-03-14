@@ -21,3 +21,4 @@ metric = {
 }
 
 test_logger.info('python-logstash: test extra fields', extra=metric)
+print('Done')
