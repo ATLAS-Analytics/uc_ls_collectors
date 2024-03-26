@@ -4,6 +4,8 @@ def filter(event)
     hs = event.get('[result][paths]').first()
     dest = event.get('[dest]')
 
+# TODO add lookups for dns names from memcached.
+
     c = 1
     path_complete = true
     destination_reached = false
@@ -20,6 +22,7 @@ def filter(event)
                 asns.push(h["as"]["number"])
             else
                 asns.push(0)
+                # TODO here do an asns lookup 
             end
         else
             path_complete = false
