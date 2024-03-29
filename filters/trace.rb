@@ -4,7 +4,7 @@ def filter(event)
     hs = event.get('[result][paths]').first()
     dest = event.get('[dest]')
 
-# TODO add lookups for dns names from memcached.
+# TODO add lookups for dns names from memcached
 
     c = 1
     path_complete = true
