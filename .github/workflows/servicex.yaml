@@ -26,6 +26,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v3.0.0
         with:
           token: ${{ secrets.AAAS_GITOPS_DEPLOY_TRIGGER }}
-          repository: maniaclab/river_apps
+          repository: maniaclab/flux_apps
           event-type: gitops-uc-ls-servicex-app-trigger
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
