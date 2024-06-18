@@ -1,9 +1,9 @@
-name: Build Varnish Monitor Logstash dockerhub image
+name: Build EventLoop Logstash dockerhub image
 
 on:
   push:
     branches:
-      - "varnish"
+      - "event-loop"
 
 jobs:
   docker:
