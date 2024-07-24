@@ -11,4 +11,5 @@ RUN mkdir /usr/share/logstash/configs
 
 COPY logstash.yml /usr/share/logstash/config/logstash.yml
 COPY configs/temps.conf /usr/share/logstash/configs/temps.conf
-COPY pipelines/temps.yml /usr/share/logstash/config/pipelines.yml
+COPY configs/sidewalk.conf /usr/share/logstash/configs/sidewalk.conf
+COPY pipelines/pips.yml /usr/share/logstash/config/pipelines.yml
