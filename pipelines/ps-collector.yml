@@ -26,9 +26,6 @@
 - pipeline.id: es-output
   path.config: "/usr/share/logstash/configs/es-output.conf"
   pipeline.workers: 1
-- pipeline.id: es-output-ds
-  path.config: "/usr/share/logstash/configs/es-output-ds.conf"
-  pipeline.workers: 1
 - pipeline.id: nebraska
   path.config: "/usr/share/logstash/configs/nebraska.conf"
   pipeline.workers: 1
