@@ -7,6 +7,6 @@ USER root
 RUN mkdir /usr/share/logstash/configs
 
 COPY logstash.yml /usr/share/logstash/config/logstash.yml
-COPY configs/event-loop.conf /usr/share/logstash/configs/event-loop.conf
-COPY pipelines/event-loop.yml /usr/share/logstash/config/pipelines.yml
+COPY configs/pilot_log.conf /usr/share/logstash/configs/pilot_log.conf
+COPY pipelines/pilot_log.yml /usr/share/logstash/config/pipelines.yml
 COPY filters/* /usr/share/logstash/filters/

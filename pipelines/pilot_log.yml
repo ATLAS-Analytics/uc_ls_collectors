@@ -1,0 +1,5 @@
+- pipeline.id: pilot_log
+  path.config: "/usr/share/logstash/configs/pilot_log.conf"
+  pipeline.workers: 1
+#   queue.type: persisted
+#   queue.max_bytes: 4gb
