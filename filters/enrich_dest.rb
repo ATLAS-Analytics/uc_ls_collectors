@@ -3,8 +3,8 @@ require 'resolv'
 
 def get_ips(address)
     result = {
-        'ipv4' => nil,
-        'ipv6' => nil
+        'ipv4' => '',
+        'ipv6' => ''
     }
     is_hostname = !Regexp.union([Resolv::IPv4::Regex, Resolv::IPv6::Regex]).match?(address)
     
