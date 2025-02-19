@@ -1,0 +1,2362 @@
+[
+    {
+        "id": "7cee6405-2bbd-41bd-a8fa-e8704141987c",
+        "schedule": {
+            "start": "2025-02-19T01:47:06+01:00",
+            "duration": "P1DT2S"
+        },
+        "result": {
+            "packets-duplicated": 0,
+            "max-clock-error": 1.93,
+            "histogram-latency": {
+                "32.35": 34,
+                "32.93": 1,
+                "32.31": 61,
+                "32.37": 15,
+                "32.28": 54,
+                "32.40": 3,
+                "32.42": 2,
+                "33.10": 1,
+                "32.34": 47,
+                "32.59": 2,
+                "32.22": 4,
+                "32.23": 8,
+                "32.26": 28,
+                "32.30": 51,
+                "32.24": 11,
+                "32.33": 69,
+                "32.39": 9,
+                "32.51": 2,
+                "32.20": 1,
+                "32.29": 52,
+                "32.52": 1,
+                "32.32": 57,
+                "32.38": 8,
+                "32.50": 2,
+                "32.25": 18,
+                "32.47": 1,
+                "32.36": 23,
+                "32.27": 35
+            },
+            "schema": 1,
+            "succeeded": true,
+            "histogram-ttl": {
+                "244": 600
+            },
+            "packets-reordered": 0,
+            "packets-lost": 0,
+            "packets-received": 600,
+            "packets-sent": 600
+        },
+        "tool": {
+            "name": "powstream",
+            "version": "1.0"
+        },
+        "@version": "1",
+        "@timestamp": "2025-02-19T17: 51: 39.271245204Z",
+        "test": {
+            "spec": {
+                "packet-interval": 0.1,
+                "bucket-width": 0.001,
+                "schema": 1,
+                "source": "lapp-ps02.in2p3.fr",
+                "dest": "tech-ps.hep.technion.ac.il",
+                "data-ports": {
+                    "lower": 8760,
+                    "upper": 9960
+                },
+                "packet-count": 600
+            },
+            "type": "latencybg"
+        },
+        "headers": {
+            "http_host": "ps-collection.atlas-ml.org",
+            "x_real_ip": "172.17.157.128",
+            "http_user_agent": "PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.2.2 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0",
+            "http_accept": "* /*",
+            "request_path": "/",
+            "content_type": "application/json",
+            "x_request_id": "4d9dd89431275eb6529f0ba3835badbc",
+            "content_length": "3642",
+            "x_forwarded_scheme": "https",
+            "x_forwarded_proto": "https",
+            "request_method": "POST",
+            "http_version": "HTTP/1.1",
+            "x_forwarded_for": "172.17.157.128",
+            "x_forwarded_host": "ps-collection.atlas-ml.org",
+            "x_forwarded_port": "443",
+            "x_scheme": "https"
+        },
+        "reference": {
+            "psconfig": {
+                "created-by": {
+                    "user-agent": "psconfig-pscheduler-agent",
+                    "agent-hostname": "lapp-ps02.in2p3.fr",
+                    "uuid": "B1EFD055-3C76-453E-BF8E-DD7D3D096E11"
+                }
+            }
+        },
+        "participants": [
+            "lapp-ps02.in2p3.fr"
+        ],
+        "run": {
+            "end-time": "2025-02-19T01: 47: 06+01: 00",
+            "priority": 0,
+            "errors": null,
+            "limit-diags": null,
+            "href": "https://lapp-ps02.in2p3.fr/pscheduler/tasks/302911c9-426c-4639-994d-b25c75cdfe5e/runs/7cee6405-2bbd-41bd-a8fa-e8704141987c",
+            "added": "2025-02-19T01: 47: 06+01: 00",
+            "state": "finished",
+            "state-display": "Finished",
+            "result-merged": {
+                "packets-duplicated": 0,
+                "max-clock-error": 1.93,
+                "histogram-latency": {
+                    "32.35": 34,
+                    "32.93": 1,
+                    "32.31": 61,
+                    "32.37": 15,
+                    "32.28": 54,
+                    "32.40": 3,
+                    "32.42": 2,
+                    "33.10": 1,
+                    "32.34": 47,
+                    "32.59": 2,
+                    "32.22": 4,
+                    "32.23": 8,
+                    "32.26": 28,
+                    "32.30": 51,
+                    "32.24": 11,
+                    "32.33": 69,
+                    "32.39": 9,
+                    "32.51": 2,
+                    "32.20": 1,
+                    "32.29": 52,
+                    "32.52": 1,
+                    "32.32": 57,
+                    "32.38": 8,
+                    "32.50": 2,
+                    "32.25": 18,
+                    "32.47": 1,
+                    "32.36": 23,
+                    "32.27": 35
+                },
+                "schema": 1,
+                "succeeded": true,
+                "histogram-ttl": {
+                    "244": 600
+                },
+                "packets-reordered": 0,
+                "packets-lost": 0,
+                "packets-received": 600,
+                "packets-sent": 600
+            },
+            "task-href": "https: //lapp-ps02.in2p3.fr/pscheduler/tasks/302911c9-426c-4639-994d-b25c75cdfe5e",
+            "participant": 0,
+            "participants": [
+                "lapp-ps02.in2p3.fr"
+            ],
+            "start-time": "2025-02-19T01: 47: 06+01: 00",
+            "duration": "P0D",
+            "result-full": null
+        },
+        "host": "172.17.102.159",
+        "task": {
+            "href": "https: //lapp-ps02.in2p3.fr/pscheduler/tasks/302911c9-426c-4639-994d-b25c75cdfe5e",
+            "schedule": {
+                "until": "2025-02-19T08: 22: 49Z"
+            },
+            "reference": {
+                "psconfig": {
+                    "created-by": {
+                        "user-agent": "psconfig-pscheduler-agent",
+                        "agent-hostname": "lapp-ps02.in2p3.fr",
+                        "uuid": "B1EFD055-3C76-453E-BF8E-DD7D3D096E11"
+                    }
+                }
+            },
+            "tool": "powstream",
+            "schema": 3,
+            "detail": {
+                "exclusive": false,
+                "cli": [
+                    "--source",
+                    "lapp-ps02.in2p3.fr",
+                    "--dest",
+                    "tech-ps.hep.technion.ac.il",
+                    "--packet-count",
+                    "600",
+                    "--packet-interval",
+                    "0.1",
+                    "--data-ports",
+                    "8760-9960",
+                    "--bucket-width",
+                    "0.001"
+                ],
+                "post": "P0D",
+                "start": null,
+                "hints": {
+                    "server": "2001: 660: 5310: 420: : 2",
+                    "requester": "2001: 660: 5310: 420: : 2"
+                },
+                "anytime": true,
+                "enabled": false,
+                "runs-started": 1,
+                "added": "2025-02-18T09:29:20+01:00",
+                "runs": 1440,
+                "diags": "Hints:\n  requester: 2001:660:5310:420::2\n  server: 2001:660:5310:420::2\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do (almost) everything\n  Group 1: Limit 'throughput-sane-parallel' passed\n  Group 1: Want all,1/1 passed,0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0",
+                "slip": "P0D",
+                "multi-result": true,
+                "participant": 0,
+                "participants": [
+                    "lapp-ps02.in2p3.fr"
+                ],
+                "duration": "P1DT2S"
+            },
+            "test": {
+                "spec": {
+                    "packet-interval": 0.1,
+                    "bucket-width": 0.001,
+                    "schema": 1,
+                    "source": "lapp-ps02.in2p3.fr",
+                    "dest": "tech-ps.hep.technion.ac.il",
+                    "data-ports": {
+                        "lower": 8760,
+                        "upper": 9960
+                    },
+                    "packet-count": 600
+                },
+                "type": "latencybg"
+            }
+        }
+    },
+    {
+        "id": "bcfba860-6112-40e0-b26b-df7f2fad2b6c",
+        "schedule": {
+            "start": "2025-02-19T01:47:03+01:00",
+            "duration": "P1DT2S"
+        },
+        "result": {
+            "packets-duplicated": 0,
+            "max-clock-error": 2.01,
+            "histogram-latency": {
+                "4.70": 30,
+                "4.64": 62,
+                "4.68": 74,
+                "4.74": 4,
+                "4.97": 1,
+                "5.00": 1,
+                "4.71": 11,
+                "4.76": 2,
+                "4.67": 92,
+                "4.66": 123,
+                "4.73": 2,
+                "4.75": 3,
+                "4.77": 1,
+                "4.72": 10,
+                "4.63": 11,
+                "4.61": 1,
+                "4.65": 126,
+                "4.69": 42,
+                "4.78": 4
+            },
+            "schema": 1,
+            "succeeded": true,
+            "histogram-ttl": {
+                "250": 600
+            },
+            "packets-reordered": 0,
+            "packets-lost": 0,
+            "packets-received": 600,
+            "packets-sent": 600
+        },
+        "tool": {
+            "name": "powstream",
+            "version": "1.0"
+        },
+        "@version": "1",
+        "@timestamp": "2025-02-19T17: 51: 39.274734631Z",
+        "test": {
+            "spec": {
+                "packet-interval": 0.1,
+                "bucket-width": 0.001,
+                "schema": 1,
+                "source": "lapp-ps02.in2p3.fr",
+                "dest": "lpnhe-psl.in2p3.fr",
+                "data-ports": {
+                    "lower": 8760,
+                    "upper": 9960
+                },
+                "packet-count": 600
+            },
+            "type": "latencybg"
+        },
+        "headers": {
+            "http_host": "ps-collection.atlas-ml.org",
+            "x_real_ip": "172.17.157.128",
+            "http_user_agent": "PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.2.2 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0",
+            "http_accept": "* /*",
+            "request_path": "/",
+            "content_type": "application/json",
+            "x_request_id": "21f071b66e93564217528f05ce4cabc9",
+            "content_length": "3396",
+            "x_forwarded_scheme": "https",
+            "x_forwarded_proto": "https",
+            "request_method": "POST",
+            "http_version": "HTTP/1.1",
+            "x_forwarded_for": "172.17.157.128",
+            "x_forwarded_host": "ps-collection.atlas-ml.org",
+            "x_forwarded_port": "443",
+            "x_scheme": "https"
+        },
+        "reference": {
+            "psconfig": {
+                "created-by": {
+                    "user-agent": "psconfig-pscheduler-agent",
+                    "agent-hostname": "lapp-ps02.in2p3.fr",
+                    "uuid": "B1EFD055-3C76-453E-BF8E-DD7D3D096E11"
+                }
+            }
+        },
+        "participants": [
+            "lapp-ps02.in2p3.fr"
+        ],
+        "run": {
+            "end-time": "2025-02-19T01: 47: 03+01: 00",
+            "priority": 0,
+            "errors": null,
+            "limit-diags": null,
+            "href": "https: //lapp-ps02.in2p3.fr/pscheduler/tasks/7071dc5a-8877-46ac-9ddb-eec71a1a10c1/runs/bcfba860-6112-40e0-b26b-df7f2fad2b6c",
+            "added": "2025-02-19T01: 47: 03+01: 00",
+            "state": "finished",
+            "state-display": "Finished",
+            "result-merged": {
+                "packets-duplicated": 0,
+                "max-clock-error": 2.01,
+                "histogram-latency": {
+                    "4.70": 30,
+                    "4.64": 62,
+                    "4.68": 74,
+                    "4.74": 4,
+                    "4.97": 1,
+                    "5.00": 1,
+                    "4.71": 11,
+                    "4.76": 2,
+                    "4.67": 92,
+                    "4.66": 123,
+                    "4.73": 2,
+                    "4.75": 3,
+                    "4.77": 1,
+                    "4.72": 10,
+                    "4.63": 11,
+                    "4.61": 1,
+                    "4.65": 126,
+                    "4.69": 42,
+                    "4.78": 4
+                },
+                "schema": 1,
+                "succeeded": true,
+                "histogram-ttl": {
+                    "250": 600
+                },
+                "packets-reordered": 0,
+                "packets-lost": 0,
+                "packets-received": 600,
+                "packets-sent": 600
+            },
+            "task-href": "https: //lapp-ps02.in2p3.fr/pscheduler/tasks/7071dc5a-8877-46ac-9ddb-eec71a1a10c1",
+            "participant": 0,
+            "participants": [
+                "lapp-ps02.in2p3.fr"
+            ],
+            "start-time": "2025-02-19T01: 47: 03+01: 00",
+            "duration": "P0D",
+            "result-full": null
+        },
+        "host": "172.17.102.159",
+        "task": {
+            "href": "https: //lapp-ps02.in2p3.fr/pscheduler/tasks/7071dc5a-8877-46ac-9ddb-eec71a1a10c1",
+            "schedule": {
+                "until": "2025-02-19T02:21:16Z"
+            },
+            "reference": {
+                "psconfig": {
+                    "created-by": {
+                        "user-agent": "psconfig-pscheduler-agent",
+                        "agent-hostname": "lapp-ps02.in2p3.fr",
+                        "uuid": "B1EFD055-3C76-453E-BF8E-DD7D3D096E11"
+                    }
+                }
+            },
+            "tool": "powstream",
+            "schema": 3,
+            "detail": {
+                "exclusive": false,
+                "cli": [
+                    "--source",
+                    "lapp-ps02.in2p3.fr",
+                    "--dest",
+                    "lpnhe-psl.in2p3.fr",
+                    "--packet-count",
+                    "600",
+                    "--packet-interval",
+                    "0.1",
+                    "--data-ports",
+                    "8760-9960",
+                    "--bucket-width",
+                    "0.001"
+                ],
+                "post": "P0D",
+                "start": null,
+                "hints": {
+                    "server": "2001: 660: 5310: 420: : 2",
+                    "requester": "2001: 660: 5310: 420: : 2"
+                },
+                "anytime": true,
+                "enabled": false,
+                "runs-started": 1,
+                "added": "2025-02-18T03: 26: 46+01: 00",
+                "runs": 1439,
+                "diags": "Hints:\n  requester: 2001: 660: 5310: 420: : 2\n  server: 2001: 660: 5310: 420: : 2\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do (almost) everything\n  Group 1: Limit 'throughput-sane-parallel' passed\n  Group 1: Want all,1/1 passed,0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0",
+                "slip": "P0D",
+                "multi-result": true,
+                "participant": 0,
+                "participants": [
+                    "lapp-ps02.in2p3.fr"
+                ],
+                "duration": "P1DT2S"
+            },
+            "test": {
+                "spec": {
+                    "packet-interval": 0.1,
+                    "bucket-width": 0.001,
+                    "schema": 1,
+                    "source": "lapp-ps02.in2p3.fr",
+                    "dest": "lpnhe-psl.in2p3.fr",
+                    "data-ports": {
+                        "lower": 8760,
+                        "upper": 9960
+                    },
+                    "packet-count": 600
+                },
+                "type": "latencybg"
+            }
+        }
+    },
+    {
+        "id": "74203c40-829f-4420-97ad-5dc207d4ec2c",
+        "schedule": {
+            "start": "2025-02-19T01: 46: 49+01: 00",
+            "duration": "P1DT2S"
+        },
+        "result": {
+            "packets-duplicated": 0,
+            "max-clock-error": 0.61,
+            "histogram-latency": {
+                "49.42": 1,
+                "49.33": 1,
+                "49.41": 2,
+                "49.34": 46,
+                "49.35": 167,
+                "49.37": 111,
+                "49.39": 37,
+                "49.38": 67,
+                "49.36": 152,
+                "49.40": 16
+            },
+            "schema": 1,
+            "succeeded": true,
+            "histogram-ttl": {
+                "245": 600
+            },
+            "packets-reordered": 0,
+            "packets-lost": 0,
+            "packets-received": 600,
+            "packets-sent": 600
+        },
+        "tool": {
+            "name": "powstream",
+            "version": "1.0"
+        },
+        "@version": "1",
+        "@timestamp": "2025-02-19T17: 51: 39.282228533Z",
+        "test": {
+            "spec": {
+                "packet-interval": 0.1,
+                "bucket-width": 0.001,
+                "schema": 1,
+                "source": "lapp-ps02.in2p3.fr",
+                "dest": "argus-l1.net2.mghpcc.org",
+                "data-ports": {
+                    "lower": 8760,
+                    "upper": 9960
+                },
+                "packet-count": 600
+            },
+            "type": "latencybg"
+        },
+        "headers": {
+            "http_host": "ps-collection.atlas-ml.org",
+            "x_real_ip": "172.17.157.128",
+            "http_user_agent": "PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.2.2 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0",
+            "http_accept": "* /*",
+            "request_path": "/",
+            "content_type": "application/json",
+            "x_request_id": "e477121280f42badcd070a470af6c670",
+            "content_length": "3268",
+            "x_forwarded_scheme": "https",
+            "x_forwarded_proto": "https",
+            "request_method": "POST",
+            "http_version": "HTTP/1.1",
+            "x_forwarded_for": "172.17.157.128",
+            "x_forwarded_host": "ps-collection.atlas-ml.org",
+            "x_forwarded_port": "443",
+            "x_scheme": "https"
+        },
+        "reference": {
+            "psconfig": {
+                "created-by": {
+                    "user-agent": "psconfig-pscheduler-agent",
+                    "agent-hostname": "lapp-ps02.in2p3.fr",
+                    "uuid": "B1EFD055-3C76-453E-BF8E-DD7D3D096E11"
+                }
+            }
+        },
+        "participants": [
+            "lapp-ps02.in2p3.fr"
+        ],
+        "run": {
+            "end-time": "2025-02-19T01: 46: 49+01: 00",
+            "priority": 0,
+            "errors": null,
+            "limit-diags": null,
+            "href": "https://lapp-ps02.in2p3.fr/pscheduler/tasks/e1071ca7-2c33-4413-a95d-dcc7cf16e0f3/runs/74203c40-829f-4420-97ad-5dc207d4ec2c",
+            "added": "2025-02-19T01: 46: 49+01: 00",
+            "state": "finished",
+            "state-display": "Finished",
+            "result-merged": {
+                "packets-duplicated": 0,
+                "max-clock-error": 0.61,
+                "histogram-latency": {
+                    "49.42": 1,
+                    "49.33": 1,
+                    "49.41": 2,
+                    "49.34": 46,
+                    "49.35": 167,
+                    "49.37": 111,
+                    "49.39": 37,
+                    "49.38": 67,
+                    "49.36": 152,
+                    "49.40": 16
+                },
+                "schema": 1,
+                "succeeded": true,
+                "histogram-ttl": {
+                    "245": 600
+                },
+                "packets-reordered": 0,
+                "packets-lost": 0,
+                "packets-received": 600,
+                "packets-sent": 600
+            },
+            "task-href": "https://lapp-ps02.in2p3.fr/pscheduler/tasks/e1071ca7-2c33-4413-a95d-dcc7cf16e0f3",
+            "participant": 0,
+            "participants": [
+                "lapp-ps02.in2p3.fr"
+            ],
+            "start-time": "2025-02-19T01: 46: 49+01: 00",
+            "duration": "P0D",
+            "result-full": null
+        },
+        "host": "172.17.102.159",
+        "task": {
+            "href": "https://lapp-ps02.in2p3.fr/pscheduler/tasks/e1071ca7-2c33-4413-a95d-dcc7cf16e0f3",
+            "schedule": {
+                "until": "2025-02-19T08: 22: 49Z"
+            },
+            "reference": {
+                "psconfig": {
+                    "created-by": {
+                        "user-agent": "psconfig-pscheduler-agent",
+                        "agent-hostname": "lapp-ps02.in2p3.fr",
+                        "uuid": "B1EFD055-3C76-453E-BF8E-DD7D3D096E11"
+                    }
+                }
+            },
+            "tool": "powstream",
+            "schema": 3,
+            "detail": {
+                "exclusive": false,
+                "cli": [
+                    "--source",
+                    "lapp-ps02.in2p3.fr",
+                    "--dest",
+                    "argus-l1.net2.mghpcc.org",
+                    "--packet-count",
+                    "600",
+                    "--packet-interval",
+                    "0.1",
+                    "--data-ports",
+                    "8760-9960",
+                    "--bucket-width",
+                    "0.001"
+                ],
+                "post": "P0D",
+                "start": null,
+                "hints": {
+                    "server": "2001: 660: 5310: 420: : 2",
+                    "requester": "2001: 660: 5310: 420: : 2"
+                },
+                "anytime": true,
+                "enabled": false,
+                "runs-started": 1,
+                "added": "2025-02-18T09: 31: 06+01: 00",
+                "runs": 1440,
+                "diags": "Hints:\n  requester: 2001: 660: 5310: 420: : 2\n  server: 2001: 660: 5310: 420: : 2\nIdentified as everybody, local-interfaces\nClassified as default,friendlies\nApplication: Hosts we trust to do (almost) everything\n  Group 1: Limit 'throughput-sane-parallel' passed\n  Group 1: Want all,1/1 passed,                0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0",
+                "slip": "P0D",
+                "multi-result": true,
+                "participant": 0,
+                "participants": [
+                    "lapp-ps02.in2p3.fr"
+                ],
+                "duration": "P1DT2S"
+            },
+            "test": {
+                "spec": {
+                    "packet-interval": 0.1,
+                    "bucket-width": 0.001,
+                    "schema": 1,
+                    "source": "lapp-ps02.in2p3.fr",
+                    "dest": "argus-l1.net2.mghpcc.org",
+                    "data-ports": {
+                        "lower": 8760,
+                        "upper": 9960
+                    },
+                    "packet-count": 600
+                },
+                "type": "latencybg"
+            }
+        }
+    },
+    {
+        "id": "ab4e831d-c691-42a6-ae49-8ad6eb3857b1",
+        "schedule": {
+            "start": "2025-02-19T18: 51: 39+01: 00",
+            "duration": "P1DT2S"
+        },
+        "result": {
+            "packets-duplicated": 0,
+            "max-clock-error": 0.13,
+            "histogram-latency": {
+                "12.11": 11,
+                "12.04": 2,
+                "12.06": 109,
+                "12.37": 1,
+                "12.07": 206,
+                "12.13": 1,
+                "12.09": 66,
+                "12.48": 1,
+                "12.05": 17,
+                "12.08": 147,
+                "12.10": 36,
+                "12.12": 3
+            },
+            "schema": 1,
+            "succeeded": true,
+            "histogram-ttl": {
+                "242": 439,
+                "241": 161
+            },
+            "packets-reordered": 0,
+            "packets-lost": 0,
+            "packets-received": 600,
+            "packets-sent": 600
+        },
+        "tool": {
+            "name": "powstream",
+            "version": "1.0"
+        },
+        "@version": "1",
+        "@timestamp": "2025-02-19T17: 51: 39.333209492Z",
+        "test": {
+            "spec": {
+                "packet-interval": 0.1,
+                "bucket-width": 0.001,
+                "schema": 1,
+                "source": "echolot1.zeuthen.desy.de",
+                "dest": "ps01-l.farm.particle.cz",
+                "data-ports": {
+                    "lower": 8760,
+                    "upper": 9960
+                },
+                "packet-count": 600
+            },
+            "type": "latencybg"
+        },
+        "headers": {
+            "http_host": "ps-collection.atlas-ml.org",
+            "x_real_ip": "172.17.157.128",
+            "http_user_agent": "PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.2.2 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0",
+            "http_accept": "* /*",
+            "request_path": "/",
+            "content_type": "application/json",
+            "x_request_id": "935689b13666903db7160b31ffba5207",
+            "content_length": "3428",
+            "x_forwarded_scheme": "https",
+            "x_forwarded_proto": "https",
+            "request_method": "POST",
+            "http_version": "HTTP/1.1",
+            "x_forwarded_for": "172.17.157.128",
+            "x_forwarded_host": "ps-collection.atlas-ml.org",
+            "x_forwarded_port": "443",
+            "x_scheme": "https"
+        },
+        "reference": {
+            "psconfig": {
+                "created-by": {
+                    "user-agent": "psconfig-pscheduler-agent",
+                    "agent-hostname": "echolot1.zeuthen.desy.de",
+                    "uuid": "8A980110-AFB8-11EE-8197-D6BC5DC1D6CF"
+                }
+            }
+        },
+        "participants": [
+            "echolot1.zeuthen.desy.de"
+        ],
+        "run": {
+            "end-time": "2025-02-19T18: 51: 39+01: 00",
+            "priority": 0,
+            "errors": null,
+            "limit-diags": null,
+            "href": "https: //echolot1.zeuthen.desy.de/pscheduler/tasks/8b9f0f70-0d1f-4bdf-a822-2f2a8c8da9c2/runs/ab4e831d-c691-42a6-ae49-8ad6eb3857b1",
+            "added": "2025-02-19T18: 51: 39+01: 00",
+            "state": "finished",
+            "state-display": "Finished",
+            "result-merged": {
+                "packets-duplicated": 0,
+                "max-clock-error": 0.13,
+                "histogram-latency": {
+                    "12.11": 11,
+                    "12.04": 2,
+                    "12.06": 109,
+                    "12.37": 1,
+                    "12.07": 206,
+                    "12.13": 1,
+                    "12.09": 66,
+                    "12.48": 1,
+                    "12.05": 17,
+                    "12.08": 147,
+                    "12.10": 36,
+                    "12.12": 3
+                },
+                "schema": 1,
+                "succeeded": true,
+                "histogram-ttl": {
+                    "242": 439,
+                    "241": 161
+                },
+                "packets-reordered": 0,
+                "packets-lost": 0,
+                "packets-received": 600,
+                "packets-sent": 600
+            },
+            "task-href": "https: //echolot1.zeuthen.desy.de/pscheduler/tasks/8b9f0f70-0d1f-4bdf-a822-2f2a8c8da9c2",
+            "participant": 0,
+            "participants": [
+                "echolot1.zeuthen.desy.de"
+            ],
+            "start-time": "2025-02-19T18: 51: 39+01: 00",
+            "duration": "P0D",
+            "result-full": null
+        },
+        "host": "172.17.102.159",
+        "task": {
+            "href": "https: //echolot1.zeuthen.desy.de/pscheduler/tasks/8b9f0f70-0d1f-4bdf-a822-2f2a8c8da9c2",
+            "schedule": {
+                "start": "2025-02-19T15: 25: 41Z",
+                "until": "2025-02-20T15: 25: 41Z"
+            },
+            "reference": {
+                "psconfig": {
+                    "created-by": {
+                        "user-agent": "psconfig-pscheduler-agent",
+                        "agent-hostname": "echolot1.zeuthen.desy.de",
+                        "uuid": "8A980110-AFB8-11EE-8197-D6BC5DC1D6CF"
+                    }
+                }
+            },
+            "tool": "powstream",
+            "schema": 3,
+            "detail": {
+                "exclusive": false,
+                "cli": [
+                    "--source",
+                    "echolot1.zeuthen.desy.de",
+                    "--dest",
+                    "ps01-l.farm.particle.cz",
+                    "--packet-count",
+                    "600",
+                    "--packet-interval",
+                    "0.1",
+                    "--data-ports",
+                    "8760-9960",
+                    "--bucket-width",
+                    "0.001"
+                ],
+                "post": "P0D",
+                "start": "2025-02-19T16:25:41+01:00",
+                "hints": {
+                    "server": "2001: 638: 700:f0c8: : 1: 1c",
+                    "requester": "2001: 638: 700:f0c8: : 1: 1c"
+                },
+                "anytime": true,
+                "enabled": true,
+                "runs-started": 1,
+                "added": "2025-02-19T09: 28: 26+01: 00",
+                "runs": 147,
+                "diags": "Hints:\n  requester: 2001: 638: 700:f0c8: : 1: 1c\n  server: 2001: 638: 700:f0c8: : 1: 1c\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,1/1 passed,                0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0",
+                "slip": "P0D",
+                "multi-result": true,
+                "participant": 0,
+                "participants": [
+                    "echolot1.zeuthen.desy.de"
+                ],
+                "duration": "P1DT2S"
+            },
+            "test": {
+                "spec": {
+                    "packet-interval": 0.1,
+                    "bucket-width": 0.001,
+                    "schema": 1,
+                    "source": "echolot1.zeuthen.desy.de",
+                    "dest": "ps01-l.farm.particle.cz",
+                    "data-ports": {
+                        "lower": 8760,
+                        "upper": 9960
+                    },
+                    "packet-count": 600
+                },
+                "type": "latencybg"
+            }
+        }
+    },
+    {
+        "id": "2ef9bc7e-7141-43ce-bc64-5baf96e33e15",
+        "schedule": {
+            "start": "2025-02-19T18: 51: 39+01: 00",
+            "duration": "P1DT2S"
+        },
+        "result": {
+            "packets-duplicated": 0,
+            "max-clock-error": 1.58,
+            "histogram-latency": {
+                "8.18": 33,
+                "8.28": 7,
+                "8.29": 1,
+                "8.31": 1,
+                "8.32": 1,
+                "8.21": 38,
+                "8.23": 83,
+                "8.20": 70,
+                "8.30": 2,
+                "8.19": 99,
+                "8.15": 3,
+                "8.14": 3,
+                "8.16": 5,
+                "8.22": 29,
+                "8.24": 95,
+                "8.17": 9,
+                "8.27": 11,
+                "8.26": 40,
+                "8.25": 70
+            },
+            "schema": 1,
+            "succeeded": true,
+            "histogram-ttl": {
+                "247": 600
+            },
+            "packets-reordered": 0,
+            "packets-lost": 0,
+            "packets-received": 600,
+            "packets-sent": 600
+        },
+        "tool": {
+            "name": "powstream",
+            "version": "1.0"
+        },
+        "@version": "1",
+        "@timestamp": "2025-02-19T17: 51: 39.338626977Z",
+        "test": {
+            "spec": {
+                "packet-interval": 0.1,
+                "bucket-width": 0.001,
+                "schema": 1,
+                "source": "ccperfsonar2.in2p3.fr",
+                "dest": "perfsonar-ow.cnaf.infn.it",
+                "ip-version": 6,
+                "data-ports": {
+                    "lower": 8760,
+                    "upper": 9960
+                },
+                "packet-count": 600
+            },
+            "type": "latencybg"
+        },
+        "headers": {
+            "http_host": "ps-collection.atlas-ml.org",
+            "x_real_ip": "172.17.157.128",
+            "http_user_agent": "PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.2.2 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0",
+            "http_accept": "* /*",
+            "request_path": "/",
+            "content_type": "application/json",
+            "x_request_id": "330bef60f6960f1f290d658b7ac44782",
+            "content_length": "3524",
+            "x_forwarded_scheme": "https",
+            "x_forwarded_proto": "https",
+            "request_method": "POST",
+            "http_version": "HTTP/1.1",
+            "x_forwarded_for": "172.17.157.128",
+            "x_forwarded_host": "ps-collection.atlas-ml.org",
+            "x_forwarded_port": "443",
+            "x_scheme": "https"
+        },
+        "reference": {
+            "psconfig": {
+                "created-by": {
+                    "user-agent": "psconfig-pscheduler-agent",
+                    "agent-hostname": "ccperfsonar2.in2p3.fr",
+                    "uuid": "17B97FA7-779D-4370-85AC-45EA33AEBADC"
+                }
+            }
+        },
+        "participants": [
+            "ccperfsonar2.in2p3.fr"
+        ],
+        "run": {
+            "end-time": "2025-02-19T18: 51: 39+01: 00",
+            "priority": 0,
+            "errors": null,
+            "limit-diags": null,
+            "href": "https: //ccperfsonar2.in2p3.fr/pscheduler/tasks/c777d636-5e8f-439c-8fcd-af7db24c57ff/runs/2ef9bc7e-7141-43ce-bc64-5baf96e33e15",
+            "added": "2025-02-19T18:51:39+01:00",
+            "state": "finished",
+            "state-display": "Finished",
+            "result-merged": {
+                "packets-duplicated": 0,
+                "max-clock-error": 1.58,
+                "histogram-latency": {
+                    "8.18": 33,
+                    "8.28": 7,
+                    "8.29": 1,
+                    "8.31": 1,
+                    "8.32": 1,
+                    "8.21": 38,
+                    "8.23": 83,
+                    "8.20": 70,
+                    "8.30": 2,
+                    "8.19": 99,
+                    "8.15": 3,
+                    "8.14": 3,
+                    "8.16": 5,
+                    "8.22": 29,
+                    "8.24": 95,
+                    "8.17": 9,
+                    "8.27": 11,
+                    "8.26": 40,
+                    "8.25": 70
+                },
+                "schema": 1,
+                "succeeded": true,
+                "histogram-ttl": {
+                    "247": 600
+                },
+                "packets-reordered": 0,
+                "packets-lost": 0,
+                "packets-received": 600,
+                "packets-sent": 600
+            },
+            "task-href": "https: //ccperfsonar2.in2p3.fr/pscheduler/tasks/c777d636-5e8f-439c-8fcd-af7db24c57ff",
+            "participant": 0,
+            "participants": [
+                "ccperfsonar2.in2p3.fr"
+            ],
+            "start-time": "2025-02-19T18:51:39+01:00",
+            "duration": "P0D",
+            "result-full": null
+        },
+        "host": "172.17.102.159",
+        "task": {
+            "href": "https: //ccperfsonar2.in2p3.fr/pscheduler/tasks/c777d636-5e8f-439c-8fcd-af7db24c57ff",
+            "schedule": {
+                "until": "2025-02-20T16:13:36Z"
+            },
+            "reference": {
+                "psconfig": {
+                    "created-by": {
+                        "user-agent": "psconfig-pscheduler-agent",
+                        "agent-hostname": "ccperfsonar2.in2p3.fr",
+                        "uuid": "17B97FA7-779D-4370-85AC-45EA33AEBADC"
+                    }
+                }
+            },
+            "tool": "powstream",
+            "schema": 3,
+            "detail": {
+                "exclusive": false,
+                "cli": [
+                    "--source",
+                    "ccperfsonar2.in2p3.fr",
+                    "--dest",
+                    "perfsonar-ow.cnaf.infn.it",
+                    "--packet-count",
+                    "600",
+                    "--packet-interval",
+                    "0.1",
+                    "--data-ports",
+                    "8760-9960",
+                    "--ip-version",
+                    "6",
+                    "--bucket-width",
+                    "0.001"
+                ],
+                "post": "P0D",
+                "start": null,
+                "hints": {
+                    "server": "2001:660:5009:9:193:48:99:76",
+                    "requester": "2001:660:5009:9:193:48:99:76"
+                },
+                "anytime": true,
+                "enabled": true,
+                "runs-started": 1,
+                "added": "2025-02-19T17:41:59+01:00",
+                "runs": 70,
+                "diags": "Hints:\n  requester: 2001:660:5009:9:193:48:99:76\n  server: 2001:660:5009:9:193: 48: 99: 76\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do (almost) everything\n  Group 1: Limit 'throughput-sane-parallel' passed\n  Group 1: Want all,1/1 passed,0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0",
+                "slip": "P0D",
+                "multi-result": true,
+                "participant": 0,
+                "participants": [
+                    "ccperfsonar2.in2p3.fr"
+                ],
+                "duration": "P1DT2S"
+            },
+            "test": {
+                "spec": {
+                    "packet-interval": 0.1,
+                    "bucket-width": 0.001,
+                    "schema": 1,
+                    "source": "ccperfsonar2.in2p3.fr",
+                    "dest": "perfsonar-ow.cnaf.infn.it",
+                    "ip-version": 6,
+                    "data-ports": {
+                        "lower": 8760,
+                        "upper": 9960
+                    },
+                    "packet-count": 600
+                },
+                "type": "latencybg"
+            }
+        }
+    },
+    {
+        "id": "78562aee-8620-462e-a0e9-075b88459bef",
+        "schedule": {
+            "start": "2025-02-19T17: 51: 39Z",
+            "duration": "P1DT2S"
+        },
+        "result": {
+            "packets-duplicated": 0,
+            "max-clock-error": 2.37,
+            "histogram-latency": {
+                "6.44": 1,
+                "6.14": 61,
+                "6.25": 4,
+                "6.23": 3,
+                "6.19": 53,
+                "6.32": 1,
+                "6.24": 1,
+                "6.15": 113,
+                "6.20": 33,
+                "6.18": 78,
+                "6.22": 6,
+                "6.26": 5,
+                "6.40": 1,
+                "6.49": 1,
+                "6.74": 1,
+                "6.34": 1,
+                "6.17": 79,
+                "6.16": 124,
+                "6.13": 12,
+                "6.21": 21,
+                "6.31": 1
+            },
+            "schema": 1,
+            "succeeded": true,
+            "histogram-ttl": {
+                "243": 600
+            },
+            "packets-reordered": 0,
+            "packets-lost": 0,
+            "packets-received": 600,
+            "packets-sent": 600
+        },
+        "tool": {
+            "name": "powstream",
+            "version": "1.0"
+        },
+        "@version": "1",
+        "@timestamp": "2025-02-19T17:51:39.366975445Z",
+        "test": {
+            "spec": {
+                "packet-interval": 0.1,
+                "bucket-width": 0.001,
+                "schema": 1,
+                "source": "perfsonar-latency.esc.qmul.ac.uk",
+                "dest": "ps002.gla.scotgrid.ac.uk",
+                "ip-version": 4,
+                "data-ports": {
+                    "lower": 8760,
+                    "upper": 9960
+                },
+                "packet-count": 600
+            },
+            "type": "latencybg"
+        },
+        "headers": {
+            "http_host": "ps-collection.atlas-ml.org",
+            "x_real_ip": "172.17.157.128",
+            "http_user_agent": "PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.2.2 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0",
+            "http_accept": "*/*",
+            "request_path": "/",
+            "content_type": "application/json",
+            "x_request_id": "7b7e76b8884c5458366e670237ed2871",
+            "content_length": "3655",
+            "x_forwarded_scheme": "https",
+            "x_forwarded_proto": "https",
+            "request_method": "POST",
+            "http_version": "HTTP/1.1",
+            "x_forwarded_for": "172.17.157.128",
+            "x_forwarded_host": "ps-collection.atlas-ml.org",
+            "x_forwarded_port": "443",
+            "x_scheme": "https"
+        },
+        "reference": {
+            "psconfig": {
+                "created-by": {
+                    "user-agent": "psconfig-pscheduler-agent",
+                    "agent-hostname": "perfsonar-bandwidth.esc.qmul.ac.uk",
+                    "uuid": "35A50E04-676B-11EE-8C5B-C1E25E0465D5"
+                }
+            }
+        },
+        "participants": [
+            "perfsonar-latency.esc.qmul.ac.uk"
+        ],
+        "run": {
+            "end-time": "2025-02-19T17:51:39+00:00",
+            "priority": 0,
+            "errors": null,
+            "limit-diags": null,
+            "href": "https://perfsonar-bandwidth.esc.qmul.ac.uk/pscheduler/tasks/40a413f1-6e22-4b7f-aa60-00883870bb6e/runs/78562aee-8620-462e-a0e9-075b88459bef",
+            "added": "2025-02-19T17: 51: 39+00: 00",
+            "state": "finished",
+            "state-display": "Finished",
+            "result-merged": {
+                "packets-duplicated": 0,
+                "max-clock-error": 2.37,
+                "histogram-latency": {
+                    "6.44": 1,
+                    "6.14": 61,
+                    "6.25": 4,
+                    "6.23": 3,
+                    "6.19": 53,
+                    "6.32": 1,
+                    "6.24": 1,
+                    "6.15": 113,
+                    "6.20": 33,
+                    "6.18": 78,
+                    "6.22": 6,
+                    "6.26": 5,
+                    "6.40": 1,
+                    "6.49": 1,
+                    "6.74": 1,
+                    "6.34": 1,
+                    "6.17": 79,
+                    "6.16": 124,
+                    "6.13": 12,
+                    "6.21": 21,
+                    "6.31": 1
+                },
+                "schema": 1,
+                "succeeded": true,
+                "histogram-ttl": {
+                    "243": 600
+                },
+                "packets-reordered": 0,
+                "packets-lost": 0,
+                "packets-received": 600,
+                "packets-sent": 600
+            },
+            "task-href": "https: //perfsonar-bandwidth.esc.qmul.ac.uk/pscheduler/tasks/40a413f1-6e22-4b7f-aa60-00883870bb6e",
+            "participant": 0,
+            "participants": [
+                "perfsonar-latency.esc.qmul.ac.uk"
+            ],
+            "start-time": "2025-02-19T17:51:39+00:00",
+            "duration": "P0D",
+            "result-full": null
+        },
+        "host": "172.17.102.159",
+        "task": {
+            "href": "https: //perfsonar-bandwidth.esc.qmul.ac.uk/pscheduler/tasks/40a413f1-6e22-4b7f-aa60-00883870bb6e",
+            "schedule": {
+                "until": "2025-02-20T03:07: 47Z"
+            },
+            "reference": {
+                "psconfig": {
+                    "created-by": {
+                        "user-agent": "psconfig-pscheduler-agent",
+                        "agent-hostname": "perfsonar-bandwidth.esc.qmul.ac.uk",
+                        "uuid": "35A50E04-676B-11EE-8C5B-C1E25E0465D5"
+                    }
+                }
+            },
+            "tool": "powstream",
+            "schema": 3,
+            "detail": {
+                "exclusive": false,
+                "cli": [
+                    "--source",
+                    "perfsonar-latency.esc.qmul.ac.uk",
+                    "--dest",
+                    "ps002.gla.scotgrid.ac.uk",
+                    "--packet-count",
+                    "600",
+                    "--packet-interval",
+                    "0.1",
+                    "--data-ports",
+                    "8760-9960",
+                    "--ip-version",
+                    "4",
+                    "--bucket-width",
+                    "0.001"
+                ],
+                "post": "P0D",
+                "start": null,
+                "hints": {
+                    "server": "2a01: 56c1: 10: 1000: :c224:b26",
+                    "requester": "2a01: 56c1: 10: 1000: :c224:b26"
+                },
+                "anytime": true,
+                "enabled": true,
+                "runs-started": 1,
+                "added": "2025-02-19T03: 08: 39+00: 00",
+                "runs": 881,
+                "diags": "Hints:\n  requester: 2a01: 56c1: 10: 1000: :c224:b26\n  server: 2a01: 56c1: 10: 1000: :c224:b26\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,1/1 passed,0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0",
+                "slip": "P0D",
+                "multi-result": true,
+                "participant": 0,
+                "participants": [
+                    "perfsonar-latency.esc.qmul.ac.uk"
+                ],
+                "duration": "P1DT2S"
+            },
+            "test": {
+                "spec": {
+                    "packet-interval": 0.1,
+                    "bucket-width": 0.001,
+                    "schema": 1,
+                    "source": "perfsonar-latency.esc.qmul.ac.uk",
+                    "dest": "ps002.gla.scotgrid.ac.uk",
+                    "ip-version": 4,
+                    "data-ports": {
+                        "lower": 8760,
+                        "upper": 9960
+                    },
+                    "packet-count": 600
+                },
+                "type": "latencybg"
+            }
+        }
+    },
+    {
+        "id": "fc837b43-6bb6-4a96-9dc5-f2b80814d7c4",
+        "schedule": {
+            "start": "2025-02-19T18:51:39+01:00",
+            "duration": "P1DT2S"
+        },
+        "result": {
+            "packets-duplicated": 0,
+            "max-clock-error": 0.24,
+            "histogram-latency": {
+                "14.21": 104,
+                "14.29": 3,
+                "14.61": 1,
+                "14.17": 12,
+                "14.22": 98,
+                "14.26": 15,
+                "14.20": 86,
+                "14.28": 1,
+                "14.45": 1,
+                "14.49": 1,
+                "14.51": 1,
+                "14.52": 1,
+                "14.66": 1,
+                "14.19": 66,
+                "14.59": 1,
+                "15.33": 1,
+                "14.31": 2,
+                "14.50": 1,
+                "14.54": 1,
+                "14.58": 1,
+                "14.27": 9,
+                "14.73": 1,
+                "14.60": 1,
+                "14.36": 1,
+                "14.18": 28,
+                "14.39": 1,
+                "14.82": 2,
+                "14.72": 1,
+                "14.30": 1,
+                "14.16": 3,
+                "14.37": 1,
+                "14.65": 1,
+                "14.23": 61,
+                "14.68": 1,
+                "14.24": 51,
+                "14.25": 38,
+                "14.91": 1
+            },
+            "schema": 1,
+            "succeeded": true,
+            "histogram-ttl": {
+                "233": 600
+            },
+            "packets-reordered": 0,
+            "packets-lost": 0,
+            "packets-received": 600,
+            "packets-sent": 600
+        },
+        "tool": {
+            "name": "powstream",
+            "version": "1.0"
+        },
+        "@version": "1",
+        "@timestamp": "2025-02-19T17:51:39.395065285Z",
+        "test": {
+            "spec": {
+                "packet-interval": 0.1,
+                "bucket-width": 0.001,
+                "schema": 1,
+                "source": "ps01-l.farm.particle.cz",
+                "dest": "lcgperf.shef.ac.uk",
+                "ip-version": 6,
+                "data-ports": {
+                    "lower": 8760,
+                    "upper": 9960
+                },
+                "packet-count": 600
+            },
+            "type": "latencybg"
+        },
+        "headers": {
+            "http_host": "ps-collection.atlas-ml.org",
+            "x_real_ip": "172.17.157.128",
+            "http_user_agent": "PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.2.2 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0",
+            "http_accept": "* /*",
+            "request_path": "/",
+            "content_type": "application/json",
+            "x_request_id": "5c47ceccc4b21f58f7c1e55b358cf152",
+            "content_length": "3964",
+            "x_forwarded_scheme": "https",
+            "x_forwarded_proto": "https",
+            "request_method": "POST",
+            "http_version": "HTTP/1.1",
+            "x_forwarded_for": "172.17.157.128",
+            "x_forwarded_host": "ps-collection.atlas-ml.org",
+            "x_forwarded_port": "443",
+            "x_scheme": "https"
+        },
+        "reference": {
+            "psconfig": {
+                "created-by": {
+                    "user-agent": "psconfig-pscheduler-agent",
+                    "agent-hostname": "ps01-l.farm.particle.cz",
+                    "uuid": "C65854BE-7934-4330-9B51-67B986D6ED7B"
+                }
+            }
+        },
+        "participants": [
+            "ps01-l.farm.particle.cz"
+        ],
+        "run": {
+            "end-time": "2025-02-19T18: 51: 39+01: 00",
+            "priority": 0,
+            "errors": null,
+            "limit-diags": null,
+            "href": "https: //ps01-l.farm.particle.cz/pscheduler/tasks/4aad276f-6947-4ac8-b769-c4e3e0d6c79d/runs/fc837b43-6bb6-4a96-9dc5-f2b80814d7c4",
+            "added": "2025-02-19T18:51:39+01: 00",
+            "state": "finished",
+            "state-display": "Finished",
+            "result-merged": {
+                "packets-duplicated": 0,
+                "max-clock-error": 0.24,
+                "histogram-latency": {
+                    "14.21": 104,
+                    "14.29": 3,
+                    "14.61": 1,
+                    "14.17": 12,
+                    "14.22": 98,
+                    "14.26": 15,
+                    "14.20": 86,
+                    "14.28": 1,
+                    "14.45": 1,
+                    "14.49": 1,
+                    "14.51": 1,
+                    "14.52": 1,
+                    "14.66": 1,
+                    "14.19": 66,
+                    "14.59": 1,
+                    "15.33": 1,
+                    "14.31": 2,
+                    "14.50": 1,
+                    "14.54": 1,
+                    "14.58": 1,
+                    "14.27": 9,
+                    "14.73": 1,
+                    "14.60": 1,
+                    "14.36": 1,
+                    "14.18": 28,
+                    "14.39": 1,
+                    "14.82": 2,
+                    "14.72": 1,
+                    "14.30": 1,
+                    "14.16": 3,
+                    "14.37": 1,
+                    "14.65": 1,
+                    "14.23": 61,
+                    "14.68": 1,
+                    "14.24": 51,
+                    "14.25": 38,
+                    "14.91": 1
+                },
+                "schema": 1,
+                "succeeded": true,
+                "histogram-ttl": {
+                    "233": 600
+                },
+                "packets-reordered": 0,
+                "packets-lost": 0,
+                "packets-received": 600,
+                "packets-sent": 600
+            },
+            "task-href": "https://ps01-l.farm.particle.cz/pscheduler/tasks/4aad276f-6947-4ac8-b769-c4e3e0d6c79d",
+            "participant": 0,
+            "participants": [
+                "ps01-l.farm.particle.cz"
+            ],
+            "start-time": "2025-02-19T18: 51: 39+01: 00",
+            "duration": "P0D",
+            "result-full": null
+        },
+        "host": "172.17.102.159",
+        "task": {
+            "href": "https: //ps01-l.farm.particle.cz/pscheduler/tasks/4aad276f-6947-4ac8-b769-c4e3e0d6c79d",
+            "schedule": {
+                "start": "2025-02-19T15:11:26Z",
+                "until": "2025-02-20T15: 11: 26Z"
+            },
+            "reference": {
+                "psconfig": {
+                    "created-by": {
+                        "user-agent": "psconfig-pscheduler-agent",
+                        "agent-hostname": "ps01-l.farm.particle.cz",
+                        "uuid": "C65854BE-7934-4330-9B51-67B986D6ED7B"
+                    }
+                }
+            },
+            "tool": "powstream",
+            "schema": 3,
+            "detail": {
+                "exclusive": false,
+                "cli": [
+                    "--source",
+                    "ps01-l.farm.particle.cz",
+                    "--dest",
+                    "lcgperf.shef.ac.uk",
+                    "--packet-count",
+                    "600",
+                    "--packet-interval",
+                    "0.1",
+                    "--data-ports",
+                    "8760-9960",
+                    "--ip-version",
+                    "6",
+                    "--bucket-width",
+                    "0.001"
+                ],
+                "post": "P0D",
+                "start": "2025-02-19T16: 11: 26+01: 00",
+                "hints": {
+                    "server": "2001: 718: 401: 6025: 1: : 192",
+                    "requester": "2001: 718: 401: 6025: 1: : 192"
+                },
+                "anytime": true,
+                "enabled": true,
+                "runs-started": 1,
+                "added": "2025-02-19T11: 28: 39+01: 00",
+                "runs": 161,
+                "diags": "Hints:\n  requester: 2001: 718: 401: 6025: 1: : 192\n  server: 2001: 718: 401: 6025: 1: : 192\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do (almost) everything\n  Group 1: Limit 'throughput-sane-parallel' passed\n  Group 1: Want all,1/1 passed,0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0",
+                "slip": "P0D",
+                "multi-result": true,
+                "participant": 0,
+                "participants": [
+                    "ps01-l.farm.particle.cz"
+                ],
+                "duration": "P1DT2S"
+            },
+            "test": {
+                "spec": {
+                    "packet-interval": 0.1,
+                    "bucket-width": 0.001,
+                    "schema": 1,
+                    "source": "ps01-l.farm.particle.cz",
+                    "dest": "lcgperf.shef.ac.uk",
+                    "ip-version": 6,
+                    "data-ports": {
+                        "lower": 8760,
+                        "upper": 9960
+                    },
+                    "packet-count": 600
+                },
+                "type": "latencybg"
+            }
+        }
+    },
+    {
+        "id": "a34f50d3-11ab-4085-b011-a41deaeb241a",
+        "schedule": {
+            "start": "2025-02-19T01:46:52+01:00",
+            "duration": "P1DT2S"
+        },
+        "result": {
+            "packets-duplicated": 0,
+            "max-clock-error": 3.43,
+            "histogram-latency": {
+                "53.97": 1,
+                "11.61": 1,
+                "41.87": 3,
+                "48.20": 2,
+                "44.81": 1,
+                "40.68": 1,
+                "19.90": 1,
+                "46.53": 1,
+                "22.70": 1,
+                "42.89": 1,
+                "44.10": 1,
+                "18.18": 1,
+                "45.97": 1,
+                "47.00": 1,
+                "58.06": 1,
+                "45.80": 1,
+                "10.49": 31,
+                "36.72": 1,
+                "25.18": 1,
+                "10.55": 6,
+                "39.33": 1,
+                "39.51": 1,
+                "39.47": 1,
+                "30.14": 1,
+                "43.26": 1,
+                "53.41": 1,
+                "43.28": 1,
+                "53.91": 1,
+                "23.84": 1,
+                "56.04": 1,
+                "22.57": 1,
+                "40.01": 1,
+                "26.41": 1,
+                "47.07": 1,
+                "29.02": 1,
+                "10.64": 2,
+                "24.36": 1,
+                "53.70": 1,
+                "60.21": 1,
+                "12.45": 1,
+                "44.68": 1,
+                "41.30": 2,
+                "42.56": 1,
+                "25.22": 1,
+                "43.57": 1,
+                "21.45": 1,
+                "47.86": 1,
+                "25.04": 2,
+                "48.23": 1,
+                "10.90": 1,
+                "39.82": 1,
+                "40.06": 1,
+                "12.17": 1,
+                "25.62": 1,
+                "44.31": 1,
+                "44.72": 2,
+                "50.27": 1,
+                "47.17": 1,
+                "41.20": 1,
+                "10.81": 1,
+                "33.76": 1,
+                "50.06": 1,
+                "39.27": 1,
+                "39.55": 1,
+                "43.74": 2,
+                "45.51": 1,
+                "10.65": 2,
+                "24.00": 1,
+                "44.62": 2,
+                "45.30": 1,
+                "56.88": 1,
+                "32.60": 1,
+                "41.96": 1,
+                "50.24": 1,
+                "23.85": 1,
+                "47.59": 1,
+                "10.85": 1,
+                "21.79": 1,
+                "53.26": 1,
+                "24.89": 1,
+                "20.56": 1,
+                "43.11": 1,
+                "10.44": 1,
+                "43.96": 1,
+                "51.19": 1,
+                "10.56": 11,
+                "50.37": 1,
+                "56.93": 1,
+                "40.86": 1,
+                "54.73": 1,
+                "21.50": 1,
+                "57.93": 1,
+                "58.64": 1,
+                "44.02": 1,
+                "46.38": 1,
+                "41.55": 2,
+                "19.82": 1,
+                "23.70": 1,
+                "27.55": 1,
+                "57.68": 1,
+                "41.71": 2,
+                "16.28": 1,
+                "42.35": 1,
+                "41.92": 1,
+                "20.54": 1,
+                "38.33": 1,
+                "40.88": 1,
+                "46.47": 1,
+                "40.74": 1,
+                "18.46": 1,
+                "41.27": 1,
+                "10.63": 3,
+                "48.93": 1,
+                "20.13": 1,
+                "45.32": 1,
+                "10.58": 3,
+                "60.64": 1,
+                "34.56": 1,
+                "37.98": 1,
+                "43.80": 1,
+                "50.38": 1,
+                "40.61": 1,
+                "40.57": 2,
+                "12.04": 1,
+                "41.08": 1,
+                "25.21": 1,
+                "42.73": 1,
+                "44.66": 1,
+                "45.05": 1,
+                "26.55": 1,
+                "45.75": 1,
+                "55.39": 1,
+                "10.50": 26,
+                "10.66": 1,
+                "18.17": 1,
+                "36.41": 1,
+                "42.78": 1,
+                "48.57": 1,
+                "54.07": 1,
+                "42.83": 1,
+                "46.66": 1,
+                "43.77": 1,
+                "10.79": 1,
+                "46.21": 1,
+                "54.89": 1,
+                "41.44": 2,
+                "52.97": 1,
+                "31.49": 1,
+                "26.34": 1,
+                "45.85": 1,
+                "43.78": 1,
+                "51.51": 1,
+                "37.78": 1,
+                "39.70": 1,
+                "40.70": 1,
+                "44.84": 1,
+                "47.40": 1,
+                "20.12": 1,
+                "39.92": 1,
+                "37.90": 1,
+                "10.48": 18,
+                "46.29": 1,
+                "55.60": 1,
+                "45.03": 1,
+                "19.42": 1,
+                "50.84": 1,
+                "10.46": 6,
+                "10.57": 5,
+                "18.39": 1,
+                "19.21": 1,
+                "40.32": 1,
+                "41.24": 1,
+                "48.03": 1,
+                "51.92": 1,
+                "26.95": 1,
+                "51.41": 1,
+                "55.05": 1,
+                "47.23": 1,
+                "50.01": 1,
+                "11.87": 1,
+                "19.53": 1,
+                "10.76": 1,
+                "19.23": 1,
+                "36.81": 1,
+                "36.33": 1,
+                "55.29": 1,
+                "36.29": 1,
+                "52.49": 1,
+                "21.33": 1,
+                "10.51": 47,
+                "35.56": 1,
+                "40.79": 2,
+                "55.00": 1,
+                "38.80": 1,
+                "40.55": 1,
+                "44.94": 1,
+                "43.31": 1,
+                "26.45": 1,
+                "22.08": 1,
+                "42.13": 1,
+                "28.47": 1,
+                "23.23": 1,
+                "38.97": 1,
+                "47.46": 1,
+                "40.84": 1,
+                "43.71": 1,
+                "44.05": 1,
+                "46.82": 1,
+                "41.67": 1,
+                "35.36": 1,
+                "43.53": 1,
+                "51.69": 1,
+                "50.47": 1,
+                "25.46": 1,
+                "42.01": 1,
+                "55.89": 1,
+                "55.42": 1,
+                "10.61": 3,
+                "39.64": 1,
+                "43.56": 1,
+                "46.17": 1,
+                "56.29": 1,
+                "41.28": 1,
+                "50.43": 1,
+                "31.81": 1,
+                "53.92": 1,
+                "20.58": 1,
+                "51.04": 1,
+                "35.93": 1,
+                "41.21": 1,
+                "44.43": 1,
+                "11.80": 1,
+                "40.92": 1,
+                "41.78": 1,
+                "42.11": 1,
+                "45.53": 2,
+                "52.23": 1,
+                "10.62": 1,
+                "20.93": 1,
+                "41.01": 1,
+                "41.40": 1,
+                "11.44": 1,
+                "10.45": 5,
+                "36.67": 1,
+                "41.97": 1,
+                "10.97": 2,
+                "51.13": 1,
+                "12.61": 1,
+                "46.61": 1,
+                "10.52": 50,
+                "43.58": 2,
+                "41.14": 1,
+                "47.15": 1,
+                "26.35": 1,
+                "50.78": 1,
+                "45.10": 1,
+                "51.87": 1,
+                "10.59": 3,
+                "40.34": 1,
+                "54.26": 1,
+                "10.47": 14,
+                "41.99": 1,
+                "43.33": 1,
+                "47.14": 1,
+                "47.44": 1,
+                "56.54": 1,
+                "10.67": 1,
+                "47.90": 1,
+                "43.14": 1,
+                "23.05": 1,
+                "23.25": 1,
+                "50.30": 1,
+                "10.54": 14,
+                "45.07": 1,
+                "10.77": 1,
+                "41.88": 1,
+                "37.08": 1,
+                "39.86": 1,
+                "44.83": 1,
+                "41.23": 1,
+                "42.82": 2,
+                "44.74": 1,
+                "42.62": 1,
+                "19.46": 1,
+                "47.55": 1,
+                "10.53": 22,
+                "22.36": 2,
+                "38.39": 1,
+                "46.06": 1,
+                "44.08": 1,
+                "49.14": 1,
+                "26.94": 1,
+                "45.70": 1,
+                "53.99": 1,
+                "43.87": 1,
+                "41.83": 1,
+                "23.04": 1,
+                "23.88": 1,
+                "26.21": 1,
+                "17.38": 1,
+                "38.04": 1,
+                "34.02": 1,
+                "42.02": 1,
+                "24.59": 1,
+                "45.99": 2,
+                "42.87": 1,
+                "43.70": 1,
+                "46.31": 1,
+                "45.26": 1,
+                "55.73": 1,
+                "29.22": 1,
+                "41.56": 2,
+                "45.59": 1,
+                "19.04": 1,
+                "43.69": 1,
+                "45.44": 1,
+                "10.60": 1,
+                "42.03": 1,
+                "41.81": 1,
+                "17.63": 1,
+                "35.44": 1,
+                "40.50": 1,
+                "52.10": 1,
+                "42.66": 1,
+                "38.55": 2,
+                "40.75": 2
+            },
+            "schema": 1,
+            "succeeded": true,
+            "histogram-ttl": {
+                "248": 600
+            },
+            "packets-reordered": 0,
+            "packets-lost": 0,
+            "packets-received": 600,
+            "packets-sent": 600
+        },
+        "tool": {
+            "name": "powstream",
+            "version": "1.0"
+        },
+        "@version": "1",
+        "@timestamp": "2025-02-19T17: 51: 39.528656355Z",
+        "test": {
+            "spec": {
+                "packet-interval": 0.1,
+                "bucket-width": 0.001,
+                "schema": 1,
+                "source": "lapp-ps02.in2p3.fr",
+                "dest": "marperf02.in2p3.fr",
+                "data-ports": {
+                    "lower": 8760,
+                    "upper": 9960
+                },
+                "packet-count": 600
+            },
+            "type": "latencybg"
+        },
+        "headers": {
+            "http_host": "ps-collection.atlas-ml.org",
+            "x_real_ip": "172.17.157.128",
+            "http_user_agent": "PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.2.2 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0",
+            "http_accept": "* /*",
+            "request_path": "/",
+            "content_type": "application/json",
+            "x_request_id": "e4abc355519858c7f07da1c6ee4e4e81",
+            "content_length": "9567",
+            "x_forwarded_scheme": "https",
+            "x_forwarded_proto": "https",
+            "request_method": "POST",
+            "http_version": "HTTP/1.1",
+            "x_forwarded_for": "172.17.157.128",
+            "x_forwarded_host": "ps-collection.atlas-ml.org",
+            "x_forwarded_port": "443",
+            "x_scheme": "https"
+        },
+        "reference": {
+            "psconfig": {
+                "created-by": {
+                    "user-agent": "psconfig-pscheduler-agent",
+                    "agent-hostname": "lapp-ps02.in2p3.fr",
+                    "uuid": "B1EFD055-3C76-453E-BF8E-DD7D3D096E11"
+                }
+            }
+        },
+        "participants": [
+            "lapp-ps02.in2p3.fr"
+        ],
+        "run": {
+            "end-time": "2025-02-19T01: 46: 52+01: 00",
+            "priority": 0,
+            "errors": null,
+            "limit-diags": null,
+            "href": "https: //lapp-ps02.in2p3.fr/pscheduler/tasks/2512750c-ab8b-419f-afb4-0bd8de631e9d/runs/a34f50d3-11ab-4085-b011-a41deaeb241a",
+            "added": "2025-02-19T01: 46: 52+01: 00",
+            "state": "finished",
+            "state-display": "Finished",
+            "result-merged": {
+                "packets-duplicated": 0,
+                "max-clock-error": 3.43,
+                "histogram-latency": {
+                    "53.97": 1,
+                    "11.61": 1,
+                    "41.87": 3,
+                    "48.20": 2,
+                    "44.81": 1,
+                    "40.68": 1,
+                    "19.90": 1,
+                    "46.53": 1,
+                    "22.70": 1,
+                    "42.89": 1,
+                    "44.10": 1,
+                    "18.18": 1,
+                    "45.97": 1,
+                    "47.00": 1,
+                    "58.06": 1,
+                    "45.80": 1,
+                    "10.49": 31,
+                    "36.72": 1,
+                    "25.18": 1,
+                    "10.55": 6,
+                    "39.33": 1,
+                    "39.51": 1,
+                    "39.47": 1,
+                    "30.14": 1,
+                    "43.26": 1,
+                    "53.41": 1,
+                    "43.28": 1,
+                    "53.91": 1,
+                    "23.84": 1,
+                    "56.04": 1,
+                    "22.57": 1,
+                    "40.01": 1,
+                    "26.41": 1,
+                    "47.07": 1,
+                    "29.02": 1,
+                    "10.64": 2,
+                    "24.36": 1,
+                    "53.70": 1,
+                    "60.21": 1,
+                    "12.45": 1,
+                    "44.68": 1,
+                    "41.30": 2,
+                    "42.56": 1,
+                    "25.22": 1,
+                    "43.57": 1,
+                    "21.45": 1,
+                    "47.86": 1,
+                    "25.04": 2,
+                    "48.23": 1,
+                    "10.90": 1,
+                    "39.82": 1,
+                    "40.06": 1,
+                    "12.17": 1,
+                    "25.62": 1,
+                    "44.31": 1,
+                    "44.72": 2,
+                    "50.27": 1,
+                    "47.17": 1,
+                    "41.20": 1,
+                    "10.81": 1,
+                    "33.76": 1,
+                    "50.06": 1,
+                    "39.27": 1,
+                    "39.55": 1,
+                    "43.74": 2,
+                    "45.51": 1,
+                    "10.65": 2,
+                    "24.00": 1,
+                    "44.62": 2,
+                    "45.30": 1,
+                    "56.88": 1,
+                    "32.60": 1,
+                    "41.96": 1,
+                    "50.24": 1,
+                    "23.85": 1,
+                    "47.59": 1,
+                    "10.85": 1,
+                    "21.79": 1,
+                    "53.26": 1,
+                    "24.89": 1,
+                    "20.56": 1,
+                    "43.11": 1,
+                    "10.44": 1,
+                    "43.96": 1,
+                    "51.19": 1,
+                    "10.56": 11,
+                    "50.37": 1,
+                    "56.93": 1,
+                    "40.86": 1,
+                    "54.73": 1,
+                    "21.50": 1,
+                    "57.93": 1,
+                    "58.64": 1,
+                    "44.02": 1,
+                    "46.38": 1,
+                    "41.55": 2,
+                    "19.82": 1,
+                    "23.70": 1,
+                    "27.55": 1,
+                    "57.68": 1,
+                    "41.71": 2,
+                    "16.28": 1,
+                    "42.35": 1,
+                    "41.92": 1,
+                    "20.54": 1,
+                    "38.33": 1,
+                    "40.88": 1,
+                    "46.47": 1,
+                    "40.74": 1,
+                    "18.46": 1,
+                    "41.27": 1,
+                    "10.63": 3,
+                    "48.93": 1,
+                    "20.13": 1,
+                    "45.32": 1,
+                    "10.58": 3,
+                    "60.64": 1,
+                    "34.56": 1,
+                    "37.98": 1,
+                    "43.80": 1,
+                    "50.38": 1,
+                    "40.61": 1,
+                    "40.57": 2,
+                    "12.04": 1,
+                    "41.08": 1,
+                    "25.21": 1,
+                    "42.73": 1,
+                    "44.66": 1,
+                    "45.05": 1,
+                    "26.55": 1,
+                    "45.75": 1,
+                    "55.39": 1,
+                    "10.50": 26,
+                    "10.66": 1,
+                    "18.17": 1,
+                    "36.41": 1,
+                    "42.78": 1,
+                    "48.57": 1,
+                    "54.07": 1,
+                    "42.83": 1,
+                    "46.66": 1,
+                    "43.77": 1,
+                    "10.79": 1,
+                    "46.21": 1,
+                    "54.89": 1,
+                    "41.44": 2,
+                    "52.97": 1,
+                    "31.49": 1,
+                    "26.34": 1,
+                    "45.85": 1,
+                    "43.78": 1,
+                    "51.51": 1,
+                    "37.78": 1,
+                    "39.70": 1,
+                    "40.70": 1,
+                    "44.84": 1,
+                    "47.40": 1,
+                    "20.12": 1,
+                    "39.92": 1,
+                    "37.90": 1,
+                    "10.48": 18,
+                    "46.29": 1,
+                    "55.60": 1,
+                    "45.03": 1,
+                    "19.42": 1,
+                    "50.84": 1,
+                    "10.46": 6,
+                    "10.57": 5,
+                    "18.39": 1,
+                    "19.21": 1,
+                    "40.32": 1,
+                    "41.24": 1,
+                    "48.03": 1,
+                    "51.92": 1,
+                    "26.95": 1,
+                    "51.41": 1,
+                    "55.05": 1,
+                    "47.23": 1,
+                    "50.01": 1,
+                    "11.87": 1,
+                    "19.53": 1,
+                    "10.76": 1,
+                    "19.23": 1,
+                    "36.81": 1,
+                    "36.33": 1,
+                    "55.29": 1,
+                    "36.29": 1,
+                    "52.49": 1,
+                    "21.33": 1,
+                    "10.51": 47,
+                    "35.56": 1,
+                    "40.79": 2,
+                    "55.00": 1,
+                    "38.80": 1,
+                    "40.55": 1,
+                    "44.94": 1,
+                    "43.31": 1,
+                    "26.45": 1,
+                    "22.08": 1,
+                    "42.13": 1,
+                    "28.47": 1,
+                    "23.23": 1,
+                    "38.97": 1,
+                    "47.46": 1,
+                    "40.84": 1,
+                    "43.71": 1,
+                    "44.05": 1,
+                    "46.82": 1,
+                    "41.67": 1,
+                    "35.36": 1,
+                    "43.53": 1,
+                    "51.69": 1,
+                    "50.47": 1,
+                    "25.46": 1,
+                    "42.01": 1,
+                    "55.89": 1,
+                    "55.42": 1,
+                    "10.61": 3,
+                    "39.64": 1,
+                    "43.56": 1,
+                    "46.17": 1,
+                    "56.29": 1,
+                    "41.28": 1,
+                    "50.43": 1,
+                    "31.81": 1,
+                    "53.92": 1,
+                    "20.58": 1,
+                    "51.04": 1,
+                    "35.93": 1,
+                    "41.21": 1,
+                    "44.43": 1,
+                    "11.80": 1,
+                    "40.92": 1,
+                    "41.78": 1,
+                    "42.11": 1,
+                    "45.53": 2,
+                    "52.23": 1,
+                    "10.62": 1,
+                    "20.93": 1,
+                    "41.01": 1,
+                    "41.40": 1,
+                    "11.44": 1,
+                    "10.45": 5,
+                    "36.67": 1,
+                    "41.97": 1,
+                    "10.97": 2,
+                    "51.13": 1,
+                    "12.61": 1,
+                    "46.61": 1,
+                    "10.52": 50,
+                    "43.58": 2,
+                    "41.14": 1,
+                    "47.15": 1,
+                    "26.35": 1,
+                    "50.78": 1,
+                    "45.10": 1,
+                    "51.87": 1,
+                    "10.59": 3,
+                    "40.34": 1,
+                    "54.26": 1,
+                    "10.47": 14,
+                    "41.99": 1,
+                    "43.33": 1,
+                    "47.14": 1,
+                    "47.44": 1,
+                    "56.54": 1,
+                    "10.67": 1,
+                    "47.90": 1,
+                    "43.14": 1,
+                    "23.05": 1,
+                    "23.25": 1,
+                    "50.30": 1,
+                    "10.54": 14,
+                    "45.07": 1,
+                    "10.77": 1,
+                    "41.88": 1,
+                    "37.08": 1,
+                    "39.86": 1,
+                    "44.83": 1,
+                    "41.23": 1,
+                    "42.82": 2,
+                    "44.74": 1,
+                    "42.62": 1,
+                    "19.46": 1,
+                    "47.55": 1,
+                    "10.53": 22,
+                    "22.36": 2,
+                    "38.39": 1,
+                    "46.06": 1,
+                    "44.08": 1,
+                    "49.14": 1,
+                    "26.94": 1,
+                    "45.70": 1,
+                    "53.99": 1,
+                    "43.87": 1,
+                    "41.83": 1,
+                    "23.04": 1,
+                    "23.88": 1,
+                    "26.21": 1,
+                    "17.38": 1,
+                    "38.04": 1,
+                    "34.02": 1,
+                    "42.02": 1,
+                    "24.59": 1,
+                    "45.99": 2,
+                    "42.87": 1,
+                    "43.70": 1,
+                    "46.31": 1,
+                    "45.26": 1,
+                    "55.73": 1,
+                    "29.22": 1,
+                    "41.56": 2,
+                    "45.59": 1,
+                    "19.04": 1,
+                    "43.69": 1,
+                    "45.44": 1,
+                    "10.60": 1,
+                    "42.03": 1,
+                    "41.81": 1,
+                    "17.63": 1,
+                    "35.44": 1,
+                    "40.50": 1,
+                    "52.10": 1,
+                    "42.66": 1,
+                    "38.55": 2,
+                    "40.75": 2
+                },
+                "schema": 1,
+                "succeeded": true,
+                "histogram-ttl": {
+                    "248": 600
+                },
+                "packets-reordered": 0,
+                "packets-lost": 0,
+                "packets-received": 600,
+                "packets-sent": 600
+            },
+            "task-href": "https://lapp-ps02.in2p3.fr/pscheduler/tasks/2512750c-ab8b-419f-afb4-0bd8de631e9d",
+            "participant": 0,
+            "participants": [
+                "lapp-ps02.in2p3.fr"
+            ],
+            "start-time": "2025-02-19T01: 46: 52+01: 00",
+            "duration": "P0D",
+            "result-full": null
+        },
+        "host": "172.17.102.159",
+        "task": {
+            "href": "https://lapp-ps02.in2p3.fr/pscheduler/tasks/2512750c-ab8b-419f-afb4-0bd8de631e9d",
+            "schedule": {
+                "until": "2025-02-19T15: 30: 45Z"
+            },
+            "reference": {
+                "psconfig": {
+                    "created-by": {
+                        "user-agent": "psconfig-pscheduler-agent",
+                        "agent-hostname": "lapp-ps02.in2p3.fr",
+                        "uuid": "B1EFD055-3C76-453E-BF8E-DD7D3D096E11"
+                    }
+                }
+            },
+            "tool": "powstream",
+            "schema": 3,
+            "detail": {
+                "exclusive": false,
+                "cli": [
+                    "--source",
+                    "lapp-ps02.in2p3.fr",
+                    "--dest",
+                    "marperf02.in2p3.fr",
+                    "--packet-count",
+                    "600",
+                    "--packet-interval",
+                    "0.1",
+                    "--data-ports",
+                    "8760-9960",
+                    "--bucket-width",
+                    "0.001"
+                ],
+                "post": "P0D",
+                "start": null,
+                "hints": {
+                    "server": "2001: 660: 5310: 420: : 2",
+                    "requester": "2001: 660: 5310: 420: : 2"
+                },
+                "anytime": true,
+                "enabled": true,
+                "runs-started": 1,
+                "added": "2025-02-18T16: 37: 27+01: 00",
+                "runs": 1414,
+                "diags": "Hints:\n  requester: 2001: 660: 5310: 420: : 2\n  server: 2001: 660: 5310: 420: : 2\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do (almost) everything\n  Group 1: Limit 'throughput-sane-parallel' passed\n  Group 1: Want all,1/1 passed,0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0",
+                "slip": "P0D",
+                "multi-result": true,
+                "participant": 0,
+                "participants": [
+                    "lapp-ps02.in2p3.fr"
+                ],
+                "duration": "P1DT2S"
+            },
+            "test": {
+                "spec": {
+                    "packet-interval": 0.1,
+                    "bucket-width": 0.001,
+                    "schema": 1,
+                    "source": "lapp-ps02.in2p3.fr",
+                    "dest": "marperf02.in2p3.fr",
+                    "data-ports": {
+                        "lower": 8760,
+                        "upper": 9960
+                    },
+                    "packet-count": 600
+                },
+                "type": "latencybg"
+            }
+        }
+    }
+]

@@ -1,0 +1,1274 @@
+[
+    {
+        "id": "f5e7074a-9af4-4f2b-acb5-f99e2c23629c",
+        "schedule": {
+            "start": "2025-02-19T11:51:19-06:00",
+            "duration": "PT15S"
+        },
+        "result": {
+            "roundtrips": [
+                {
+                    "length": 64,
+                    "ip": "2001:948:40:3::86",
+                    "hostname": "perfsonar-ps.ndgf.org",
+                    "rtt": "PT0.114S",
+                    "seq": 1,
+                    "ttl": 49
+                },
+                {
+                    "length": 64,
+                    "ip": "2001:948:40:3::86",
+                    "hostname": "perfsonar-ps.ndgf.org",
+                    "rtt": "PT0.114S",
+                    "seq": 2,
+                    "ttl": 49
+                },
+                {
+                    "length": 64,
+                    "ip": "2001: 948: 40: 3: : 86",
+                    "hostname": "perfsonar-ps.ndgf.org",
+                    "rtt": "PT0.114S",
+                    "seq": 3,
+                    "ttl": 49
+                },
+                {
+                    "length": 64,
+                    "ip": "2001: 948: 40: 3: : 86",
+                    "hostname": "perfsonar-ps.ndgf.org",
+                    "rtt": "PT0.114S",
+                    "seq": 4,
+                    "ttl": 49
+                },
+                {
+                    "length": 64,
+                    "ip": "2001:948:40:3::86",
+                    "hostname": "perfsonar-ps.ndgf.org",
+                    "rtt": "PT0.114S",
+                    "seq": 5,
+                    "ttl": 49
+                },
+                {
+                    "length": 64,
+                    "ip": "2001: 948: 40: 3: : 86",
+                    "hostname": "perfsonar-ps.ndgf.org",
+                    "rtt": "PT0.114S",
+                    "seq": 6,
+                    "ttl": 49
+                },
+                {
+                    "length": 64,
+                    "ip": "2001: 948: 40: 3: : 86",
+                    "hostname": "perfsonar-ps.ndgf.org",
+                    "rtt": "PT0.114S",
+                    "seq": 7,
+                    "ttl": 49
+                },
+                {
+                    "length": 64,
+                    "ip": "2001: 948: 40: 3: : 86",
+                    "hostname": "perfsonar-ps.ndgf.org",
+                    "rtt": "PT0.114S",
+                    "seq": 8,
+                    "ttl": 49
+                },
+                {
+                    "length": 64,
+                    "ip": "2001: 948: 40: 3: : 86",
+                    "hostname": "perfsonar-ps.ndgf.org",
+                    "rtt": "PT0.114S",
+                    "seq": 9,
+                    "ttl": 49
+                },
+                {
+                    "length": 64,
+                    "ip": "2001: 948: 40: 3: : 86",
+                    "hostname": "perfsonar-ps.ndgf.org",
+                    "rtt": "PT0.114S",
+                    "seq": 10,
+                    "ttl": 49
+                }
+            ],
+            "loss": 0.0,
+            "max": "PT0.11449S",
+            "schema": 1,
+            "succeeded": true,
+            "mean": "PT0.114419S",
+            "lost": 0,
+            "stddev": "PT0.000027S",
+            "min": "PT0.114385S",
+            "reorders": 0,
+            "received": 10,
+            "duplicates": 0,
+            "sent": 10
+        },
+        "tool": {
+            "name": "ping",
+            "version": "1.0"
+        },
+        "@version": "1",
+        "@timestamp": "2025-02-19T17: 51: 28.504819374Z",
+        "test": {
+            "spec": {
+                "count": 10,
+                "schema": 1,
+                "source": "uct2-net1.mwt2.org",
+                "dest": "perfsonar-ps.ndgf.org",
+                "interval": "PT1S"
+            },
+            "type": "rtt"
+        },
+        "headers": {
+            "http_host": "ps-collection.atlas-ml.org",
+            "x_real_ip": "172.17.157.128",
+            "http_user_agent": "PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.2.2 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0",
+            "http_accept": "* /*",
+            "request_path": "/",
+            "content_type": "application/json",
+            "x_request_id": "289f6e93846b3c848a5444a4707a8954",
+            "content_length": "7875",
+            "x_forwarded_scheme": "https",
+            "x_forwarded_proto": "https",
+            "request_method": "POST",
+            "http_version": "HTTP/1.1",
+            "x_forwarded_for": "172.17.157.128",
+            "x_forwarded_host": "ps-collection.atlas-ml.org",
+            "x_forwarded_port": "443",
+            "x_scheme": "https"
+        },
+        "reference": {
+            "psconfig": {
+                "created-by": {
+                    "user-agent": "psconfig-pscheduler-agent",
+                    "agent-hostname": "uct2-net1.mwt2.org",
+                    "uuid": "30DC2CEA-84CB-11EE-BD3E-B02441060572"
+                }
+            }
+        },
+        "participants": [
+            "uct2-net1.mwt2.org"
+        ],
+        "run": {
+            "end-time": "2025-02-19T11: 51: 28-06: 00",
+            "priority": null,
+            "errors": null,
+            "limit-diags": "Hints:\n  requester: 2605: 9a00: 10: 200a:be97:e1ff:feeb:b320\n  server: 2605: 9a00: 10: 200a:be97:e1ff:feeb:b320\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,1/1 passed,            0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set at 0:\n  Initial priority  (Set to 0)",
+            "href": "https: //uct2-net1.mwt2.org/pscheduler/tasks/b71428            04-4eaf-4c1e-88d6-326498fb58af/runs/f5e7074a-9af4-4f2b-acb5-f99e2c23629c",
+            "added": "2025-02-19T04: 28: 30-06: 00",
+            "state": "finished",
+            "state-display": "Finished",
+            "result-merged": {
+                "roundtrips": [
+                    {
+                        "length": 64,
+                        "ip": "2001: 948: 40: 3: : 86",
+                        "hostname": "perfsonar-ps.ndgf.org",
+                        "rtt": "PT0.114S",
+                        "seq": 1,
+                        "ttl": 49
+                    },
+                    {
+                        "length": 64,
+                        "ip": "2001: 948: 40: 3: : 86",
+                        "hostname": "perfsonar-ps.ndgf.org",
+                        "rtt": "PT0.114S",
+                        "seq": 2,
+                        "ttl": 49
+                    },
+                    {
+                        "length": 64,
+                        "ip": "2001:948:40:3::86",
+                        "hostname": "perfsonar-ps.ndgf.org",
+                        "rtt": "PT0.114S",
+                        "seq": 3,
+                        "ttl": 49
+                    },
+                    {
+                        "length": 64,
+                        "ip": "2001: 948: 40: 3: : 86",
+                        "hostname": "perfsonar-ps.ndgf.org",
+                        "rtt": "PT0.114S",
+                        "seq": 4,
+                        "ttl": 49
+                    },
+                    {
+                        "length": 64,
+                        "ip": "2001:948:40:3::86",
+                        "hostname": "perfsonar-ps.ndgf.org",
+                        "rtt": "PT0.114S",
+                        "seq": 5,
+                        "ttl": 49
+                    },
+                    {
+                        "length": 64,
+                        "ip": "2001:948:40:3::86",
+                        "hostname": "perfsonar-ps.ndgf.org",
+                        "rtt": "PT0.114S",
+                        "seq": 6,
+                        "ttl": 49
+                    },
+                    {
+                        "length": 64,
+                        "ip": "2001: 948: 40: 3: : 86",
+                        "hostname": "perfsonar-ps.ndgf.org",
+                        "rtt": "PT0.114S",
+                        "seq": 7,
+                        "ttl": 49
+                    },
+                    {
+                        "length": 64,
+                        "ip": "2001:948:40:3::86",
+                        "hostname": "perfsonar-ps.ndgf.org",
+                        "rtt": "PT0.114S",
+                        "seq": 8,
+                        "ttl": 49
+                    },
+                    {
+                        "length": 64,
+                        "ip": "2001:948: 40: 3: : 86",
+                        "hostname": "perfsonar-ps.ndgf.org",
+                        "rtt": "PT0.114S",
+                        "seq": 9,
+                        "ttl": 49
+                    },
+                    {
+                        "length": 64,
+                        "ip": "2001: 948: 40: 3: : 86",
+                        "hostname": "perfsonar-ps.ndgf.org",
+                        "rtt": "PT0.114S",
+                        "seq": 10,
+                        "ttl": 49
+                    }
+                ],
+                "loss": 0.0,
+                "max": "PT0.11449S",
+                "schema": 1,
+                "succeeded": true,
+                "mean": "PT0.114419S",
+                "lost": 0,
+                "stddev": "PT0.000027S",
+                "min": "PT0.114385S",
+                "reorders": 0,
+                "received": 10,
+                "duplicates": 0,
+                "sent": 10
+            },
+            "task-href": "https://uct2-net1.mwt2.org/pscheduler/tasks/b7142804-4eaf-4c1e-88d6-326498fb58af",
+            "participant": 0,
+            "participants": [
+                "uct2-net1.mwt2.org"
+            ],
+            "start-time": "2025-02-19T11: 51: 19-06: 00",
+            "duration": "PT9S",
+            "result-full": [
+                {
+                    "error": null,
+                    "schema": 1,
+                    "succeeded": true,
+                    "diags": "ping6 -n -c 10 -i 1.0 -I 2605: 9a00: 10: 200a:be97:e1ff:feeb:b320 -W 1.0 2001: 948: 40: 3: : 86\n\nStandard output:\nPING 2001: 948: 40: 3: : 86(2001: 948: 40: 3: : 86) from 2605: 9a00: 10: 200a:be97:e1ff:feeb:b320 : 56 data bytes\n64 bytes from 2001: 948: 40: 3: : 86: icmp_seq=1 ttl=49 time=114 ms\n64 bytes from 2001: 948: 40: 3: : 86: icmp_seq=2 ttl=49 time=114 ms\n64 bytes from 2001: 948: 40: 3: : 86: icmp_seq=3 ttl=49 time=114 ms\n64 bytes from 2001: 948: 40: 3: : 86: icmp_seq=4 ttl=49 time=114 ms\n64 bytes from 2001: 948: 40: 3: : 86: icmp_seq=5 ttl=49 time=114 ms\n64 bytes from 2001: 948: 40: 3: : 86: icmp_seq=6 ttl=49 time=114 ms\n64 bytes from 2001: 948: 40: 3: : 86: icmp_seq=7 ttl=49 time=114 ms\n64 bytes from 2001: 948: 40: 3: : 86: icmp_seq=8 ttl=49 time=114 ms\n64 bytes from 2001: 948: 40: 3: : 86: icmp_seq=9 ttl=49 time=114 ms\n64 bytes from 2001: 948: 40: 3: : 86: icmp_seq=10 ttl=49 time=114 ms\n\n--- 2001: 948: 40: 3: : 86 ping statistics ---\n10 packets transmitted,10 received, 0% packet loss, time 9012ms\nrtt min/avg/max/mdev = 114.385/114.419/114.490/0.027 ms\n\n\nStandard error:\n",
+                    "result": {
+                        "roundtrips": [
+                            {
+                                "length": 64,
+                                "ip": "2001: 948: 40: 3: : 86",
+                                "hostname": "perfsonar-ps.ndgf.org",
+                                "rtt": "PT0.114S",
+                                "seq": 1,
+                                "ttl": 49
+                            },
+                            {
+                                "length": 64,
+                                "ip": "2001: 948: 40: 3: : 86",
+                                "hostname": "perfsonar-ps.ndgf.org",
+                                "rtt": "PT0.114S",
+                                "seq": 2,
+                                "ttl": 49
+                            },
+                            {
+                                "length": 64,
+                                "ip": "2001: 948: 40: 3: : 86",
+                                "hostname": "perfsonar-ps.ndgf.org",
+                                "rtt": "PT0.114S",
+                                "seq": 3,
+                                "ttl": 49
+                            },
+                            {
+                                "length": 64,
+                                "ip": "2001: 948: 40: 3: : 86",
+                                "hostname": "perfsonar-ps.ndgf.org",
+                                "rtt": "PT0.114S",
+                                "seq": 4,
+                                "ttl": 49
+                            },
+                            {
+                                "length": 64,
+                                "ip": "2001: 948: 40: 3: : 86",
+                                "hostname": "perfsonar-ps.ndgf.org",
+                                "rtt": "PT0.114S",
+                                "seq": 5,
+                                "ttl": 49
+                            },
+                            {
+                                "length": 64,
+                                "ip": "2001: 948: 40: 3: : 86",
+                                "hostname": "perfsonar-ps.ndgf.org",
+                                "rtt": "PT0.114S",
+                                "seq": 6,
+                                "ttl": 49
+                            },
+                            {
+                                "length": 64,
+                                "ip": "2001: 948: 40: 3: : 86",
+                                "hostname": "perfsonar-ps.ndgf.org",
+                                "rtt": "PT0.114S",
+                                "seq": 7,
+                                "ttl": 49
+                            },
+                            {
+                                "length": 64,
+                                "ip": "2001: 948: 40: 3: : 86",
+                                "hostname": "perfsonar-ps.ndgf.org",
+                                "rtt": "PT0.114S",
+                                "seq": 8,
+                                "ttl": 49
+                            },
+                            {
+                                "length": 64,
+                                "ip": "2001: 948: 40: 3: : 86",
+                                "hostname": "perfsonar-ps.ndgf.org",
+                                "rtt": "PT0.114S",
+                                "seq": 9,
+                                "ttl": 49
+                            },
+                            {
+                                "length": 64,
+                                "ip": "2001:948:40:3::86",
+                                "hostname": "perfsonar-ps.ndgf.org",
+                                "rtt": "PT0.114S",
+                                "seq": 10,
+                                "ttl": 49
+                            }
+                        ],
+                        "loss": 0.0,
+                        "max": "PT0.11449S",
+                        "schema": 1,
+                        "succeeded": true,
+                        "mean": "PT0.114419S",
+                        "lost": 0,
+                        "stddev": "PT0.000027S",
+                        "min": "PT0.114385S",
+                        "reorders": 0,
+                        "received": 10,
+                        "duplicates": 0,
+                        "sent": 10
+                    }
+                }
+            ]
+        },
+        "host": "172.17.102.159",
+        "task": {
+            "href": "https: //uct2-net1.mwt2.org/pscheduler/tasks/b7142804-4eaf-4c1e-88d6-326498fb58af",
+            "schedule": {
+                "repeat": "PT1S",
+                "until": "2025-02-19T23: 11: 51Z",
+                "slip": "PT0.5S",
+                "sliprand": true
+            },
+            "reference": {
+                "psconfig": {
+                    "created-by": {
+                        "user-agent": "psconfig-pscheduler-agent",
+                        "agent-hostname": "uct2-net1.mwt2.org",
+                        "uuid": "30DC2CEA-84CB-11EE-BD3E-B02441060572"
+                    }
+                }
+            },
+            "tool": "ping",
+            "schema": 3,
+            "detail": {
+                "exclusive": false,
+                "cli": [
+                    "--count",
+                    "10",
+                    "--dest",
+                    "perfsonar-ps.ndgf.org",
+                    "--interval",
+                    "PT1S",
+                    "--source",
+                    "uct2-net1.mwt2.org"
+                ],
+                "post": "P0D",
+                "start": null,
+                "hints": {
+                    "server": "2605: 9a00: 10: 200a:be97:e1ff:feeb:b320",
+                    "requester": "2605: 9a00: 10: 200a:be97:e1ff:feeb:b320"
+                },
+                "anytime": true,
+                "enabled": true,
+                "runs-started": 4103,
+                "added": "2025-02-18T17: 37: 21-06: 00",
+                "runs": 5304,
+                "diags": "Hints:\n  requester: 2605: 9a00: 10: 200a:be97:e1ff:feeb:b320\n  server: 2605: 9a00: 10: 200a:be97:e1ff:feeb:b320\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,1/1 passed,0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0",
+                "slip": "PT1S",
+                "multi-result": false,
+                "participant": 0,
+                "participants": [
+                    "uct2-net1.mwt2.org"
+                ],
+                "duration": "PT15S"
+            },
+            "test": {
+                "spec": {
+                    "count": 10,
+                    "schema": 1,
+                    "source": "uct2-net1.mwt2.org",
+                    "dest": "perfsonar-ps.ndgf.org",
+                    "interval": "PT1S"
+                },
+                "type": "rtt"
+            }
+        }
+    },
+    {
+        "id": "618ea583-4def-408c-a3a9-8e2a6c3ff8b4",
+        "schedule": {
+            "start": "2025-02-19T17: 51: 18Z",
+            "duration": "PT15S"
+        },
+        "result": {
+            "reorders": 0,
+            "roundtrips": [],
+            "loss": 1.0,
+            "schema": 1,
+            "succeeded": true,
+            "received": 0,
+            "duplicates": 0,
+            "lost": 10,
+            "sent": 10
+        },
+        "tool": {
+            "name": "ping",
+            "version": "1.0"
+        },
+        "@version": "1",
+        "@timestamp": "2025-02-19T17: 51: 28.523562155Z",
+        "test": {
+            "spec": {
+                "count": 10,
+                "schema": 1,
+                "source": "psum01.aglt2.org",
+                "dest": "ps1.ochep.ou.edu",
+                "interval": "PT1S"
+            },
+            "type": "rtt"
+        },
+        "headers": {
+            "http_host": "ps-collection.atlas-ml.org",
+            "x_real_ip": "172.17.157.128",
+            "http_user_agent": "PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.2.2 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0",
+            "http_accept": "* /*",
+            "request_path": "/",
+            "content_type": "application/json",
+            "x_request_id": "f865c58b6ed298a93a974fc6693118c4",
+            "content_length": "3552",
+            "x_forwarded_scheme": "https",
+            "x_forwarded_proto": "https",
+            "request_method": "POST",
+            "http_version": "HTTP/1.1",
+            "x_forwarded_for": "172.17.157.128",
+            "x_forwarded_host": "ps-collection.atlas-ml.org",
+            "x_forwarded_port": "443",
+            "x_scheme": "https"
+        },
+        "reference": {
+            "psconfig": {
+                "created-by": {
+                    "user-agent": "psconfig-pscheduler-agent",
+                    "agent-hostname": "psum01.aglt2.org",
+                    "uuid": "4CD2C888-BB07-11EE-85EF-B45CE2FC3211"
+                }
+            }
+        },
+        "participants": [
+            "psum01.aglt2.org"
+        ],
+        "run": {
+            "end-time": "2025-02-19T17: 51: 28+00: 00",
+            "priority": null,
+            "errors": null,
+            "limit-diags": "Hints:\n  requester: 2001: 48a8: 68f7: 1: 192: 41: 230: 59\n  server: 2001: 48a8: 68f7: 1: 192: 41: 230: 59\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,1/1 passed,0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set at 0:\n  Initial priority  (Set to 0)",
+            "href": "https: //psum01.aglt2.org/pscheduler/tasks/a9ad4abc-d6c0-40d8-85ed-e185346ec0c5/runs/618ea583-4def-408c-a3a9-8e2a6c3ff8b4",
+            "added": "2025-02-19T12: 24: 47+00: 00",
+            "state": "finished",
+            "state-display": "Finished",
+            "result-merged": {
+                "reorders": 0,
+                "roundtrips": [],
+                "loss": 1.0,
+                "schema": 1,
+                "succeeded": true,
+                "received": 0,
+                "duplicates": 0,
+                "lost": 10,
+                "sent": 10
+            },
+            "task-href": "https: //psum01.aglt2.org/pscheduler/tasks/a9ad4abc-d6c0-40d8-85ed-e185346ec0c5",
+            "participant": 0,
+            "participants": [
+                "psum01.aglt2.org"
+            ],
+            "start-time": "2025-02-19T17: 51: 18+00: 00",
+            "duration": "PT10S",
+            "result-full": [
+                {
+                    "error": null,
+                    "schema": 1,
+                    "succeeded": true,
+                    "diags": "ping -n -c 10 -i 1.0 -I 192.41.230.59 -W 1.0 129.15.40.231\n\nStandard output:\nPING 129.15.40.231 (129.15.40.231) from 192.41.230.59 : 56(84) bytes of data.\n\n--- 129.15.40.231 ping statistics ---\n10 packets transmitted,            0 received,            100% packet loss, time 9243ms\n\n\n\nStandard error:\n",
+                    "result": {
+                        "reorders": 0,
+                        "roundtrips": [],
+                        "loss": 1.0,
+                        "schema": 1,
+                        "succeeded": true,
+                        "received": 0,
+                        "duplicates": 0,
+                        "lost": 10,
+                        "sent": 10
+                    }
+                }
+            ]
+        },
+        "host": "172.17.102.159",
+        "task": {
+            "href": "https: //psum01.aglt2.org/pscheduler/tasks/a9ad4abc-d6c0-40d8-85ed-e185346ec0c5",
+            "schedule": {
+                "repeat": "PT1S",
+                "until": "2025-02-20T04: 39: 26Z",
+                "slip": "PT0.5S",
+                "sliprand": true
+            },
+            "reference": {
+                "psconfig": {
+                    "created-by": {
+                        "user-agent": "psconfig-pscheduler-agent",
+                        "agent-hostname": "psum01.aglt2.org",
+                        "uuid": "4CD2C888-BB07-11EE-85EF-B45CE2FC3211"
+                    }
+                }
+            },
+            "tool": "ping",
+            "schema": 3,
+            "detail": {
+                "exclusive": false,
+                "cli": [
+                    "--count",
+                    "10",
+                    "--dest",
+                    "ps1.ochep.ou.edu",
+                    "--interval",
+                    "PT1S",
+                    "--source",
+                    "psum01.aglt2.org"
+                ],
+                "post": "P0D",
+                "start": null,
+                "hints": {
+                    "server": "2001: 48a8: 68f7: 1: 192: 41: 230: 59",
+                    "requester": "2001: 48a8: 68f7: 1: 192: 41: 230: 59"
+                },
+                "anytime": true,
+                "enabled": true,
+                "runs-started": 2957,
+                "added": "2025-02-19T04: 42: 57+00: 00",
+                "runs": 4894,
+                "diags": "Hints:\n  requester: 2001: 48a8: 68f7: 1: 192: 41: 230: 59\n  server: 2001: 48a8: 68f7: 1: 192: 41: 230: 59\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\nGroup 1: Limit 'always' passed\n  Group 1: Want all,1/1 passed,                0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0",
+                "slip": "PT1S",
+                "multi-result": false,
+                "participant": 0,
+                "participants": [
+                    "psum01.aglt2.org"
+                ],
+                "duration": "PT15S"
+            },
+            "test": {
+                "spec": {
+                    "count": 10,
+                    "schema": 1,
+                    "source": "psum01.aglt2.org",
+                    "dest": "ps1.ochep.ou.edu",
+                    "interval": "PT1S"
+                },
+                "type": "rtt"
+            }
+        }
+    },
+    {
+        "id": "1cc5c03c-0ec3-40f0-94b6-a377abe853e9",
+        "schedule": {
+            "start": "2025-02-19T12:51:18-05:00",
+            "duration": "PT15S"
+        },
+        "result": {
+            "reorders": 0,
+            "roundtrips": [],
+            "loss": 1.0,
+            "schema": 1,
+            "succeeded": true,
+            "received": 0,
+            "duplicates": 0,
+            "lost": 10,
+            "sent": 10
+        },
+        "tool": {
+            "name": "ping",
+            "version": "1.0"
+        },
+        "@version": "1",
+        "@timestamp": "2025-02-19T17: 51: 28.531006667Z",
+        "test": {
+            "spec": {
+                "count": 10,
+                "schema": 1,
+                "source": "iut2-net09.iu.edu",
+                "dest": "psuta01.atlas-swt2.org",
+                "interval": "PT1S"
+            },
+            "type": "rtt"
+        },
+        "headers": {
+            "http_host": "ps-collection.atlas-ml.org",
+            "x_real_ip": "172.17.157.128",
+            "http_user_agent": "PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.2.2 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0",
+            "http_accept": "* /*",
+            "request_path": "/",
+            "content_type": "application/json",
+            "x_request_id": "628851f947c8a2c0535dfa4e8038402e",
+            "content_length": "3674",
+            "x_forwarded_scheme": "https",
+            "x_forwarded_proto": "https",
+            "request_method": "POST",
+            "http_version": "HTTP/1.1",
+            "x_forwarded_for": "172.17.157.128",
+            "x_forwarded_host": "ps-collection.atlas-ml.org",
+            "x_forwarded_port": "443",
+            "x_scheme": "https"
+        },
+        "reference": {
+            "psconfig": {
+                "created-by": {
+                    "user-agent": "psconfig-pscheduler-agent",
+                    "agent-hostname": "iut2-net09.iu.edu",
+                    "uuid": "CE0AD3A2-F390-11EE-B8F0-1D29D0094A75"
+                }
+            }
+        },
+        "participants": [
+            "iut2-net09.iu.edu"
+        ],
+        "run": {
+            "end-time": "2025-02-19T12: 51: 28-05: 00",
+            "priority": null,
+            "errors": null,
+            "limit-diags": "Hints:\n  requester: 2001: 18e8:c02: 5:b27b: 25ff:feb9:d30e\n  server: 2001: 18e8:c02: 5:b27b: 25ff:feb9:d30e\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,            1/1 passed,  0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set at 0:\n  Initial priority  (Set to0)",
+            "href": "https: //iut2-net09.iu.edu/pscheduler/tasks/cb96af29-b8d0-4fda-a6b6-c384035a673c/runs/1cc5c03c-0ec3-40f0-94b6-a377abe853e9",
+            "added": "2025-02-19T11: 48: 47-05: 00",
+            "state": "finished",
+            "state-display": "Finished",
+            "result-merged": {
+                "reorders": 0,
+                "roundtrips": [],
+                "loss": 1.0,
+                "schema": 1,
+                "succeeded": true,
+                "received": 0,
+                "duplicates": 0,
+                "lost": 10,
+                "sent": 10
+            },
+            "task-href": "https: //iut2-net09.iu.edu/pscheduler/tasks/cb96af29-b8d0-4fda-a6b6-c384035a673c",
+            "participant": 0,
+            "participants": [
+                "iut2-net09.iu.edu"
+            ],
+            "start-time": "2025-02-19T12:51:18-05:00",
+            "duration": "PT10S",
+            "result-full": [
+                {
+                    "error": null,
+                    "schema": 1,
+                    "succeeded": true,
+                    "diags": "ping6 -n -c 10 -i 1.0 -I 2001:18e8:c02:5:b27b:25ff:feb9:d30e -W 1.0 2602:fd0f:0:1001::2\n\nStandard output:\nPING 2602:fd0f:0:1001::2(2602:fd0f:0: 1001: : 2) from 2001: 18e8:c02: 5:b27b: 25ff:feb9:d30e : 56 data bytes\n\n--- 2602:fd0f: 0: 1001: : 2 ping statistics ---\n10 packets transmitted,0 received,100% packet loss, time 9224ms\n\n\n\nStandard error:\n",
+                    "result": {
+                        "reorders": 0,
+                        "roundtrips": [],
+                        "loss": 1.0,
+                        "schema": 1,
+                        "succeeded": true,
+                        "received": 0,
+                        "duplicates": 0,
+                        "lost": 10,
+                        "sent": 10
+                    }
+                }
+            ]
+        },
+        "host": "172.17.102.159",
+        "task": {
+            "href": "https: //iut2-net09.iu.edu/pscheduler/tasks/cb96af29-b8d0-4fda-a6b6-c384035a673c",
+            "schedule": {
+                "repeat": "PT1S",
+                "until": "2025-02-20T14: 47: 51Z",
+                "slip": "PT0.5S",
+                "sliprand": true
+            },
+            "reference": {
+                "psconfig": {
+                    "created-by": {
+                        "user-agent": "psconfig-pscheduler-agent",
+                        "agent-hostname": "iut2-net09.iu.edu",
+                        "uuid": "CE0AD3A2-F390-11EE-B8F0-1D29D0094A75"
+                    }
+                }
+            },
+            "tool": "ping",
+            "schema": 3,
+            "detail": {
+                "exclusive": false,
+                "cli": [
+                    "--count",
+                    "10",
+                    "--dest",
+                    "psuta01.atlas-swt2.org",
+                    "--interval",
+                    "PT1S",
+                    "--source",
+                    "iut2-net09.iu.edu"
+                ],
+                "post": "P0D",
+                "start": null,
+                "hints": {
+                    "server": "2001: 18e8:c02: 5:b27b: 25ff:feb9:d30e",
+                    "requester": "2001: 18e8:c02: 5:b27b: 25ff:feb9:d30e"
+                },
+                "anytime": true,
+                "enabled": true,
+                "runs-started": 568,
+                "added": "2025-02-19T10: 20: 00-05: 00",
+                "runs": 963,
+                "diags": "Hints:\n  requester: 2001: 18e8:c02: 5:b27b: 25ff:feb9:d30e\n  server: 2001: 18e8:c02: 5:b27b: 25ff:feb9:d30e\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group1: Want all,                1/1 passed,0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0",
+                "slip": "PT1S",
+                "multi-result": false,
+                "participant": 0,
+                "participants": [
+                    "iut2-net09.iu.edu"
+                ],
+                "duration": "PT15S"
+            },
+            "test": {
+                "spec": {
+                    "count": 10,
+                    "schema": 1,
+                    "source": "iut2-net09.iu.edu",
+                    "dest": "psuta01.atlas-swt2.org",
+                    "interval": "PT1S"
+                },
+                "type": "rtt"
+            }
+        }
+    },
+    {
+        "id": "fdd6d80b-a072-44d5-bb83-573ef587915c",
+        "schedule": {
+            "start": "2025-02-19T11:51:18-06:00",
+            "duration": "PT15S"
+        },
+        "result": {
+            "reorders": 0,
+            "roundtrips": [
+                {
+                    "error": "net-unreachable",
+                    "ip": "192.170.192.62",
+                    "hostname": "sbsci-to-sb.net.uchicago.edu",
+                    "seq": 1
+                },
+                {
+                    "error": "net-unreachable",
+                    "ip": "192.170.192.62",
+                    "hostname": "sbsci-to-sb.net.uchicago.edu",
+                    "seq": 2
+                },
+                {
+                    "error": "net-unreachable",
+                    "ip": "192.170.192.62",
+                    "hostname": "sbsci-to-sb.net.uchicago.edu",
+                    "seq": 3
+                },
+                {
+                    "error": "net-unreachable",
+                    "ip": "192.170.192.62",
+                    "hostname": "sbsci-to-sb.net.uchicago.edu",
+                    "seq": 4
+                },
+                {
+                    "error": "net-unreachable",
+                    "ip": "192.170.192.62",
+                    "hostname": "sbsci-to-sb.net.uchicago.edu",
+                    "seq": 5
+                },
+                {
+                    "error": "net-unreachable",
+                    "ip": "192.170.192.62",
+                    "hostname": "sbsci-to-sb.net.uchicago.edu",
+                    "seq": 7
+                },
+                {
+                    "error": "net-unreachable",
+                    "ip": "192.170.192.62",
+                    "hostname": "sbsci-to-sb.net.uchicago.edu",
+                    "seq": 8
+                },
+                {
+                    "error": "net-unreachable",
+                    "ip": "192.170.192.62",
+                    "hostname": "sbsci-to-sb.net.uchicago.edu",
+                    "seq": 9
+                }
+            ],
+            "loss": 100.0,
+            "schema": 1,
+            "succeeded": true,
+            "received": 0,
+            "duplicates": 0,
+            "lost": 0,
+            "sent": 0
+        },
+        "tool": {
+            "name": "ping",
+            "version": "1.0"
+        },
+        "@version": "1",
+        "@timestamp": "2025-02-19T17: 51: 28.634089541Z",
+        "test": {
+            "spec": {
+                "count": 10,
+                "schema": 1,
+                "source": "uct2-net1.mwt2.org",
+                "dest": "ps-latency.atlas.unimelb.edu.au",
+                "interval": "PT1S"
+            },
+            "type": "rtt"
+        },
+        "headers": {
+            "http_host": "ps-collection.atlas-ml.org",
+            "x_real_ip": "172.17.157.128",
+            "http_user_agent": "PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.2.2 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0",
+            "http_accept": "* /*",
+            "request_path": "/",
+            "content_type": "application/json",
+            "x_request_id": "f06014acb7e4d36eb46c37fad75dab4e",
+            "content_length": "6560",
+            "x_forwarded_scheme": "https",
+            "x_forwarded_proto": "https",
+            "request_method": "POST",
+            "http_version": "HTTP/1.1",
+            "x_forwarded_for": "172.17.157.128",
+            "x_forwarded_host": "ps-collection.atlas-ml.org",
+            "x_forwarded_port": "443",
+            "x_scheme": "https"
+        },
+        "reference": {
+            "psconfig": {
+                "created-by": {
+                    "user-agent": "psconfig-pscheduler-agent",
+                    "agent-hostname": "uct2-net1.mwt2.org",
+                    "uuid": "30DC2CEA-84CB-11EE-BD3E-B02441060572"
+                }
+            }
+        },
+        "participants": [
+            "uct2-net1.mwt2.org"
+        ],
+        "run": {
+            "end-time": "2025-02-19T11: 51: 28-06: 00",
+            "priority": null,
+            "errors": null,
+            "limit-diags": "Hints:\n  requester: 2605: 9a00: 10: 200a:be97:e1ff:feeb:b320\n  server: 2605: 9a00: 10: 200a:be97:e1ff:feeb:b320\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,1/1 passed,            0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set at 0:\n  Initial priority  (Set to 0)",
+            "href": "https: //uct2-net1.mwt2.org/pscheduler/tasks/b7aee0f5-9313-481d-ac56-c16c8bc76b4c/runs/fdd6d80b-a            072-44d5-bb83-573ef587915c",
+            "added": "2025-02-19T04: 34: 16-06: 00",
+            "state": "finished",
+            "state-display": "Finished",
+            "result-merged": {
+                "reorders": 0,
+                "roundtrips": [
+                    {
+                        "error": "net-unreachable",
+                        "ip": "192.170.192.62",
+                        "hostname": "sbsci-to-sb.net.uchicago.edu",
+                        "seq": 1
+                    },
+                    {
+                        "error": "net-unreachable",
+                        "ip": "192.170.192.62",
+                        "hostname": "sbsci-to-sb.net.uchicago.edu",
+                        "seq": 2
+                    },
+                    {
+                        "error": "net-unreachable",
+                        "ip": "192.170.192.62",
+                        "hostname": "sbsci-to-sb.net.uchicago.edu",
+                        "seq": 3
+                    },
+                    {
+                        "error": "net-unreachable",
+                        "ip": "192.170.192.62",
+                        "hostname": "sbsci-to-sb.net.uchicago.edu",
+                        "seq": 4
+                    },
+                    {
+                        "error": "net-unreachable",
+                        "ip": "192.170.192.62",
+                        "hostname": "sbsci-to-sb.net.uchicago.edu",
+                        "seq": 5
+                    },
+                    {
+                        "error": "net-unreachable",
+                        "ip": "192.170.192.62",
+                        "hostname": "sbsci-to-sb.net.uchicago.edu",
+                        "seq": 7
+                    },
+                    {
+                        "error": "net-unreachable",
+                        "ip": "192.170.192.62",
+                        "hostname": "sbsci-to-sb.net.uchicago.edu",
+                        "seq": 8
+                    },
+                    {
+                        "error": "net-unreachable",
+                        "ip": "192.170.192.62",
+                        "hostname": "sbsci-to-sb.net.uchicago.edu",
+                        "seq": 9
+                    }
+                ],
+                "loss": 100.0,
+                "schema": 1,
+                "succeeded": true,
+                "received": 0,
+                "duplicates": 0,
+                "lost": 0,
+                "sent": 0
+            },
+            "task-href": "https: //uct2-net1.mwt2.org/pscheduler/tasks/b7aee0f5-9313-481d-ac56-c16c8bc76b4c",
+            "participant": 0,
+            "participants": [
+                "uct2-net1.mwt2.org"
+            ],
+            "start-time": "2025-02-19T11: 51: 18-06: 00",
+            "duration": "PT10S",
+            "result-full": [
+                {
+                    "error": null,
+                    "schema": 1,
+                    "succeeded": true,
+                    "diags": "ping -n -c 10 -i 1.0 -I 192.170.240.16 -W 1.0 192.231.127.41\n\nStandard output:\nPING 192.231.127.41 (192.231.127.41) from 192.170.240.16 : 56(84) bytes of data.\nFrom 192.170.192.62 icmp_seq=1 Destination Net Unreachable\nFrom 192.170.192.62 icmp_seq=2 Destination Net Unreachable\nFrom 192.170.192.62 icmp_seq=3 Destination Net Unreachable\nFrom 192.170.192.62 icmp_seq=4 Destination Net Unreachable\nFrom 192.170.192.62 icmp_seq=5 Destination Net Unreachable\nFrom 192.170.192.62 icmp_seq=7 Destination Net Unreachable\nFrom 192.170.192.62 icmp_seq=8 Destination Net Unreachable\nFrom 192.170.192.62 icmp_seq=9 Destination Net Unreachable\n\n--- 192.231.127.41 ping statistics ---\n10 packets transmitted,                    0 received, +8 errors,100% packet loss, time 9251ms\n\n\n\nStandard error:\n",
+                    "result": {
+                        "reorders": 0,
+                        "roundtrips": [
+                            {
+                                "error": "net-unreachable",
+                                "ip": "192.170.192.62",
+                                "hostname": "sbsci-to-sb.net.uchicago.edu",
+                                "seq": 1
+                            },
+                            {
+                                "error": "net-unreachable",
+                                "ip": "192.170.192.62",
+                                "hostname": "sbsci-to-sb.net.uchicago.edu",
+                                "seq": 2
+                            },
+                            {
+                                "error": "net-unreachable",
+                                "ip": "192.170.192.62",
+                                "hostname": "sbsci-to-sb.net.uchicago.edu",
+                                "seq": 3
+                            },
+                            {
+                                "error": "net-unreachable",
+                                "ip": "192.170.192.62",
+                                "hostname": "sbsci-to-sb.net.uchicago.edu",
+                                "seq": 4
+                            },
+                            {
+                                "error": "net-unreachable",
+                                "ip": "192.170.192.62",
+                                "hostname": "sbsci-to-sb.net.uchicago.edu",
+                                "seq": 5
+                            },
+                            {
+                                "error": "net-unreachable",
+                                "ip": "192.170.192.62",
+                                "hostname": "sbsci-to-sb.net.uchicago.edu",
+                                "seq": 7
+                            },
+                            {
+                                "error": "net-unreachable",
+                                "ip": "192.170.192.62",
+                                "hostname": "sbsci-to-sb.net.uchicago.edu",
+                                "seq": 8
+                            },
+                            {
+                                "error": "net-unreachable",
+                                "ip": "192.170.192.62",
+                                "hostname": "sbsci-to-sb.net.uchicago.edu",
+                                "seq": 9
+                            }
+                        ],
+                        "loss": 100.0,
+                        "schema": 1,
+                        "succeeded": true,
+                        "received": 0,
+                        "duplicates": 0,
+                        "lost": 0,
+                        "sent": 0
+                    }
+                }
+            ]
+        },
+        "host": "172.17.102.159",
+        "task": {
+            "href": "https: //uct2-net1.mwt2.org/pscheduler/tasks/b7aee0f5-9313-481d-ac56-c16c8bc76b4c",
+            "schedule": {
+                "repeat": "PT1S",
+                "until": "2025-02-19T23:11:51Z",
+                "slip": "PT0.5S",
+                "sliprand": true
+            },
+            "reference": {
+                "psconfig": {
+                    "created-by": {
+                        "user-agent": "psconfig-pscheduler-agent",
+                        "agent-hostname": "uct2-net1.mwt2.org",
+                        "uuid": "30DC2CEA-84CB-11EE-BD3E-B02441060572"
+                    }
+                }
+            },
+            "tool": "ping",
+            "schema": 3,
+            "detail": {
+                "exclusive": false,
+                "cli": [
+                    "--count",
+                    "10",
+                    "--dest",
+                    "ps-latency.atlas.unimelb.edu.au",
+                    "--interval",
+                    "PT1S",
+                    "--source",
+                    "uct2-net1.mwt2.org"
+                ],
+                "post": "P0D",
+                "start": null,
+                "hints": {
+                    "server": "2605: 9a00: 10: 200a:be97:e1ff:feeb:b320",
+                    "requester": "2605: 9a00: 10: 200a:be97:e1ff:feeb:b320"
+                },
+                "anytime": true,
+                "enabled": true,
+                "runs-started": 4102,
+                "added": "2025-02-18T17: 37: 36-06: 00",
+                "runs": 5304,
+                "diags": "Hints:\n  requester: 2605: 9a00: 10: 200a:be97:e1ff:feeb:b320\n  server: 2605: 9a00: 10: 200a:be97:e1ff:feeb:b320\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,1/1 passed,                0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0",
+                "slip": "PT1S",
+                "multi-result": false,
+                "participant": 0,
+                "participants": [
+                    "uct2-net1.mwt2.org"
+                ],
+                "duration": "PT15S"
+            },
+            "test": {
+                "spec": {
+                    "count": 10,
+                    "schema": 1,
+                    "source": "uct2-net1.mwt2.org",
+                    "dest": "ps-latency.atlas.unimelb.edu.au",
+                    "interval": "PT1S"
+                },
+                "type": "rtt"
+            }
+        }
+    },
+    {
+        "id": "9b44a7d9-eeff-4e71-98c1-4579dc1968e1",
+        "schedule": {
+            "start": "2025-02-19T12: 51: 19-05: 00",
+            "duration": "PT15S"
+        },
+        "result": {
+            "reorders": 0,
+            "roundtrips": [],
+            "loss": 1.0,
+            "schema": 1,
+            "succeeded": true,
+            "received": 0,
+            "duplicates": 0,
+            "lost": 10,
+            "sent": 10
+        },
+        "tool": {
+            "name": "ping",
+            "version": "1.0"
+        },
+        "@version": "1",
+        "@timestamp": "2025-02-19T17: 51: 29.545701491Z",
+        "test": {
+            "spec": {
+                "count": 10,
+                "schema": 1,
+                "source": "iut2-net09.iu.edu",
+                "dest": "ps1.ochep.ou.edu",
+                "interval": "PT1S"
+            },
+            "type": "rtt"
+        },
+        "headers": {
+            "http_host": "ps-collection.atlas-ml.org",
+            "x_real_ip": "172.17.157.128",
+            "http_user_agent": "PycURL/7.43.0.6 libcurl/7.76.1 OpenSSL/3.2.2 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0",
+            "http_accept": "*/*",
+            "request_path": "/",
+            "content_type": "application/json",
+            "x_request_id": "34e71fe328d912493266c14040ba0f70",
+            "content_length": "3600",
+            "x_forwarded_scheme": "https",
+            "x_forwarded_proto": "https",
+            "request_method": "POST",
+            "http_version": "HTTP/1.1",
+            "x_forwarded_for": "172.17.157.128",
+            "x_forwarded_host": "ps-collection.atlas-ml.org",
+            "x_forwarded_port": "443",
+            "x_scheme": "https"
+        },
+        "reference": {
+            "psconfig": {
+                "created-by": {
+                    "user-agent": "psconfig-pscheduler-agent",
+                    "agent-hostname": "iut2-net09.iu.edu",
+                    "uuid": "CE0AD3A2-F390-11EE-B8F0-1D29D0094A75"
+                }
+            }
+        },
+        "participants": [
+            "iut2-net09.iu.edu"
+        ],
+        "run": {
+            "end-time": "2025-02-19T12: 51: 29-05: 00",
+            "priority": null,
+            "errors": null,
+            "limit-diags": "Hints:\n  requester: 2001: 18e8:c02: 5:b27b: 25ff:feb9:d30e\n  server: 2001: 18e8:c02: 5:b27b: 25ff:feb9:d30e\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,1/1 passed,            0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set at 0:\n  Initial priority  (Set to 0)",
+            "href": "https: //iut2-net09.iu.edu/pscheduler/tasks/1fa0e36a-8011-4691-8a19-3edd3e5516b0/runs/9b44a7d9-eeff-4e71-98c1-4579dc1968e1",
+            "added": "2025-02-19T11:4            8: 16-05: 00",
+            "state": "finished",
+            "state-display": "Finished",
+            "result-merged": {
+                "reorders": 0,
+                "roundtrips": [],
+                "loss": 1.0,
+                "schema": 1,
+                "succeeded": true,
+                "received": 0,
+                "duplicates": 0,
+                "lost": 10,
+                "sent": 10
+            },
+            "task-href": "https: //iut2-net09.iu.edu/pscheduler/tasks/1fa0e36a-8011-4691-8a19-3edd3e5516b0",
+            "participant": 0,
+            "participants": [
+                "iut2-net09.iu.edu"
+            ],
+            "start-time": "2025-02-19T12: 51: 19-05: 00",
+            "duration": "PT10S",
+            "result-full": [
+                {
+                    "error": null,
+                    "schema": 1,
+                    "succeeded": true,
+                    "diags": "ping -n -c 10 -i 1.0 -I 149.165.224.243 -W 1.0 129.15.40.231\n\nStandard output:\nPING 129.15.40.231 (129.15.40.231) from 149.165.224.243 : 56(84) bytes of data.\n\n--- 129.15.40.231 ping statistics ---\n10 packets transmitted,0 received,                    100% packet loss, time 9247ms\n\n\n\nStandard error:\n",
+                    "result": {
+                        "reorders": 0,
+                        "roundtrips": [],
+                        "loss": 1.0,
+                        "schema": 1,
+                        "succeeded": true,
+                        "received": 0,
+                        "duplicates": 0,
+                        "lost": 10,
+                        "sent": 10
+                    }
+                }
+            ]
+        },
+        "host": "172.17.102.159",
+        "task": {
+            "href": "https: //iut2-net09.iu.edu/pscheduler/tasks/1fa0e36a-8011-4691-8a19-3edd3e5516b0",
+            "schedule": {
+                "repeat": "PT1S",
+                "until": "2025-02-20T14:47:51Z",
+                "slip": "PT0.5S",
+                "sliprand": true
+            },
+            "reference": {
+                "psconfig": {
+                    "created-by": {
+                        "user-agent": "psconfig-pscheduler-agent",
+                        "agent-hostname": "iut2-net09.iu.edu",
+                        "uuid": "CE0AD3A2-F390-11EE-B8F0-1D29D0094A75"
+                    }
+                }
+            },
+            "tool": "ping",
+            "schema": 3,
+            "detail": {
+                "exclusive": false,
+                "cli": [
+                    "--count",
+                    "10",
+                    "--dest",
+                    "ps1.ochep.ou.edu",
+                    "--interval",
+                    "PT1S",
+                    "--source",
+                    "iut2-net09.iu.edu"
+                ],
+                "post": "P0D",
+                "start": null,
+                "hints": {
+                    "server": "2001: 18e8:c02: 5:b27b: 25ff:feb9:d30e",
+                    "requester": "2001: 18e8:c02: 5:b27b: 25ff:feb9:d30e"
+                },
+                "anytime": true,
+                "enabled": true,
+                "runs-started": 569,
+                "added": "2025-02-19T10: 19: 45-05: 00",
+                "runs": 967,
+                "diags": "Hints:\n  requester: 2001: 18e8:c02: 5:b27b: 25ff:feb9:d30e\n  server: 2001: 18e8:c02: 5:b27b: 25ff:feb9:d30e\nIdentified as everybody, local-interfaces\nClassified as default, friendlies\nApplication: Hosts we trust to do everything\n  Group 1: Limit 'always' passed\n  Group 1: Want all,                    1/1 passed,0/1 failed: PASS\n  Application PASSES\nPassed one application.  Stopping.\nProposal meets limits\nPriority set to default of 0",
+                "slip": "PT1S",
+                "multi-result": false,
+                "participant": 0,
+                "participants": [
+                    "iut2-net09.iu.edu"
+                ],
+                "duration": "PT15S"
+            },
+            "test": {
+                "spec": {
+                    "count": 10,
+                    "schema": 1,
+                    "source": "iut2-net09.iu.edu",
+                    "dest": "ps1.ochep.ou.edu",
+                    "interval": "PT1S"
+                },
+                "type": "rtt"
+            }
+        }
+    }
+]
