@@ -1,14 +1,16 @@
 require 'socket'
 
 def lookup_hostname(ip)
+    result = {
+        'client' => ''   
+    }
     begin
-        return Socket.gethostbyaddr(IPAddr.new(ip).hton).first
+        result['client'] = Socket.gethostbyaddr(IPAddr.new(ip).hton).first
     rescue SocketError
-        return nil
     end
 end
 
 def filter(event)
-    event.set("client", lookup_hostname(event.get("ip")) ) unless event.get("client")
+    event.set("source", lookup_hostname(event.get("ip")) ) unless event.get("source")
     return [event]
 end
