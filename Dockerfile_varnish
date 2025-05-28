@@ -5,7 +5,7 @@ LABEL maintainer="Ilija Vukotic <ivukotic@cern.ch>"
 USER root
 RUN apt-get update && apt-get install -y nmap
 
-RUN /usr/share/logstash/bin/logstash-plugin install logstash-filter-memcached
+# RUN /usr/share/logstash/bin/logstash-plugin install logstash-filter-memcached
 
 RUN mkdir /usr/share/logstash/configs
 RUN mkdir /var/log/logstash && chown -R logstash /var/log/logstash
