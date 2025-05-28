@@ -5,7 +5,7 @@ def lookup_hostname(ip)
         return Socket.gethostbyaddr(IPAddr.new(ip).hton).first
     rescue SocketError
     end
-    reurn nil
+    return nil
 end
 
 def filter(event)
