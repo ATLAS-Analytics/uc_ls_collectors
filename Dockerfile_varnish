@@ -7,7 +7,7 @@ USER root
 
 # USER logstash
 
-RUN /usr/share/logstash/bin/logstash-plugin install logstash-filter-memcached
+# RUN /usr/share/logstash/bin/logstash-plugin install logstash-filter-memcached
 RUN mkdir /usr/share/logstash/configs
 
 COPY logstash.yml /usr/share/logstash/config/logstash.yml
