@@ -8,6 +8,7 @@ def lookup_hostname(ip)
         result['client'] = Socket.gethostbyaddr(IPAddr.new(ip).hton).first
     rescue SocketError
     end
+    reurn result
 end
 
 def filter(event)
