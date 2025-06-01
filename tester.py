@@ -5,8 +5,8 @@ import logstash
 test_logger = logging.getLogger('test-ilija')
 
 test_logger.setLevel(logging.INFO)
-# test_logger.addHandler(logstash.LogstashHandler('frontier.atlas-ml.org', 5959, version=1))
-test_logger.addHandler(logstash.TCPLogstashHandler('frontier.atlas-ml.org', 5959, version=1))
+# test_logger.addHandler(logstash.LogstashHandler('frontier.atlas-ml.org', 5958, version=1))
+test_logger.addHandler(logstash.TCPLogstashHandler('frontier.atlas-ml.org', 5958, version=1))
 
 test_logger.error('python-logstash: test logstash error message.')
 test_logger.info('python-logstash: test logstash info message.')
