@@ -1,9 +1,9 @@
-name: Build Varnish Accesses Monitor Logstash dockerhub image
+name: Build Varnish Accesses Status Logstash dockerhub image
 
 on:
   push:
     branches:
-      - "varnish-accesses"
+      - "varnish-tests"
 
 jobs:
   docker:
@@ -15,7 +15,7 @@ jobs:
       - name: Docker Build & Push Action
         uses: mr-smithers-excellent/docker-build-push@v6.4
         with:
-          image: atlasanalyticsservice/uc_ls_varnish_accesses
+          image: atlasanalyticsservice/uc_ls_varnish_tests
           dockerfile: Dockerfile_varnish
           tags: latest, ${{ github.sha }}
           registry: docker.io
@@ -27,5 +27,5 @@ jobs:
         with:
           token: ${{ secrets.AAAS_GITOPS_DEPLOY_TRIGGER }}
           repository: maniaclab/flux_apps
-          event-type: gitops-uc-ls-varnish-accesses-trigger
+          event-type: gitops-uc-ls-varnish-tests-trigger
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
