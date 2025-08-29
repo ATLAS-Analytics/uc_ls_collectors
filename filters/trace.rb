@@ -1,11 +1,26 @@
 require 'digest/sha1'
+require 'ipaddr'
+
+def normalize_ip(ip)
+  ip = ip.split.join("") # we have cases like this: "2001:b30: 4202: 100: : 3", that this library can not handle and identify like this "2001:b30:4202:100::3"
+  IPAddr.new(ip).to_s.downcase
+rescue
+  ip.downcase
+end
+
+def same_ip?(a, b)
+  normalized_a = normalize_ip(a)
+  normalized_b = normalize_ip(b)
+  normalized_a == normalized_b
+rescue
+  false
+end
 
 def filter(event)
     hs = event.get('[result][paths]').first()
     dest = event.get('[dest]')
 
 # TODO add lookups for dns names from memcached.
-
     c = 1
     path_complete = true
     destination_reached = false
@@ -37,13 +52,14 @@ def filter(event)
     event.set('rtts', rtts)
     event.set('max_rtt', rtts.max)
     event.set('looping',hops.uniq.length!=hops.length)
-
-    if hops.last() == dest
-        hops.pop()
-        destination_reached=true
+  
+    if !hops.empty? && dest
+        if same_ip?(hops.last, dest)
+            destination_reached = true
+        end
     end
 
     event.set('destination_reached', destination_reached)
-    event.set('route-sha1', Digest::SHA1.hexdigest(hops.join('')) )
+    event.set('route-sha1', Digest::SHA1.hexdigest(hops.join('')))
     return [event]
 end
