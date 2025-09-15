@@ -4,9 +4,6 @@ LABEL maintainer="Ilija Vukotic <ivukotic@cern.ch>"
 
 USER root
 
-# add postgresql driver
-RUN mkdir -p /usr/share/logstash/java/
-
 RUN mkdir /usr/share/logstash/configs
 RUN mkdir /var/log/logstash && chown -R logstash /var/log/logstash
 
