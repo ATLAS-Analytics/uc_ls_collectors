@@ -1,3 +1,3 @@
-# CREST collector to run at UC
+# AI logger collector to run at UC
 
-[![Build Crest Logstash dockerhub image](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/crest.yaml/badge.svg)](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/crest.yaml)
+[![Build AI Logger Logstash dockerhub image](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/ai_logger.yaml/badge.svg)](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/ai_logger.yaml)
