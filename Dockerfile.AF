@@ -2,6 +2,8 @@ FROM docker.elastic.co/logstash/logstash:9.1.3
 
 LABEL maintainer="Ilija Vukotic <ivukotic@cern.ch>"
 
+USER root
+
 RUN mkdir /usr/share/logstash/configs
 RUN mkdir /var/log/logstash && chown -R logstash /var/log/logstash
 
