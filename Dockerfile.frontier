@@ -1,5 +1,5 @@
 
-FROM docker.elastic.co/logstash/logstash:9.6.2
+FROM docker.elastic.co/logstash/logstash:9.4
 
 LABEL maintainer="Ilija Vukotic <ivukotic@cern.ch>"
 
