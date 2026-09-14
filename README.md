@@ -1,29 +1,9 @@
-# Frontier collector to run at UC
+# Netstat collector to run at UC
 
-[![Build Frontier Logstash dockerhub image](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/frontier.yaml/badge.svg)](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/frontier.yaml)
+[![Build Netstat Logstash dockerhub image](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/netstat.yaml/badge.svg)](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/netstat.yaml)
 
-If it gets frontier-id field, It splits it into task_id and job_id.
-Enriching with panda.reqid and panda.taskname is done manually in this way:
+Once per hour gets netstat data from all the WLCG sites and puts it into UChicago Elasticsearch.
+It gets the data from CERN Monit.
 
-* in kibana there is an Enrich Policy in "Index Management" named *panda_to_frontier*. It matches tasks table *jeditaskid* and get fields: *reqid*, *taskname*.
-* we reindex frontier data where the fields are not present.
+curl -s -X POST 'https://monit-grafana-open.cern.ch/api/ds/query?ds_type=elasticsearch&requestId=SQR103' -H 'Content-Type: application/json' -H 'Accept: application/json'  -d "@request_data.json"
 
-These are console commands:
-
-POST /_enrich/policy/panda_to_frontier/_execute?wait_for_completion=true
-
-if index got rolled over, unlock it:
-PUT neo_frontier-000008/_settings
-{ "index.blocks.write": false }
-
-POST /neo_frontier-000008/_update_by_query?pipeline=frontier_enrichment&conflicts=proceed&slices=auto&requests_per_second=5000&wait_for_completion=false
-{
-  "query": {
-    "bool": {
-      "must": [
-        {"exists":{"field":"task_id"}}
-      ],
-      "must_not": [ { "exists": { "field": "panda.reqid" } } ]
-    }
-  }
-}

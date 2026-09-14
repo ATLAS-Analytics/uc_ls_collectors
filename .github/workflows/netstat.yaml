@@ -3,7 +3,7 @@ name: Build frontier Logstash dockerhub image
 on:
   push:
     branches:
-      - "frontier"
+      - "netstat"
 
 jobs:
   docker:
@@ -16,7 +16,7 @@ jobs:
         uses: mr-smithers-excellent/docker-build-push@v7
         with:
           image: atlasanalyticsservice/uc_ls_frontier
-          dockerfile: Dockerfile.frontier
+          dockerfile: Dockerfile.netstat
           tags: latest, ${{ github.sha }}
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
@@ -27,5 +27,5 @@ jobs:
         with:
           token: ${{ secrets.AAAS_GITOPS_DEPLOY_TRIGGER }}
           repository: maniaclab/flux_apps
-          event-type: gitops-uc-ls-frontier-app-trigger
+          event-type: gitops-uc-ls-netstat-app-trigger
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
