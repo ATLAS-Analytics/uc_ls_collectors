@@ -12,20 +12,31 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7.0.0
 
-      - name: Docker Build & Push Action
-        uses: mr-smithers-excellent/docker-build-push@v7
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
         with:
-          image: atlasanalyticsservice/uc_ls_frontier
-          dockerfile: Dockerfile.frontier
-          tags: latest, ${{ github.sha }}
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v4.0.0
+      - name: Build & Push
+        uses: docker/build-push-action@v6
         with:
-          token: ${{ secrets.AAAS_GITOPS_DEPLOY_TRIGGER }}
-          repository: maniaclab/flux_apps
-          event-type: gitops-uc-ls-frontier-app-trigger
-          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+          context: .
+          file: Dockerfile.frontier
+          push: true
+          tags: |
+            atlasanalyticsservice/uc_ls_frontier:latest
+            atlasanalyticsservice/uc_ls_frontier:${{ github.sha }}
+
+      - name: Repository Dispatch
+        env:
+          GH_TOKEN: ${{ secrets.AAAS_GITOPS_DEPLOY_TRIGGER }}
+        run: |
+          gh api repos/maniaclab/flux_apps/dispatches \
+            -f event_type=gitops-uc-ls-frontier-app-trigger \
+            -F "client_payload[ref]=${{ github.ref }}" \
+            -F "client_payload[sha]=${{ github.sha }}"
