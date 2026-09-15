@@ -1,19 +1,18 @@
-
-FROM docker.elastic.co/logstash/logstash:9.5.3
+FROM python:3.12-slim
 
 LABEL maintainer="Ilija Vukotic <ivukotic@cern.ch>"
 
-USER root
+# Pick up outstanding OS security patches on top of the base image.
+RUN apt-get update && apt-get upgrade -y && rm -rf /var/lib/apt/lists/*
 
-RUN mkdir /usr/share/logstash/configs
-RUN mkdir /var/log/logstash && chown -R logstash /var/log/logstash
+WORKDIR /app
 
-COPY logstash.yml /usr/share/logstash/config/logstash.yml
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-COPY configs/netstat.conf /usr/share/logstash/configs/netstat.conf
+COPY netstat_collector.py request_data.json ./
 
-COPY pipelines/netstat.yml /usr/share/logstash/config/pipelines.yml
+RUN useradd --create-home --shell /usr/sbin/nologin collector
+USER collector
 
-# COPY filters/* /usr/share/logstash/filters/
-
-USER logstash
+ENTRYPOINT ["python", "netstat_collector.py"]

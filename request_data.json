@@ -1,0 +1,27 @@
+{
+    "from": "1789413704048",
+    "to": "1789414304048",
+    "queries": [
+        {
+            "refId": "A",
+            "query": "data.site: *",
+            "timeField": "metadata.timestamp",
+            "datasource": {
+                "type": "elasticsearch",
+                "uid": "s0TUbLzIz"
+            },
+            "datasourceId": 10526,
+            "intervalMs": 60000,
+            "metrics": [
+                {
+                    "id": "1",
+                    "type": "raw_data",
+                    "settings": {
+                        "size": "500"
+                    }
+                }
+            ],
+            "bucketAggs": []
+        }
+    ]
+}

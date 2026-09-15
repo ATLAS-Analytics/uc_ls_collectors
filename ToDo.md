@@ -1,64 +1,17 @@
-# To Do
+# TO DO
 
-        {
-            "refId": "C",
-            "alias": "IN: Total",
-            "query": "data.site: *",
-            "timeField": "metadata.timestamp",
-            "datasource": {
-                "type": "elasticsearch",
-                "uid": "s0TUbLzIz"
-            },
-            "datasourceId": 10526,
-            "intervalMs": 60000,
-            "metrics": [
-                {
-                    "id": "1",
-                    "type": "sum",
-                    "field": "data.InBytesPerSec",
-                    "settings": {}
-                }
-            ],
-            "bucketAggs": [
-                {
-                    "id": "2",
-                    "type": "date_histogram",
-                    "field": "metadata.timestamp",
-                    "settings": {
-                        "interval": "auto"
-                    }
-                }
-            ]
-        },
-        {
-            "refId": "D",
-            "alias": "OUT: Total",
-            "query": "data.site: *",
-            "timeField": "metadata.timestamp",
-            "datasource": {
-                "type": "elasticsearch",
-                "uid": "s0TUbLzIz"
-            },
-            "datasourceId": 10526,
-            "intervalMs": 60000,
-            "metrics": [
-                {
-                    "id": "1",
-                    "type": "sum",
-                    "field": "data.OutBytesPerSec",
-                    "settings": {
-                        "script": "(_value * 8 / 1024 / 1024)  / (60000 / 1000 / 60)"
-                    }
-                }
-            ],
-            "bucketAggs": [
-                {
-                    "id": "2",
-                    "type": "date_histogram",
-                    "field": "metadata.timestamp",
-                    "settings": {
-                        "interval": "auto"
-                    }
-                }
-            ]
-        }
+* get "_id" value too.
+* rename columns like this:
+    "_id" -> "_id"
+    "metadata.timestamp" -> timestamp,
+    "data.netsite" -> netsite,
+    "data.site" -> site,
+    "data.InBytesPerSec" -> InBytesPerSecond,
+    "data.OutBytesPerSec" -> OutBytesPerSecond
+* add a code to index the data here:
+    hosts => "atlas-kibana.mwt2.org"
+    ssl_enabled => true
+    index       => "wlcg-sitenetwork-%{+YYYY.MM}"
+    user => "uc_logstash_indexer"
+    password => "${LOGSTASH_PWD}"
+
