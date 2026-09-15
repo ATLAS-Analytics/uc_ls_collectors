@@ -1,17 +1,5 @@
 # TO DO
 
-* get "_id" value too.
-* rename columns like this:
-    "_id" -> "_id"
-    "metadata.timestamp" -> timestamp,
-    "data.netsite" -> netsite,
-    "data.site" -> site,
-    "data.InBytesPerSec" -> InBytesPerSecond,
-    "data.OutBytesPerSec" -> OutBytesPerSecond
-* add a code to index the data here:
-    hosts => "atlas-kibana.mwt2.org"
-    ssl_enabled => true
-    index       => "wlcg-sitenetwork-%{+YYYY.MM}"
-    user => "uc_logstash_indexer"
-    password => "${LOGSTASH_PWD}"
-
+* [x] don't print out indexed data but only how many docs have been indexed.
+* [x] base index name on document's timestamp not on current time
+* [x] add an option to give two dates and the code will index all the data between them. this will be used only interactively.

@@ -4,10 +4,12 @@ Netstat collector.
 
 Every 5 minutes, POST a Grafana Elasticsearch data-source query to
 https://monit-grafana-open.cern.ch/api/ds/query, rename each record's
-fields, print one line per record, and index the result into the UC
-Elasticsearch cluster (index "wlcg-sitenetwork-%Y.%m", document id taken
-from the record's own "_id" so an overlapping fetch window updates rather
-than duplicates):
+fields, and index the result into the UC Elasticsearch cluster (index
+"wlcg-sitenetwork-%Y.%m", named after each record's own timestamp rather
+than the current time; document id taken from the record's own "_id" so
+an overlapping fetch window updates rather than duplicates). Each run
+prints a one-line summary of how many docs were fetched/indexed, not the
+documents themselves:
 
     _id                    -> _id
     metadata.timestamp     -> timestamp
@@ -25,8 +27,9 @@ uc_logstash_indexer user on atlas-kibana.mwt2.org); if it isn't set,
 indexing is skipped and records are only printed.
 
 Usage:
-    python netstat_collector.py           # run forever, polling every 5 min
-    python netstat_collector.py --once    # fetch a single batch and exit
+    python netstat_collector.py                        # run forever, polling every 5 min
+    python netstat_collector.py --once                  # fetch a single batch and exit
+    python netstat_collector.py --start ... --end ...   # interactive backfill of a date range
 """
 
 import argparse
@@ -35,7 +38,7 @@ import json
 import os
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -48,6 +51,11 @@ POLL_INTERVAL_SECONDS = 5 * 60
 # leaves a gap between consecutive windows.
 LOOKBACK_MINUTES = 6
 
+# Chunk size used when backfilling an interactively-specified date range, so
+# a long range is fetched (and indexed) as a series of smaller queries
+# rather than one huge one.
+BACKFILL_CHUNK_MINUTES = 60
+
 # Raw field name (as returned by the Grafana ES datasource) -> renamed field
 # used both for the printed output and for the indexed document.
 RENAME = {
@@ -59,9 +67,6 @@ RENAME = {
     "data.OutBytesPerSec": "OutBytesPerSecond",
 }
 FIELDS = list(RENAME)
-# Column order for the printed, tab-separated log line.
-OUTPUT_ORDER = ["_id", "timestamp", "netsite", "site",
-                "InBytesPerSecond", "OutBytesPerSecond"]
 
 # Where/how to index, mirroring the elasticsearch output of the netstat
 # Logstash pipeline (configs/netstat.conf).
@@ -77,12 +82,19 @@ def load_template() -> dict:
         return json.load(f)
 
 
-def build_payload(template: dict) -> dict:
-    """Return a copy of the template with a fresh from/to time window."""
+def build_payload(template: dict, from_ms: int | None = None, to_ms: int | None = None) -> dict:
+    """Return a copy of the template with a from/to time window.
+
+    By default the window covers the last LOOKBACK_MINUTES up to now; pass
+    from_ms/to_ms explicitly (e.g. for an interactive backfill) to override it.
+    """
     payload = copy.deepcopy(template)
-    now_ms = int(time.time() * 1000)
-    payload["to"] = str(now_ms)
-    payload["from"] = str(now_ms - LOOKBACK_MINUTES * 60 * 1000)
+    if to_ms is None:
+        to_ms = int(time.time() * 1000)
+    if from_ms is None:
+        from_ms = to_ms - LOOKBACK_MINUTES * 60 * 1000
+    payload["to"] = str(to_ms)
+    payload["from"] = str(from_ms)
     return payload
 
 
@@ -132,35 +144,47 @@ def transform_record(record: dict) -> dict:
     return doc
 
 
-def format_record(doc: dict) -> str:
-    values = [doc.get(f) for f in OUTPUT_ORDER]
-    return "\t".join("" if v is None else str(v) for v in values)
+def es_index_name(doc: dict) -> str:
+    """Index name for a document, based on its own "timestamp" field.
+
+    Falls back to the current time if the document has no usable timestamp,
+    so a malformed record still gets indexed somewhere.
+    """
+    ts = doc.get("timestamp")
+    when = None
+    if isinstance(ts, str):
+        try:
+            when = datetime.fromisoformat(ts)
+        except ValueError:
+            when = None
+    if when is None:
+        when = datetime.now(timezone.utc)
+    return f"{ES_INDEX_PREFIX}-{when:%Y.%m}"
 
 
-def es_index_name() -> str:
-    return f"{ES_INDEX_PREFIX}-{datetime.now(timezone.utc):%Y.%m}"
-
-
-def index_records(docs: list[dict]) -> None:
+def index_records(docs: list[dict]) -> int:
     """Bulk-index documents into the UC Elasticsearch cluster.
 
     Each document is indexed with its own "_id" as the document id, so
     re-fetching an overlapping time window overwrites rather than
     duplicates records. "_id" is a reserved metadata field name in
     Elasticsearch, so it's only used as the bulk action's document id, not
-    stored inside the document source itself.
+    stored inside the document source itself. Documents are routed to the
+    monthly index matching their own timestamp, not the current time, so a
+    backfill correctly lands in past months' indices.
+
+    Returns the number of documents actually indexed (0 if skipped).
     """
     if not docs:
-        return
+        return 0
     password = os.environ.get(ES_PASSWORD_ENV)
     if not password:
         print(f"{ES_PASSWORD_ENV} not set; skipping indexing", file=sys.stderr)
-        return
+        return 0
 
-    index = es_index_name()
     lines = []
     for doc in docs:
-        action = {"index": {"_index": index}}
+        action = {"index": {"_index": es_index_name(doc)}}
         doc_id = doc.get("_id")
         if doc_id:
             action["index"]["_id"] = doc_id
@@ -178,32 +202,74 @@ def index_records(docs: list[dict]) -> None:
     )
     resp.raise_for_status()
     result = resp.json()
+    errors = 0
     if result.get("errors"):
         for item in result.get("items", []):
             info = item.get("index", {})
             if info.get("error"):
+                errors += 1
                 print(
                     f"index error for _id={info.get('_id')}: {info['error']}",
                     file=sys.stderr,
                 )
+    return len(docs) - errors
 
 
-def run_once(template: dict) -> None:
-    payload = build_payload(template)
+def run_once(template: dict, from_ms: int | None = None, to_ms: int | None = None) -> None:
+    payload = build_payload(template, from_ms=from_ms, to_ms=to_ms)
     response = fetch(payload)
     docs = [transform_record(record) for record in extract_records(response)]
-    for doc in docs:
-        print(format_record(doc))
-    index_records(docs)
+    indexed = index_records(docs)
+    print(f"fetched {len(docs)} docs, indexed {indexed}")
+
+
+def parse_datetime(value: str) -> datetime:
+    """Parse a --start/--end CLI value (ISO date or datetime) as UTC."""
+    dt = datetime.fromisoformat(value)
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt
+
+
+def run_range(template: dict, start: datetime, end: datetime) -> None:
+    """Backfill every record between start and end (inclusive of start).
+
+    Fetched in BACKFILL_CHUNK_MINUTES-sized windows so a long range is
+    broken into a series of smaller queries instead of one huge one.
+    """
+    chunk = timedelta(minutes=BACKFILL_CHUNK_MINUTES)
+    cur = start
+    while cur < end:
+        chunk_end = min(cur + chunk, end)
+        run_once(
+            template,
+            from_ms=int(cur.timestamp() * 1000),
+            to_ms=int(chunk_end.timestamp() * 1000),
+        )
+        cur = chunk_end
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--once", action="store_true",
                         help="fetch a single batch and exit")
+    parser.add_argument("--start", type=parse_datetime,
+                        help="backfill start (ISO date/datetime, e.g. 2026-01-01); "
+                             "requires --end, interactive use only")
+    parser.add_argument("--end", type=parse_datetime,
+                        help="backfill end (ISO date/datetime), exclusive; requires --start")
     args = parser.parse_args()
 
+    if bool(args.start) != bool(args.end):
+        parser.error("--start and --end must be given together")
+    if args.start and args.start >= args.end:
+        parser.error("--start must be before --end")
+
     template = load_template()
+
+    if args.start and args.end:
+        run_range(template, args.start, args.end)
+        return
 
     if args.once:
         run_once(template)
