@@ -1,3 +1,0 @@
-xpack.monitoring.enabled: false
-pipeline.ordered: false
-pipeline.ecs_compatibility: disabled
