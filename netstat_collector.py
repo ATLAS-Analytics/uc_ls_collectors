@@ -54,7 +54,7 @@ LOOKBACK_MINUTES = 6
 # Chunk size used when backfilling an interactively-specified date range, so
 # a long range is fetched (and indexed) as a series of smaller queries
 # rather than one huge one.
-BACKFILL_CHUNK_MINUTES = 60
+BACKFILL_CHUNK_MINUTES = 5
 
 # Raw field name (as returned by the Grafana ES datasource) -> renamed field
 # used both for the printed output and for the indexed document.
