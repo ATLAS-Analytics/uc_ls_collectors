@@ -146,7 +146,9 @@ def index_records(docs: list[dict]) -> None:
 
     Each document is indexed with its own "_id" as the document id, so
     re-fetching an overlapping time window overwrites rather than
-    duplicates records.
+    duplicates records. "_id" is a reserved metadata field name in
+    Elasticsearch, so it's only used as the bulk action's document id, not
+    stored inside the document source itself.
     """
     if not docs:
         return
@@ -162,8 +164,9 @@ def index_records(docs: list[dict]) -> None:
         doc_id = doc.get("_id")
         if doc_id:
             action["index"]["_id"] = doc_id
+        source = {k: v for k, v in doc.items() if k != "_id"}
         lines.append(json.dumps(action))
-        lines.append(json.dumps(doc))
+        lines.append(json.dumps(source))
     body = "\n".join(lines) + "\n"
 
     resp = requests.post(
