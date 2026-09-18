@@ -6,13 +6,14 @@ LABEL maintainer="Ilija Vukotic <ivukotic@cern.ch>"
 USER root
 
 RUN mkdir /usr/share/logstash/configs
+RUN mkdir /usr/share/logstash/certs
 RUN mkdir /var/log/logstash && chown -R logstash /var/log/logstash
 
 COPY logstash.yml /usr/share/logstash/config/logstash.yml
 
-COPY configs/frontier.conf /usr/share/logstash/configs/frontier.conf
+COPY configs/fireflies.conf /usr/share/logstash/configs/fireflies.conf
 
-COPY pipelines/frontier.yml /usr/share/logstash/config/pipelines.yml
+COPY pipelines/fireflies.yml /usr/share/logstash/config/pipelines.yml
 
 # COPY filters/* /usr/share/logstash/filters/
 
