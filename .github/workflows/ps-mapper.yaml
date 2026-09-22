@@ -1,9 +1,7 @@
 name: Build pS Mapper dockerhub image
 
 on:
-  push:
-    branches:
-      - "ps-collector"
+  workflow_dispatch:
 
 jobs:
   docker:
