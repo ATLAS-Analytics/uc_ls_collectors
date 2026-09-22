@@ -22,15 +22,26 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+      - name: Docker metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: atlasanalyticsservice/uc_ls_fireflies
+          tags: |
+            type=raw,value=latest
+            type=raw,value=${{ github.sha }}
+          labels: |
+            org.opencontainers.image.title=uc_ls_fireflies
+            org.opencontainers.image.vendor=ATLAS Analytics Service
+
       - name: Build & Push
         uses: docker/build-push-action@v7
         with:
           context: .
           file: Dockerfile.fireflies
           push: true
-          tags: |
-            atlasanalyticsservice/uc_ls_fireflies:latest
-            atlasanalyticsservice/uc_ls_fireflies:${{ github.sha }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
 
       - name: Repository Dispatch
         env:
