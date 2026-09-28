@@ -10,17 +10,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
-      - name: Docker Build & Push Action
-        uses: mr-smithers-excellent/docker-build-push@v6
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
         with:
-          image: atlasanalyticsservice/uc_ls_event-loop
-          dockerfile: Dockerfile_event-loop
-          tags: latest, ${{ github.sha }}
-          registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Build and push
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          file: Dockerfile_event-loop
+          push: true
+          tags: |
+            atlasanalyticsservice/uc_ls_event-loop:latest
+            atlasanalyticsservice/uc_ls_event-loop:${{ github.sha }}
 
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v4
