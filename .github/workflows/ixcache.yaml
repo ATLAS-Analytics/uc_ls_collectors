@@ -37,6 +37,6 @@ jobs:
           GH_TOKEN: ${{ secrets.AAAS_GITOPS_DEPLOY_TRIGGER }}
         run: |
           gh api repos/maniaclab/flux_apps/dispatches \
-            -f event_type=gitops-uc-ls-ixcache-app-trigger \
+            -f event_type=gitops-uc-ls-ixcache-trigger \
             -f "client_payload[ref]=${{ github.ref }}" \
             -f "client_payload[sha]=${{ github.sha }}"
