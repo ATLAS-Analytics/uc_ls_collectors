@@ -2,10 +2,10 @@ FROM docker.elastic.co/logstash/logstash:9.5.5
 
 LABEL maintainer="Ilija Vukotic <ivukotic@cern.ch>"
 
-USER root
+USER logstash
 
 RUN mkdir /usr/share/logstash/configs
 
-COPY logstash.yml /usr/share/logstash/config/
-COPY configs/ixcache.conf /usr/share/logstash/configs/
-COPY pipelines/ixcache.yml /usr/share/logstash/config/pipelines.yml
+COPY --chown=logstash:root logstash.yml /usr/share/logstash/config/
+COPY --chown=logstash:root configs/ixcache.conf /usr/share/logstash/configs/
+COPY --chown=logstash:root pipelines/ixcache.yml /usr/share/logstash/config/pipelines.yml
