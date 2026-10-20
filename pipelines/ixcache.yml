@@ -1,0 +1,3 @@
+- pipeline.id: ixcache
+  path.config: "/usr/share/logstash/configs/ixcache.conf"
+  pipeline.workers: 1

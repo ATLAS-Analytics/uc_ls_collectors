@@ -1,5 +1,5 @@
-# gStream collector to run at UC
+# iXCache collector
 
-[![Build xCache gStream Logstash dockerhub image](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/xCacheGstream.yaml/badge.svg)](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/xCacheGstream.yaml)
+[![Build iXCache Logstash dockerhub image](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/ixcache.yaml/badge.svg)](https://github.com/ATLAS-Analytics/uc_ls_collectors/actions/workflows/ixcache.yaml)
 
-gStream - port 9000 TCP - collector.atlas-ml.org - load balancer
+listens on ixcache.atlas-ml.org:1095 for UDP messages from all the ixcache instances.
